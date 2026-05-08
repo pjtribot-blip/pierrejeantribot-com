@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="fr" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-fr="Notes — Pierre-Jean Tribot" data-en="Notes — Pierre-Jean Tribot">Notes — Pierre-Jean Tribot</title>
+<meta name="description" content="Notes éditoriales sur l'intelligence artificielle, l'édition culturelle et la prescription musicale.">
+<meta name="author" content="Pierre-Jean Tribot">
+<meta name="theme-color" content="#f5efe2">
+
+<meta property="og:title" content="Notes — Pierre-Jean Tribot">
+<meta property="og:description" content="Notes éditoriales sur l'intelligence artificielle, l'édition culturelle et la prescription musicale.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pierrejeantribot.com/notes/">
+
+<link rel="alternate" hreflang="fr" href="https://pierrejeantribot.com/notes/">
+<link rel="alternate" hreflang="en" href="https://pierrejeantribot.com/notes/#en">
+<link rel="alternate" hreflang="x-default" href="https://pierrejeantribot.com/notes/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --fond: #f5efe2;
+  --texte: #1a1a1a;
+  --texte-mute: #5a5a5a;
+  --accent: #7a3e2a;
+  --filet: #1a1a1a;
+  --filet-leger: #c8bfa6;
+  --serif: "EB Garamond", Georgia, "Times New Roman", serif;
+  --mono: "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--fond);
+  color: var(--texte);
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 32px 32px 60px;
+}
+
+[data-fr], [data-en] { display: none; }
+html[lang="fr"] [data-fr] { display: inline; }
+html[lang="en"] [data-en] { display: inline; }
+html[lang="fr"] p[data-fr], html[lang="fr"] div[data-fr], html[lang="fr"] section[data-fr], html[lang="fr"] article[data-fr], html[lang="fr"] li[data-fr] { display: block; }
+html[lang="en"] p[data-en], html[lang="en"] div[data-en], html[lang="en"] section[data-en], html[lang="en"] article[data-en], html[lang="en"] li[data-en] { display: block; }
+
+/* En-tête */
+.head {
+  border-bottom: 1px solid var(--filet);
+  padding-bottom: 12px;
+  margin-bottom: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+}
+.head .left a {
+  color: var(--texte);
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+  transition: all 0.15s ease;
+}
+.head .left a:hover {
+  background: var(--texte);
+  color: var(--fond);
+  border-bottom-color: var(--texte);
+}
+.head .middle { flex: 1; text-align: center; color: var(--texte); font-weight: 500; }
+.head .right { color: var(--texte-mute); }
+.head .lang { color: var(--texte-mute); user-select: none; }
+.head .lang button {
+  background: none; border: none;
+  font-family: inherit; font-size: inherit; letter-spacing: inherit;
+  color: var(--texte-mute);
+  cursor: pointer;
+  padding: 0;
+  border-bottom: 1px solid var(--filet-leger);
+  padding-bottom: 1px;
+  transition: all 0.15s ease;
+}
+.head .lang button:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.head .lang button.active { color: var(--texte); font-weight: 500; border-bottom: none; cursor: default; }
+.head .lang .sep { margin: 0 6px; }
+
+/* Hero */
+.hero {
+  border-bottom: 1px solid var(--filet);
+  padding-bottom: 40px;
+  margin-bottom: 48px;
+}
+.hero .marqueur {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+  display: block;
+}
+.hero h1 {
+  font-family: var(--serif);
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  margin-bottom: 28px;
+}
+.hero h1 .point { color: var(--accent); }
+.hero .chapeau {
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--texte);
+  max-width: 56ch;
+  font-style: italic;
+}
+
+/* Index */
+.section-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--texte);
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--filet);
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.section-label .left::before {
+  content: "## ";
+  color: var(--texte-mute);
+  font-weight: 400;
+}
+.section-label .right {
+  color: var(--texte-mute);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+}
+.index {
+  border-top: 1px solid var(--filet);
+  margin-bottom: 80px;
+}
+.index-item {
+  border-bottom: 1px solid var(--filet);
+  padding: 24px 0;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 20px;
+}
+.index-item .date {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-top: 5px;
+}
+.index-item .body a.index-title {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--texte);
+  text-decoration: none;
+  border-bottom: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.15s ease;
+}
+.index-item .body a.index-title:hover { color: var(--accent); }
+.index-item .body a.index-title .point { color: var(--accent); }
+.index-item .body .resume {
+  font-family: var(--serif);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--texte-mute);
+  max-width: 60ch;
+}
+
+/* Textes complets */
+.texte {
+  scroll-margin-top: 24px;
+  padding: 64px 0 24px;
+  border-top: 2px solid var(--filet);
+}
+.texte-meta {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+  display: block;
+}
+.texte h2 {
+  font-family: var(--serif);
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  margin-bottom: 14px;
+}
+.texte h2 .subtitle {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--texte-mute);
+  margin-top: 10px;
+  line-height: 1.2;
+}
+.texte h2 .point { color: var(--accent); }
+.texte-date {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--texte-mute);
+  letter-spacing: 0.05em;
+  margin-bottom: 40px;
+  display: block;
+  border-bottom: 1px solid var(--filet);
+  padding-bottom: 20px;
+}
+.texte p {
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.75;
+  margin-bottom: 22px;
+  color: var(--texte);
+  hyphens: auto;
+}
+.texte p em { font-style: italic; }
+.texte p strong { font-weight: 600; color: var(--accent); }
+.signature {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--texte-mute);
+  margin-top: 36px;
+  padding-top: 22px;
+  border-top: 1px solid var(--filet-leger);
+}
+
+.mention {
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--texte-mute);
+  letter-spacing: 0.02em;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--filet-leger);
+  max-width: 60ch;
+}
+
+/* Partage */
+.partage {
+  margin-top: 40px;
+  padding-top: 22px;
+  border-top: 1px solid var(--filet);
+}
+.partage-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--texte-mute);
+  margin-bottom: 14px;
+  display: block;
+}
+.partage-liens {
+  font-family: var(--mono);
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 0;
+  align-items: center;
+}
+.partage-liens a {
+  color: var(--texte);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+  transition: all 0.15s ease;
+}
+.partage-liens a:hover {
+  background: var(--texte);
+  color: var(--fond);
+  border-bottom-color: var(--texte);
+}
+.partage-liens .sep {
+  color: var(--texte-mute);
+  margin: 0 10px;
+}
+
+.retour-haut {
+  margin-top: 48px;
+  text-align: center;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+}
+.retour-haut a {
+  color: var(--texte-mute);
+  text-decoration: none;
+  border-bottom: 1px solid var(--filet-leger);
+  padding-bottom: 1px;
+  transition: all 0.15s ease;
+}
+.retour-haut a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* Pied */
+footer {
+  border-top: 1px solid var(--filet);
+  margin-top: 80px;
+  padding-top: 32px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--texte-mute);
+  letter-spacing: 0.05em;
+}
+footer a {
+  color: var(--texte);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+  transition: all 0.15s ease;
+}
+footer a:hover {
+  background: var(--texte);
+  color: var(--fond);
+  border-bottom-color: var(--texte);
+}
+
+::selection { background: var(--accent); color: var(--fond); }
+
+@media (max-width: 640px) {
+  .wrap { padding: 24px 20px 48px; }
+  .head { flex-direction: column; gap: 4px; align-items: flex-start; margin-bottom: 36px; }
+  .head .middle { text-align: left; }
+  .hero h1 { font-size: 38px; }
+  .hero .chapeau { font-size: 17px; }
+  .index-item { grid-template-columns: 1fr; gap: 6px; padding: 18px 0; }
+  .index-item .date { padding-top: 0; }
+  .index-item .body a.index-title { font-size: 20px; }
+  .texte h2 { font-size: 28px; }
+  .texte h2 .subtitle { font-size: 18px; }
+  .texte p { font-size: 17px; }
+  body { font-size: 17px; }
+  .partage-liens { font-size: 11px; }
+  .partage-liens .sep { margin: 0 6px; }
+}
+</style>
+</head>
+<body id="haut">
+
+<div class="wrap">
+
+  <header class="head">
+    <span class="left"><a href="/">pierrejeantribot.com</a></span>
+    <span class="middle">notes</span>
+    <span class="lang">
+      <button id="btn-fr" type="button" aria-label="Français">FR</button>
+      <span class="sep">·</span>
+      <button id="btn-en" type="button" aria-label="English">EN</button>
+    </span>
+    <span class="right">
+      <span data-fr>bruxelles · 2026</span>
+      <span data-en>brussels · 2026</span>
+    </span>
+  </header>
+
+  <section class="hero">
+    <span class="marqueur">
+      <span data-fr>▸ Notes éditoriales</span>
+      <span data-en>▸ Editorial notes</span>
+    </span>
+    <h1>Notes<span class="point">.</span></h1>
+    <p class="chapeau" data-fr>
+      Notes éditoriales sur l'intelligence artificielle, l'édition culturelle et la prescription musicale. Textes courts, écrits au fil du travail.
+    </p>
+    <p class="chapeau" data-en>
+      Editorial notes on artificial intelligence, cultural publishing and musical prescription. Short pieces, written along the way.
+    </p>
+  </section>
+
+  <section>
+    <div class="section-label">
+      <span class="left">
+        <span data-fr>textes</span>
+        <span data-en>essays</span>
+      </span>
+      <span class="right">
+        <span data-fr>par date décroissante</span>
+        <span data-en>most recent first</span>
+      </span>
+    </div>
+
+    <div class="index">
+
+      <article class="index-item">
+        <div class="date">
+          <span data-fr>mai 2026</span>
+          <span data-en>may 2026</span>
+        </div>
+        <div class="body">
+          <a href="#prescription-culturelle" class="index-title">
+            <span data-fr>L'IA et la prescription culturelle. Pourquoi ne pas tout laisser aux plateformes<span class="point">.</span></span>
+            <span data-en>AI and cultural prescription. Why we shouldn't leave it all to the platforms<span class="point">.</span></span>
+          </a>
+          <p class="resume" data-fr>
+            Sur la pauvreté éditoriale des playlists algorithmiques, le sort fait aux compositrices et aux répertoires confidentiels, et le rôle d'une IA mise entre des mains éditoriales.
+          </p>
+          <p class="resume" data-en>
+            On the editorial poverty of algorithmic playlists, the fate of women composers and confidential repertoires, and the role of AI in editorial hands.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== TEXTE 01 ===== -->
+  <article class="texte" id="prescription-culturelle">
+
+    <span class="texte-meta">
+      <span data-fr>▸ Texte 01</span>
+      <span data-en>▸ Essay 01</span>
+    </span>
+
+    <h2>
+      <span data-fr>L'IA et la prescription culturelle<span class="point">.</span><span class="subtitle">Pourquoi ne pas tout laisser aux plateformes.</span></span>
+      <span data-en>AI and cultural prescription<span class="point">.</span><span class="subtitle">Why we shouldn't leave it all to the platforms.</span></span>
+    </h2>
+
+    <span class="texte-date">
+      <span data-fr>mai 2026 · pierre-jean tribot</span>
+      <span data-en>may 2026 · pierre-jean tribot</span>
+    </span>
+
+    <p data-fr>Il y a quelque chose qui se joue, dans le silence des algorithmes, et qui mérite qu'on y regarde de plus près.</p>
+    <p data-fr>Depuis vingt ans, la prescription musicale a basculé. Le disquaire indépendant a disparu, les pages culturelles des journaux généralistes se sont rétractées, les radios spécialisées ont perdu leur audience. Ce qui reste pour découvrir un compositeur, un interprète, un label, c'est essentiellement Spotify, Apple Music, YouTube et Tidal. Le geste de prescription, autrefois porté par des humains qui aimaient ce dont ils parlaient, s'est délégué à des systèmes de recommandation algorithmique conçus pour optimiser le temps d'écoute.</p>
+    <p data-fr>Pour la musique classique et les répertoires contemporains, cette bascule est particulièrement violente. Les algorithmes des plateformes sont calibrés sur les comportements d'écoute majoritaires. Ils privilégient ce qui est déjà écouté, déjà partagé, déjà identifié. Ils traitent la musique comme un flux indifférencié et confondent allègrement les <em>Quatre Saisons</em> de Vivaldi par cinquante ensembles différents, ne distinguent pas une lecture historiquement informée d'une version romantique, ne savent pas situer une création contemporaine dans un courant esthétique. Le répertoire patrimonial devient un fond de catalogue, et la création vivante ne sort jamais du tiroir où elle a été rangée.</p>
+    <p data-fr>Il suffit de regarder les playlists thématiques que ces plateformes proposent pour saisir l'ampleur du problème. <em>Classical Focus</em>, <em>Peaceful Piano</em>, <em>Calming Classical</em>, <em>Classical Essentials</em> : des intitulés qui disent tout. La musique classique y est traitée comme un robinet à ambiance, une bande-son pour télétravail ou méditation, dans laquelle Bach voisine avec Einaudi sans transition, Mozart avec Max Richter, et Beethoven avec d'innombrables réorchestrations apaisantes de son <em>Adagio</em>. Aucune narration, aucun contexte, aucune hiérarchie, aucun écart. Trois mille morceaux dans un ordre obscur, recalibrés pour ne jamais surprendre. C'est la négation même du geste musical : faire entendre ce qu'on n'attendait pas.</p>
+    <p data-fr>À ce biais éditorial s'ajoute un biais économique. Les playlists des plateformes sur-valorisent massivement le back-catalogue des majors — Universal, Sony, Warner — pour des raisons qui n'ont rien à voir avec la qualité musicale et tout à voir avec les accords commerciaux et le poids des catalogues historiques. Une réédition d'un enregistrement Deutsche Grammophon des années soixante-dix sera systématiquement mieux exposée qu'une création récente d'un label indépendant, même si la création en question est un événement artistique majeur. Pour les éditeurs et labels indépendants — ceux qui prennent le risque artistique, ceux qui défendent les œuvres et les interprètes émergents — la visibilité algorithmique est un combat permanent et largement perdu d'avance. Et cela vaut pour tous les compositeurs : intégrer une playlist Spotify est infiniment plus facile avec du Philip Glass qu'avec du Messiaen ou du Goubaïdoulina, parce que Glass coche toutes les cases du goût mainstream du classique-contemporain (motifs répétitifs, harmonie consonante, ambiance immédiate), là où Messiaen exige une écoute construite et Goubaïdoulina suppose un auditeur disposé à être déstabilisé. L'algorithme privilégie ce qui s'écoute en arrière-plan. Tout ce qui demande une attention frontale est par construction défavorisé.</p>
+    <p data-fr>Pour les compositrices, la situation est pire encore. Quand une plateforme ouvre, à l'occasion d'une journée internationale, une playlist consacrée aux femmes, on y trouve le plus souvent les mêmes cinq noms — Hildegarde de Bingen, Clara Schumann, Fanny Mendelssohn, Lili Boulanger, Kaija Saariaho — répétés en boucle, comme si l'histoire de la musique au féminin se résumait à un corpus de salle d'attente. Où sont Louise Farrenc, Cécile Chaminade, Mel Bonis, Augusta Holmès, Germaine Tailleferre, Grażyna Bacewicz, Sofia Goubaïdoulina, Unsuk Chin, Betsy Jolas ? Présentes au catalogue, oui, mais invisibles au flux. Leur travail existe pour qui sait les chercher ; il n'existe pas pour qui veut être surpris. Là encore, ce n'est pas un défaut de l'algorithme : c'est exactement ce qu'il a été conçu pour faire — recommander ce qui est déjà recommandé.</p>
+    <p data-fr>Le résultat est connu. Quelques compositeurs et interprètes ultra-visibles continuent de tourner, le reste s'enfonce dans une longue traîne où personne ne va chercher. Optimiser l'engagement, c'est optimiser le retour vers le déjà-connu. Aucune plateforme commerciale n'a intérêt à ce qu'un auditeur passe trois heures à explorer Charles Koechlin ou Galina Ustvolskaya — cela ne génère ni ré-écoute, ni complétion, ni partage viral. Le système fait ce pour quoi il a été conçu, et il le fait très bien.</p>
+    <p data-fr>Tout n'est pas négatif pour autant. Les plateformes ont aussi rendu possible une chose que le disque physique ne permettait pas : la diffusion réellement mondiale, jusqu'aux confins. Quand on regarde les relevés de streaming d'un éditeur indépendant, on découvre des écoutes en Indonésie, au Pérou, en Mongolie, au Cap-Vert — des territoires où aucun distributeur n'aurait jamais acheminé physiquement un disque de musique de chambre contemporaine. Les plateformes ont infiniment élargi le public potentiel des répertoires confidentiels.</p>
+    <p data-fr>Mais cette diffusion-là reste passive. Elle ne crée pas de découverte, elle révèle une demande latente. Si l'auditeur d'Oulan-Bator a trouvé Dusapin, c'est qu'il le cherchait déjà, ou qu'un humain — un programmateur, un journaliste, un ami — le lui a recommandé en amont. La plateforme a permis l'accès, elle n'a pas suscité l'intérêt. Le travail de prescription, lui, reste à faire. Et c'est précisément celui que les algorithmes commerciaux ne feront jamais, parce que leur logique économique va dans l'autre sens.</p>
+    <p data-fr>C'est précisément là que l'intelligence artificielle ouvre une autre voie.</p>
+    <p data-fr>L'IA, quand elle est mise entre des mains éditoriales et nourrie de bases structurées, peut faire l'inverse exact des algorithmes commerciaux. Elle peut tisser des liens entre des sources hétérogènes — un manuscrit, un article de revue savante, une discographie critique, un enregistrement live, une notice de festival, une chronique parue il y a dix ans. Elle peut composer des parcours qui ne suivent pas la logique de l'engagement mais celle de la découverte raisonnée. Si vous aimez tel quatuor de Ravel, voici comment Caplet, Roussel, Ropartz ont prolongé cette esthétique. Si vous découvrez Lili Boulanger, voici les enregistrements historiques qui ont compté, voici les lectures contemporaines qui valent d'être entendues, voici les compositrices oubliées de sa génération que les programmateurs commencent à exhumer. L'IA ne sait pas faire cela seule. Mais nourrie d'un corpus éditorial sérieux et encadrée par un travail humain de validation, elle devient un outil de prescription d'une puissance inédite.</p>
+    <p data-fr>C'est exactement l'ambition de Pauline, l'application de découverte musicale que nous développons à <em>Crescendo Magazine</em>. Pauline ne cherche pas à concurrencer Spotify sur le terrain du flux. Elle cherche à faire ce que Spotify ne fera jamais : raconter, contextualiser, relier, sortir des œuvres de l'oubli en les replaçant dans leur réseau de filiations et d'influences. Six cent cinq compositeurs et compositrices y sont accessibles, dont une part substantielle ne génère aucun revenu publicitaire significatif et n'a donc aucune chance d'être recommandée par un système commercial. Quatorze fonctions assistées par IA permettent de présenter une œuvre, de suggérer des écoutes complémentaires, de tracer des parcours thématiques, de croiser un répertoire avec des concerts à venir. Ce n'est pas une révolution. C'est simplement la prescription cultivée, telle qu'elle existait avant que les plateformes ne la confisquent, rendue à nouveau possible par un outil que les éditeurs et les critiques peuvent désormais s'approprier.</p>
+    <p data-fr>L'enjeu dépasse Pauline. Il s'agit de comprendre que la <strong>découvrabilité</strong> — c'est le mot qu'utilisent désormais les institutions culturelles pour parler de ce sujet — n'est pas une question technique secondaire. C'est l'un des combats culturels majeurs de la décennie qui vient. Si nous laissons les plateformes commerciales décider seules de ce qui est entendu et de ce qui ne l'est pas, nous laissons disparaître silencieusement des pans entiers de notre patrimoine musical et de notre création vivante. Pas par interdiction, par invisibilisation. La pire des disparitions, parce que personne ne la voit.</p>
+    <p data-fr>Les éditeurs, les critiques, les institutions culturelles, les médiateurs ont aujourd'hui à leur disposition un outil — l'intelligence artificielle, encadrée, nourrie, validée — qui leur permet de produire des dispositifs de prescription d'une qualité que l'on n'imaginait pas il y a trois ans. C'est une chance et c'est une responsabilité. Si nous ne nous en saisissons pas, ce sont les algorithmes commerciaux qui continueront de modeler à leur image l'écoute des prochaines générations.</p>
+    <p data-fr>Faire revivre le peu connu, c'est notre métier. L'IA, bien employée, en redevient l'instrument.</p>
+
+    <p data-en>Something is at stake, in the silence of the algorithms, and it deserves a closer look.</p>
+    <p data-en>For twenty years, musical prescription has shifted. The independent record shop has disappeared, the cultural pages of generalist newspapers have shrunk, specialised radio has lost its audience. What remains for discovering a composer, a performer, a label is essentially Spotify, Apple Music, YouTube and Tidal. The act of prescription, once carried by humans who loved what they were talking about, has been delegated to algorithmic recommendation systems designed to optimise listening time.</p>
+    <p data-en>For classical music and contemporary repertoires, this shift is particularly violent. Platform algorithms are calibrated on majority listening behaviours. They favour what is already listened to, already shared, already identified. They treat music as an undifferentiated flow and cheerfully confuse Vivaldi's <em>Four Seasons</em> recorded by fifty different ensembles, fail to distinguish a historically informed performance from a romantic version, cannot place a contemporary work within an aesthetic current. The patrimonial repertoire becomes back catalogue, and living creation never leaves the drawer in which it has been filed.</p>
+    <p data-en>One has only to look at the thematic playlists these platforms propose to grasp the scale of the problem. <em>Classical Focus</em>, <em>Peaceful Piano</em>, <em>Calming Classical</em>, <em>Classical Essentials</em>: titles that say it all. Classical music is treated as ambient wallpaper, a soundtrack for remote work or meditation, in which Bach sits beside Einaudi without transition, Mozart beside Max Richter, and Beethoven amid countless soothing reorchestrations of his <em>Adagio</em>. No narrative, no context, no hierarchy, no edge. Three thousand tracks in some obscure order, recalibrated never to surprise. This is the very negation of the musical gesture: to make heard what was not expected.</p>
+    <p data-en>To this editorial bias is added an economic one. Platform playlists massively over-value the back catalogues of the majors — Universal, Sony, Warner — for reasons that have nothing to do with musical quality and everything to do with commercial agreements and the weight of historical catalogues. A reissue of a Deutsche Grammophon recording from the 1970s will be systematically better exposed than a recent release on an independent label, even if that release is a major artistic event. For independent publishers and labels — those who take artistic risks, those who defend emerging works and performers — algorithmic visibility is a permanent and largely lost battle. And this applies to all composers: getting onto a Spotify playlist is infinitely easier with Philip Glass than with Messiaen or Gubaidulina, because Glass ticks every box of mainstream classical-contemporary taste (repetitive patterns, consonant harmony, immediate atmosphere), where Messiaen demands a constructed listening and Gubaidulina supposes a listener prepared to be unsettled. The algorithm favours what listens easily in the background. Anything requiring frontal attention is by construction disadvantaged.</p>
+    <p data-en>For women composers, the situation is worse still. When a platform opens, on the occasion of an international day, a playlist devoted to women, one most often finds the same five names — Hildegard of Bingen, Clara Schumann, Fanny Mendelssohn, Lili Boulanger, Kaija Saariaho — repeated on loop, as if the history of music by women came down to a waiting-room corpus. Where are Louise Farrenc, Cécile Chaminade, Mel Bonis, Augusta Holmès, Germaine Tailleferre, Grażyna Bacewicz, Sofia Gubaidulina, Unsuk Chin, Betsy Jolas? Present in the catalogue, yes, but invisible in the flow. Their work exists for those who know to look for it; it does not exist for those who want to be surprised. Here again, this is not a flaw of the algorithm: it is exactly what it was designed to do — recommend what is already recommended.</p>
+    <p data-en>The result is well known. A handful of ultra-visible composers and performers continue to circulate, the rest sinks into a long tail where no one goes looking. To optimise engagement is to optimise the return towards the already-known. No commercial platform has any interest in a listener spending three hours exploring Charles Koechlin or Galina Ustvolskaya — it generates neither replays, completions, nor viral shares. The system does what it was designed for, and it does it very well.</p>
+    <p data-en>Not everything is negative, however. Platforms have also made possible something the physical record never permitted: a truly worldwide diffusion, to the very ends of the earth. Looking at the streaming reports of an independent publisher, one finds listenings in Indonesia, Peru, Mongolia, Cape Verde — territories where no distributor would ever have physically delivered a chamber music recording of contemporary repertoire. Platforms have immensely enlarged the potential audience for confidential repertoires.</p>
+    <p data-en>But that diffusion remains passive. It does not create discovery, it reveals latent demand. If the listener in Ulaanbaatar has found Dusapin, it is because they were already looking for him, or because a human — a programmer, a journalist, a friend — recommended him beforehand. The platform allowed access, it did not arouse interest. The work of prescription remains to be done. And it is precisely the work that commercial algorithms will never do, because their economic logic goes in the opposite direction.</p>
+    <p data-en>This is precisely where artificial intelligence opens another path.</p>
+    <p data-en>AI, when placed in editorial hands and fed by structured databases, can do the exact inverse of commercial algorithms. It can weave links between heterogeneous sources — a manuscript, a scholarly article, a critical discography, a live recording, a festival notice, a review published ten years ago. It can compose itineraries that follow not the logic of engagement but that of reasoned discovery. If you love a particular Ravel quartet, here is how Caplet, Roussel, Ropartz extended that aesthetic. If you are discovering Lili Boulanger, here are the historical recordings that mattered, here are the contemporary readings worth hearing, here are the forgotten women composers of her generation that programmers are beginning to exhume. AI cannot do this alone. But fed by a serious editorial corpus and framed by human validation, it becomes a prescription tool of unprecedented power.</p>
+    <p data-en>This is exactly the ambition of Pauline, the music discovery application we are developing at <em>Crescendo Magazine</em>. Pauline does not seek to compete with Spotify on the terrain of the flow. It seeks to do what Spotify will never do: tell, contextualise, connect, draw works from oblivion by replacing them within their network of filiations and influences. Six hundred and five composers, men and women, are accessible there, a substantial portion of whom generate no significant advertising revenue and therefore have no chance of being recommended by a commercial system. Fourteen AI-assisted features make it possible to present a work, suggest complementary listenings, trace thematic itineraries, cross-reference a repertoire with upcoming concerts. This is not a revolution. It is simply cultivated prescription, as it existed before the platforms confiscated it, rendered possible again by a tool that publishers and critics can now appropriate.</p>
+    <p data-en>The stakes go beyond Pauline. We need to understand that <strong>discoverability</strong> — the word now used by cultural institutions to talk about this matter — is not a secondary technical question. It is one of the major cultural battles of the coming decade. If we let commercial platforms decide alone what is heard and what is not, we let entire swathes of our musical heritage and our living creation silently disappear. Not through prohibition, through invisibilisation. The worst kind of disappearance, because no one sees it.</p>
+    <p data-en>Publishers, critics, cultural institutions, mediators today have at their disposal a tool — artificial intelligence, framed, fed, validated — that allows them to produce prescription apparatuses of a quality unimaginable three years ago. It is an opportunity and a responsibility. If we do not seize it, commercial algorithms will go on shaping the listening of the next generations in their own image.</p>
+    <p data-en>Reviving the lesser-known is our craft. AI, well employed, becomes once again its instrument.</p>
+
+    <p class="signature">Pierre-Jean Tribot</p>
+
+    <p class="mention" data-fr>
+      Les opinions exprimées dans ce texte sont celles de l'auteur à titre personnel et n'engagent ni <em>Crescendo Magazine</em>, ni <em>XXI Music Publishing</em>, ni aucune des institutions auxquelles il est associé.
+    </p>
+    <p class="mention" data-en>
+      The views expressed in this essay are those of the author in a personal capacity and do not engage <em>Crescendo Magazine</em>, <em>XXI Music Publishing</em>, or any of the institutions with which he is associated.
+    </p>
+
+    <div class="partage">
+      <span class="partage-label">
+        <span data-fr>partager ce texte</span>
+        <span data-en>share this essay</span>
+      </span>
+      <div class="partage-liens" data-anchor="prescription-culturelle">
+        <a class="share-linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="sep">·</span>
+        <a class="share-facebook" href="#" target="_blank" rel="noopener">Facebook</a>
+        <span class="sep">·</span>
+        <a class="share-bluesky" href="#" target="_blank" rel="noopener">Bluesky</a>
+        <span class="sep">·</span>
+        <a class="share-x" href="#" target="_blank" rel="noopener">X</a>
+        <span class="sep">·</span>
+        <a class="share-email" href="#">
+          <span data-fr>email</span>
+          <span data-en>email</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="retour-haut">
+      <a href="#haut">
+        <span data-fr>↑ retour aux notes</span>
+        <span data-en>↑ back to notes</span>
+      </a>
+    </div>
+
+  </article>
+
+  <!-- Pour ajouter un futur texte : dupliquer le bloc <article class="texte"> ci-dessus,
+       ajouter un nouvel id, ajouter une entrée dans .index, et compléter SHARE_DATA dans le script. -->
+
+  <footer>
+    <span data-fr>← retour à <a href="/">pierrejeantribot.com</a></span>
+    <span data-en>← back to <a href="/">pierrejeantribot.com</a></span>
+  </footer>
+
+</div>
+
+<script>
+(function() {
+  var html = document.documentElement;
+  var btnFR = document.getElementById('btn-fr');
+  var btnEN = document.getElementById('btn-en');
+  var titleEl = document.querySelector('title');
+
+  // Métadonnées de partage par texte (anchor id => fr/en)
+  var SHARE_DATA = {
+    'prescription-culturelle': {
+      fr: {
+        title: "L'IA et la prescription culturelle. Pourquoi ne pas tout laisser aux plateformes.",
+        emailSubject: "L'IA et la prescription culturelle — Pierre-Jean Tribot",
+        emailBody: "Un texte de Pierre-Jean Tribot sur la prescription culturelle à l'ère des plateformes :"
+      },
+      en: {
+        title: "AI and cultural prescription. Why we shouldn't leave it all to the platforms.",
+        emailSubject: "AI and cultural prescription — Pierre-Jean Tribot",
+        emailBody: "A piece by Pierre-Jean Tribot on cultural prescription in the age of platforms:"
+      }
+    }
+  };
+
+  function setLang(lang) {
+    if (lang !== 'en') lang = 'fr';
+    html.setAttribute('lang', lang);
+    btnFR.classList.toggle('active', lang === 'fr');
+    btnEN.classList.toggle('active', lang === 'en');
+    titleEl.textContent = "Notes — Pierre-Jean Tribot";
+    updateAllShareLinks(lang);
+    try { localStorage.setItem('lang', lang); } catch(e) {}
+  }
+
+  function buildShareUrl(anchor, lang) {
+    var base = window.location.origin + window.location.pathname;
+    if (lang === 'en') {
+      return base + '#' + anchor + '-en';
+    }
+    return base + '#' + anchor;
+  }
+
+  function updateAllShareLinks(lang) {
+    var blocks = document.querySelectorAll('.partage-liens[data-anchor]');
+    blocks.forEach(function(block) {
+      var anchor = block.getAttribute('data-anchor');
+      var data = SHARE_DATA[anchor];
+      if (!data) return;
+      var d = data[lang];
+      var url = buildShareUrl(anchor, lang);
+      var encodedUrl = encodeURIComponent(url);
+      var encodedTitle = encodeURIComponent(d.title);
+      var encodedTitleAndUrl = encodeURIComponent(d.title + ' ' + url);
+
+      var li = block.querySelector('.share-linkedin');
+      if (li) li.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodedUrl;
+      var fb = block.querySelector('.share-facebook');
+      if (fb) fb.href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodedUrl;
+      var bs = block.querySelector('.share-bluesky');
+      if (bs) bs.href = 'https://bsky.app/intent/compose?text=' + encodedTitleAndUrl;
+      var x = block.querySelector('.share-x');
+      if (x) x.href = 'https://twitter.com/intent/tweet?text=' + encodedTitle + '&url=' + encodedUrl;
+      var em = block.querySelector('.share-email');
+      if (em) em.href = 'mailto:?subject=' + encodeURIComponent(d.emailSubject) +
+        '&body=' + encodeURIComponent(d.emailBody + '\n\n' + url);
+    });
+  }
+
+  function detectLang() {
+    var h = window.location.hash;
+    if (h === '#en' || h.endsWith('-en')) return 'en';
+    if (h === '#fr' || h.endsWith('-fr')) return 'fr';
+    var stored;
+    try { stored = localStorage.getItem('lang'); } catch(e) {}
+    if (stored === 'fr' || stored === 'en') return stored;
+    var nav = (navigator.language || navigator.userLanguage || 'fr').toLowerCase();
+    if (nav.indexOf('en') === 0) return 'en';
+    return 'fr';
+  }
+
+  // Si l'URL contient #anchor-en ou #anchor-fr, scroller vers l'élément (sans le suffixe)
+  function handleHashOnLoad() {
+    var h = window.location.hash;
+    if (h && (h.endsWith('-en') || h.endsWith('-fr'))) {
+      var anchor = h.replace(/-en$|-fr$/, '').substring(1);
+      var el = document.getElementById(anchor);
+      if (el) {
+        setTimeout(function() {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      }
+    }
+  }
+
+  setLang(detectLang());
+  handleHashOnLoad();
+
+  btnFR.addEventListener('click', function() {
+    setLang('fr');
+    var h = window.location.hash;
+    if (h === '#en') {
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+    } else if (h.endsWith('-en')) {
+      var newHash = h.replace(/-en$/, '');
+      history.replaceState(null, '', window.location.pathname + window.location.search + newHash);
+    }
+  });
+
+  btnEN.addEventListener('click', function() {
+    setLang('en');
+    var h = window.location.hash;
+    if (!h) {
+      history.replaceState(null, '', window.location.pathname + window.location.search + '#en');
+    } else if (h !== '#en' && !h.endsWith('-en')) {
+      history.replaceState(null, '', window.location.pathname + window.location.search + h + '-en');
+    }
+  });
+
+  window.addEventListener('hashchange', function() {
+    var h = window.location.hash;
+    if (h === '#en' || h.endsWith('-en')) setLang('en');
+    else if (h === '#fr' || h.endsWith('-fr') || h === '') setLang(detectLang());
+    else updateAllShareLinks(html.getAttribute('lang'));
+  });
+})();
+</script>
+
+</body>
+</html>
