@@ -1,0 +1,207 @@
+# Pierre-Jean Tribot — Édition culturelle & valorisation du patrimoine
+
+> Démarche éditoriale assistée par intelligence artificielle, ancrée dans une pratique professionnelle réelle de l'édition musicale et de la médiation culturelle.
+
+> Editorial practice assisted by artificial intelligence, grounded in a real professional practice of music publishing and cultural mediation.
+
+URL: https://pierrejeantribot.com
+Localisation / Location: Bruxelles · Belgique / Brussels · Belgium
+Mise à jour / Last updated: mai 2026 / May 2026
+
+---
+
+## Biographie / Biography
+
+### Français
+
+Pierre-Jean Tribot a étudié la musique (Cor d'harmonie) et l'Histoire (Universités Paris-IV Sorbonne et Université Libre de Bruxelles).
+
+Il a été rédacteur en chef de ResMusica.com (2009-2015), vice-président des International Classical Music Awards (2012-2015) et chroniqueur pour la RTBF Musiq3. Depuis janvier 2016, il est chroniqueur pour Crescendo Magazine et rédacteur en chef depuis septembre 2018. Il est l'un des animateurs du réseau Music & Arts Networks de Paris, qui œuvre à une nouvelle approche de la musique classique, et administrateur de l'éditeur musical XXI Music Publishing, qui édite la Ravel Edition.
+
+Pierre-Jean Tribot a collaboré avec différents orchestres à travers l'Europe : Orchestre Philharmonique Royal de Liège, Orchestre Symphonique de Bilkent à Ankara, Orchestre de Chambre des Cameristi della Scala (Milan). Passionné par le patrimoine, il est l'auteur de différents ouvrages sur les communes de la région de Bruxelles, l'Exposition universelle de Bruxelles 1958 et l'Atomium. Dans le domaine audiovisuel, il a participé à un projet de valorisation des fonds de la RTBF au bénéfice des publics enseignants pour le compte de la Fédération Wallonie-Bruxelles.
+
+Depuis 2024, il intègre l'intelligence artificielle dans une chaîne éditoriale réelle : critique musicale, édition critique, médiation patrimoniale, production podcast.
+
+### English
+
+Pierre-Jean Tribot studied music (French horn) and History (Paris-IV Sorbonne and Université Libre de Bruxelles).
+
+He served as editor-in-chief of ResMusica.com (2009-2015), vice-president of the International Classical Music Awards (2012-2015), and contributor to RTBF Musiq3. Since January 2016, he has contributed to Crescendo Magazine, where he became editor-in-chief in September 2018. He is one of the leading figures of the Paris-based Music & Arts Networks, working towards a new approach to classical music, and administrator of XXI Music Publishing, which publishes the Ravel Edition.
+
+Pierre-Jean Tribot has collaborated with various orchestras across Europe: Royal Philharmonic Orchestra of Liège, Bilkent Symphony Orchestra in Ankara, Cameristi della Scala chamber orchestra (Milan). Passionate about heritage, he is the author of several books on the municipalities of the Brussels region, the 1958 Brussels World Fair, and the Atomium. In audiovisual work, he contributed to a project for the educational use of RTBF archives on behalf of the Fédération Wallonie-Bruxelles.
+
+Since 2024, he has been integrating artificial intelligence into a working editorial chain: music criticism, critical editing, heritage outreach, podcast production.
+
+---
+
+## Approche / Approach
+
+### Français
+
+Travail conduit en français, étape par étape, par un éditeur non-développeur. Production de fichiers complets et déployables plutôt que modifications fragmentaires. Intégration dans des structures éditoriales établies — Crescendo Magazine, Ravel Edition, 21 Music — plutôt que création de prototypes isolés.
+
+Productions IA systématiquement encadrées par des bases de données structurées et des contrôles de cohérence : pas de génération libre, pas de prose creuse. Exigence d'infrastructure tenue au niveau d'une production professionnelle traditionnelle : accessibilité WCAG, conformité RGPD, métadonnées sémantiques, API ouvertes.
+
+Refus de la posture techno-évangéliste comme du repli défensif. L'IA est un outil d'éditeur, au service d'une exigence éditoriale classique : trouver les mots justes, vérifier les sources, soigner la forme, servir la musique et ceux qui la font vivre.
+
+### English
+
+Work conducted in French, step by step, by an editor who is not a developer. Production of complete, deployable files rather than fragmentary edits. Integration into established editorial structures — Crescendo Magazine, Ravel Edition, 21 Music — rather than isolated prototypes.
+
+AI-assisted output is systematically grounded in structured databases and consistency checks: no free generation, no hollow prose. Infrastructure is held to the same standard as traditional professional production: WCAG accessibility, GDPR compliance, semantic metadata, open APIs.
+
+Neither tech evangelism nor defensive retreat. AI is an editor's tool, in the service of a classical editorial standard: finding the right words, checking the sources, attending to the form, serving music and those who bring it to life.
+
+---
+
+## Projets / Projects
+
+### 01 — Pauline — Le Voyage Musical
+
+URL: https://pauline.crescendo-magazine.be/
+Type: Application musicale / Music application
+
+**Français.** Application de découverte musicale construite autour de 605 compositeurs, avec quatorze fonctions assistées par IA via l'API Anthropic — présentation d'œuvres, suggestions discographiques, recommandations contextuelles, agenda de concerts. Intégrée à Crescendo Magazine en sous-domaine propre. Démonstrateur d'une IA musicale au service de la médiation, et base potentielle pour un déploiement institutionnel.
+
+**English.** A music discovery application built around 605 composers, with fourteen AI-assisted features powered by the Anthropic API — work presentations, discographic suggestions, contextual recommendations, concert agenda. Integrated into Crescendo Magazine on its own subdomain. A demonstrator of musical AI in service of cultural mediation, and a potential foundation for institutional deployment.
+
+### 02 — XXI Music Publishing
+
+URL: https://www.21music-publishing.com/
+Type: Site institutionnel / Institutional website
+
+**Français.** Site de la maison d'édition musicale (fondée en 2018, catalogue de onze compositeurs, collection Ravel Edition). Cinquante-six pages bilingues français-anglais, fiches œuvres détaillées avec ISMN, bibliothèque d'orchestre filtrable, recherche universelle au clavier, espace presse. Conformité WCAG AA, métadonnées Schema.org et Dublin Core, API JSON publique du catalogue, hébergement CDN mondial, RGPD intégral. Outil professionnel servant cent vingt orchestres dans vingt-six pays.
+
+**English.** Website of the music publishing house (founded 2018, eleven composers in catalogue, Ravel Edition collection). Fifty-six pages bilingual French-English, detailed work sheets with ISMN, filterable orchestral library, keyboard-driven universal search, press area. WCAG AA compliant, Schema.org and Dublin Core metadata, public JSON catalogue API, global CDN hosting, full GDPR compliance. A professional tool serving one hundred and twenty orchestras across twenty-six countries.
+
+### 03 — Art Déco Belgique
+
+URL: https://www.art-deco-belgique.eu/
+Type: Patrimoine architectural / Architectural heritage
+
+**Français.** Inventaire géoréférencé de plus de trois cents bâtiments Art déco en Belgique, à explorer par carte, par architecte ou par parcours thématique. Vingt-neuf itinéraires éditoriaux et un générateur de promenades sur mesure : Claude compose, à partir d'une base structurée et avec validation automatique, des parcours cohérents historiquement et précis dans l'attribution. Démonstrateur d'exploration patrimoniale assistée par IA.
+
+**English.** Geo-referenced inventory of more than three hundred Art Deco buildings in Belgium, browsable by map, by architect or by thematic itinerary. Twenty-nine editorial routes plus a custom walk generator: Claude composes, from a structured database and with automated validation, walks that are historically coherent and accurate in attribution. A demonstrator of AI-assisted heritage exploration.
+
+### 04 — Crescendo Festivals 2026
+
+URL: https://festivals.crescendo-magazine.be/
+Type: Cartographie culturelle / Cultural cartography
+
+**Français.** Guide cartographique interactif des festivals européens de musique classique pour la saison 2026, avec recommandations éditoriales, douze coups de cœur, cartes Leaflet et fiches enrichies. Intégré à l'écosystème Crescendo Magazine en sous-domaine officiel. Production éditoriale assistée par IA pour les notices et l'enrichissement des données festivals.
+
+**English.** Interactive cartographic guide to European classical music festivals for the 2026 season, with editorial recommendations, twelve coups de cœur, Leaflet maps and enriched listings. Integrated into the Crescendo Magazine ecosystem on an official subdomain. Editorial production assisted by AI for the writing of notices and the enrichment of festival data.
+
+### 05 — Phono Crescendo
+
+URL: https://phono.crescendo-magazine.be/
+Type: Base discographique / Discographic database
+
+**Français.** Plateforme discographique adossée aux archives critiques de Crescendo Magazine : plus de cinq mille deux cents chroniques d'albums, biographies de compositeurs enrichies, pages thématiques (millésimes, compositrices, scène belge, palmarès), badges éditoriaux. Architecture Next.js et Supabase, génération assistée par IA des contenus enrichis avec contrôle de cohérence et révision éditoriale systématique.
+
+**English.** A discographic platform built on the critical archives of Crescendo Magazine: more than five thousand two hundred album reviews, enriched composer biographies, thematic pages (vintages, women composers, Belgian scene, awards), editorial badges. Next.js and Supabase architecture, AI-assisted generation of enriched content with consistency checks and systematic editorial review.
+
+### 06 — Studio podcast / Podcast studio
+
+Type: Production audio / Audio production
+
+**Français.** Production éditoriale assistée par IA pour les podcasts Crescendo Magazine et Ravel Edition : scripts rédigés selon la ligne éditoriale et l'orthographe adaptée à la synthèse vocale (ElevenLabs), épisodes consacrés notamment à La Valse, au Tombeau de Couperin, aux figures historiques de chefs d'orchestre (Klemperer, Inghelbrecht), pochettes et bannières déclinées pour Spotify, Facebook, Instagram et LinkedIn.
+
+**English.** AI-assisted editorial production for the podcasts of Crescendo Magazine and Ravel Edition: scripts written according to editorial line and orthography adapted to voice synthesis (ElevenLabs), episodes devoted notably to La Valse, Le Tombeau de Couperin, and historic conductors (Klemperer, Inghelbrecht), covers and banners declined for Spotify, Facebook, Instagram and LinkedIn.
+
+### 07 — Pupitre de commande éditorial / Editorial toolkit
+
+Type: Outils éditoriaux / Editorial tools
+
+**Français.** Suite d'outils internes développés pour la rédaction de Crescendo Magazine : génération de scripts podcast, traduction de brèves d'actualité, fiches CD au format maison, métadonnées SEO, composition de lettres d'information. Accès direct à l'API Anthropic depuis le navigateur, prompts spécialisés par tâche éditoriale.
+
+**English.** Suite of in-house tools developed for the Crescendo Magazine editorial team: podcast script generation, news brief translation, in-house CD review templates, SEO metadata, newsletter composition. Direct browser access to the Anthropic API, specialised prompts per editorial task.
+
+---
+
+## Notes éditoriales / Editorial notes
+
+### L'IA et la prescription culturelle. Pourquoi ne pas tout laisser aux plateformes.
+
+URL: https://pierrejeantribot.com/notes/#prescription-culturelle
+Date: mai 2026 / May 2026
+
+**Français.**
+
+Il y a quelque chose qui se joue, dans le silence des algorithmes, et qui mérite qu'on y regarde de plus près.
+
+Depuis vingt ans, la prescription musicale a basculé. Le disquaire indépendant a disparu, les pages culturelles des journaux généralistes se sont rétractées, les radios spécialisées ont perdu leur audience. Ce qui reste pour découvrir un compositeur, un interprète, un label, c'est essentiellement Spotify, Apple Music, YouTube et Tidal. Le geste de prescription, autrefois porté par des humains qui aimaient ce dont ils parlaient, s'est délégué à des systèmes de recommandation algorithmique conçus pour optimiser le temps d'écoute.
+
+Pour la musique classique et les répertoires contemporains, cette bascule est particulièrement violente. Les algorithmes des plateformes sont calibrés sur les comportements d'écoute majoritaires. Ils privilégient ce qui est déjà écouté, déjà partagé, déjà identifié. Ils traitent la musique comme un flux indifférencié et confondent allègrement les Quatre Saisons de Vivaldi par cinquante ensembles différents, ne distinguent pas une lecture historiquement informée d'une version romantique, ne savent pas situer une création contemporaine dans un courant esthétique. Le répertoire patrimonial devient un fond de catalogue, et la création vivante ne sort jamais du tiroir où elle a été rangée.
+
+Il suffit de regarder les playlists thématiques que ces plateformes proposent pour saisir l'ampleur du problème. Classical Focus, Peaceful Piano, Calming Classical, Classical Essentials : des intitulés qui disent tout. La musique classique y est traitée comme un robinet à ambiance, une bande-son pour télétravail ou méditation, dans laquelle Bach voisine avec Einaudi sans transition, Mozart avec Max Richter, et Beethoven avec d'innombrables réorchestrations apaisantes de son Adagio. Aucune narration, aucun contexte, aucune hiérarchie, aucun écart. Trois mille morceaux dans un ordre obscur, recalibrés pour ne jamais surprendre. C'est la négation même du geste musical : faire entendre ce qu'on n'attendait pas.
+
+À ce biais éditorial s'ajoute un biais économique. Les playlists des plateformes sur-valorisent massivement le back-catalogue des majors — Universal, Sony, Warner — pour des raisons qui n'ont rien à voir avec la qualité musicale et tout à voir avec les accords commerciaux et le poids des catalogues historiques. Une réédition d'un enregistrement Deutsche Grammophon des années soixante-dix sera systématiquement mieux exposée qu'une création récente d'un label indépendant, même si la création en question est un événement artistique majeur. Pour les éditeurs et labels indépendants — ceux qui prennent le risque artistique, ceux qui défendent les œuvres et les interprètes émergents — la visibilité algorithmique est un combat permanent et largement perdu d'avance. Et cela vaut pour tous les compositeurs : intégrer une playlist Spotify est infiniment plus facile avec du Philip Glass qu'avec du Messiaen ou du Goubaïdoulina, parce que Glass coche toutes les cases du goût mainstream du classique-contemporain (motifs répétitifs, harmonie consonante, ambiance immédiate), là où Messiaen exige une écoute construite et Goubaïdoulina suppose un auditeur disposé à être déstabilisé. L'algorithme privilégie ce qui s'écoute en arrière-plan. Tout ce qui demande une attention frontale est par construction défavorisé.
+
+Pour les compositrices, la situation est pire encore. Quand une plateforme ouvre, à l'occasion d'une journée internationale, une playlist consacrée aux femmes, on y trouve le plus souvent les mêmes cinq noms — Hildegarde de Bingen, Clara Schumann, Fanny Mendelssohn, Lili Boulanger, Kaija Saariaho — répétés en boucle, comme si l'histoire de la musique au féminin se résumait à un corpus de salle d'attente. Où sont Louise Farrenc, Cécile Chaminade, Mel Bonis, Augusta Holmès, Germaine Tailleferre, Grażyna Bacewicz, Sofia Goubaïdoulina, Unsuk Chin, Betsy Jolas ? Présentes au catalogue, oui, mais invisibles au flux. Leur travail existe pour qui sait les chercher ; il n'existe pas pour qui veut être surpris. Là encore, ce n'est pas un défaut de l'algorithme : c'est exactement ce qu'il a été conçu pour faire — recommander ce qui est déjà recommandé.
+
+Le résultat est connu. Quelques compositeurs et interprètes ultra-visibles continuent de tourner, le reste s'enfonce dans une longue traîne où personne ne va chercher. Optimiser l'engagement, c'est optimiser le retour vers le déjà-connu. Aucune plateforme commerciale n'a intérêt à ce qu'un auditeur passe trois heures à explorer Charles Koechlin ou Galina Ustvolskaya — cela ne génère ni ré-écoute, ni complétion, ni partage viral. Le système fait ce pour quoi il a été conçu, et il le fait très bien.
+
+Tout n'est pas négatif pour autant. Les plateformes ont aussi rendu possible une chose que le disque physique ne permettait pas : la diffusion réellement mondiale, jusqu'aux confins. Quand on regarde les relevés de streaming d'un éditeur indépendant, on découvre des écoutes en Indonésie, au Pérou, en Mongolie, au Cap-Vert — des territoires où aucun distributeur n'aurait jamais acheminé physiquement un disque de musique de chambre contemporaine. Les plateformes ont infiniment élargi le public potentiel des répertoires confidentiels.
+
+Mais cette diffusion-là reste passive. Elle ne crée pas de découverte, elle révèle une demande latente. Si l'auditeur d'Oulan-Bator a trouvé Dusapin, c'est qu'il le cherchait déjà, ou qu'un humain — un programmateur, un journaliste, un ami — le lui a recommandé en amont. La plateforme a permis l'accès, elle n'a pas suscité l'intérêt. Le travail de prescription, lui, reste à faire. Et c'est précisément celui que les algorithmes commerciaux ne feront jamais, parce que leur logique économique va dans l'autre sens.
+
+C'est précisément là que l'intelligence artificielle ouvre une autre voie.
+
+L'IA, quand elle est mise entre des mains éditoriales et nourrie de bases structurées, peut faire l'inverse exact des algorithmes commerciaux. Elle peut tisser des liens entre des sources hétérogènes — un manuscrit, un article de revue savante, une discographie critique, un enregistrement live, une notice de festival, une chronique parue il y a dix ans. Elle peut composer des parcours qui ne suivent pas la logique de l'engagement mais celle de la découverte raisonnée. Si vous aimez tel quatuor de Ravel, voici comment Caplet, Roussel, Ropartz ont prolongé cette esthétique. Si vous découvrez Lili Boulanger, voici les enregistrements historiques qui ont compté, voici les lectures contemporaines qui valent d'être entendues, voici les compositrices oubliées de sa génération que les programmateurs commencent à exhumer. L'IA ne sait pas faire cela seule. Mais nourrie d'un corpus éditorial sérieux et encadrée par un travail humain de validation, elle devient un outil de prescription d'une puissance inédite.
+
+C'est exactement l'ambition de Pauline, l'application de découverte musicale que nous développons à Crescendo Magazine. Pauline ne cherche pas à concurrencer Spotify sur le terrain du flux. Elle cherche à faire ce que Spotify ne fera jamais : raconter, contextualiser, relier, sortir des œuvres de l'oubli en les replaçant dans leur réseau de filiations et d'influences. Six cent cinq compositeurs et compositrices y sont accessibles, dont une part substantielle ne génère aucun revenu publicitaire significatif et n'a donc aucune chance d'être recommandée par un système commercial. Quatorze fonctions assistées par IA permettent de présenter une œuvre, de suggérer des écoutes complémentaires, de tracer des parcours thématiques, de croiser un répertoire avec des concerts à venir. Ce n'est pas une révolution. C'est simplement la prescription cultivée, telle qu'elle existait avant que les plateformes ne la confisquent, rendue à nouveau possible par un outil que les éditeurs et les critiques peuvent désormais s'approprier.
+
+L'enjeu dépasse Pauline. Il s'agit de comprendre que la découvrabilité — c'est le mot qu'utilisent désormais les institutions culturelles pour parler de ce sujet — n'est pas une question technique secondaire. C'est l'un des combats culturels majeurs de la décennie qui vient. Si nous laissons les plateformes commerciales décider seules de ce qui est entendu et de ce qui ne l'est pas, nous laissons disparaître silencieusement des pans entiers de notre patrimoine musical et de notre création vivante. Pas par interdiction, par invisibilisation. La pire des disparitions, parce que personne ne la voit.
+
+Les éditeurs, les critiques, les institutions culturelles, les médiateurs ont aujourd'hui à leur disposition un outil — l'intelligence artificielle, encadrée, nourrie, validée — qui leur permet de produire des dispositifs de prescription d'une qualité que l'on n'imaginait pas il y a trois ans. C'est une chance et c'est une responsabilité. Si nous ne nous en saisissons pas, ce sont les algorithmes commerciaux qui continueront de modeler à leur image l'écoute des prochaines générations.
+
+Faire revivre le peu connu, c'est notre métier. L'IA, bien employée, en redevient l'instrument.
+
+— Pierre-Jean Tribot
+
+Les opinions exprimées dans ce texte sont celles de l'auteur à titre personnel et n'engagent ni Crescendo Magazine, ni XXI Music Publishing, ni aucune des institutions auxquelles il est associé.
+
+**English.**
+
+Something is at stake, in the silence of the algorithms, and it deserves a closer look.
+
+For twenty years, musical prescription has shifted. The independent record shop has disappeared, the cultural pages of generalist newspapers have shrunk, specialised radio has lost its audience. What remains for discovering a composer, a performer, a label is essentially Spotify, Apple Music, YouTube and Tidal. The act of prescription, once carried by humans who loved what they were talking about, has been delegated to algorithmic recommendation systems designed to optimise listening time.
+
+For classical music and contemporary repertoires, this shift is particularly violent. Platform algorithms are calibrated on majority listening behaviours. They favour what is already listened to, already shared, already identified. They treat music as an undifferentiated flow and cheerfully confuse Vivaldi's Four Seasons recorded by fifty different ensembles, fail to distinguish a historically informed performance from a romantic version, cannot place a contemporary work within an aesthetic current. The patrimonial repertoire becomes back catalogue, and living creation never leaves the drawer in which it has been filed.
+
+One has only to look at the thematic playlists these platforms propose to grasp the scale of the problem. Classical Focus, Peaceful Piano, Calming Classical, Classical Essentials: titles that say it all. Classical music is treated as ambient wallpaper, a soundtrack for remote work or meditation, in which Bach sits beside Einaudi without transition, Mozart beside Max Richter, and Beethoven amid countless soothing reorchestrations of his Adagio. No narrative, no context, no hierarchy, no edge. Three thousand tracks in some obscure order, recalibrated never to surprise. This is the very negation of the musical gesture: to make heard what was not expected.
+
+To this editorial bias is added an economic one. Platform playlists massively over-value the back catalogues of the majors — Universal, Sony, Warner — for reasons that have nothing to do with musical quality and everything to do with commercial agreements and the weight of historical catalogues. A reissue of a Deutsche Grammophon recording from the 1970s will be systematically better exposed than a recent release on an independent label, even if that release is a major artistic event. For independent publishers and labels — those who take artistic risks, those who defend emerging works and performers — algorithmic visibility is a permanent and largely lost battle. And this applies to all composers: getting onto a Spotify playlist is infinitely easier with Philip Glass than with Messiaen or Gubaidulina, because Glass ticks every box of mainstream classical-contemporary taste (repetitive patterns, consonant harmony, immediate atmosphere), where Messiaen demands a constructed listening and Gubaidulina supposes a listener prepared to be unsettled. The algorithm favours what listens easily in the background. Anything requiring frontal attention is by construction disadvantaged.
+
+For women composers, the situation is worse still. When a platform opens, on the occasion of an international day, a playlist devoted to women, one most often finds the same five names — Hildegard of Bingen, Clara Schumann, Fanny Mendelssohn, Lili Boulanger, Kaija Saariaho — repeated on loop, as if the history of music by women came down to a waiting-room corpus. Where are Louise Farrenc, Cécile Chaminade, Mel Bonis, Augusta Holmès, Germaine Tailleferre, Grażyna Bacewicz, Sofia Gubaidulina, Unsuk Chin, Betsy Jolas? Present in the catalogue, yes, but invisible in the flow. Their work exists for those who know to look for it; it does not exist for those who want to be surprised. Here again, this is not a flaw of the algorithm: it is exactly what it was designed to do — recommend what is already recommended.
+
+The result is well known. A handful of ultra-visible composers and performers continue to circulate, the rest sinks into a long tail where no one goes looking. To optimise engagement is to optimise the return towards the already-known. No commercial platform has any interest in a listener spending three hours exploring Charles Koechlin or Galina Ustvolskaya — it generates neither replays, completions, nor viral shares. The system does what it was designed for, and it does it very well.
+
+Not everything is negative, however. Platforms have also made possible something the physical record never permitted: a truly worldwide diffusion, to the very ends of the earth. Looking at the streaming reports of an independent publisher, one finds listenings in Indonesia, Peru, Mongolia, Cape Verde — territories where no distributor would ever have physically delivered a chamber music recording of contemporary repertoire. Platforms have immensely enlarged the potential audience for confidential repertoires.
+
+But that diffusion remains passive. It does not create discovery, it reveals latent demand. If the listener in Ulaanbaatar has found Dusapin, it is because they were already looking for him, or because a human — a programmer, a journalist, a friend — recommended him beforehand. The platform allowed access, it did not arouse interest. The work of prescription remains to be done. And it is precisely the work that commercial algorithms will never do, because their economic logic goes in the opposite direction.
+
+This is precisely where artificial intelligence opens another path.
+
+AI, when placed in editorial hands and fed by structured databases, can do the exact inverse of commercial algorithms. It can weave links between heterogeneous sources — a manuscript, a scholarly article, a critical discography, a live recording, a festival notice, a review published ten years ago. It can compose itineraries that follow not the logic of engagement but that of reasoned discovery. If you love a particular Ravel quartet, here is how Caplet, Roussel, Ropartz extended that aesthetic. If you are discovering Lili Boulanger, here are the historical recordings that mattered, here are the contemporary readings worth hearing, here are the forgotten women composers of her generation that programmers are beginning to exhume. AI cannot do this alone. But fed by a serious editorial corpus and framed by human validation, it becomes a prescription tool of unprecedented power.
+
+This is exactly the ambition of Pauline, the music discovery application we are developing at Crescendo Magazine. Pauline does not seek to compete with Spotify on the terrain of the flow. It seeks to do what Spotify will never do: tell, contextualise, connect, draw works from oblivion by replacing them within their network of filiations and influences. Six hundred and five composers, men and women, are accessible there, a substantial portion of whom generate no significant advertising revenue and therefore have no chance of being recommended by a commercial system. Fourteen AI-assisted features make it possible to present a work, suggest complementary listenings, trace thematic itineraries, cross-reference a repertoire with upcoming concerts. This is not a revolution. It is simply cultivated prescription, as it existed before the platforms confiscated it, rendered possible again by a tool that publishers and critics can now appropriate.
+
+The stakes go beyond Pauline. We need to understand that discoverability — the word now used by cultural institutions to talk about this matter — is not a secondary technical question. It is one of the major cultural battles of the coming decade. If we let commercial platforms decide alone what is heard and what is not, we let entire swathes of our musical heritage and our living creation silently disappear. Not through prohibition, through invisibilisation. The worst kind of disappearance, because no one sees it.
+
+Publishers, critics, cultural institutions, mediators today have at their disposal a tool — artificial intelligence, framed, fed, validated — that allows them to produce prescription apparatuses of a quality unimaginable three years ago. It is an opportunity and a responsibility. If we do not seize it, commercial algorithms will go on shaping the listening of the next generations in their own image.
+
+Reviving the lesser-known is our craft. AI, well employed, becomes once again its instrument.
+
+— Pierre-Jean Tribot
+
+The views expressed in this essay are those of the author in a personal capacity and do not engage Crescendo Magazine, XXI Music Publishing, or any of the institutions with which he is associated.
+
+---
+
+## Contact
+
+- Email: pjtribot@musicartsnet.eu
+- LinkedIn: https://www.linkedin.com/in/pierre-jean-t-781a9316/
+- Localisation / Location: Bruxelles · Belgique / Brussels · Belgium
