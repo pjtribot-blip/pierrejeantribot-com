@@ -1,0 +1,43 @@
+# Pierre-Jean Tribot
+
+> Édition culturelle & valorisation du patrimoine. Démarche assistée par intelligence artificielle.
+> Cultural publishing & heritage. An AI-assisted practice.
+
+Pierre-Jean Tribot est rédacteur en chef de Crescendo Magazine, magazine belge francophone de musique classique et de danse fondé en 1993. Il est administrateur de XXI Music Publishing, maison d'édition musicale belge éditrice de la Ravel Edition (édition critique de référence de l'œuvre de Maurice Ravel) et défenseure de la création contemporaine. Depuis 2024, il intègre l'intelligence artificielle dans une chaîne éditoriale réelle : critique musicale, édition critique, médiation patrimoniale, production podcast.
+
+Pierre-Jean Tribot is editor-in-chief of Crescendo Magazine, a Belgian French-language classical music and dance publication founded in 1993. He is administrator of XXI Music Publishing, a Belgian music publisher of the Ravel Edition (a reference critical edition of Maurice Ravel's work) and an advocate of contemporary creation. Since 2024, he has been integrating artificial intelligence into a working editorial chain: music criticism, critical editing, heritage outreach, podcast production.
+
+## Site / Website
+
+- [Page d'accueil / Home page](https://pierrejeantribot.com/): Portfolio des projets et démarche IA appliquée à l'édition culturelle / Portfolio of projects and AI-assisted cultural publishing practice
+- [Notes éditoriales / Editorial notes](https://pierrejeantribot.com/notes/): Textes de fond sur l'IA, l'édition culturelle et la prescription musicale / Long-form pieces on AI, cultural publishing and musical prescription
+
+## Projets principaux / Main projects
+
+- [Pauline — Le Voyage Musical](https://pauline.crescendo-magazine.be/): Application de découverte musicale avec 605 compositeurs et 14 fonctions assistées par IA via l'API Anthropic, intégrée à Crescendo Magazine / Music discovery application with 605 composers and 14 AI-assisted features powered by the Anthropic API, integrated into Crescendo Magazine
+
+- [XXI Music Publishing](https://www.21music-publishing.com/): Site institutionnel de la maison d'édition musicale belge fondée en 2018, 56 pages bilingues FR/EN, fiches œuvres, bibliothèque d'orchestre, conformité WCAG AA, métadonnées Schema.org et Dublin Core, API JSON publique, servant 120 orchestres dans 26 pays / Institutional website of the Belgian music publishing house founded in 2018, 56 bilingual FR/EN pages, work sheets, orchestral library, WCAG AA compliance, Schema.org and Dublin Core metadata, public JSON API, serving 120 orchestras across 26 countries
+
+- [Art Déco Belgique](https://www.art-deco-belgique.eu/): Inventaire géoréférencé de plus de 300 bâtiments Art déco en Belgique, 29 itinéraires éditoriaux, générateur de promenades sur mesure assisté par IA / Geo-referenced inventory of over 300 Art Deco buildings in Belgium, 29 editorial routes, AI-assisted custom walk generator
+
+- [Crescendo Festivals 2026](https://festivals.crescendo-magazine.be/): Guide cartographique interactif des festivals européens de musique classique pour la saison 2026 / Interactive cartographic guide to European classical music festivals for the 2026 season
+
+- [Phono Crescendo](https://phono.crescendo-magazine.be/): Plateforme discographique adossée aux archives critiques de Crescendo Magazine, plus de 5 200 chroniques d'albums, biographies enrichies / Discographic platform built on Crescendo Magazine's critical archives, over 5,200 album reviews, enriched biographies
+
+## Notes éditoriales / Editorial notes
+
+- [Le diplôme et le portfolio / The diploma and the portfolio](https://pierrejeantribot.com/notes/#diplome-portfolio): Texte de mai 2026 sur la rupture du contrat implicite du diplôme, l'accélération provoquée par l'IA, et l'émergence du portfolio comme nouvelle preuve de capacité / May 2026 essay on the rupture of the diploma's implicit contract, the acceleration brought by AI, and the rise of the portfolio as new evidence of capability
+
+- [L'IA et la prescription culturelle / AI and cultural prescription](https://pierrejeantribot.com/notes/#prescription-culturelle): Texte de mai 2026 sur la pauvreté éditoriale des playlists algorithmiques, le sort fait aux compositrices et aux répertoires confidentiels, et le rôle d'une IA mise entre des mains éditoriales / May 2026 essay on the editorial poverty of algorithmic playlists, the fate of women composers and confidential repertoires, and the role of AI in editorial hands
+
+## Structures associées / Associated organisations
+
+- [Crescendo Magazine](https://www.crescendo-magazine.be/): Magazine belge francophone de musique classique et de danse, fondé en 1993 / Belgian French-language classical music and dance magazine, founded in 1993
+- [XXI Music Publishing](https://www.21music-publishing.com/): Maison d'édition musicale belge, Linkebeek / Belgian music publishing house, Linkebeek
+- [Ravel Edition](https://www.21music-publishing.com/ravel-edition.html): Édition critique de référence de l'œuvre de Maurice Ravel / Reference critical edition of Maurice Ravel's work
+
+## Contact
+
+- Email: pjtribot@musicartsnet.eu
+- LinkedIn: https://www.linkedin.com/in/pierre-jean-t-781a9316/
+- Localisation / Location: Bruxelles · Belgique / Brussels · Belgium
