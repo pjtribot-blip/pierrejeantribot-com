@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="fr" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-fr="Pierre-Jean Tribot — Édition culturelle & valorisation du patrimoine" data-en="Pierre-Jean Tribot — Cultural publishing & heritage">Pierre-Jean Tribot — Édition culturelle &amp; valorisation du patrimoine</title>
+<meta name="description" id="meta-desc" content="Rédacteur en chef de Crescendo Magazine et administrateur de XXI Music Publishing. Édition culturelle et valorisation du patrimoine, démarche assistée par intelligence artificielle depuis 2024.">
+<meta name="author" content="Pierre-Jean Tribot">
+<meta name="theme-color" content="#f5efe2">
+
+<meta property="og:title" content="Pierre-Jean Tribot — Édition culturelle &amp; valorisation du patrimoine">
+<meta property="og:description" content="Édition culturelle et valorisation du patrimoine, démarche assistée par IA. Crescendo Magazine, Ravel Edition, projets patrimoniaux et applications musicales.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pierrejeantribot.com">
+
+<link rel="alternate" hreflang="fr" href="https://pierrejeantribot.com/">
+<link rel="alternate" hreflang="en" href="https://pierrejeantribot.com/#en">
+<link rel="alternate" hreflang="x-default" href="https://pierrejeantribot.com/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+/* ========================================================================
+   PIERRE-JEAN TRIBOT — PORTFOLIO
+   Fichier bilingue unique. Bascule FR/EN via attributs data et JavaScript.
+   Hybride : structure brutaliste + typographie éditoriale.
+   ======================================================================== */
+
+:root {
+  --fond: #f5efe2;
+  --texte: #1a1a1a;
+  --texte-mute: #5a5a5a;
+  --accent: #7a3e2a;
+  --filet: #1a1a1a;
+  --filet-leger: #c8bfa6;
+
+  --serif: "EB Garamond", Georgia, "Times New Roman", serif;
+  --mono: "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--fond);
+  color: var(--texte);
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 32px 60px;
+}
+
+/* ========================================================================
+   BASCULE LINGUISTIQUE
+   Tous les éléments [data-fr] et [data-en] s'affichent selon la langue
+   ======================================================================== */
+
+[data-fr], [data-en] { display: none; }
+
+html[lang="fr"] [data-fr] { display: inline; }
+html[lang="en"] [data-en] { display: inline; }
+
+/* Pour les éléments qui doivent rester en block (p, div, etc.) */
+html[lang="fr"] p[data-fr],
+html[lang="fr"] div[data-fr],
+html[lang="fr"] section[data-fr],
+html[lang="fr"] article[data-fr] { display: block; }
+
+html[lang="en"] p[data-en],
+html[lang="en"] div[data-en],
+html[lang="en"] section[data-en],
+html[lang="en"] article[data-en] { display: block; }
+
+/* ========================================================================
+   EN-TÊTE TECHNIQUE
+   ======================================================================== */
+
+.head {
+  border-bottom: 1px solid var(--filet);
+  padding-bottom: 12px;
+  margin-bottom: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+}
+
+.head .left {
+  font-weight: 500;
+}
+
+.head .right {
+  color: var(--texte-mute);
+}
+
+.head .middle {
+  flex: 1;
+  text-align: center;
+}
+
+.head .notes-link {
+  color: var(--texte);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+  transition: all 0.15s ease;
+}
+
+.head .notes-link:hover {
+  background: var(--texte);
+  color: var(--fond);
+  border-bottom-color: var(--texte);
+}
+
+.head .lang {
+  color: var(--texte-mute);
+  user-select: none;
+}
+
+.head .lang button {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  color: var(--texte-mute);
+  cursor: pointer;
+  padding: 0;
+  border-bottom: 1px solid var(--filet-leger);
+  padding-bottom: 1px;
+  transition: all 0.15s ease;
+}
+
+.head .lang button:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.head .lang button.active {
+  color: var(--texte);
+  font-weight: 500;
+  border-bottom: none;
+  cursor: default;
+}
+
+.head .lang .sep {
+  margin: 0 6px;
+}
+
+/* ========================================================================
+   HERO
+   ======================================================================== */
+
+.hero {
+  border-bottom: 1px solid var(--filet);
+  padding-bottom: 56px;
+  margin-bottom: 72px;
+}
+
+.hero .marqueur {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 6px;
+  display: block;
+}
+
+.hero .sous-marqueur {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: var(--texte-mute);
+  margin-bottom: 32px;
+  display: block;
+}
+
+.hero h1 {
+  font-family: var(--serif);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
+}
+
+.hero h1 .point {
+  color: var(--accent);
+}
+
+.hero .bio {
+  font-size: 19px;
+  line-height: 1.65;
+  color: var(--texte);
+  max-width: 56ch;
+}
+
+.hero .bio + .bio {
+  margin-top: 16px;
+}
+
+.hero em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+/* ========================================================================
+   SECTIONS
+   ======================================================================== */
+
+.section {
+  margin-bottom: 72px;
+}
+
+.section-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--texte);
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--filet);
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.section-label .left::before {
+  content: "## ";
+  color: var(--texte-mute);
+  font-weight: 400;
+}
+
+.section-label .right {
+  color: var(--texte-mute);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+}
+
+.section h2 {
+  font-family: var(--serif);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin-bottom: 28px;
+}
+
+.section h2 .point {
+  color: var(--accent);
+}
+
+/* ========================================================================
+   APPROCHE
+   ======================================================================== */
+
+.approche p {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 60ch;
+  margin-bottom: 18px;
+  color: var(--texte);
+}
+
+.approche p:last-child {
+  margin-bottom: 0;
+}
+
+.approche em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+/* ========================================================================
+   PROJETS
+   ======================================================================== */
+
+.projets {
+  border-top: 1px solid var(--filet);
+}
+
+.projet {
+  border-bottom: 1px solid var(--filet);
+  padding: 28px 0;
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 20px;
+}
+
+.projet .num {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+  padding-top: 6px;
+}
+
+.projet .body .title {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.projet .body .title .point {
+  color: var(--accent);
+}
+
+.projet .body .kind {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--texte-mute);
+  margin-bottom: 14px;
+  display: block;
+}
+
+.projet .body .desc {
+  font-family: var(--serif);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--texte);
+  margin-bottom: 14px;
+  max-width: 60ch;
+}
+
+.projet .body .desc em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.projet .body .meta {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--texte-mute);
+}
+
+.projet .body .meta a {
+  color: var(--texte);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+  transition: all 0.15s ease;
+}
+
+.projet .body .meta a:hover {
+  background: var(--texte);
+  color: var(--fond);
+  border-bottom-color: var(--texte);
+}
+
+/* ========================================================================
+   PIED DE PAGE
+   ======================================================================== */
+
+footer {
+  border-top: 1px solid var(--filet);
+  margin-top: 80px;
+  padding-top: 32px;
+}
+
+footer .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 32px;
+}
+
+footer h4 {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--texte);
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+footer h4::before {
+  content: "// ";
+  color: var(--texte-mute);
+  font-weight: 400;
+}
+
+footer p, footer ul {
+  font-family: var(--serif);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--texte);
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 4px;
+}
+
+footer a {
+  color: var(--texte);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+  transition: all 0.15s ease;
+}
+
+footer a:hover {
+  background: var(--texte);
+  color: var(--fond);
+  border-bottom-color: var(--texte);
+}
+
+.tech {
+  border-top: 1px solid var(--filet-leger);
+  padding-top: 20px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--texte-mute);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.copyright {
+  margin-top: 16px;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--texte-mute);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--fond);
+}
+
+/* ========================================================================
+   RESPONSIVE
+   ======================================================================== */
+
+@media (max-width: 640px) {
+  .wrap {
+    padding: 24px 20px 48px;
+  }
+
+  .head {
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+    margin-bottom: 48px;
+  }
+
+  .hero {
+    padding-bottom: 40px;
+    margin-bottom: 48px;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .hero .bio {
+    font-size: 17px;
+  }
+
+  .section {
+    margin-bottom: 56px;
+  }
+
+  .section h2 {
+    font-size: 28px;
+  }
+
+  .section-label {
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+  }
+
+  .projet {
+    grid-template-columns: 40px 1fr;
+    gap: 14px;
+    padding: 24px 0;
+  }
+
+  .projet .body .title {
+    font-size: 20px;
+  }
+
+  body {
+    font-size: 17px;
+  }
+
+  footer .grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .tech {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <!-- ===================================================================
+       EN-TÊTE TECHNIQUE
+       =================================================================== -->
+  <header class="head">
+    <span class="left">pierrejeantribot.com</span>
+    <span class="middle">
+      <a href="/notes/" class="notes-link">
+        <span data-fr>notes</span>
+        <span data-en>notes</span>
+      </a>
+    </span>
+    <span class="lang">
+      <button id="btn-fr" type="button" aria-label="Français">FR</button>
+      <span class="sep">·</span>
+      <button id="btn-en" type="button" aria-label="English">EN</button>
+    </span>
+    <span class="right">
+      <span data-fr>bruxelles · 2026</span>
+      <span data-en>brussels · 2026</span>
+    </span>
+  </header>
+
+  <!-- ===================================================================
+       HERO
+       =================================================================== -->
+  <section class="hero">
+    <span class="marqueur">
+      <span data-fr>▸ Édition culturelle &amp; valorisation du patrimoine</span>
+      <span data-en>▸ Cultural publishing &amp; heritage</span>
+    </span>
+    <span class="sous-marqueur">
+      <span data-fr>démarche assistée par intelligence artificielle</span>
+      <span data-en>an AI-assisted practice</span>
+    </span>
+    <h1>Pierre-Jean<br>Tribot<span class="point">.</span></h1>
+
+    <p class="bio" data-fr>
+      Rédacteur en chef de <em>Crescendo Magazine</em>. Administrateur de <em>XXI Music Publishing</em> et de la <em>Ravel Edition</em>.
+    </p>
+    <p class="bio" data-en>
+      Editor-in-chief of <em>Crescendo Magazine</em>. Administrator of <em>XXI Music Publishing</em> and the <em>Ravel Edition</em>.
+    </p>
+
+    <p class="bio" data-fr>
+      J'intègre depuis 2024 l'intelligence artificielle dans une chaîne éditoriale réelle : critique musicale, édition critique, médiation patrimoniale, production podcast.
+    </p>
+    <p class="bio" data-en>
+      Since 2024 I have been integrating artificial intelligence into a working editorial chain: music criticism, critical editing, heritage outreach, podcast production.
+    </p>
+  </section>
+
+  <!-- ===================================================================
+       APPROCHE
+       =================================================================== -->
+  <section class="section approche">
+    <div class="section-label">
+      <span class="left">
+        <span data-fr>approche</span>
+        <span data-en>approach</span>
+      </span>
+      <span class="right">
+        <span data-fr>méthode &amp; principes</span>
+        <span data-en>method &amp; principles</span>
+      </span>
+    </div>
+
+    <h2>
+      <span data-fr>Une démarche éditoriale,<br>pas une expérimentation<span class="point">.</span></span>
+      <span data-en>An editorial practice,<br>not an experiment<span class="point">.</span></span>
+    </h2>
+
+    <p data-fr>
+      Travail conduit en français, étape par étape, par un éditeur non-développeur. Production de fichiers complets et déployables plutôt que modifications fragmentaires. Intégration dans des structures éditoriales établies — <em>Crescendo Magazine</em>, <em>Ravel Edition</em>, <em>21 Music</em> — plutôt que création de prototypes isolés.
+    </p>
+    <p data-en>
+      Work conducted in French, step by step, by an editor who is not a developer. Production of complete, deployable files rather than fragmentary edits. Integration into established editorial structures — <em>Crescendo Magazine</em>, <em>Ravel Edition</em>, <em>21 Music</em> — rather than isolated prototypes.
+    </p>
+
+    <p data-fr>
+      Productions IA systématiquement encadrées par des bases de données structurées et des contrôles de cohérence : pas de génération libre, pas de prose creuse. Exigence d'infrastructure tenue au niveau d'une production professionnelle traditionnelle : accessibilité <em>WCAG</em>, conformité <em>RGPD</em>, métadonnées sémantiques, API ouvertes.
+    </p>
+    <p data-en>
+      AI-assisted output is systematically grounded in structured databases and consistency checks: no free generation, no hollow prose. Infrastructure is held to the same standard as traditional professional production: <em>WCAG</em> accessibility, <em>GDPR</em> compliance, semantic metadata, open APIs.
+    </p>
+
+    <p data-fr>
+      Refus de la posture techno-évangéliste comme du repli défensif. L'IA est un outil d'éditeur, au service d'une exigence éditoriale classique : trouver les mots justes, vérifier les sources, soigner la forme, servir la musique et ceux qui la font vivre.
+    </p>
+    <p data-en>
+      Neither tech evangelism nor defensive retreat. AI is an editor's tool, in the service of a classical editorial standard: finding the right words, checking the sources, attending to the form, serving music and those who bring it to life.
+    </p>
+  </section>
+
+  <!-- ===================================================================
+       PROJETS
+       =================================================================== -->
+  <section class="section">
+    <div class="section-label">
+      <span class="left">
+        <span data-fr>réalisations</span>
+        <span data-en>projects</span>
+      </span>
+      <span class="right">
+        <span data-fr>8 projets · 2024 → 2026</span>
+        <span data-en>8 projects · 2024 → 2026</span>
+      </span>
+    </div>
+
+    <h2>
+      <span data-fr>Huit projets,<br>une méthode<span class="point">.</span></span>
+      <span data-en>Eight projects,<br>one method<span class="point">.</span></span>
+    </h2>
+
+    <div class="projets">
+
+      <!-- 01 PAULINE -->
+      <article class="projet">
+        <div class="num">01</div>
+        <div class="body">
+          <div class="title">Pauline — Le Voyage Musical<span class="point">.</span></div>
+          <span class="kind">
+            <span data-fr>application musicale</span>
+            <span data-en>music application</span>
+          </span>
+          <p class="desc" data-fr>
+            Application de découverte musicale construite autour de 605 compositeurs, avec quatorze fonctions assistées par IA via l'API Anthropic — présentation d'œuvres, suggestions discographiques, recommandations contextuelles, agenda de concerts. Intégrée à <em>Crescendo Magazine</em> en sous-domaine propre. Démonstrateur d'une IA musicale au service de la médiation, et base potentielle pour un déploiement institutionnel.
+          </p>
+          <p class="desc" data-en>
+            A music discovery application built around 605 composers, with fourteen AI-assisted features powered by the Anthropic API — work presentations, discographic suggestions, contextual recommendations, concert agenda. Integrated into <em>Crescendo Magazine</em> on its own subdomain. A demonstrator of musical AI in service of cultural mediation, and a potential foundation for institutional deployment.
+          </p>
+          <div class="meta">
+            <a href="https://pauline.crescendo-magazine.be/" target="_blank" rel="noopener">pauline.crescendo-magazine.be</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 02 XXI -->
+      <article class="projet">
+        <div class="num">02</div>
+        <div class="body">
+          <div class="title">XXI Music Publishing<span class="point">.</span></div>
+          <span class="kind">
+            <span data-fr>site institutionnel</span>
+            <span data-en>institutional website</span>
+          </span>
+          <p class="desc" data-fr>
+            Site de la maison d'édition musicale (fondée en 2018, catalogue de onze compositeurs, collection <em>Ravel Edition</em>). Cinquante-six pages bilingues français-anglais, fiches œuvres détaillées avec ISMN, bibliothèque d'orchestre filtrable, recherche universelle au clavier, espace presse. Conformité <em>WCAG AA</em>, métadonnées <em>Schema.org</em> et <em>Dublin Core</em>, API JSON publique du catalogue, hébergement CDN mondial, RGPD intégral. Outil professionnel servant cent vingt orchestres dans vingt-six pays.
+          </p>
+          <p class="desc" data-en>
+            Website of the music publishing house (founded 2018, eleven composers in catalogue, <em>Ravel Edition</em> collection). Fifty-six pages bilingual French-English, detailed work sheets with ISMN, filterable orchestral library, keyboard-driven universal search, press area. <em>WCAG AA</em> compliant, <em>Schema.org</em> and <em>Dublin Core</em> metadata, public JSON catalogue API, global CDN hosting, full GDPR compliance. A professional tool serving one hundred and twenty orchestras across twenty-six countries.
+          </p>
+          <div class="meta">
+            <a href="https://www.21music-publishing.com/" target="_blank" rel="noopener" data-fr>21music-publishing.com</a>
+            <a href="https://www.21music-publishing.com/en/" target="_blank" rel="noopener" data-en>21music-publishing.com</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 03 ART DECO -->
+      <article class="projet">
+        <div class="num">03</div>
+        <div class="body">
+          <div class="title">Art Déco Belgique<span class="point">.</span></div>
+          <span class="kind">
+            <span data-fr>patrimoine architectural</span>
+            <span data-en>architectural heritage</span>
+          </span>
+          <p class="desc" data-fr>
+            Inventaire géoréférencé de plus de trois cents bâtiments Art déco en Belgique, à explorer par carte, par architecte ou par parcours thématique. Vingt-neuf itinéraires éditoriaux et un générateur de promenades sur mesure : Claude compose, à partir d'une base structurée et avec validation automatique, des parcours cohérents historiquement et précis dans l'attribution. Démonstrateur d'exploration patrimoniale assistée par IA.
+          </p>
+          <p class="desc" data-en>
+            Geo-referenced inventory of more than three hundred Art Deco buildings in Belgium, browsable by map, by architect or by thematic itinerary. Twenty-nine editorial routes plus a custom walk generator: Claude composes, from a structured database and with automated validation, walks that are historically coherent and accurate in attribution. A demonstrator of AI-assisted heritage exploration.
+          </p>
+          <div class="meta">
+            <a href="https://www.art-deco-belgique.eu/" target="_blank" rel="noopener">art-deco-belgique.eu</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 04 FESTIVALS -->
+      <article class="projet">
+        <div class="num">04</div>
+        <div class="body">
+          <div class="title">Crescendo Festivals 2026<span class="point">.</span></div>
+          <span class="kind">
+            <span data-fr>cartographie culturelle</span>
+            <span data-en>cultural cartography</span>
+          </span>
+          <p class="desc" data-fr>
+            Guide cartographique interactif des festivals européens de musique classique pour la saison 2026, avec recommandations éditoriales, douze <em>coups de cœur</em>, cartes Leaflet et fiches enrichies. Intégré à l'écosystème <em>Crescendo Magazine</em> en sous-domaine officiel. Production éditoriale assistée par IA pour les notices et l'enrichissement des données festivals.
+          </p>
+          <p class="desc" data-en>
+            Interactive cartographic guide to European classical music festivals for the 2026 season, with editorial recommendations, twelve <em>coups de cœur</em>, Leaflet maps and enriched listings. Integrated into the <em>Crescendo Magazine</em> ecosystem on an official subdomain. Editorial production assisted by AI for the writing of notices and the enrichment of festival data.
+          </p>
+          <div class="meta">
+            <a href="https://festivals.crescendo-magazine.be/" target="_blank" rel="noopener">festivals.crescendo-magazine.be</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 05 PHONO -->
+      <article class="projet">
+        <div class="num">05</div>
+        <div class="body">
+          <div class="title">Phono Crescendo<span class="point">.</span></div>
+          <span class="kind">
+            <span data-fr>base discographique</span>
+            <span data-en>discographic database</span>
+          </span>
+          <p class="desc" data-fr>
+            Plateforme discographique adossée aux archives critiques de <em>Crescendo Magazine</em> : plus de cinq mille deux cents chroniques d'albums, biographies de compositeurs enrichies, pages thématiques (millésimes, compositrices, scène belge, palmarès), badges éditoriaux. Architecture Next.js et Supabase, génération assistée par IA des contenus enrichis avec contrôle de cohérence et révision éditoriale systématique.
+          </p>
+          <p class="desc" data-en>
+            A discographic platform built on the critical archives of <em>Crescendo Magazine</em>: more than five thousand two hundred album reviews, enriched composer biographies, thematic pages (vintages, women composers, Belgian scene, awards), editorial badges. Next.js and Supabase architecture, AI-assisted generation of enriched content with consistency checks and systematic editorial review.
+          </p>
+          <div class="meta">
+            <a href="https://phono.crescendo-magazine.be/" target="_blank" rel="noopener">phono.crescendo-magazine.be</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 06 PODCAST -->
+      <article class="projet">
+        <div class="num">06</div>
+        <div class="body">
+          <div class="title">
+            <span data-fr>Studio podcast<span class="point">.</span></span>
+            <span data-en>Podcast studio<span class="point">.</span></span>
+          </div>
+          <span class="kind">
+            <span data-fr>production audio</span>
+            <span data-en>audio production</span>
+          </span>
+          <p class="desc" data-fr>
+            Production éditoriale assistée par IA pour les podcasts <em>Crescendo Magazine</em> et <em>Ravel Edition</em> : scripts rédigés selon la ligne éditoriale et l'orthographe adaptée à la synthèse vocale (ElevenLabs), épisodes consacrés notamment à <em>La Valse</em>, au <em>Tombeau de Couperin</em>, aux figures historiques de chefs d'orchestre (Klemperer, Inghelbrecht), pochettes et bannières déclinées pour Spotify, Facebook, Instagram et LinkedIn.
+          </p>
+          <p class="desc" data-en>
+            AI-assisted editorial production for the podcasts of <em>Crescendo Magazine</em> and <em>Ravel Edition</em>: scripts written according to editorial line and orthography adapted to voice synthesis (ElevenLabs), episodes devoted notably to <em>La Valse</em>, <em>Le Tombeau de Couperin</em>, and historic conductors (Klemperer, Inghelbrecht), covers and banners declined for Spotify, Facebook, Instagram and LinkedIn.
+          </p>
+          <div class="meta">
+            <span data-fr>production interne · crescendo · ravel edition</span>
+            <span data-en>internal production · crescendo · ravel edition</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 07 PUPITRE -->
+      <article class="projet">
+        <div class="num">07</div>
+        <div class="body">
+          <div class="title">
+            <span data-fr>Pupitre de commande éditorial<span class="point">.</span></span>
+            <span data-en>Editorial toolkit<span class="point">.</span></span>
+          </div>
+          <span class="kind">
+            <span data-fr>outils éditoriaux</span>
+            <span data-en>editorial tools</span>
+          </span>
+          <p class="desc" data-fr>
+            Suite d'outils internes développés pour la rédaction de <em>Crescendo Magazine</em> : génération de scripts podcast, traduction de brèves d'actualité, fiches CD au format maison, métadonnées SEO, composition de lettres d'information. Accès direct à l'API Anthropic depuis le navigateur, prompts spécialisés par tâche éditoriale.
+          </p>
+          <p class="desc" data-en>
+            Suite of in-house tools developed for the <em>Crescendo Magazine</em> editorial team: podcast script generation, news brief translation, in-house CD review templates, SEO metadata, newsletter composition. Direct browser access to the Anthropic API, specialised prompts per editorial task.
+          </p>
+          <div class="meta">
+            <span data-fr>outil interne · crescendo magazine</span>
+            <span data-en>internal tool · crescendo magazine</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 08 AGENDA -->
+      <article class="projet">
+        <div class="num">08</div>
+        <div class="body">
+          <div class="title">Agenda <em>Crescendo</em><span class="point">.</span></div>
+          <span class="kind">
+            <span data-fr>agenda concertant</span>
+            <span data-en>concert listings</span>
+          </span>
+          <p class="desc" data-fr>
+            Agenda des concerts de musique classique en Belgique et dans l'Eurorégion — France, Luxembourg, Pays-Bas. Plus de deux mille deux cents concerts agrégés depuis quarante-quatre sources, répartis dans quatre-vingts salles, avec carte interactive, filtres par pays, ville, mois, compositeur et festival, fiches détaillées et module statistique de lecture éditoriale du paysage. Architecture en page unique, agrégation automatisée des programmations institutionnelles ; le projet a mis au jour la disparité des données de programmation selon les institutions, posant la découvrabilité comme enjeu culturel.
+          </p>
+          <p class="desc" data-en>
+            A listing of classical music concerts across Belgium and the Euroregion — France, Luxembourg, the Netherlands. More than two thousand two hundred concerts aggregated from forty-four sources, across eighty venues, with an interactive map, filters by country, city, month, composer and festival, detailed listings and a statistical module offering an editorial reading of the landscape. Single-page architecture, automated aggregation of institutional programming; the project brought to light the disparity in programming data from one institution to another, posing discoverability as a cultural issue.
+          </p>
+          <div class="meta">
+            <a href="https://agenda-crescendo.vercel.app/" target="_blank" rel="noopener">agenda-crescendo.vercel.app</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       PIED DE PAGE
+       =================================================================== -->
+  <footer>
+    <div class="grid">
+      <div>
+        <h4>contact</h4>
+        <p data-fr>
+          <a href="mailto:pjtribot@musicartsnet.eu">pjtribot@musicartsnet.eu</a><br>
+          <a href="https://www.linkedin.com/in/pierre-jean-t-781a9316/" target="_blank" rel="noopener">LinkedIn</a><br>
+          Bruxelles · Belgique
+        </p>
+        <p data-en>
+          <a href="mailto:pjtribot@musicartsnet.eu">pjtribot@musicartsnet.eu</a><br>
+          <a href="https://www.linkedin.com/in/pierre-jean-t-781a9316/" target="_blank" rel="noopener">LinkedIn</a><br>
+          Brussels · Belgium
+        </p>
+      </div>
+
+      <div>
+        <h4>
+          <span data-fr>liens éditoriaux</span>
+          <span data-en>editorial links</span>
+        </h4>
+        <ul data-fr>
+          <li><a href="https://www.crescendo-magazine.be/" target="_blank" rel="noopener">Crescendo Magazine</a></li>
+          <li><a href="https://www.21music-publishing.com/" target="_blank" rel="noopener">XXI Music Publishing</a></li>
+          <li><a href="https://www.21music-publishing.com/ravel-edition.html" target="_blank" rel="noopener">Ravel Edition</a></li>
+        </ul>
+        <ul data-en>
+          <li><a href="https://www.crescendo-magazine.be/" target="_blank" rel="noopener">Crescendo Magazine</a></li>
+          <li><a href="https://www.21music-publishing.com/en/" target="_blank" rel="noopener">XXI Music Publishing</a></li>
+          <li><a href="https://www.21music-publishing.com/en/ravel-edition.html" target="_blank" rel="noopener">Ravel Edition</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tech">
+      <span data-fr>html statique</span><span data-en>static html</span>
+      <span>0 javascript</span>
+      <span>0 cookie</span>
+      <span>0 tracker</span>
+      <span data-fr>1 fichier</span><span data-en>1 file</span>
+    </div>
+
+    <div class="copyright">
+      © 2026 · Pierre-Jean Tribot · pierrejeantribot.com
+    </div>
+  </footer>
+
+</div>
+
+<script>
+/* ========================================================================
+   BASCULE LINGUISTIQUE
+   1. Détection : ancre #en > localStorage > navigateur > français par défaut
+   2. Mémorisation du choix
+   3. Mise à jour de l'attribut lang sur <html> et des meta dynamiques
+   ======================================================================== */
+
+(function() {
+  var html = document.documentElement;
+  var btnFR = document.getElementById('btn-fr');
+  var btnEN = document.getElementById('btn-en');
+  var titleEl = document.querySelector('title');
+
+  // Textes pour les meta tags (titre + description)
+  var meta = {
+    fr: {
+      title: "Pierre-Jean Tribot — Édition culturelle & valorisation du patrimoine",
+      desc: "Rédacteur en chef de Crescendo Magazine et administrateur de XXI Music Publishing. Édition culturelle et valorisation du patrimoine, démarche assistée par intelligence artificielle depuis 2024."
+    },
+    en: {
+      title: "Pierre-Jean Tribot — Cultural publishing & heritage",
+      desc: "Editor-in-chief of Crescendo Magazine and administrator of XXI Music Publishing. Cultural publishing and heritage, an AI-assisted practice since 2024."
+    }
+  };
+
+  // Application d'une langue
+  function setLang(lang) {
+    if (lang !== 'en') lang = 'fr';
+    html.setAttribute('lang', lang);
+
+    // Mise à jour des boutons
+    btnFR.classList.toggle('active', lang === 'fr');
+    btnEN.classList.toggle('active', lang === 'en');
+
+    // Mise à jour des meta tags
+    titleEl.textContent = meta[lang].title;
+    var descEl = document.getElementById('meta-desc');
+    if (descEl) descEl.setAttribute('content', meta[lang].desc);
+
+    // Mémorisation du choix
+    try { localStorage.setItem('lang', lang); } catch(e) {}
+  }
+
+  // Détection de la langue à appliquer au chargement
+  function detectLang() {
+    // 1. Priorité : ancre #en dans l'URL
+    if (window.location.hash === '#en') return 'en';
+    if (window.location.hash === '#fr') return 'fr';
+
+    // 2. Sinon : choix mémorisé en localStorage
+    var stored;
+    try { stored = localStorage.getItem('lang'); } catch(e) {}
+    if (stored === 'fr' || stored === 'en') return stored;
+
+    // 3. Sinon : langue du navigateur
+    var nav = (navigator.language || navigator.userLanguage || 'fr').toLowerCase();
+    if (nav.indexOf('en') === 0) return 'en';
+
+    // 4. Par défaut : français
+    return 'fr';
+  }
+
+  // Initialisation
+  setLang(detectLang());
+
+  // Boutons
+  btnFR.addEventListener('click', function() {
+    setLang('fr');
+    if (window.location.hash === '#en') {
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+  });
+  btnEN.addEventListener('click', function() {
+    setLang('en');
+    history.replaceState(null, '', window.location.pathname + window.location.search + '#en');
+  });
+
+  // Réaction à un changement d'ancre (par ex. lien partagé pierrejeantribot.com/#en)
+  window.addEventListener('hashchange', function() {
+    if (window.location.hash === '#en') setLang('en');
+    else if (window.location.hash === '#fr' || window.location.hash === '') setLang(detectLang());
+  });
+})();
+</script>
+
+</body>
+</html>
