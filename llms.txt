@@ -1,40 +1,347 @@
-# Pierre-Jean Tribot
+# Pierre-Jean Tribot — Édition culturelle & valorisation du patrimoine
 
-> Édition culturelle & valorisation du patrimoine. Démarche assistée par intelligence artificielle.
-> Cultural publishing & heritage. An AI-assisted practice.
+> Démarche éditoriale assistée par intelligence artificielle, ancrée dans une pratique professionnelle réelle de l'édition musicale et de la médiation culturelle.
 
-Pierre-Jean Tribot est rédacteur en chef de Crescendo Magazine, magazine belge francophone de musique classique et de danse fondé en 1993. Il est administrateur de XXI Music Publishing, maison d'édition musicale belge éditrice de la Ravel Edition (édition critique de référence de l'œuvre de Maurice Ravel) et défenseure de la création contemporaine. Depuis 2024, il intègre l'intelligence artificielle dans une chaîne éditoriale réelle : critique musicale, édition critique, médiation patrimoniale, production podcast.
+> Editorial practice assisted by artificial intelligence, grounded in a real professional practice of music publishing and cultural mediation.
 
-Pierre-Jean Tribot is editor-in-chief of Crescendo Magazine, a Belgian French-language classical music and dance publication founded in 1993. He is administrator of XXI Music Publishing, a Belgian music publisher of the Ravel Edition (a reference critical edition of Maurice Ravel's work) and an advocate of contemporary creation. Since 2024, he has been integrating artificial intelligence into a working editorial chain: music criticism, critical editing, heritage outreach, podcast production.
+URL: https://pierrejeantribot.com
+Localisation / Location: Bruxelles · Belgique / Brussels · Belgium
+Mise à jour / Last updated: mai 2026 / May 2026
 
-## Site / Website
+---
 
-- [Page d'accueil / Home page](https://pierrejeantribot.com/): Portfolio des projets et démarche IA appliquée à l'édition culturelle / Portfolio of projects and AI-assisted cultural publishing practice
-- [Notes éditoriales / Editorial notes](https://pierrejeantribot.com/notes/): Textes de fond sur l'IA, l'édition culturelle et la prescription musicale / Long-form pieces on AI, cultural publishing and musical prescription
+## Biographie / Biography
 
-## Projets principaux / Main projects
+### Français
 
-- [Pauline — Le Voyage Musical](https://pauline.crescendo-magazine.be/): Application de découverte musicale avec 605 compositeurs et 14 fonctions assistées par IA via l'API Anthropic, intégrée à Crescendo Magazine / Music discovery application with 605 composers and 14 AI-assisted features powered by the Anthropic API, integrated into Crescendo Magazine
+Pierre-Jean Tribot a étudié la musique (Cor d'harmonie) et l'Histoire (Universités Paris-IV Sorbonne et Université Libre de Bruxelles).
 
-- [XXI Music Publishing](https://www.21music-publishing.com/): Site institutionnel de la maison d'édition musicale belge fondée en 2018, 56 pages bilingues FR/EN, fiches œuvres, bibliothèque d'orchestre, conformité WCAG AA, métadonnées Schema.org et Dublin Core, API JSON publique, servant 120 orchestres dans 26 pays / Institutional website of the Belgian music publishing house founded in 2018, 56 bilingual FR/EN pages, work sheets, orchestral library, WCAG AA compliance, Schema.org and Dublin Core metadata, public JSON API, serving 120 orchestras across 26 countries
+Il a été rédacteur en chef de ResMusica.com (2009-2015), vice-président des International Classical Music Awards (2012-2015) et chroniqueur pour la RTBF Musiq3. Depuis janvier 2016, il est chroniqueur pour Crescendo Magazine et rédacteur en chef depuis septembre 2018. Il est l'un des animateurs du réseau Music & Arts Networks de Paris, qui œuvre à une nouvelle approche de la musique classique, et administrateur de l'éditeur musical XXI Music Publishing, qui édite la Ravel Edition.
 
-- [Art Déco Belgique](https://www.art-deco-belgique.eu/): Inventaire géoréférencé de plus de 300 bâtiments Art déco en Belgique, 29 itinéraires éditoriaux, générateur de promenades sur mesure assisté par IA / Geo-referenced inventory of over 300 Art Deco buildings in Belgium, 29 editorial routes, AI-assisted custom walk generator
+Pierre-Jean Tribot a collaboré avec différents orchestres à travers l'Europe : Orchestre Philharmonique Royal de Liège, Orchestre Symphonique de Bilkent à Ankara, Orchestre de Chambre des Cameristi della Scala (Milan). Passionné par le patrimoine, il est l'auteur de différents ouvrages sur les communes de la région de Bruxelles, l'Exposition universelle de Bruxelles 1958 et l'Atomium. Dans le domaine audiovisuel, il a participé à un projet de valorisation des fonds de la RTBF au bénéfice des publics enseignants pour le compte de la Fédération Wallonie-Bruxelles.
 
-- [Crescendo Festivals 2026](https://festivals.crescendo-magazine.be/): Guide cartographique interactif des festivals européens de musique classique pour la saison 2026 / Interactive cartographic guide to European classical music festivals for the 2026 season
+Depuis 2024, il intègre l'intelligence artificielle dans une chaîne éditoriale réelle : critique musicale, édition critique, médiation patrimoniale, production podcast.
 
-- [Phono Crescendo](https://phono.crescendo-magazine.be/): Plateforme discographique adossée aux archives critiques de Crescendo Magazine, plus de 5 200 chroniques d'albums, biographies enrichies / Discographic platform built on Crescendo Magazine's critical archives, over 5,200 album reviews, enriched biographies
+### English
+
+Pierre-Jean Tribot studied music (French horn) and History (Paris-IV Sorbonne and Université Libre de Bruxelles).
+
+He served as editor-in-chief of ResMusica.com (2009-2015), vice-president of the International Classical Music Awards (2012-2015), and contributor to RTBF Musiq3. Since January 2016, he has contributed to Crescendo Magazine, where he became editor-in-chief in September 2018. He is one of the leading figures of the Paris-based Music & Arts Networks, working towards a new approach to classical music, and administrator of XXI Music Publishing, which publishes the Ravel Edition.
+
+Pierre-Jean Tribot has collaborated with various orchestras across Europe: Royal Philharmonic Orchestra of Liège, Bilkent Symphony Orchestra in Ankara, Cameristi della Scala chamber orchestra (Milan). Passionate about heritage, he is the author of several books on the municipalities of the Brussels region, the 1958 Brussels World Fair, and the Atomium. In audiovisual work, he contributed to a project for the educational use of RTBF archives on behalf of the Fédération Wallonie-Bruxelles.
+
+Since 2024, he has been integrating artificial intelligence into a working editorial chain: music criticism, critical editing, heritage outreach, podcast production.
+
+---
+
+## Approche / Approach
+
+### Français
+
+Travail conduit en français, étape par étape, par un éditeur non-développeur. Production de fichiers complets et déployables plutôt que modifications fragmentaires. Intégration dans des structures éditoriales établies — Crescendo Magazine, Ravel Edition, 21 Music — plutôt que création de prototypes isolés.
+
+Productions IA systématiquement encadrées par des bases de données structurées et des contrôles de cohérence : pas de génération libre, pas de prose creuse. Exigence d'infrastructure tenue au niveau d'une production professionnelle traditionnelle : accessibilité WCAG, conformité RGPD, métadonnées sémantiques, API ouvertes.
+
+Refus de la posture techno-évangéliste comme du repli défensif. L'IA est un outil d'éditeur, au service d'une exigence éditoriale classique : trouver les mots justes, vérifier les sources, soigner la forme, servir la musique et ceux qui la font vivre.
+
+### English
+
+Work conducted in French, step by step, by an editor who is not a developer. Production of complete, deployable files rather than fragmentary edits. Integration into established editorial structures — Crescendo Magazine, Ravel Edition, 21 Music — rather than isolated prototypes.
+
+AI-assisted output is systematically grounded in structured databases and consistency checks: no free generation, no hollow prose. Infrastructure is held to the same standard as traditional professional production: WCAG accessibility, GDPR compliance, semantic metadata, open APIs.
+
+Neither tech evangelism nor defensive retreat. AI is an editor's tool, in the service of a classical editorial standard: finding the right words, checking the sources, attending to the form, serving music and those who bring it to life.
+
+---
+
+## Projets / Projects
+
+### 01 — Pauline — Le Voyage Musical
+
+URL: https://pauline.crescendo-magazine.be/
+Type: Application musicale / Music application
+
+**Français.** Application de découverte musicale construite autour de 605 compositeurs, avec quatorze fonctions assistées par IA via l'API Anthropic — présentation d'œuvres, suggestions discographiques, recommandations contextuelles, agenda de concerts. Intégrée à Crescendo Magazine en sous-domaine propre. Démonstrateur d'une IA musicale au service de la médiation, et base potentielle pour un déploiement institutionnel.
+
+**English.** A music discovery application built around 605 composers, with fourteen AI-assisted features powered by the Anthropic API — work presentations, discographic suggestions, contextual recommendations, concert agenda. Integrated into Crescendo Magazine on its own subdomain. A demonstrator of musical AI in service of cultural mediation, and a potential foundation for institutional deployment.
+
+### 02 — XXI Music Publishing
+
+URL: https://www.21music-publishing.com/
+Type: Site institutionnel / Institutional website
+
+**Français.** Site de la maison d'édition musicale (fondée en 2018, catalogue de onze compositeurs, collection Ravel Edition). Cinquante-six pages bilingues français-anglais, fiches œuvres détaillées avec ISMN, bibliothèque d'orchestre filtrable, recherche universelle au clavier, espace presse. Conformité WCAG AA, métadonnées Schema.org et Dublin Core, API JSON publique du catalogue, hébergement CDN mondial, RGPD intégral. Outil professionnel servant cent vingt orchestres dans vingt-six pays.
+
+**English.** Website of the music publishing house (founded 2018, eleven composers in catalogue, Ravel Edition collection). Fifty-six pages bilingual French-English, detailed work sheets with ISMN, filterable orchestral library, keyboard-driven universal search, press area. WCAG AA compliant, Schema.org and Dublin Core metadata, public JSON catalogue API, global CDN hosting, full GDPR compliance. A professional tool serving one hundred and twenty orchestras across twenty-six countries.
+
+### 03 — Art Déco Belgique
+
+URL: https://www.art-deco-belgique.eu/
+Type: Patrimoine architectural / Architectural heritage
+
+**Français.** Inventaire géoréférencé de plus de trois cents bâtiments Art déco en Belgique, à explorer par carte, par architecte ou par parcours thématique. Vingt-neuf itinéraires éditoriaux et un générateur de promenades sur mesure : Claude compose, à partir d'une base structurée et avec validation automatique, des parcours cohérents historiquement et précis dans l'attribution. Démonstrateur d'exploration patrimoniale assistée par IA.
+
+**English.** Geo-referenced inventory of more than three hundred Art Deco buildings in Belgium, browsable by map, by architect or by thematic itinerary. Twenty-nine editorial routes plus a custom walk generator: Claude composes, from a structured database and with automated validation, walks that are historically coherent and accurate in attribution. A demonstrator of AI-assisted heritage exploration.
+
+### 04 — Crescendo Festivals 2026
+
+URL: https://festivals.crescendo-magazine.be/
+Type: Cartographie culturelle / Cultural cartography
+
+**Français.** Guide cartographique interactif des festivals européens de musique classique pour la saison 2026, avec recommandations éditoriales, douze coups de cœur, cartes Leaflet et fiches enrichies. Intégré à l'écosystème Crescendo Magazine en sous-domaine officiel. Production éditoriale assistée par IA pour les notices et l'enrichissement des données festivals.
+
+**English.** Interactive cartographic guide to European classical music festivals for the 2026 season, with editorial recommendations, twelve coups de cœur, Leaflet maps and enriched listings. Integrated into the Crescendo Magazine ecosystem on an official subdomain. Editorial production assisted by AI for the writing of notices and the enrichment of festival data.
+
+### 05 — Phono Crescendo
+
+URL: https://phono.crescendo-magazine.be/
+Type: Base discographique / Discographic database
+
+**Français.** Plateforme discographique adossée aux archives critiques de Crescendo Magazine : plus de cinq mille deux cents chroniques d'albums, biographies de compositeurs enrichies, pages thématiques (millésimes, compositrices, scène belge, palmarès), badges éditoriaux. Architecture Next.js et Supabase, génération assistée par IA des contenus enrichis avec contrôle de cohérence et révision éditoriale systématique.
+
+**English.** A discographic platform built on the critical archives of Crescendo Magazine: more than five thousand two hundred album reviews, enriched composer biographies, thematic pages (vintages, women composers, Belgian scene, awards), editorial badges. Next.js and Supabase architecture, AI-assisted generation of enriched content with consistency checks and systematic editorial review.
+
+### 06 — Studio podcast / Podcast studio
+
+Type: Production audio / Audio production
+
+**Français.** Production éditoriale assistée par IA pour les podcasts Crescendo Magazine et Ravel Edition : scripts rédigés selon la ligne éditoriale et l'orthographe adaptée à la synthèse vocale (ElevenLabs), épisodes consacrés notamment à La Valse, au Tombeau de Couperin, aux figures historiques de chefs d'orchestre (Klemperer, Inghelbrecht), pochettes et bannières déclinées pour Spotify, Facebook, Instagram et LinkedIn.
+
+**English.** AI-assisted editorial production for the podcasts of Crescendo Magazine and Ravel Edition: scripts written according to editorial line and orthography adapted to voice synthesis (ElevenLabs), episodes devoted notably to La Valse, Le Tombeau de Couperin, and historic conductors (Klemperer, Inghelbrecht), covers and banners declined for Spotify, Facebook, Instagram and LinkedIn.
+
+### 07 — Pupitre de commande éditorial / Editorial toolkit
+
+Type: Outils éditoriaux / Editorial tools
+
+**Français.** Suite d'outils internes développés pour la rédaction de Crescendo Magazine : génération de scripts podcast, traduction de brèves d'actualité, fiches CD au format maison, métadonnées SEO, composition de lettres d'information. Accès direct à l'API Anthropic depuis le navigateur, prompts spécialisés par tâche éditoriale.
+
+**English.** Suite of in-house tools developed for the Crescendo Magazine editorial team: podcast script generation, news brief translation, in-house CD review templates, SEO metadata, newsletter composition. Direct browser access to the Anthropic API, specialised prompts per editorial task.
+
+### 08 — Agenda Crescendo
+
+URL: https://agenda-crescendo.vercel.app/
+Type: Agenda concertant / Concert listings
+
+**Français.** Agenda des concerts de musique classique en Belgique et dans l'Eurorégion — France, Luxembourg, Pays-Bas. Plus de deux mille deux cents concerts agrégés depuis quarante-quatre sources, répartis dans quatre-vingts salles, avec carte interactive, filtres par pays, ville, mois, compositeur et festival, fiches détaillées et module statistique de lecture éditoriale du paysage. Architecture en page unique, agrégation automatisée des programmations institutionnelles ; le projet a mis au jour la disparité des données de programmation selon les institutions, posant la découvrabilité comme enjeu culturel.
+
+**English.** A listing of classical music concerts across Belgium and the Euroregion — France, Luxembourg, the Netherlands. More than two thousand two hundred concerts aggregated from forty-four sources, across eighty venues, with an interactive map, filters by country, city, month, composer and festival, detailed listings and a statistical module offering an editorial reading of the landscape. Single-page architecture, automated aggregation of institutional programming; the project brought to light the disparity in programming data from one institution to another, posing discoverability as a cultural issue.
+
+---
 
 ## Notes éditoriales / Editorial notes
 
-- [Le diplôme et le portfolio / The diploma and the portfolio](https://pierrejeantribot.com/notes/#diplome-portfolio): Texte de mai 2026 sur la rupture du contrat implicite du diplôme, l'accélération provoquée par l'IA, et l'émergence du portfolio comme nouvelle preuve de capacité / May 2026 essay on the rupture of the diploma's implicit contract, the acceleration brought by AI, and the rise of the portfolio as new evidence of capability
+### L'IA et la prescription culturelle. Pourquoi ne pas tout laisser aux plateformes.
 
-- [L'IA et la prescription culturelle / AI and cultural prescription](https://pierrejeantribot.com/notes/#prescription-culturelle): Texte de mai 2026 sur la pauvreté éditoriale des playlists algorithmiques, le sort fait aux compositrices et aux répertoires confidentiels, et le rôle d'une IA mise entre des mains éditoriales / May 2026 essay on the editorial poverty of algorithmic playlists, the fate of women composers and confidential repertoires, and the role of AI in editorial hands
+URL: https://pierrejeantribot.com/notes/#prescription-culturelle
+Date: mai 2026 / May 2026
 
-## Structures associées / Associated organisations
+**Français.**
 
-- [Crescendo Magazine](https://www.crescendo-magazine.be/): Magazine belge francophone de musique classique et de danse, fondé en 1993 / Belgian French-language classical music and dance magazine, founded in 1993
-- [XXI Music Publishing](https://www.21music-publishing.com/): Maison d'édition musicale belge, Linkebeek / Belgian music publishing house, Linkebeek
-- [Ravel Edition](https://www.21music-publishing.com/ravel-edition.html): Édition critique de référence de l'œuvre de Maurice Ravel / Reference critical edition of Maurice Ravel's work
+Il y a quelque chose qui se joue, dans le silence des algorithmes, et qui mérite qu'on y regarde de plus près.
+
+Depuis vingt ans, la prescription musicale a basculé. Le disquaire indépendant a disparu, les pages culturelles des journaux généralistes se sont rétractées, les radios spécialisées ont perdu leur audience. Ce qui reste pour découvrir un compositeur, un interprète, un label, c'est essentiellement Spotify, Apple Music, YouTube et Tidal. Le geste de prescription, autrefois porté par des humains qui aimaient ce dont ils parlaient, s'est délégué à des systèmes de recommandation algorithmique conçus pour optimiser le temps d'écoute.
+
+Pour la musique classique et les répertoires contemporains, cette bascule est particulièrement violente. Les algorithmes des plateformes sont calibrés sur les comportements d'écoute majoritaires. Ils privilégient ce qui est déjà écouté, déjà partagé, déjà identifié. Ils traitent la musique comme un flux indifférencié et confondent allègrement les Quatre Saisons de Vivaldi par cinquante ensembles différents, ne distinguent pas une lecture historiquement informée d'une version romantique, ne savent pas situer une création contemporaine dans un courant esthétique. Le répertoire patrimonial devient un fond de catalogue, et la création vivante ne sort jamais du tiroir où elle a été rangée.
+
+Il suffit de regarder les playlists thématiques que ces plateformes proposent pour saisir l'ampleur du problème. Classical Focus, Peaceful Piano, Calming Classical, Classical Essentials : des intitulés qui disent tout. La musique classique y est traitée comme un robinet à ambiance, une bande-son pour télétravail ou méditation, dans laquelle Bach voisine avec Einaudi sans transition, Mozart avec Max Richter, et Beethoven avec d'innombrables réorchestrations apaisantes de son Adagio. Aucune narration, aucun contexte, aucune hiérarchie, aucun écart. Trois mille morceaux dans un ordre obscur, recalibrés pour ne jamais surprendre. C'est la négation même du geste musical : faire entendre ce qu'on n'attendait pas.
+
+À ce biais éditorial s'ajoute un biais économique. Les playlists des plateformes sur-valorisent massivement le back-catalogue des majors — Universal, Sony, Warner — pour des raisons qui n'ont rien à voir avec la qualité musicale et tout à voir avec les accords commerciaux et le poids des catalogues historiques. Une réédition d'un enregistrement Deutsche Grammophon des années soixante-dix sera systématiquement mieux exposée qu'une création récente d'un label indépendant, même si la création en question est un événement artistique majeur. Pour les éditeurs et labels indépendants — ceux qui prennent le risque artistique, ceux qui défendent les œuvres et les interprètes émergents — la visibilité algorithmique est un combat permanent et largement perdu d'avance. Et cela vaut pour tous les compositeurs : intégrer une playlist Spotify est infiniment plus facile avec du Philip Glass qu'avec du Messiaen ou du Goubaïdoulina, parce que Glass coche toutes les cases du goût mainstream du classique-contemporain (motifs répétitifs, harmonie consonante, ambiance immédiate), là où Messiaen exige une écoute construite et Goubaïdoulina suppose un auditeur disposé à être déstabilisé. L'algorithme privilégie ce qui s'écoute en arrière-plan. Tout ce qui demande une attention frontale est par construction défavorisé.
+
+Pour les compositrices, la situation est pire encore. Quand une plateforme ouvre, à l'occasion d'une journée internationale, une playlist consacrée aux femmes, on y trouve le plus souvent les mêmes cinq noms — Hildegarde de Bingen, Clara Schumann, Fanny Mendelssohn, Lili Boulanger, Kaija Saariaho — répétés en boucle, comme si l'histoire de la musique au féminin se résumait à un corpus de salle d'attente. Où sont Louise Farrenc, Cécile Chaminade, Mel Bonis, Augusta Holmès, Germaine Tailleferre, Grażyna Bacewicz, Sofia Goubaïdoulina, Unsuk Chin, Betsy Jolas ? Présentes au catalogue, oui, mais invisibles au flux. Leur travail existe pour qui sait les chercher ; il n'existe pas pour qui veut être surpris. Là encore, ce n'est pas un défaut de l'algorithme : c'est exactement ce qu'il a été conçu pour faire — recommander ce qui est déjà recommandé.
+
+Le résultat est connu. Quelques compositeurs et interprètes ultra-visibles continuent de tourner, le reste s'enfonce dans une longue traîne où personne ne va chercher. Optimiser l'engagement, c'est optimiser le retour vers le déjà-connu. Aucune plateforme commerciale n'a intérêt à ce qu'un auditeur passe trois heures à explorer Charles Koechlin ou Galina Ustvolskaya — cela ne génère ni ré-écoute, ni complétion, ni partage viral. Le système fait ce pour quoi il a été conçu, et il le fait très bien.
+
+Tout n'est pas négatif pour autant. Les plateformes ont aussi rendu possible une chose que le disque physique ne permettait pas : la diffusion réellement mondiale, jusqu'aux confins. Quand on regarde les relevés de streaming d'un éditeur indépendant, on découvre des écoutes en Indonésie, au Pérou, en Mongolie, au Cap-Vert — des territoires où aucun distributeur n'aurait jamais acheminé physiquement un disque de musique de chambre contemporaine. Les plateformes ont infiniment élargi le public potentiel des répertoires confidentiels.
+
+Mais cette diffusion-là reste passive. Elle ne crée pas de découverte, elle révèle une demande latente. Si l'auditeur d'Oulan-Bator a trouvé Dusapin, c'est qu'il le cherchait déjà, ou qu'un humain — un programmateur, un journaliste, un ami — le lui a recommandé en amont. La plateforme a permis l'accès, elle n'a pas suscité l'intérêt. Le travail de prescription, lui, reste à faire. Et c'est précisément celui que les algorithmes commerciaux ne feront jamais, parce que leur logique économique va dans l'autre sens.
+
+C'est précisément là que l'intelligence artificielle ouvre une autre voie.
+
+L'IA, quand elle est mise entre des mains éditoriales et nourrie de bases structurées, peut faire l'inverse exact des algorithmes commerciaux. Elle peut tisser des liens entre des sources hétérogènes — un manuscrit, un article de revue savante, une discographie critique, un enregistrement live, une notice de festival, une chronique parue il y a dix ans. Elle peut composer des parcours qui ne suivent pas la logique de l'engagement mais celle de la découverte raisonnée. Si vous aimez tel quatuor de Ravel, voici comment Caplet, Roussel, Ropartz ont prolongé cette esthétique. Si vous découvrez Lili Boulanger, voici les enregistrements historiques qui ont compté, voici les lectures contemporaines qui valent d'être entendues, voici les compositrices oubliées de sa génération que les programmateurs commencent à exhumer. L'IA ne sait pas faire cela seule. Mais nourrie d'un corpus éditorial sérieux et encadrée par un travail humain de validation, elle devient un outil de prescription d'une puissance inédite.
+
+C'est exactement l'ambition de Pauline, l'application de découverte musicale que nous développons à Crescendo Magazine. Pauline ne cherche pas à concurrencer Spotify sur le terrain du flux. Elle cherche à faire ce que Spotify ne fera jamais : raconter, contextualiser, relier, sortir des œuvres de l'oubli en les replaçant dans leur réseau de filiations et d'influences. Six cent cinq compositeurs et compositrices y sont accessibles, dont une part substantielle ne génère aucun revenu publicitaire significatif et n'a donc aucune chance d'être recommandée par un système commercial. Quatorze fonctions assistées par IA permettent de présenter une œuvre, de suggérer des écoutes complémentaires, de tracer des parcours thématiques, de croiser un répertoire avec des concerts à venir. Ce n'est pas une révolution. C'est simplement la prescription cultivée, telle qu'elle existait avant que les plateformes ne la confisquent, rendue à nouveau possible par un outil que les éditeurs et les critiques peuvent désormais s'approprier.
+
+L'enjeu dépasse Pauline. Il s'agit de comprendre que la découvrabilité — c'est le mot qu'utilisent désormais les institutions culturelles pour parler de ce sujet — n'est pas une question technique secondaire. C'est l'un des combats culturels majeurs de la décennie qui vient. Si nous laissons les plateformes commerciales décider seules de ce qui est entendu et de ce qui ne l'est pas, nous laissons disparaître silencieusement des pans entiers de notre patrimoine musical et de notre création vivante. Pas par interdiction, par invisibilisation. La pire des disparitions, parce que personne ne la voit.
+
+Les éditeurs, les critiques, les institutions culturelles, les médiateurs ont aujourd'hui à leur disposition un outil — l'intelligence artificielle, encadrée, nourrie, validée — qui leur permet de produire des dispositifs de prescription d'une qualité que l'on n'imaginait pas il y a trois ans. C'est une chance et c'est une responsabilité. Si nous ne nous en saisissons pas, ce sont les algorithmes commerciaux qui continueront de modeler à leur image l'écoute des prochaines générations.
+
+Faire revivre le peu connu, c'est notre métier. L'IA, bien employée, en redevient l'instrument.
+
+— Pierre-Jean Tribot
+
+Les opinions exprimées dans ce texte sont celles de l'auteur à titre personnel et n'engagent ni Crescendo Magazine, ni XXI Music Publishing, ni aucune des institutions auxquelles il est associé.
+
+**English.**
+
+Something is at stake, in the silence of the algorithms, and it deserves a closer look.
+
+For twenty years, musical prescription has shifted. The independent record shop has disappeared, the cultural pages of generalist newspapers have shrunk, specialised radio has lost its audience. What remains for discovering a composer, a performer, a label is essentially Spotify, Apple Music, YouTube and Tidal. The act of prescription, once carried by humans who loved what they were talking about, has been delegated to algorithmic recommendation systems designed to optimise listening time.
+
+For classical music and contemporary repertoires, this shift is particularly violent. Platform algorithms are calibrated on majority listening behaviours. They favour what is already listened to, already shared, already identified. They treat music as an undifferentiated flow and cheerfully confuse Vivaldi's Four Seasons recorded by fifty different ensembles, fail to distinguish a historically informed performance from a romantic version, cannot place a contemporary work within an aesthetic current. The patrimonial repertoire becomes back catalogue, and living creation never leaves the drawer in which it has been filed.
+
+One has only to look at the thematic playlists these platforms propose to grasp the scale of the problem. Classical Focus, Peaceful Piano, Calming Classical, Classical Essentials: titles that say it all. Classical music is treated as ambient wallpaper, a soundtrack for remote work or meditation, in which Bach sits beside Einaudi without transition, Mozart beside Max Richter, and Beethoven amid countless soothing reorchestrations of his Adagio. No narrative, no context, no hierarchy, no edge. Three thousand tracks in some obscure order, recalibrated never to surprise. This is the very negation of the musical gesture: to make heard what was not expected.
+
+To this editorial bias is added an economic one. Platform playlists massively over-value the back catalogues of the majors — Universal, Sony, Warner — for reasons that have nothing to do with musical quality and everything to do with commercial agreements and the weight of historical catalogues. A reissue of a Deutsche Grammophon recording from the 1970s will be systematically better exposed than a recent release on an independent label, even if that release is a major artistic event. For independent publishers and labels — those who take artistic risks, those who defend emerging works and performers — algorithmic visibility is a permanent and largely lost battle. And this applies to all composers: getting onto a Spotify playlist is infinitely easier with Philip Glass than with Messiaen or Gubaidulina, because Glass ticks every box of mainstream classical-contemporary taste (repetitive patterns, consonant harmony, immediate atmosphere), where Messiaen demands a constructed listening and Gubaidulina supposes a listener prepared to be unsettled. The algorithm favours what listens easily in the background. Anything requiring frontal attention is by construction disadvantaged.
+
+For women composers, the situation is worse still. When a platform opens, on the occasion of an international day, a playlist devoted to women, one most often finds the same five names — Hildegard of Bingen, Clara Schumann, Fanny Mendelssohn, Lili Boulanger, Kaija Saariaho — repeated on loop, as if the history of music by women came down to a waiting-room corpus. Where are Louise Farrenc, Cécile Chaminade, Mel Bonis, Augusta Holmès, Germaine Tailleferre, Grażyna Bacewicz, Sofia Gubaidulina, Unsuk Chin, Betsy Jolas? Present in the catalogue, yes, but invisible in the flow. Their work exists for those who know to look for it; it does not exist for those who want to be surprised. Here again, this is not a flaw of the algorithm: it is exactly what it was designed to do — recommend what is already recommended.
+
+The result is well known. A handful of ultra-visible composers and performers continue to circulate, the rest sinks into a long tail where no one goes looking. To optimise engagement is to optimise the return towards the already-known. No commercial platform has any interest in a listener spending three hours exploring Charles Koechlin or Galina Ustvolskaya — it generates neither replays, completions, nor viral shares. The system does what it was designed for, and it does it very well.
+
+Not everything is negative, however. Platforms have also made possible something the physical record never permitted: a truly worldwide diffusion, to the very ends of the earth. Looking at the streaming reports of an independent publisher, one finds listenings in Indonesia, Peru, Mongolia, Cape Verde — territories where no distributor would ever have physically delivered a chamber music recording of contemporary repertoire. Platforms have immensely enlarged the potential audience for confidential repertoires.
+
+But that diffusion remains passive. It does not create discovery, it reveals latent demand. If the listener in Ulaanbaatar has found Dusapin, it is because they were already looking for him, or because a human — a programmer, a journalist, a friend — recommended him beforehand. The platform allowed access, it did not arouse interest. The work of prescription remains to be done. And it is precisely the work that commercial algorithms will never do, because their economic logic goes in the opposite direction.
+
+This is precisely where artificial intelligence opens another path.
+
+AI, when placed in editorial hands and fed by structured databases, can do the exact inverse of commercial algorithms. It can weave links between heterogeneous sources — a manuscript, a scholarly article, a critical discography, a live recording, a festival notice, a review published ten years ago. It can compose itineraries that follow not the logic of engagement but that of reasoned discovery. If you love a particular Ravel quartet, here is how Caplet, Roussel, Ropartz extended that aesthetic. If you are discovering Lili Boulanger, here are the historical recordings that mattered, here are the contemporary readings worth hearing, here are the forgotten women composers of her generation that programmers are beginning to exhume. AI cannot do this alone. But fed by a serious editorial corpus and framed by human validation, it becomes a prescription tool of unprecedented power.
+
+This is exactly the ambition of Pauline, the music discovery application we are developing at Crescendo Magazine. Pauline does not seek to compete with Spotify on the terrain of the flow. It seeks to do what Spotify will never do: tell, contextualise, connect, draw works from oblivion by replacing them within their network of filiations and influences. Six hundred and five composers, men and women, are accessible there, a substantial portion of whom generate no significant advertising revenue and therefore have no chance of being recommended by a commercial system. Fourteen AI-assisted features make it possible to present a work, suggest complementary listenings, trace thematic itineraries, cross-reference a repertoire with upcoming concerts. This is not a revolution. It is simply cultivated prescription, as it existed before the platforms confiscated it, rendered possible again by a tool that publishers and critics can now appropriate.
+
+The stakes go beyond Pauline. We need to understand that discoverability — the word now used by cultural institutions to talk about this matter — is not a secondary technical question. It is one of the major cultural battles of the coming decade. If we let commercial platforms decide alone what is heard and what is not, we let entire swathes of our musical heritage and our living creation silently disappear. Not through prohibition, through invisibilisation. The worst kind of disappearance, because no one sees it.
+
+Publishers, critics, cultural institutions, mediators today have at their disposal a tool — artificial intelligence, framed, fed, validated — that allows them to produce prescription apparatuses of a quality unimaginable three years ago. It is an opportunity and a responsibility. If we do not seize it, commercial algorithms will go on shaping the listening of the next generations in their own image.
+
+Reviving the lesser-known is our craft. AI, well employed, becomes once again its instrument.
+
+— Pierre-Jean Tribot
+
+The views expressed in this essay are those of the author in a personal capacity and do not engage Crescendo Magazine, XXI Music Publishing, or any of the institutions with which he is associated.
+
+---
+
+### Le diplôme et le portfolio. Pourquoi la preuve directe remplace progressivement le titre.
+
+URL: https://pierrejeantribot.com/notes/#diplome-portfolio
+Date: mai 2026 / May 2026
+
+**Français.**
+
+Quelque chose se déplace, lentement mais sûrement, dans la manière dont les sociétés évaluent les compétences. Et l'intelligence artificielle, en accélérant brutalement le mouvement, oblige à le regarder en face.
+
+Pendant un siècle et demi, le diplôme universitaire a fonctionné comme un signal. Une institution certifiait qu'un individu avait suivi un cursus, satisfait à des examens, atteint un certain niveau. Les employeurs faisaient confiance à ce signal parce qu'il était difficile à truquer et coûteux à obtenir. Le diplôme était une promesse économique : tu fais des études, tu auras un poste qualifié. Ce contrat implicite a tenu, plus ou moins, jusqu'à la fin du vingtième siècle.
+
+Il est aujourd'hui largement rompu, et l'IA n'a fait que rendre la rupture visible.
+
+Plusieurs choses se sont passées simultanément. La massification de l'enseignement supérieur a dilué la valeur de signal du diplôme : quand cinquante pour cent d'une génération a un master, le master ne distingue plus personne. Les contenus de formation, dans beaucoup de filières, ont décroché de ce que demandent les employeurs réels. Et l'évaluation universitaire, par dissertation à domicile et par mémoires-fleuves, a fini par mesurer surtout la capacité à tenir un format académique, plus rarement la compétence opérationnelle.
+
+L'IA générative arrive dans ce paysage déjà fragilisé et joue le rôle d'accélérateur. Un étudiant en droit, en marketing, en communication, en histoire, en traduction se rend compte qu'une part substantielle de ce qu'on lui apprend, ChatGPT le fait déjà — souvent mieux, toujours plus vite. Pourquoi mémoriser, rédiger, compiler, lorsque la machine maîtrise mieux ces gestes ? La question n'est pas illégitime, et elle ronge silencieusement la motivation de toute une génération.
+
+Symétriquement, l'IA rend l'autoformation crédible pour la première fois dans l'histoire. Un jeune motivé peut apprendre à coder, à analyser des données, à monter une vidéo, à lancer un produit, avec une IA comme tuteur disponible vingt-quatre heures sur vingt-quatre. Ce qui demandait autrefois un encadrement humain rare et coûteux devient accessible à qui a la discipline. Pour certains profils — autonomes, structurés, débrouillards — l'université devient un détour inutile.
+
+Dans ce paysage en mutation, une autre forme de certification gagne discrètement du terrain : le portfolio.
+
+Le portfolio n'est pas une nouveauté. Les architectes, les graphistes, les photographes, les artistes en ont toujours produit un. Ce qui est neuf, c'est son extension à des métiers qui ne fonctionnaient pas ainsi. Aujourd'hui, dans le numérique, le journalisme, l'édition, le conseil, la communication, la médiation culturelle, la question posée par les recruteurs sérieux n'est plus seulement qu'avez-vous étudié ? mais qu'avez-vous produit ? La réponse à la première question se trouve dans un CV. La réponse à la seconde se trouve dans un site personnel, un dépôt GitHub, une chaîne podcast, une bibliographie en ligne, une série de publications datées et accessibles.
+
+La différence est cruciale. Le diplôme atteste d'un parcours administré par une institution. Le portfolio atteste d'une capacité de faire, démontrée par la chose faite. Le premier est déclaratif, le second est performatif. Le premier peut être obtenu par bachotage, conformisme et persévérance polie ; le second exige de produire, de publier, d'assumer une signature. C'est une autre exigence.
+
+Ce qui rend cette bascule possible aujourd'hui, c'est précisément l'IA. Avant elle, produire des choses concrètes demandait des moyens lourds : une rédaction qui vous publie, un studio qui vous embauche, un éditeur qui vous fait confiance. Maintenant, n'importe qui avec une bonne idée et de la discipline peut sortir un site, une application, une publication, un podcast, une analyse de données, un livre. La barrière à la production s'est effondrée, et avec elle l'argument selon lequel il fallait passer par une institution pour démontrer sa valeur. Ce qui distingue désormais, c'est la qualité de l'exécution et la cohérence du corpus produit.
+
+Le risque qu'il faut nommer, c'est l'inégalité. Construire un portfolio crédible demande du temps, des compétences techniques de base, une certaine aisance avec l'autopromotion, et un capital culturel qui permet de savoir ce qui mérite d'être montré. Ces ressources ne sont pas également distribuées. Le système académique, malgré tous ses défauts, offrait au moins une voie standardisée pour tous, lisible dans les pays et les milieux. Le portfolio est plus juste sur le contenu mais plus impitoyable sur la forme. Il favorise les autonomes débrouillards et désavantage ceux qui ont besoin d'un cadre. Il faudra, à un moment, que les institutions éducatives s'emparent de cette question — en intégrant la production de portfolio dans les cursus, en accompagnant les étudiants dans leur mise en visibilité — sous peine de creuser un fossé social que le diplôme avait, malgré tout, contribué à réduire.
+
+Mais l'évolution est déjà en cours, qu'elle soit accompagnée ou non. Les recruteurs du numérique ne regardent quasiment plus le CV ; ils regardent GitHub, le site personnel, les publications. Cela s'étend progressivement au journalisme, au design, à la communication, à une partie du conseil et à toute la médiation culturelle. Pour les institutions universitaires, deux scénarios se dessinent. Soit elles intègrent la logique du portfolio dans leurs cursus et leurs évaluations — projets capstone, mémoires-publications, soutenances ouvertes au public, partenariats avec les structures professionnelles —, et elles restent des opérateurs de formation pertinents. Soit elles continuent à produire des diplômes désincarnés, et elles deviendront ce que sont devenues certaines administrations : des institutions qui distribuent des titres dont le marché ne sait plus que faire.
+
+La recommandation la plus juste qu'on puisse formuler aujourd'hui, à l'intention des étudiants et de ceux qui les conseillent, est de faire les deux. Suivre le cursus parce qu'il continue d'ouvrir des portes formelles et qu'il fournit des cadres, mais construire en parallèle un portfolio dès la première année. Publier des analyses, tenir un blog ou un podcast, contribuer à des projets en ligne, monter ses propres dispositifs avec les outils IA disponibles. À la fin du cursus, le diplôme est dans la poche et la preuve de ce qu'on sait faire est publiquement accessible. Cette accumulation parallèle est probablement la chose la plus utile qu'un étudiant puisse construire aujourd'hui, parce qu'elle anticipe le monde qui vient sans renoncer à celui qui finit.
+
+L'IA n'a pas créé cette situation. Elle l'a rendue inévitable et lisible. La preuve directe, quand elle devient accessible, finit toujours par remplacer la promesse certifiée.
+
+— Pierre-Jean Tribot
+
+Les opinions exprimées dans ce texte sont celles de l'auteur à titre personnel et n'engagent ni Crescendo Magazine, ni XXI Music Publishing, ni aucune des institutions auxquelles il est associé.
+
+**English.**
+
+Something is shifting, slowly but surely, in the way societies evaluate competence. And artificial intelligence, by sharply accelerating the movement, forces us to look at it directly.
+
+For a century and a half, the university degree functioned as a signal. An institution certified that an individual had followed a curriculum, satisfied examinations, reached a certain level. Employers trusted this signal because it was difficult to fake and costly to obtain. The diploma was an economic promise: study, and you will have a qualified position. This implicit contract held, more or less, until the end of the twentieth century.
+
+It is now largely broken, and AI has merely made the rupture visible.
+
+Several things happened simultaneously. The massification of higher education diluted the diploma's signal value: when fifty percent of a generation has a master's, the master's no longer distinguishes anyone. The contents of training, in many fields, drifted away from what real employers actually require. And university evaluation, through take-home essays and lengthy theses, ended up measuring above all the capacity to maintain an academic format, far less often operational competence.
+
+Generative AI arrives in this already fragile landscape and plays the role of accelerator. A student in law, marketing, communication, history, translation realises that a substantial part of what is taught, ChatGPT does already — often better, always faster. Why memorise, write, compile, when the machine handles these gestures more skilfully? The question is not illegitimate, and it silently erodes the motivation of an entire generation.
+
+Symmetrically, AI makes self-learning credible for the first time in history. A motivated young person can learn to code, analyse data, edit video, launch a product, with AI as a tutor available twenty-four hours a day. What once required rare and expensive human supervision becomes accessible to those with discipline. For certain profiles — autonomous, structured, resourceful — university becomes an unnecessary detour.
+
+In this shifting landscape, another form of certification is quietly gaining ground: the portfolio.
+
+The portfolio is not new. Architects, graphic designers, photographers, artists have always produced one. What is new is its extension to professions that did not work this way. Today, in technology, journalism, publishing, consulting, communication, cultural mediation, the question serious recruiters ask is no longer only what did you study? but what have you produced? The answer to the first question is found in a CV. The answer to the second is found in a personal website, a GitHub repository, a podcast feed, an online bibliography, a series of dated and accessible publications.
+
+The difference is crucial. The diploma attests to a path administered by an institution. The portfolio attests to a capacity to make, demonstrated by the thing made. The first is declarative, the second is performative. The first can be obtained through cramming, conformity and polite perseverance; the second requires producing, publishing, owning a signature. It is another order of demand.
+
+What makes this shift possible today is precisely AI. Before it, producing concrete things required heavy resources: a publication that publishes you, a studio that hires you, a publisher who trusts you. Now, anyone with a good idea and discipline can put out a website, an application, a publication, a podcast, a data analysis, a book. The barrier to production has collapsed, and with it the argument that one had to pass through an institution to demonstrate one's value. What now distinguishes is the quality of execution and the coherence of the corpus produced.
+
+The risk that must be named is inequality. Building a credible portfolio requires time, basic technical skills, a certain ease with self-promotion, and the cultural capital to know what is worth showing. These resources are not equally distributed. The academic system, despite all its flaws, at least offered a standardised path for all, legible across countries and milieus. The portfolio is fairer on content but more unforgiving on form. It favours resourceful self-starters and disadvantages those who need a frame. Educational institutions will need, at some point, to take up this question — by integrating portfolio production into curricula, by supporting students in their public visibility — lest they widen a social gap that the diploma had, despite everything, helped to narrow.
+
+But the evolution is already underway, supported or not. Tech recruiters scarcely look at the CV any more; they look at GitHub, the personal website, the publications. This is gradually extending to journalism, design, communication, parts of consulting and all of cultural mediation. For universities, two scenarios are taking shape. Either they integrate the portfolio's logic into their curricula and evaluations — capstone projects, dissertation-publications, public defences, partnerships with professional structures — and they remain relevant training operators. Or they continue to produce disembodied diplomas, and they will become what certain administrations have become: institutions distributing titles the market no longer knows what to do with.
+
+The fairest recommendation one can make today, addressed to students and those who advise them, is to do both. Follow the curriculum because it continues to open formal doors and provides frames, but build a portfolio in parallel from the first year. Publish analyses, keep a blog or a podcast, contribute to online projects, build one's own setups with the AI tools now available. By the end of the curriculum, the diploma is in hand and the proof of capability is publicly accessible. This parallel accumulation is probably the most useful thing a student can build today, because it anticipates the world that is coming without renouncing the one that is ending.
+
+AI did not create this situation. It made it inevitable and legible. Direct evidence, once it becomes accessible, always ends up replacing the certified promise.
+
+— Pierre-Jean Tribot
+
+The views expressed in this essay are those of the author in a personal capacity and do not engage Crescendo Magazine, XXI Music Publishing, or any of the institutions with which he is associated.
+
+---
+
+### La programmation et la donnée. Pourquoi une saison peut rester invisible.
+
+URL: https://pierrejeantribot.com/notes/#programmation-donnee
+Date: mai 2026 / May 2026
+
+**Français.**
+
+Il y a une question que les institutions culturelles ne se posent presque jamais, et qui décide pourtant d'une part croissante de leur visibilité : leur programmation est-elle lisible par une machine ?
+
+La question paraît technique, secondaire, vaguement absurde. Elle ne l'est pas. Pour le comprendre, il faut partir d'une expérience concrète. En construisant l'Agenda Crescendo — un agenda des concerts de musique classique à l'échelle de la Belgique et de l'Eurorégion —, nous avons dû aller chercher, une à une, les programmations de dizaines de salles, d'orchestres, d'opéras, de festivals. Non pas les consulter à l'œil, comme le ferait un visiteur, mais les récupérer : extraire des dates, des lieux, des programmes, des distributions, sous une forme exploitable par un système automatisé. Et c'est là que le paysage s'est révélé, avec une netteté que nous n'avions pas anticipée.
+
+D'un côté, des institutions dont les données sont accessibles, structurées, ouvertes. Leur programmation est balisée correctement, exposée dans des formats standards, parfois assortie d'un flux que n'importe quel tiers peut reprendre. Ces maisons-là sont lisibles : un agrégateur les trouve, un moteur les indexe, et demain un assistant conversationnel saura les citer. De l'autre côté, des institutions tout aussi sérieuses, tout aussi actives, dont les données sont — pour des raisons purement techniques — quasiment inatteignables. Programmation enfermée dans des pages qui ne se laissent pas lire, information dispersée, aucun flux, aucune structure. Ces maisons-là existent pour le visiteur qui connaît déjà leur site et tape leur nom. Elles n'existent pas pour celui qui cherche autrement.
+
+Il faut insister sur un point, parce qu'il est contre-intuitif : cette fracture n'a presque rien à voir avec les moyens. Ce n'est pas une affaire de gros budgets contre petits budgets. Des institutions modestes exposent des données impeccables ; des maisons considérables restent opaques. La ligne de partage ne passe pas par la richesse, elle passe par une chose plus simple et plus rare — quelqu'un, à un moment, s'est posé la question. Quelqu'un a pensé que la programmation n'était pas seulement une page à afficher, mais une donnée à exposer.
+
+Pourquoi cela devient-il un enjeu maintenant, alors que ça ne l'était pas il y a dix ans ? Parce que la manière dont le public accède à l'information culturelle est en train de changer de nature. Pendant vingt ans, on a cherché des concerts en tapant des mots dans un moteur, qui renvoyait vers des sites. Le site était la destination. Ce modèle est en train d'être doublé par un autre : on pose une question à un assistant — quels concerts de musique baroque à Bruxelles cette semaine ? — et l'assistant répond directement, en synthétisant des sources. Dans ce nouveau régime, l'institution n'est plus une destination qu'on visite, elle est une source qu'on cite — ou qu'on ne cite pas. Et l'assistant ne peut citer que ce qu'il peut lire. Une programmation qu'aucun système ne parvient à interpréter ne sera pas mal classée dans la réponse : elle en sera absente. Ce n'est pas une pénalité, c'est une disparition.
+
+C'est exactement le mécanisme que j'ai décrit ailleurs à propos des plateformes de streaming et de la prescription musicale — l'invisibilisation silencieuse, celle que personne ne voit parce qu'il n'y a rien à voir. Mais le versant institutionnel est, d'une certaine manière, plus injuste encore. Un compositeur peu écouté sur Spotify a au moins été versé au catalogue ; sa relative invisibilité tient à un algorithme de recommandation. Une institution dont les données ne sont pas lisibles, elle, ne franchit même pas la première porte. Son travail de programmation — souvent excellent, souvent courageux — ne devient jamais une information disponible. Le geste culturel a eu lieu ; il n'a pas laissé de trace exploitable.
+
+Le secteur a commencé à nommer ce sujet. On parle désormais de découvrabilité — la capacité d'une œuvre, d'un artiste, d'une institution à être trouvée par quelqu'un qui ne la cherchait pas nommément. Le mot est utile parce qu'il déplace le problème : il ne s'agit plus de communication, de marketing, de communauté, mais d'infrastructure. La découvrabilité ne se gagne pas en publiant davantage ; elle se gagne en rendant ce qu'on publie interprétable. C'est une différence de nature, et elle est mal comprise, parce qu'elle relève d'un savoir-faire qui n'appartient ni tout à fait à la communication, ni tout à fait à la technique, et qui tombe donc, le plus souvent, entre les chaises.
+
+Que faudrait-il ? Rien d'inaccessible, et c'est ce qui rend la situation presque frustrante. Exposer sa programmation dans des formats standards. Structurer l'information d'un événement — date, lieu, programme, distribution — de façon qu'une machine la comprenne sans avoir à la deviner. Proposer un flux que les agrégateurs et les agendas tiers peuvent reprendre. Veiller à ce que les pages soient techniquement lisibles, et pas seulement visuellement réussies. Aucune de ces opérations n'est hors de portée. Ce qui manque, ce ne sont pas les moyens ni les outils — c'est la conscience que le problème existe, et qu'il relève d'une responsabilité.
+
+Car c'en est une. Une institution culturelle financée pour faire vivre un patrimoine et soutenir la création a, parmi ses missions implicites, celle de rendre ce travail trouvable. Une saison que personne ne peut découvrir n'a pas tout à fait eu lieu. À l'heure où les intermédiaires deviennent algorithmiques, la lisibilité numérique d'une programmation n'est pas un supplément technique : c'est la condition pour que le travail accompli existe au-delà du cercle de ceux qui le connaissaient déjà.
+
+L'agenda que nous avons construit n'avait pas pour objet de dresser ce constat. Il l'a rendu visible par accident, simplement parce qu'il fallait, pour le faire fonctionner, lire ce que les institutions exposent réellement. Ce que cette lecture a montré, c'est qu'une part du secteur a déjà franchi le pas, et qu'une autre part — sans le savoir, sans mauvaise volonté — laisse son travail s'effacer du champ de ce qui est trouvable. La bonne nouvelle, c'est que rien n'est irréversible. La découvrabilité se construit. Encore faut-il avoir vu qu'elle se perd.
+
+— Pierre-Jean Tribot
+
+Les opinions exprimées dans ce texte sont celles de l'auteur à titre personnel et n'engagent ni Crescendo Magazine, ni XXI Music Publishing, ni aucune des institutions auxquelles il est associé.
+
+**English.**
+
+There is a question cultural institutions almost never ask themselves, and which nonetheless decides a growing share of their visibility: is their programming legible to a machine?
+
+The question seems technical, secondary, vaguely absurd. It is not. To understand why, one has to start from a concrete experience. In building the Agenda Crescendo — a listing of classical music concerts across Belgium and the Euroregion — we had to go and gather, one by one, the programmes of dozens of venues, orchestras, opera houses, festivals. Not to consult them by eye, as a visitor would, but to retrieve them: to extract dates, places, programmes, casts, in a form an automated system could use. And that is where the landscape revealed itself, with a sharpness we had not anticipated.
+
+On one side, institutions whose data is accessible, structured, open. Their programming is properly marked up, exposed in standard formats, sometimes accompanied by a feed any third party can pick up. These houses are legible: an aggregator finds them, a search engine indexes them, and tomorrow a conversational assistant will be able to cite them. On the other side, institutions every bit as serious, every bit as active, whose data is — for purely technical reasons — virtually unreachable. Programming locked inside pages that resist reading, scattered information, no feed, no structure. These houses exist for the visitor who already knows their site and types their name. They do not exist for the one who searches otherwise.
+
+One point must be stressed, because it is counter-intuitive: this divide has almost nothing to do with resources. It is not a matter of large budgets against small ones. Modest institutions expose impeccable data; substantial houses remain opaque. The dividing line does not run through wealth, it runs through something simpler and rarer — someone, at some point, asked the question. Someone thought that programming was not only a page to display, but data to expose.
+
+Why does this become an issue now, when it was not one ten years ago? Because the way the public accesses cultural information is changing in nature. For twenty years, one looked for concerts by typing words into a search engine, which returned sites. The site was the destination. That model is now being doubled by another: one asks an assistant a question — which baroque concerts in Brussels this week? — and the assistant answers directly, synthesising sources. In this new regime, the institution is no longer a destination one visits, it is a source one cites — or does not cite. And the assistant can only cite what it can read. Programming that no system manages to interpret will not be ranked low in the answer: it will be absent from it. This is not a penalty, it is a disappearance.
+
+It is exactly the mechanism I have described elsewhere with regard to streaming platforms and musical prescription — silent invisibilisation, the kind no one sees because there is nothing to see. But the institutional side is, in a way, more unjust still. A composer little listened to on Spotify has at least been entered into the catalogue; their relative invisibility is the work of a recommendation algorithm. An institution whose data is not legible does not even pass the first door. Its programming work — often excellent, often courageous — never becomes available information. The cultural gesture took place; it left no usable trace.
+
+The sector has begun to name this matter. We now speak of discoverability — the capacity of a work, an artist, an institution to be found by someone who was not looking for it by name. The word is useful because it shifts the problem: it is no longer about communication, marketing, community, but about infrastructure. Discoverability is not won by publishing more; it is won by making what one publishes interpretable. It is a difference in kind, and it is poorly understood, because it belongs to a know-how that is neither quite communication nor quite technology, and therefore falls, most often, between the chairs.
+
+What would it take? Nothing out of reach, and that is what makes the situation almost frustrating. Exposing one's programming in standard formats. Structuring the information of an event — date, place, programme, cast — so that a machine understands it without having to guess. Offering a feed that aggregators and third-party listings can pick up. Ensuring that pages are technically legible, not only visually accomplished. None of these operations is beyond reach. What is missing is not the means or the tools — it is the awareness that the problem exists, and that it is a responsibility.
+
+For a responsibility it is. A cultural institution funded to keep a heritage alive and to support creation has, among its implicit missions, that of making this work findable. A season no one can discover has not quite taken place. At a time when intermediaries are becoming algorithmic, the digital legibility of a programme is not a technical supplement: it is the condition for the work accomplished to exist beyond the circle of those who already knew it.
+
+The listing we built was not meant to draw this conclusion. It made it visible by accident, simply because making it work required reading what institutions actually expose. What that reading showed is that part of the sector has already taken the step, and that another part — unknowingly, with no ill will — is letting its work fade from the field of what is findable. The good news is that nothing is irreversible. Discoverability can be built. One must first have seen that it can be lost.
+
+— Pierre-Jean Tribot
+
+The views expressed in this essay are those of the author in a personal capacity and do not engage Crescendo Magazine, XXI Music Publishing, or any of the institutions with which he is associated.
+
+---
 
 ## Contact
 
