@@ -117,6 +117,15 @@ Type: Outils éditoriaux / Editorial tools
 
 **English.** Suite of in-house tools developed for the Crescendo Magazine editorial team: podcast script generation, news brief translation, in-house CD review templates, SEO metadata, newsletter composition. Direct browser access to the Anthropic API, specialised prompts per editorial task.
 
+### 08 — Agenda Crescendo
+
+URL: https://agenda-crescendo.vercel.app/
+Type: Agenda concertant / Concert listings
+
+**Français.** Agenda des concerts de musique classique en Belgique et dans l'Eurorégion — France, Luxembourg, Pays-Bas. Plus de deux mille deux cents concerts agrégés depuis quarante-quatre sources, répartis dans quatre-vingts salles, avec carte interactive, filtres par pays, ville, mois, compositeur et festival, fiches détaillées et module statistique de lecture éditoriale du paysage. Architecture en page unique, agrégation automatisée des programmations institutionnelles ; le projet a mis au jour la disparité des données de programmation selon les institutions, posant la découvrabilité comme enjeu culturel.
+
+**English.** A listing of classical music concerts across Belgium and the Euroregion — France, Luxembourg, the Netherlands. More than two thousand two hundred concerts aggregated from forty-four sources, across eighty venues, with an interactive map, filters by country, city, month, composer and festival, detailed listings and a statistical module offering an editorial reading of the landscape. Single-page architecture, automated aggregation of institutional programming; the project brought to light the disparity in programming data from one institution to another, posing discoverability as a cultural issue.
+
 ---
 
 ## Notes éditoriales / Editorial notes
@@ -268,6 +277,65 @@ But the evolution is already underway, supported or not. Tech recruiters scarcel
 The fairest recommendation one can make today, addressed to students and those who advise them, is to do both. Follow the curriculum because it continues to open formal doors and provides frames, but build a portfolio in parallel from the first year. Publish analyses, keep a blog or a podcast, contribute to online projects, build one's own setups with the AI tools now available. By the end of the curriculum, the diploma is in hand and the proof of capability is publicly accessible. This parallel accumulation is probably the most useful thing a student can build today, because it anticipates the world that is coming without renouncing the one that is ending.
 
 AI did not create this situation. It made it inevitable and legible. Direct evidence, once it becomes accessible, always ends up replacing the certified promise.
+
+— Pierre-Jean Tribot
+
+The views expressed in this essay are those of the author in a personal capacity and do not engage Crescendo Magazine, XXI Music Publishing, or any of the institutions with which he is associated.
+
+---
+
+### La programmation et la donnée. Pourquoi une saison peut rester invisible.
+
+URL: https://pierrejeantribot.com/notes/#programmation-donnee
+Date: mai 2026 / May 2026
+
+**Français.**
+
+Il y a une question que les institutions culturelles ne se posent presque jamais, et qui décide pourtant d'une part croissante de leur visibilité : leur programmation est-elle lisible par une machine ?
+
+La question paraît technique, secondaire, vaguement absurde. Elle ne l'est pas. Pour le comprendre, il faut partir d'une expérience concrète. En construisant l'Agenda Crescendo — un agenda des concerts de musique classique à l'échelle de la Belgique et de l'Eurorégion —, nous avons dû aller chercher, une à une, les programmations de dizaines de salles, d'orchestres, d'opéras, de festivals. Non pas les consulter à l'œil, comme le ferait un visiteur, mais les récupérer : extraire des dates, des lieux, des programmes, des distributions, sous une forme exploitable par un système automatisé. Et c'est là que le paysage s'est révélé, avec une netteté que nous n'avions pas anticipée.
+
+D'un côté, des institutions dont les données sont accessibles, structurées, ouvertes. Leur programmation est balisée correctement, exposée dans des formats standards, parfois assortie d'un flux que n'importe quel tiers peut reprendre. Ces maisons-là sont lisibles : un agrégateur les trouve, un moteur les indexe, et demain un assistant conversationnel saura les citer. De l'autre côté, des institutions tout aussi sérieuses, tout aussi actives, dont les données sont — pour des raisons purement techniques — quasiment inatteignables. Programmation enfermée dans des pages qui ne se laissent pas lire, information dispersée, aucun flux, aucune structure. Ces maisons-là existent pour le visiteur qui connaît déjà leur site et tape leur nom. Elles n'existent pas pour celui qui cherche autrement.
+
+Il faut insister sur un point, parce qu'il est contre-intuitif : cette fracture n'a presque rien à voir avec les moyens. Ce n'est pas une affaire de gros budgets contre petits budgets. Des institutions modestes exposent des données impeccables ; des maisons considérables restent opaques. La ligne de partage ne passe pas par la richesse, elle passe par une chose plus simple et plus rare — quelqu'un, à un moment, s'est posé la question. Quelqu'un a pensé que la programmation n'était pas seulement une page à afficher, mais une donnée à exposer.
+
+Pourquoi cela devient-il un enjeu maintenant, alors que ça ne l'était pas il y a dix ans ? Parce que la manière dont le public accède à l'information culturelle est en train de changer de nature. Pendant vingt ans, on a cherché des concerts en tapant des mots dans un moteur, qui renvoyait vers des sites. Le site était la destination. Ce modèle est en train d'être doublé par un autre : on pose une question à un assistant — quels concerts de musique baroque à Bruxelles cette semaine ? — et l'assistant répond directement, en synthétisant des sources. Dans ce nouveau régime, l'institution n'est plus une destination qu'on visite, elle est une source qu'on cite — ou qu'on ne cite pas. Et l'assistant ne peut citer que ce qu'il peut lire. Une programmation qu'aucun système ne parvient à interpréter ne sera pas mal classée dans la réponse : elle en sera absente. Ce n'est pas une pénalité, c'est une disparition.
+
+C'est exactement le mécanisme que j'ai décrit ailleurs à propos des plateformes de streaming et de la prescription musicale — l'invisibilisation silencieuse, celle que personne ne voit parce qu'il n'y a rien à voir. Mais le versant institutionnel est, d'une certaine manière, plus injuste encore. Un compositeur peu écouté sur Spotify a au moins été versé au catalogue ; sa relative invisibilité tient à un algorithme de recommandation. Une institution dont les données ne sont pas lisibles, elle, ne franchit même pas la première porte. Son travail de programmation — souvent excellent, souvent courageux — ne devient jamais une information disponible. Le geste culturel a eu lieu ; il n'a pas laissé de trace exploitable.
+
+Le secteur a commencé à nommer ce sujet. On parle désormais de découvrabilité — la capacité d'une œuvre, d'un artiste, d'une institution à être trouvée par quelqu'un qui ne la cherchait pas nommément. Le mot est utile parce qu'il déplace le problème : il ne s'agit plus de communication, de marketing, de communauté, mais d'infrastructure. La découvrabilité ne se gagne pas en publiant davantage ; elle se gagne en rendant ce qu'on publie interprétable. C'est une différence de nature, et elle est mal comprise, parce qu'elle relève d'un savoir-faire qui n'appartient ni tout à fait à la communication, ni tout à fait à la technique, et qui tombe donc, le plus souvent, entre les chaises.
+
+Que faudrait-il ? Rien d'inaccessible, et c'est ce qui rend la situation presque frustrante. Exposer sa programmation dans des formats standards. Structurer l'information d'un événement — date, lieu, programme, distribution — de façon qu'une machine la comprenne sans avoir à la deviner. Proposer un flux que les agrégateurs et les agendas tiers peuvent reprendre. Veiller à ce que les pages soient techniquement lisibles, et pas seulement visuellement réussies. Aucune de ces opérations n'est hors de portée. Ce qui manque, ce ne sont pas les moyens ni les outils — c'est la conscience que le problème existe, et qu'il relève d'une responsabilité.
+
+Car c'en est une. Une institution culturelle financée pour faire vivre un patrimoine et soutenir la création a, parmi ses missions implicites, celle de rendre ce travail trouvable. Une saison que personne ne peut découvrir n'a pas tout à fait eu lieu. À l'heure où les intermédiaires deviennent algorithmiques, la lisibilité numérique d'une programmation n'est pas un supplément technique : c'est la condition pour que le travail accompli existe au-delà du cercle de ceux qui le connaissaient déjà.
+
+L'agenda que nous avons construit n'avait pas pour objet de dresser ce constat. Il l'a rendu visible par accident, simplement parce qu'il fallait, pour le faire fonctionner, lire ce que les institutions exposent réellement. Ce que cette lecture a montré, c'est qu'une part du secteur a déjà franchi le pas, et qu'une autre part — sans le savoir, sans mauvaise volonté — laisse son travail s'effacer du champ de ce qui est trouvable. La bonne nouvelle, c'est que rien n'est irréversible. La découvrabilité se construit. Encore faut-il avoir vu qu'elle se perd.
+
+— Pierre-Jean Tribot
+
+Les opinions exprimées dans ce texte sont celles de l'auteur à titre personnel et n'engagent ni Crescendo Magazine, ni XXI Music Publishing, ni aucune des institutions auxquelles il est associé.
+
+**English.**
+
+There is a question cultural institutions almost never ask themselves, and which nonetheless decides a growing share of their visibility: is their programming legible to a machine?
+
+The question seems technical, secondary, vaguely absurd. It is not. To understand why, one has to start from a concrete experience. In building the Agenda Crescendo — a listing of classical music concerts across Belgium and the Euroregion — we had to go and gather, one by one, the programmes of dozens of venues, orchestras, opera houses, festivals. Not to consult them by eye, as a visitor would, but to retrieve them: to extract dates, places, programmes, casts, in a form an automated system could use. And that is where the landscape revealed itself, with a sharpness we had not anticipated.
+
+On one side, institutions whose data is accessible, structured, open. Their programming is properly marked up, exposed in standard formats, sometimes accompanied by a feed any third party can pick up. These houses are legible: an aggregator finds them, a search engine indexes them, and tomorrow a conversational assistant will be able to cite them. On the other side, institutions every bit as serious, every bit as active, whose data is — for purely technical reasons — virtually unreachable. Programming locked inside pages that resist reading, scattered information, no feed, no structure. These houses exist for the visitor who already knows their site and types their name. They do not exist for the one who searches otherwise.
+
+One point must be stressed, because it is counter-intuitive: this divide has almost nothing to do with resources. It is not a matter of large budgets against small ones. Modest institutions expose impeccable data; substantial houses remain opaque. The dividing line does not run through wealth, it runs through something simpler and rarer — someone, at some point, asked the question. Someone thought that programming was not only a page to display, but data to expose.
+
+Why does this become an issue now, when it was not one ten years ago? Because the way the public accesses cultural information is changing in nature. For twenty years, one looked for concerts by typing words into a search engine, which returned sites. The site was the destination. That model is now being doubled by another: one asks an assistant a question — which baroque concerts in Brussels this week? — and the assistant answers directly, synthesising sources. In this new regime, the institution is no longer a destination one visits, it is a source one cites — or does not cite. And the assistant can only cite what it can read. Programming that no system manages to interpret will not be ranked low in the answer: it will be absent from it. This is not a penalty, it is a disappearance.
+
+It is exactly the mechanism I have described elsewhere with regard to streaming platforms and musical prescription — silent invisibilisation, the kind no one sees because there is nothing to see. But the institutional side is, in a way, more unjust still. A composer little listened to on Spotify has at least been entered into the catalogue; their relative invisibility is the work of a recommendation algorithm. An institution whose data is not legible does not even pass the first door. Its programming work — often excellent, often courageous — never becomes available information. The cultural gesture took place; it left no usable trace.
+
+The sector has begun to name this matter. We now speak of discoverability — the capacity of a work, an artist, an institution to be found by someone who was not looking for it by name. The word is useful because it shifts the problem: it is no longer about communication, marketing, community, but about infrastructure. Discoverability is not won by publishing more; it is won by making what one publishes interpretable. It is a difference in kind, and it is poorly understood, because it belongs to a know-how that is neither quite communication nor quite technology, and therefore falls, most often, between the chairs.
+
+What would it take? Nothing out of reach, and that is what makes the situation almost frustrating. Exposing one's programming in standard formats. Structuring the information of an event — date, place, programme, cast — so that a machine understands it without having to guess. Offering a feed that aggregators and third-party listings can pick up. Ensuring that pages are technically legible, not only visually accomplished. None of these operations is beyond reach. What is missing is not the means or the tools — it is the awareness that the problem exists, and that it is a responsibility.
+
+For a responsibility it is. A cultural institution funded to keep a heritage alive and to support creation has, among its implicit missions, that of making this work findable. A season no one can discover has not quite taken place. At a time when intermediaries are becoming algorithmic, the digital legibility of a programme is not a technical supplement: it is the condition for the work accomplished to exist beyond the circle of those who already knew it.
+
+The listing we built was not meant to draw this conclusion. It made it visible by accident, simply because making it work required reading what institutions actually expose. What that reading showed is that part of the sector has already taken the step, and that another part — unknowingly, with no ill will — is letting its work fade from the field of what is findable. The good news is that nothing is irreversible. Discoverability can be built. One must first have seen that it can be lost.
 
 — Pierre-Jean Tribot
 
