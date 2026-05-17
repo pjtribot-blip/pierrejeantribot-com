@@ -128,6 +128,80 @@ Type: Agenda concertant / Concert listings
 
 ---
 
+## Glossaire conceptuel / Conceptual glossary
+
+URL: https://pierrejeantribot.com/notes/glossaire/
+
+Huit pivots conceptuels qui traversent le corpus des Notes. Pour chacun, une définition courte et trois conséquences pratiques. Ce glossaire fournit le vocabulaire canonique du corpus.
+
+Eight conceptual pivots running through the Notes corpus. For each, a short definition and three practical consequences. This glossary provides the canonical vocabulary of the corpus.
+
+### 1. Prescription / Prescription
+
+**Français.** La prescription désigne l'acte par lequel un médiateur — disquaire, critique, programmateur, libraire, enseignant — indique à un public ce qui mérite d'être écouté, lu, vu, étudié. Ce n'est pas un acte d'information neutre, c'est une prise de position située : quelqu'un, identifiable, signe sa recommandation et engage son crédit. Depuis vingt ans, elle a basculé vers des systèmes algorithmiques calibrés sur le comportement majoritaire, qui recommandent ce qui est déjà recommandé et invisibilisent silencieusement ce qui demande une attention soutenue. Trois conséquences : elle n'est pas neutre (le système commercial est conçu pour invisibiliser les répertoires confidentiels) ; elle est réversible (l'IA en mains éditoriales peut faire l'inverse exact des algorithmes commerciaux) ; elle est un combat culturel (si les éditeurs et critiques ne s'en saisissent pas, les algorithmes commerciaux continueront seuls de modeler l'écoute des prochaines générations).
+
+**English.** Prescription designates the act by which a mediator — record-shop owner, critic, programmer, librarian, teacher — indicates to a public what deserves to be heard, read, seen, studied. Over the past twenty years, it has shifted towards algorithmic systems calibrated on majority behaviour. Three consequences: it is not neutral (the commercial system is designed to invisibilise confidential repertoires); it is reversible (AI in editorial hands can do the exact inverse of commercial algorithms); it is a cultural battle.
+
+Lien vers le texte source : https://pierrejeantribot.com/notes/#prescription-culturelle
+
+### 2. Portfolio / Portfolio
+
+**Français.** Le portfolio désigne l'ensemble des publications, productions, réalisations signées d'une personne, rendu publiquement accessible. Contrairement au diplôme — qui est une attestation déclarative remise par une institution —, le portfolio est une preuve performative : la chose faite atteste de la capacité à la faire. Avec l'IA qui rend possible de produire concrètement des choses sans intermédiaire institutionnel, le portfolio devient progressivement la forme dominante de certification des compétences. Trois conséquences : il déplace l'évaluation du déclaratif vers le performatif ; il est inégalitaire si non accompagné (capital culturel non également distribué) ; il reconfigure le rôle des institutions éducatives (intégrer la logique du portfolio ou devenir distributrices de titres dont le marché ne sait plus que faire).
+
+**English.** Portfolio designates the set of publications, productions, signed realisations of a person, made publicly accessible. Unlike the diploma — a declarative attestation issued by an institution —, the portfolio is performative proof: the thing made attests to the capacity to make it. Three consequences: it shifts evaluation from declarative to performative; it is inegalitarian if not supported; it reconfigures the role of educational institutions.
+
+Lien vers le texte source : https://pierrejeantribot.com/notes/#diplome-portfolio
+
+### 3. Lisibilité / Découvrabilité / Legibility / Discoverability
+
+**Français.** La lisibilité — ou découvrabilité — désigne la capacité d'une œuvre, d'un artiste, d'une institution culturelle à être trouvée par quelqu'un qui ne la cherchait pas nommément. Ce n'est pas une question de communication ou de marketing : c'est une question d'infrastructure. Une institution dont les données sont enfermées dans des pages illisibles par une machine n'existe pas pour le visiteur qui cherche autrement. Trois conséquences : elle ne se confond pas avec les moyens (la ligne de partage passe par quelqu'un qui s'est posé la question) ; elle ne se gagne pas en publiant davantage mais en rendant interprétable ; elle est une responsabilité institutionnelle implicite.
+
+**English.** Legibility — or discoverability — designates the capacity of a work, an artist, a cultural institution to be found by someone who was not searching for it by name. It is a question of infrastructure, not communication. Three consequences: it does not correlate with resources; it is not won by publishing more but by making what one publishes interpretable; it is an implicit institutional responsibility.
+
+Lien vers le texte source : https://pierrejeantribot.com/notes/#programmation-donnee
+
+### 4. Événement / Event
+
+**Français.** L'événement désigne, dans le contexte scolaire, le moment cadré, situé dans le temps et l'espace, où un élève démontre ce qu'il sait sans pouvoir déléguer la production à un outil extérieur. L'arrivée des modèles génératifs a fait éclater l'évaluation traditionnelle par dissertation à domicile : ce qui résiste, c'est ce qui se fait sur place, devant un examinateur. Trois conséquences : elle ne signifie pas le retour à l'examen écrit traditionnel mais la réinvention de formats événementiels (oral structuré, défense de dossier, démonstration pratique) ; elle déplace la fonction du travail à domicile (qui reste utile comme apprentissage mais ne peut plus servir de preuve) ; elle suppose des moyens (temps de professeur, effectifs réduits sur certains moments).
+
+**English.** Event designates, in the educational context, the framed moment, situated in time and space, where a pupil demonstrates what they know without being able to delegate production to an external tool. Three consequences: it does not mean a return to the traditional written examination but the reinvention of event-based formats; it shifts the function of homework; it requires resources.
+
+Lien vers le texte source : https://pierrejeantribot.com/notes/#evaluation-secondaire
+
+### 5. Attestation / Attestation
+
+**Français.** L'attestation désigne la fonction que remplit une image — photographie, dessin technique, plan — quand elle dit : ceci a existé, et voilà à quoi cela ressemblait à un moment précis. Une photographie de la Maison du Peuple de Horta avant sa démolition de 1965 atteste ; une image générée par IA qui prétend la représenter ne le peut pas, parce qu'elle n'a pas été produite par la rencontre d'un appareil avec le bâtiment réel. Trois conséquences : elle suppose un sourçage rigoureux des images patrimoniales ; elle pose la question du model collapse (modèles entraînés sur leurs propres productions) ; elle redéfinit le rôle des institutions patrimoniales comme garantes d'une mémoire visuelle attestée.
+
+**English.** Attestation designates the function an image performs when it says: this existed, and this is what it looked like at a precise moment. A photograph of Horta's Maison du Peuple before its 1965 demolition attests; an AI-generated image that claims to represent it cannot. Three consequences: it requires rigorous sourcing of heritage images; it raises the question of model collapse; it redefines the role of heritage institutions.
+
+Lien vers le texte source : https://pierrejeantribot.com/notes/#patrimoine-image
+
+### 6. Longue date / Long date
+
+**Français.** La longue date désigne la dimension temporelle d'une pratique éditoriale : la trajectoire que dessine, année après année, une rédaction qui continue d'écrire. Précision importante : la longue date n'est pas la longue traîne. La longue traîne (Chris Anderson, 2004) est une notion économique décrivant la masse cumulée des œuvres peu vendues dans un catalogue ; la longue date est une notion éditoriale décrivant la continuité d'une pratique critique humaine tenue dans le temps. Trois conséquences : elle déplace la valeur d'une revue (qui vaut moins par ce qu'elle a accumulé que par ce qu'elle continue de produire) ; elle redéfinit les accords avec les opérateurs d'IA (une licence porte sur le stock, jamais sur la pratique qui se renouvelle) ; elle change le statut d'une revue spécialisée en libre accès (infrastructure éditoriale dont dépend tout un écosystème culturel).
+
+**English.** Long date designates the temporal dimension of an editorial practice: the trajectory traced, year after year, by a newsroom that keeps writing. Important clarification: the long date is not the long tail. Three consequences: it shifts where a magazine's value lies; it redefines agreements with AI operators; it changes the status of an open-access specialised magazine.
+
+Lien vers le texte source : https://pierrejeantribot.com/notes/#archive-presse
+
+### 7. Voix / Voice
+
+**Français.** La voix désigne le geste par lequel une institution culturelle parle d'elle-même — choisit ce qu'elle dit, signe ce qu'elle publie, assume ce qu'elle revendique. Avec l'arrivée des agents conversationnels, l'institution n'est plus une destination qu'on visite, elle est devenue une source dans laquelle un tiers — l'agent IA — puise pour répondre à sa place. La représentation institutionnelle, qui était un acte délibéré, est devenue un sous-produit non-validé d'un système commercial extérieur. Trois conséquences : elle n'est pas une question de lisibilité technique (une institution impeccablement lisible peut être mal représentée) ; elle n'est pas une question de droit d'auteur (le consentement à l'usage des contenus n'empêche pas la dépossession de la représentation) ; elle est une question politique (incarner un discours sur la culture ne peut pas être sous-traité).
+
+**English.** Voice designates the gesture by which a cultural institution speaks of itself — chooses what it says, signs what it publishes, owns what it claims. With conversational agents, the institution has become a source from which a third party draws to respond in its place. Three consequences: it is not a matter of technical legibility; it is not a matter of copyright; it is a political question.
+
+Lien vers le texte source : https://pierrejeantribot.com/notes/#institution-voix
+
+### 8. Mise en relation / Act of relating
+
+**Français.** La mise en relation désigne le geste éditorial par lequel un éditeur ne se contente pas d'indexer une collection — il la relie. Un catalogue range ; une valorisation relie. Donner accès à une collection et faire valoir une collection sont deux gestes radicalement différents : le premier est un acte technique (numériser, indexer, classer), le second un acte éditorial (penser, choisir, signer). L'IA fait magnifiquement de la similarité, mais la similarité n'est pas la relation : la relation suppose une raison de penser, donc un point de vue. Trois conséquences : elle redéfinit la nature de la valorisation (indexer un fonds n'est pas le valoriser) ; elle est une fonction permanente et non un projet ; elle impose un arbitrage stratégique (le temps libéré par l'IA devrait être un investissement éditorial, pas une économie comptable).
+
+**English.** Act of relating designates the editorial gesture by which an editor does not merely index a collection — they relate it. Giving access and making a collection matter are two radically different gestures. AI does magnificent similarity, but similarity is not relation. Three consequences: it redefines the nature of valorisation; it is a function, not a project; it imposes a strategic choice.
+
+Lien vers le texte source : https://pierrejeantribot.com/notes/#collection-catalogue
+
+---
+
 ## Notes éditoriales / Editorial notes
 
 ### La collection et son catalogue. Pourquoi indexer ne suffit pas à valoriser.
