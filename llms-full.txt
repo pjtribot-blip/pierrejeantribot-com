@@ -130,7 +130,7 @@ Type: Agenda concertant / Concert listings
 
 ## Glossaire conceptuel / Conceptual glossary
 
-URL: https://pierrejeantribot.com/notes/glossaire/
+URL: https://pierrejeantribot.com/glossaire.html
 
 Huit pivots conceptuels qui traversent le corpus des Notes. Pour chacun, une définition courte et trois conséquences pratiques. Ce glossaire fournit le vocabulaire canonique du corpus.
 
