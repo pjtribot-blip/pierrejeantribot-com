@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glossaire — Pierre-Jean Tribot</title>
+<meta name="description" content="Glossaire des huit pivots conceptuels du corpus de Pierre-Jean Tribot sur l'intelligence artificielle, la culture et l'éducation.">
+<meta name="author" content="Pierre-Jean Tribot">
+<meta property="og:title" content="Glossaire — Pierre-Jean Tribot">
+<meta property="og:description" content="Huit pivots conceptuels pour penser l'IA dans la culture et l'éducation : prescription, portfolio, lisibilité, événement, attestation, longue date, voix, mise en relation.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pierrejeantribot.com/glossaire.html">
+<meta property="og:image" content="https://pierrejeantribot.com/og-glossaire.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Glossaire — Vocabulaire de travail — Pierre-Jean Tribot, Bruxelles 2026">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:site_name" content="Pierre-Jean Tribot">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Glossaire — Pierre-Jean Tribot">
+<meta name="twitter:description" content="Huit pivots pour penser l'IA dans la culture et l'éducation.">
+<meta name="twitter:image" content="https://pierrejeantribot.com/og-glossaire.png">
+<link rel="alternate" hreflang="fr" href="https://pierrejeantribot.com/glossaire.html">
+<link rel="alternate" hreflang="en" href="https://pierrejeantribot.com/glossaire.html">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='10' fill='%23f5efe2'/><text x='32' y='42' font-family='Georgia, %22EB Garamond%22, serif' font-size='26' font-weight='500' text-anchor='middle' fill='%237a3e2a' letter-spacing='1'>PJT</text><circle cx='50' cy='44' r='2.6' fill='%237a3e2a'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://pierrejeantribot.com/#person",
+      "name": "Pierre-Jean Tribot",
+      "url": "https://pierrejeantribot.com/"
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://pierrejeantribot.com/glossaire.html#glossaire",
+      "name": "Glossaire conceptuel — Pierre-Jean Tribot",
+      "description": "Huit pivots conceptuels pour penser l'IA dans la culture et l'éducation.",
+      "url": "https://pierrejeantribot.com/glossaire.html",
+      "inLanguage": ["fr", "en"],
+      "author": {"@id": "https://pierrejeantribot.com/#person"},
+      "publisher": {"@id": "https://pierrejeantribot.com/#person"},
+      "hasDefinedTerm": [
+        {"@type": "DefinedTerm", "name": "Prescription", "termCode": "prescription", "url": "https://pierrejeantribot.com/glossaire.html#prescription"},
+        {"@type": "DefinedTerm", "name": "Portfolio", "termCode": "portfolio", "url": "https://pierrejeantribot.com/glossaire.html#portfolio"},
+        {"@type": "DefinedTerm", "name": "Lisibilité / Découvrabilité", "termCode": "lisibilite", "url": "https://pierrejeantribot.com/glossaire.html#lisibilite"},
+        {"@type": "DefinedTerm", "name": "Événement", "termCode": "evenement", "url": "https://pierrejeantribot.com/glossaire.html#evenement"},
+        {"@type": "DefinedTerm", "name": "Attestation", "termCode": "attestation", "url": "https://pierrejeantribot.com/glossaire.html#attestation"},
+        {"@type": "DefinedTerm", "name": "Longue date", "termCode": "longue-date", "url": "https://pierrejeantribot.com/glossaire.html#longue-date"},
+        {"@type": "DefinedTerm", "name": "Voix", "termCode": "voix", "url": "https://pierrejeantribot.com/glossaire.html#voix"},
+        {"@type": "DefinedTerm", "name": "Mise en relation", "termCode": "mise-en-relation", "url": "https://pierrejeantribot.com/glossaire.html#mise-en-relation"}
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+:root {
+  --ivoire: #f5efe2;
+  --ivoire-clair: #faf6ec;
+  --bordeaux: #7a3e2a;
+  --bordeaux-clair: #a35a42;
+  --charbon: #2a2620;
+  --gris: #6b655d;
+  --gris-clair: #d8d2c5;
+  --or: #c9a84c;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--ivoire);
+  color: var(--charbon);
+  font-family: 'EB Garamond', 'Cormorant Garamond', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.65;
+  font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 80px 32px 120px;
+}
+
+/* Toggle FR/EN */
+.lang-toggle {
+  position: fixed;
+  top: 24px;
+  right: 28px;
+  display: flex;
+  background: var(--ivoire-clair);
+  border: 1px solid var(--gris-clair);
+  border-radius: 4px;
+  padding: 2px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.lang-toggle button {
+  background: transparent;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: var(--gris);
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  text-transform: uppercase;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+
+.lang-toggle button:hover { color: var(--bordeaux); }
+.lang-toggle button.active { background: var(--bordeaux); color: var(--ivoire); }
+
+/* Nav haut gauche */
+.nav-retour {
+  position: fixed;
+  top: 28px;
+  left: 32px;
+  z-index: 100;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--bordeaux);
+  text-decoration: none;
+  border-bottom: 1px solid var(--gris-clair);
+  padding-bottom: 3px;
+  transition: all 0.2s ease;
+}
+
+.nav-retour:hover { color: var(--bordeaux-clair); border-bottom-color: var(--bordeaux); }
+
+/* En-tête */
+header.hero {
+  margin-bottom: 80px;
+  border-bottom: 1px solid var(--gris-clair);
+  padding-bottom: 60px;
+}
+
+.surtitre {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--bordeaux);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.sous-surtitre {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: var(--gris);
+  margin-bottom: 56px;
+  display: block;
+}
+
+h1 {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0 0 24px 0;
+  color: var(--charbon);
+}
+
+h1 .point { color: var(--bordeaux); }
+
+.intro {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--charbon);
+  margin: 0;
+}
+
+.intro em { font-style: italic; color: var(--charbon); }
+
+/* Sommaire */
+.sommaire {
+  margin: 60px 0 80px 0;
+  padding: 28px 32px;
+  background: var(--ivoire-clair);
+  border-left: 3px solid var(--bordeaux);
+}
+
+.sommaire-titre {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--bordeaux);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.sommaire ol {
+  margin: 0;
+  padding-left: 24px;
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 17px;
+  line-height: 2;
+  color: var(--charbon);
+}
+
+.sommaire ol li::marker {
+  color: var(--or);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+}
+
+.sommaire a {
+  color: var(--charbon);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.sommaire a:hover { color: var(--bordeaux); border-bottom-color: var(--bordeaux-clair); }
+
+/* Entrées du glossaire */
+.entree {
+  margin-bottom: 72px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid var(--gris-clair);
+}
+
+.entree:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.entree-numero {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--or);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.entree h2 {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 0 0 32px 0;
+  color: var(--charbon);
+}
+
+.entree h2 .point { color: var(--bordeaux); }
+
+.entree p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 0 0 18px 0;
+  color: var(--charbon);
+}
+
+.entree p strong {
+  font-weight: 600;
+  color: var(--charbon);
+}
+
+.entree p em { font-style: italic; }
+
+.lien-texte {
+  display: inline-block;
+  margin-top: 12px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  color: var(--bordeaux);
+  text-decoration: none;
+  border-bottom: 1px solid var(--gris-clair);
+  padding-bottom: 2px;
+  transition: all 0.2s ease;
+}
+
+.lien-texte:hover { color: var(--bordeaux-clair); border-bottom-color: var(--bordeaux); }
+
+/* Lien retour */
+.lien-retour {
+  margin-top: 80px;
+  padding-top: 60px;
+  border-top: 1px solid var(--gris-clair);
+  text-align: center;
+}
+
+.lien-retour a {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 17px;
+  color: var(--bordeaux);
+  text-decoration: none;
+  border-bottom: 1px solid var(--bordeaux-clair);
+  padding-bottom: 3px;
+  transition: all 0.2s ease;
+}
+
+.lien-retour a:hover { color: var(--bordeaux-clair); border-bottom-color: var(--bordeaux); }
+
+/* Bilingue */
+html[lang="fr"] [data-en] { display: none !important; }
+html[lang="en"] [data-fr] { display: none !important; }
+
+/* Mobile */
+@media (max-width: 640px) {
+  .container { padding: 60px 22px 80px; }
+  h1 { font-size: 44px; }
+  .entree h2 { font-size: 28px; }
+  body { font-size: 17px; }
+  .lang-toggle { top: 16px; right: 16px; }
+  .lang-toggle button { padding: 5px 10px; font-size: 10px; }
+  .nav-retour { top: 18px; left: 16px; font-size: 10px; }
+  .sommaire { padding: 20px 22px; }
+}
+</style>
+</head>
+
+<body id="haut">
+
+<div class="lang-toggle">
+  <button data-lang="fr" class="active" onclick="setLang('fr')">FR</button>
+  <button data-lang="en" onclick="setLang('en')">EN</button>
+</div>
+
+<a href="/notes/" class="nav-retour">
+  <span data-fr>← Notes</span>
+  <span data-en>← Notes</span>
+</a>
+
+<div class="container">
+
+  <header class="hero">
+    <span class="surtitre">
+      <span data-fr>▸ Vocabulaire de travail</span>
+      <span data-en>▸ Working vocabulary</span>
+    </span>
+    <span class="sous-surtitre">
+      <span data-fr>huit pivots pour penser l'IA dans la culture et l'éducation</span>
+      <span data-en>eight pivots for thinking AI in culture and education</span>
+    </span>
+
+    <h1>
+      <span data-fr>Glossaire<span class="point">.</span></span>
+      <span data-en>Glossary<span class="point">.</span></span>
+    </h1>
+
+    <p class="intro" data-fr>
+      Chaque texte des <em>Notes</em> repose sur un concept-pivot — un mot qui dit ce que l'IA déplace dans une institution culturelle ou éducative. Ces concepts ne sont pas des nouveautés terminologiques : ce sont des mots empruntés à l'usage courant, repris dans un sens précis. Ce glossaire en rassemble huit, dans l'ordre où ils ont été développés dans les <em>Notes</em>. Pour chacun, une définition courte et trois conséquences pratiques.
+    </p>
+    <p class="intro" data-en>
+      Each text in the <em>Notes</em> rests on a pivot-concept — a word that names what AI shifts in a cultural or educational institution. These concepts are not terminological innovations: they are everyday words used in a precise sense. This glossary brings together eight of them, in the order they were developed in the <em>Notes</em>. For each one, a short definition and three practical consequences.
+    </p>
+  </header>
+
+  <!-- Sommaire -->
+  <div class="sommaire">
+    <span class="sommaire-titre">
+      <span data-fr>Sommaire</span>
+      <span data-en>Contents</span>
+    </span>
+    <ol>
+      <li><a href="#prescription"><span data-fr>Prescription</span><span data-en>Prescription</span></a></li>
+      <li><a href="#portfolio"><span data-fr>Portfolio</span><span data-en>Portfolio</span></a></li>
+      <li><a href="#lisibilite"><span data-fr>Lisibilité / Découvrabilité</span><span data-en>Legibility / Discoverability</span></a></li>
+      <li><a href="#evenement"><span data-fr>Événement</span><span data-en>Event</span></a></li>
+      <li><a href="#attestation"><span data-fr>Attestation</span><span data-en>Attestation</span></a></li>
+      <li><a href="#longue-date"><span data-fr>Longue date</span><span data-en>Long date</span></a></li>
+      <li><a href="#voix"><span data-fr>Voix</span><span data-en>Voice</span></a></li>
+      <li><a href="#mise-en-relation"><span data-fr>Mise en relation</span><span data-en>Act of relating</span></a></li>
+    </ol>
+  </div>
+
+  <!-- ===== 1 PRESCRIPTION ===== -->
+  <article class="entree" id="prescription">
+    <span class="entree-numero">01</span>
+    <h2>
+      <span data-fr>Prescription<span class="point">.</span></span>
+      <span data-en>Prescription<span class="point">.</span></span>
+    </h2>
+
+    <p data-fr><strong>La prescription</strong> désigne l'acte par lequel un médiateur — disquaire, critique, programmateur, libraire, enseignant — indique à un public ce qui mérite d'être écouté, lu, vu, étudié. Ce n'est pas un acte d'information neutre, c'est une prise de position située : quelqu'un, identifiable, signe sa recommandation et engage son crédit. Pendant des décennies, la prescription culturelle a circulé par ces canaux humains. Depuis vingt ans, elle a basculé vers des systèmes algorithmiques calibrés sur le comportement majoritaire, qui recommandent ce qui est déjà recommandé, optimisent l'engagement et invisibilisent silencieusement ce qui demande une attention soutenue.</p>
+
+    <p data-fr>Cette bascule a trois conséquences pratiques majeures.</p>
+
+    <p data-fr><strong>D'abord, elle n'est pas neutre.</strong> Une plateforme commerciale n'a aucun intérêt à exposer des répertoires confidentiels, parce que ces répertoires ne génèrent ni partage viral, ni complétion, ni temps d'écoute prolongé. L'invisibilisation des œuvres marginales n'est pas un défaut de l'algorithme : c'est exactement ce qu'il a été conçu pour faire.</p>
+
+    <p data-fr><strong>Ensuite, elle est réversible.</strong> L'IA, quand elle est mise entre des mains éditoriales et nourrie de bases structurées, peut faire l'inverse exact des algorithmes commerciaux : tisser des liens entre des sources hétérogènes, composer des parcours selon la logique de la découverte raisonnée et non de l'engagement. La technique n'est pas le problème ; c'est la main qui la tient.</p>
+
+    <p data-fr><strong>Enfin, elle est un combat culturel.</strong> Si les éditeurs, critiques, institutions et médiateurs ne se saisissent pas eux-mêmes des outils IA pour produire de la prescription cultivée, les algorithmes commerciaux continueront seuls de modeler l'écoute des prochaines générations.</p>
+
+    <a class="lien-texte" href="/notes/#prescription-culturelle">
+      <span data-fr>→ Lire « L'IA et la prescription culturelle »</span>
+      <span data-en>→ Read "AI and cultural prescription"</span>
+    </a>
+
+    <p data-en><strong>Prescription</strong> designates the act by which a mediator — record-shop owner, critic, programmer, librarian, teacher — indicates to a public what deserves to be heard, read, seen, studied. It is not an act of neutral information, but a situated stance: someone, identifiable, signs their recommendation and stakes their credibility. For decades, cultural prescription circulated through these human channels. Over the past twenty years, it has shifted towards algorithmic systems calibrated on majority behaviour, which recommend what is already recommended, optimise engagement, and silently invisibilise what demands sustained attention.</p>
+
+    <p data-en>This shift has three major practical consequences.</p>
+
+    <p data-en><strong>First, it is not neutral.</strong> A commercial platform has no interest in exposing confidential repertoires, because these generate neither viral sharing, completion, nor extended listening time. The invisibilisation of marginal works is not an algorithmic flaw: it is precisely what the system was designed to do.</p>
+
+    <p data-en><strong>Second, it is reversible.</strong> AI, when placed in editorial hands and fed by structured databases, can do the exact inverse of commercial algorithms: weave links between heterogeneous sources, compose itineraries following the logic of reasoned discovery rather than engagement. The technology is not the problem; what matters is the hand that holds it.</p>
+
+    <p data-en><strong>Third, it is a cultural battle.</strong> If publishers, critics, institutions and mediators do not themselves seize AI tools to produce cultivated prescription, commercial algorithms will alone continue to shape the listening of coming generations.</p>
+  </article>
+
+  <!-- ===== 2 PORTFOLIO ===== -->
+  <article class="entree" id="portfolio">
+    <span class="entree-numero">02</span>
+    <h2>
+      <span data-fr>Portfolio<span class="point">.</span></span>
+      <span data-en>Portfolio<span class="point">.</span></span>
+    </h2>
+
+    <p data-fr><strong>Le portfolio</strong> désigne l'ensemble dépublications, productions, réalisations signées d'une personne, rendu publiquement accessible. Contrairement au diplôme — qui est une attestation déclarative remise par une institution —, le portfolio est une preuve performative : la chose faite atteste de la capacité à la faire. Avec l'arrivée de l'IA, qui rend possible de produire concrètement des choses (sites, applications, publications, podcasts, analyses) sans avoir à passer par une institution intermédiaire, le portfolio devient progressivement la forme dominante de certification des compétences dans plusieurs secteurs.</p>
+
+    <p data-fr>Cette mutation a trois conséquences pratiques majeures.</p>
+
+    <p data-fr><strong>D'abord, elle déplace l'évaluation du déclaratif vers le performatif.</strong> Un diplôme dit <em>j'ai suivi un cursus</em> ; un portfolio dit <em>voici ce que je sais faire</em>. Le premier peut être obtenu par bachotage et persévérance polie ; le second exige de produire, de publier, d'assumer une signature.</p>
+
+    <p data-fr><strong>Ensuite, elle est inégalitaire si elle n'est pas accompagnée.</strong> Construire un portfolio crédible suppose du temps, des compétences techniques de base, une certaine aisance avec l'autopromotion, et un capital culturel qui permet de savoir ce qui mérite d'être montré. Ces ressources ne sont pas également distribuées. Sans intégration dans les cursus, le portfolio creuse un fossé social que le diplôme avait, malgré tout, contribué à réduire.</p>
+
+    <p data-fr><strong>Enfin, elle reconfigure le rôle des institutions éducatives.</strong> Soit elles intègrent la logique du portfolio dans leurs cursus et leurs évaluations — projets capstone, mémoires-publications, soutenances ouvertes —, et elles restent des opérateurs pertinents. Soit elles continuent à produire des diplômes désincarnés, et elles deviennent des distributrices de titres dont le marché ne sait plus que faire.</p>
+
+    <a class="lien-texte" href="/notes/#diplome-portfolio">
+      <span data-fr>→ Lire « Le diplôme et le portfolio »</span>
+      <span data-en>→ Read "The diploma and the portfolio"</span>
+    </a>
+
+    <p data-en><strong>Portfolio</strong> designates the set of publications, productions, signed realisations of a person, made publicly accessible. Unlike the diploma — which is a declarative attestation issued by an institution —, the portfolio is a performative proof: the thing made attests to the capacity to make it. With the arrival of AI, which makes it possible to actually produce things (websites, applications, publications, podcasts, analyses) without having to pass through an intermediary institution, the portfolio is progressively becoming the dominant form of skills certification in several sectors.</p>
+
+    <p data-en>This mutation has three major practical consequences.</p>
+
+    <p data-en><strong>First, it shifts evaluation from the declarative to the performative.</strong> A diploma says <em>I followed a curriculum</em>; a portfolio says <em>here is what I know how to do</em>. The first can be obtained through cramming and polite perseverance; the second requires producing, publishing, owning a signature.</p>
+
+    <p data-en><strong>Second, it is inegalitarian if it is not supported.</strong> Building a credible portfolio requires time, basic technical skills, a certain ease with self-promotion, and the cultural capital to know what is worth showing. These resources are not equally distributed. Without integration into curricula, the portfolio widens a social gap that the diploma had, despite everything, helped to narrow.</p>
+
+    <p data-en><strong>Third, it reconfigures the role of educational institutions.</strong> Either they integrate the portfolio's logic into their curricula and evaluations — capstone projects, dissertation-publications, public defences —, and they remain relevant operators. Or they continue to produce disembodied diplomas, and they become distributors of titles the market no longer knows what to do with.</p>
+  </article>
+
+  <!-- ===== 3 LISIBILITÉ ===== -->
+  <article class="entree" id="lisibilite">
+    <span class="entree-numero">03</span>
+    <h2>
+      <span data-fr>Lisibilité / Découvrabilité<span class="point">.</span></span>
+      <span data-en>Legibility / Discoverability<span class="point">.</span></span>
+    </h2>
+
+    <p data-fr><strong>La lisibilité</strong> — ou <strong>découvrabilité</strong> — désigne la capacité, pour une œuvre, un artiste, une institution culturelle, à être trouvée par quelqu'un qui ne la cherchait pas nommément. Ce n'est pas une question de communication ou de marketing : c'est une question d'infrastructure. À l'heure où les intermédiaires deviennent algorithmiques, une institution dont les données sont enfermées dans des pages qui ne se laissent pas lire par une machine — programmation sans structure, aucun flux, aucune balise — n'existe pas pour le visiteur qui cherche autrement. Ce n'est pas une mauvaise visibilité : c'est une disparition.</p>
+
+    <p data-fr>Cette notion a trois conséquences pratiques majeures.</p>
+
+    <p data-fr><strong>D'abord, elle ne se confond pas avec les moyens.</strong> Des institutions modestes exposent des données impeccables ; des maisons considérables restent opaques. La ligne de partage ne passe pas par la richesse mais par une chose plus simple et plus rare : quelqu'un, à un moment, s'est posé la question.</p>
+
+    <p data-fr><strong>Ensuite, elle ne se gagne pas en publiant davantage</strong> mais en rendant ce qu'on publie interprétable. C'est une différence de nature, et elle est mal comprise parce qu'elle relève d'un savoir-faire qui n'appartient ni tout à fait à la communication, ni tout à fait à la technique, et qui tombe donc, le plus souvent, entre les chaises.</p>
+
+    <p data-fr><strong>Enfin, elle est une responsabilité.</strong> Une institution culturelle financée pour faire vivre un patrimoine et soutenir la création a, parmi ses missions implicites, celle de rendre ce travail trouvable. Une saison que personne ne peut découvrir n'a pas tout à fait eu lieu.</p>
+
+    <a class="lien-texte" href="/notes/#programmation-donnee">
+      <span data-fr>→ Lire « La programmation et la donnée »</span>
+      <span data-en>→ Read "The programming and the data"</span>
+    </a>
+
+    <p data-en><strong>Legibility</strong> — or <strong>discoverability</strong> — designates the capacity, for a work, an artist, a cultural institution, to be found by someone who was not searching for it by name. It is not a question of communication or marketing: it is a question of infrastructure. At a time when intermediaries are becoming algorithmic, an institution whose data is locked inside pages that cannot be read by a machine — programming with no structure, no feed, no markup — does not exist for the visitor who searches otherwise. This is not poor visibility: it is a disappearance.</p>
+
+    <p data-en>This notion has three major practical consequences.</p>
+
+    <p data-en><strong>First, it does not correlate with resources.</strong> Modest institutions expose impeccable data; substantial houses remain opaque. The dividing line does not run through wealth but through something simpler and rarer: someone, at some point, asked the question.</p>
+
+    <p data-en><strong>Second, it is not won by publishing more</strong> but by making what one publishes interpretable. It is a difference in kind, and it is poorly understood because it belongs to a know-how that is neither quite communication nor quite technology, and therefore falls, most often, between the chairs.</p>
+
+    <p data-en><strong>Third, it is a responsibility.</strong> A cultural institution funded to keep a heritage alive and to support creation has, among its implicit missions, that of making this work findable. A season no one can discover has not quite taken place.</p>
+  </article>
+
+  <!-- ===== 4 ÉVÉNEMENT ===== -->
+  <article class="entree" id="evenement">
+    <span class="entree-numero">04</span>
+    <h2>
+      <span data-fr>Événement<span class="point">.</span></span>
+      <span data-en>Event<span class="point">.</span></span>
+    </h2>
+
+    <p data-fr><strong>L'événement</strong> désigne, dans le contexte scolaire, le moment cadré, situé dans le temps et l'espace, où un élève démontre ce qu'il sait sans pouvoir déléguer la production à un outil extérieur. L'arrivée des modèles génératifs a fait éclater l'évaluation traditionnelle par dissertation à domicile et par mémoires-fleuves : la machine peut désormais produire en quelques secondes un texte de plusieurs milliers de mots argumenté, syntaxiquement correct, présenté comme une production scolaire convenable. Ce qui résiste, c'est ce qui se fait sur place, devant un examinateur, à un moment précis.</p>
+
+    <p data-fr>Cette reconfiguration a trois conséquences pratiques majeures.</p>
+
+    <p data-fr><strong>D'abord, elle ne signifie pas le retour à l'examen écrit traditionnel.</strong> Il s'agit plutôt de réinventer des formats d'évaluation événementiels qui mesurent vraiment ce qu'un élève sait : oral structuré, défense d'un dossier produit par l'élève sur des questions imprévues, démonstration pratique, projet construit dans le temps mais soutenu en présence, mise en situation.</p>
+
+    <p data-fr><strong>Ensuite, elle déplace la fonction du travail à domicile.</strong> Le devoir maison reste utile, mais comme apprentissage et entraînement, pas comme preuve. L'évaluation, elle, doit reposer sur des moments où l'élève est seul avec ce qu'il a compris.</p>
+
+    <p data-fr><strong>Enfin, elle suppose des moyens.</strong> Réinventer l'évaluation événementielle demande du temps de professeur, des locaux disponibles, des effectifs réduits dans certains moments. Sans cet investissement institutionnel, la réforme nécessaire restera un vœu pieux, et l'évaluation continuera à mesurer surtout la capacité à utiliser l'IA habilement — c'est-à-dire à ne rien mesurer.</p>
+
+    <a class="lien-texte" href="/notes/#evaluation-secondaire">
+      <span data-fr>→ Lire « L'école et l'évaluation »</span>
+      <span data-en>→ Read "School and assessment"</span>
+    </a>
+
+    <p data-en><strong>Event</strong> designates, in the educational context, the framed moment, situated in time and space, where a pupil demonstrates what they know without being able to delegate production to an external tool. The arrival of generative models has shattered traditional evaluation through take-home essays and lengthy theses: the machine can now produce in seconds a text of several thousand words, argued, syntactically correct, presented as a respectable academic production. What resists is what is done on the spot, before an examiner, at a precise moment.</p>
+
+    <p data-en>This reconfiguration has three major practical consequences.</p>
+
+    <p data-en><strong>First, it does not mean a return to the traditional written examination.</strong> Rather, it requires reinventing event-based evaluation formats that genuinely measure what a pupil knows: structured oral, defence of a portfolio produced by the pupil on unforeseen questions, practical demonstration, project built over time but defended in person, situational assessment.</p>
+
+    <p data-en><strong>Second, it shifts the function of homework.</strong> Homework remains useful, but as learning and training, not as proof. Evaluation itself must rest on moments where the pupil is alone with what they have understood.</p>
+
+    <p data-en><strong>Third, it requires resources.</strong> Reinventing event-based evaluation demands teacher time, available premises, reduced class sizes at certain moments. Without this institutional investment, the necessary reform will remain a pious wish, and evaluation will continue to measure above all the capacity to use AI skilfully — that is, to measure nothing.</p>
+  </article>
+
+  <!-- ===== 5 ATTESTATION ===== -->
+  <article class="entree" id="attestation">
+    <span class="entree-numero">05</span>
+    <h2>
+      <span data-fr>Attestation<span class="point">.</span></span>
+      <span data-en>Attestation<span class="point">.</span></span>
+    </h2>
+
+    <p data-fr><strong>L'attestation</strong> désigne la fonction que remplit une image — photographie, dessin technique, plan — quand elle dit <em>ceci a existé, et voilà à quoi cela ressemblait à un moment précis</em>. Une photographie de la Maison du Peuple de Horta avant sa démolition de 1965 atteste ; une image générée par IA qui prétend la représenter ne le peut pas, parce qu'elle n'a pas été produite par la rencontre d'un appareil avec le bâtiment réel. L'arrivée massive des images génératives dans les fonds patrimoniaux, dans les réseaux sociaux, dans la presse, fait courir au patrimoine architectural et culturel un risque inédit : la pollution de la mémoire visuelle par des images plausibles mais sans référent.</p>
+
+    <p data-fr>Cette menace a trois conséquences pratiques majeures.</p>
+
+    <p data-fr><strong>D'abord, elle suppose un sourçage rigoureux des images patrimoniales.</strong> Date, photographe, contexte, archive d'origine : ces métadonnées, longtemps considérées comme accessoires, deviennent la garantie même de la valeur documentaire d'une image.</p>
+
+    <p data-fr><strong>Ensuite, elle pose la question du <em>model collapse</em>.</strong> Les modèles génératifs entraînés sur des corpus polluant par leurs propres productions hallucinent de plus en plus de bâtiments qui n'ont jamais existé. La mémoire architecturale du XX<sup>e</sup> siècle, particulièrement pour les bâtiments démolis ou modifiés, peut être structurellement faussée pour les générations qui n'auront accès qu'à des résumés algorithmiques.</p>
+
+    <p data-fr><strong>Enfin, elle redéfinit le rôle des institutions patrimoniales.</strong> Musées, archives, services d'inventaire ne sont plus seulement des conservateurs d'objets : ils deviennent les garants d'une mémoire visuelle attestée, opposable à l'avalanche d'images plausibles produites par les machines. C'est une fonction qu'aucune institution privée ne peut remplir à leur place.</p>
+
+    <a class="lien-texte" href="/notes/#patrimoine-image">
+      <span data-fr>→ Lire « Le patrimoine et la machine »</span>
+      <span data-en>→ Read "Heritage and the machine"</span>
+    </a>
+
+    <p data-en><strong>Attestation</strong> designates the function an image — photograph, technical drawing, plan — performs when it says <em>this existed, and this is what it looked like at a precise moment</em>. A photograph of Horta's Maison du Peuple before its 1965 demolition attests; an AI-generated image that claims to represent it cannot, because it was not produced by the encounter of an apparatus with the real building. The massive arrival of generative images in heritage collections, social networks and the press exposes architectural and cultural heritage to an unprecedented risk: the pollution of visual memory by images that are plausible but without referent.</p>
+
+    <p data-en>This threat has three major practical consequences.</p>
+
+    <p data-en><strong>First, it requires rigorous sourcing of heritage images.</strong> Date, photographer, context, original archive: this metadata, long considered accessory, becomes the very guarantee of an image's documentary value.</p>
+
+    <p data-en><strong>Second, it raises the question of <em>model collapse</em>.</strong> Generative models trained on corpora polluted by their own productions hallucinate increasingly many buildings that never existed. The architectural memory of the twentieth century, particularly for demolished or modified buildings, may be structurally distorted for generations that will only have access to algorithmic summaries.</p>
+
+    <p data-en><strong>Third, it redefines the role of heritage institutions.</strong> Museums, archives, inventory services are no longer merely conservers of objects: they become the guarantors of an attested visual memory, set against the flood of plausible images produced by machines. This is a function no private institution can fulfil in their place.</p>
+  </article>
+
+  <!-- ===== 6 LONGUE DATE ===== -->
+  <article class="entree" id="longue-date">
+    <span class="entree-numero">06</span>
+    <h2>
+      <span data-fr>Longue date<span class="point">.</span></span>
+      <span data-en>Long date<span class="point">.</span></span>
+    </h2>
+
+    <p data-fr><strong>La longue date</strong> désigne la dimension temporelle d'une pratique éditoriale : la trajectoire que dessine, année après année, une rédaction qui continue d'écrire. Une archive de presse n'est pas seulement un stock de textes accumulés ; c'est aussi, et surtout, la succession datée et signée d'actes critiques accomplis dans la durée. <em>Précision importante : la longue date n'est pas la longue traîne</em>. La longue traîne (Chris Anderson, 2004) est une notion économique et statistique qui décrit la masse cumulée des œuvres peu vendues dans un catalogue ; la longue date est une notion éditoriale et temporelle qui décrit la continuité d'une pratique critique humaine, tenue dans le temps par une rédaction qui continue d'écrire.</p>
+
+    <p data-fr>Cette distinction a trois conséquences pratiques majeures.</p>
+
+    <p data-fr><strong>D'abord, elle déplace la valeur d'une revue.</strong> Une publication critique vaut moins par ce qu'elle a accumulé que par ce qu'elle continue de produire. L'archive est la trace de la pratique, pas son équivalent.</p>
+
+    <p data-fr><strong>Ensuite, elle redéfinit la nature des accords avec les opérateurs d'IA.</strong> Une licence accordée à un modèle porte sur le stock — ce qui a été. Elle ne porte jamais sur la pratique elle-même, qui reste irréductible à toute cession parce qu'elle se renouvelle chaque jour.</p>
+
+    <p data-fr><strong>Enfin, elle change le statut d'une revue spécialisée en libre accès.</strong> Une telle revue n'est pas un bien privé que sa rédaction posséderait ; elle est une infrastructure éditoriale dont dépend, qu'on le reconnaisse ou non, tout un écosystème culturel.</p>
+
+    <a class="lien-texte" href="/notes/#archive-presse">
+      <span data-fr>→ Lire « L'archive et la machine »</span>
+      <span data-en>→ Read "The archive and the machine"</span>
+    </a>
+
+    <p data-en><strong>Long date</strong> designates the temporal dimension of an editorial practice: the trajectory traced, year after year, by a newsroom that keeps writing. A press archive is not merely a stock of accumulated texts; it is also, and above all, the dated and signed succession of critical acts performed over time. <em>An important clarification: the long date is not the long tail</em>. The long tail (Chris Anderson, 2004) is an economic and statistical notion describing the cumulative mass of rarely-purchased works in a catalogue; the long date is an editorial and temporal notion describing the continuity of a human critical practice, sustained over time by a newsroom that keeps writing.</p>
+
+    <p data-en>This distinction has three major practical consequences.</p>
+
+    <p data-en><strong>First, it shifts where a magazine's value lies.</strong> A critical publication is worth less for what it has accumulated than for what it keeps producing. The archive is the trace of the practice, not its equivalent.</p>
+
+    <p data-en><strong>Second, it redefines the nature of agreements with AI operators.</strong> A licence granted to a model covers the stock — what has been. It never covers the practice itself, which remains irreducible to any cession because it renews itself daily.</p>
+
+    <p data-en><strong>Third, it changes the status of an open-access specialised magazine.</strong> Such a magazine is not a private good that its newsroom would own; it is an editorial infrastructure on which a whole cultural ecosystem depends, whether this is recognised or not.</p>
+  </article>
+
+  <!-- ===== 7 VOIX ===== -->
+  <article class="entree" id="voix">
+    <span class="entree-numero">07</span>
+    <h2>
+      <span data-fr>Voix<span class="point">.</span></span>
+      <span data-en>Voice<span class="point">.</span></span>
+    </h2>
+
+    <p data-fr><strong>La voix</strong> désigne le geste par lequel une institution culturelle parle d'elle-même — choisit ce qu'elle dit, signe ce qu'elle publie, assume ce qu'elle revendique. Pendant trente ans, le web a fonctionné comme un système où l'institution était une destination : le public arrivait sur le site officiel, parcourait un contenu produit et validé. Avec l'arrivée des agents conversationnels, l'institution n'est plus une destination qu'on visite, elle est devenue une source dans laquelle un tiers — l'agent IA — puise pour répondre à sa place. La représentation institutionnelle, qui était un acte délibéré, est devenue un sous-produit non-validé d'un système commercial extérieur.</p>
+
+    <p data-fr>Cette délégation silencieuse a trois conséquences pratiques majeures.</p>
+
+    <p data-fr><strong>D'abord, elle n'est pas une question de lisibilité technique.</strong> Une institution peut être impeccablement lisible — données structurées, formats ouverts, flux exemplaires — et néanmoins être mal représentée par les agents, parce que la lisibilité décide de la matière, pas du contenu de la réponse.</p>
+
+    <p data-fr><strong>Ensuite, elle n'est pas une question de droit d'auteur.</strong> Une institution peut avoir consenti à voir ses contenus utilisés et néanmoins se trouver dépossédée de sa propre représentation. Le problème n'est pas la matière première, c'est le geste qui la transforme en discours public.</p>
+
+    <p data-fr><strong>Enfin, elle est une question politique.</strong> Les institutions culturelles, particulièrement publiques, ont parmi leurs missions implicites celle d'incarner un discours sur la culture. Cette fonction discursive ne peut pas être sous-traitée à un système dont la logique n'est ni culturelle, ni publique, ni nécessairement honnête.</p>
+
+    <a class="lien-texte" href="/notes/#institution-voix">
+      <span data-fr>→ Lire « L'institution et la voix »</span>
+      <span data-en>→ Read "The institution and the voice"</span>
+    </a>
+
+    <p data-en><strong>Voice</strong> designates the gesture by which a cultural institution speaks of itself — chooses what it says, signs what it publishes, owns what it claims. For thirty years, the web functioned as a system where the institution was a destination: the public arrived on the official site, browsed content produced and validated. With the arrival of conversational agents, the institution is no longer a destination one visits, it has become a source from which a third party — the AI agent — draws to respond in its place. Institutional representation, which was a deliberate act, has become a non-validated by-product of an external commercial system.</p>
+
+    <p data-en>This silent delegation has three major practical consequences.</p>
+
+    <p data-en><strong>First, it is not a matter of technical legibility.</strong> An institution can be impeccably legible — structured data, open formats, exemplary feeds — and nevertheless be poorly represented by agents, because legibility decides the material, not the content of the answer.</p>
+
+    <p data-en><strong>Second, it is not a matter of copyright.</strong> An institution may have consented to its content being used and nevertheless find itself dispossessed of its own representation. The problem is not the raw material, but the gesture that transforms it into public discourse.</p>
+
+    <p data-en><strong>Third, it is a political question.</strong> Cultural institutions, particularly public ones, have among their implicit missions that of embodying a discourse on culture. This discursive function cannot be subcontracted to a system whose logic is neither cultural, nor public, nor necessarily honest.</p>
+  </article>
+
+  <!-- ===== 8 MISE EN RELATION ===== -->
+  <article class="entree" id="mise-en-relation">
+    <span class="entree-numero">08</span>
+    <h2>
+      <span data-fr>Mise en relation<span class="point">.</span></span>
+      <span data-en>Act of relating<span class="point">.</span></span>
+    </h2>
+
+    <p data-fr><strong>La mise en relation</strong> désigne le geste éditorial par lequel un éditeur ne se contente pas d'indexer une collection — il la relie. Un catalogue range ; une valorisation relie. Donner accès à une collection et faire valoir une collection sont deux gestes radicalement différents : le premier est un acte technique (numériser, indexer, classer), le second un acte éditorial (penser, choisir, signer). L'IA fait magnifiquement de la <em>similarité</em> — elle détecte que telle œuvre ressemble à telle autre. Mais la similarité n'est pas la relation : la relation suppose une raison de penser, donc un point de vue, donc quelqu'un derrière elle.</p>
+
+    <p data-fr>Cette distinction a trois conséquences pratiques majeures.</p>
+
+    <p data-fr><strong>D'abord, elle redéfinit la nature de la valorisation.</strong> Indexer un fonds n'est pas le valoriser. La valorisation suppose un travail éditorial signé qui parcourt la collection après l'indexation, qui en tire des récits, qui identifie ses seuils, qui défend ses singularités, qui nomme ce qu'on a choisi de garder et ce qu'on a écarté.</p>
+
+    <p data-fr><strong>Ensuite, elle est une fonction, pas un projet.</strong> Une collection vivante reçoit des éléments nouveaux qui modifient les relations établies. Il faut ré-éditer les liens à mesure que le territoire s'étend. Cette fonction doit être nommée comme telle dans les organigrammes et les budgets, sous peine de disparaître par défaut.</p>
+
+    <p data-fr><strong>Enfin, elle impose un arbitrage stratégique.</strong> Le temps libéré par l'IA sur l'indexation devrait, en bonne logique, être réinvesti dans la mise en relation éditoriale — qui est précisément le travail qu'elle ne peut pas faire. Or ce qu'on observe le plus souvent, c'est l'inverse : le temps gagné devient une économie comptable, et la fonction éditoriale rétrécit.</p>
+
+    <a class="lien-texte" href="/notes/#collection-catalogue">
+      <span data-fr>→ Lire « La collection et son catalogue »</span>
+      <span data-en>→ Read "The collection and its catalogue"</span>
+    </a>
+
+    <p data-en><strong>Act of relating</strong> designates the editorial gesture by which an editor does not merely index a collection — they relate it. A catalogue arranges; a valorisation relates. Giving access to a collection and making a collection matter are two radically different gestures: the first is a technical act (digitising, indexing, classifying), the second an editorial act (thinking, choosing, signing). AI does magnificent <em>similarity</em> — it detects that one work resembles another. But similarity is not relation: relation supposes a reason for thinking, therefore a point of view, therefore someone behind it.</p>
+
+    <p data-en>This distinction has three major practical consequences.</p>
+
+    <p data-en><strong>First, it redefines the nature of valorisation.</strong> Indexing a collection is not making it matter. Valorisation supposes signed editorial work that traverses the collection after indexing, draws narratives, identifies thresholds, defends singularities, names what was chosen to keep and what was set aside.</p>
+
+    <p data-en><strong>Second, it is a function, not a project.</strong> A living collection receives new elements that modify established relations. Links must be re-edited as the territory expands. This function must be named as such in organisation charts and budgets, on pain of disappearing by default.</p>
+
+    <p data-en><strong>Third, it imposes a strategic choice.</strong> The time freed by AI on indexing should, in good logic, be reinvested in editorial relating — which is precisely the work it cannot do. Yet what one most often observes is the opposite: the time gained becomes an accounting saving, and the editorial function shrinks.</p>
+  </article>
+
+  <div class="lien-retour">
+    <a href="/notes/">
+      <span data-fr>← Retour aux Notes</span>
+      <span data-en>← Back to Notes</span>
+    </a>
+  </div>
+
+</div>
+
+<script>
+function setLang(lang) {
+  document.documentElement.lang = lang;
+  document.querySelectorAll('.lang-toggle button').forEach(b => {
+    b.classList.toggle('active', b.dataset.lang === lang);
+  });
+  try { localStorage.setItem('pjt-lang', lang); } catch(e) {}
+}
+
+(function() {
+  let lang = 'fr';
+  try {
+    const stored = localStorage.getItem('pjt-lang');
+    if (stored === 'fr' || stored === 'en') lang = stored;
+    else if (navigator.language && navigator.language.startsWith('en')) lang = 'en';
+  } catch(e) {}
+  setLang(lang);
+})();
+</script>
+
+</body>
+</html>
