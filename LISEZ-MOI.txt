@@ -1,0 +1,72 @@
+PIERREJEANTRIBOT.COM — LIVRAISON DU 23 MAI 2026
+================================================
+
+Trois fichiers à déposer à la racine du dépôt GitHub
+qui sert pierrejeantribot.com (probablement
+pjtribot-blip/pierrejeantribot ou nom similaire).
+
+Procédure (conforme à ta règle absolue) :
+  1. Sur GitHub, supprimer l'ancien fichier.
+  2. Uploader le nouveau à la racine, nom exact identique.
+  3. Vercel redéploie automatiquement.
+
+Aucune dépendance entre les trois fichiers — tu peux les
+pousser dans l'ordre que tu veux.
+
+
+CONTENU DU ZIP
+==============
+
+1. index.html              (~33 ko)
+   Portfolio complet, 9 projets (7 existants + Agenda Crescendo
+   en notice 08 + Crescendo Tremplin en notice 09).
+   Compteur header passé de "7 projets / 7 projects" à
+   "9 projets / 9 projects".
+
+   Notice 08 — Agenda Crescendo :
+   Formulation que tu as validée — "sous monitoring continu",
+   "Page Statistiques publique :", périmètre simplifié
+   (Belgique, Hauts-de-France, Flandre culturelle, Luxembourg,
+   Eurorégion), Phono.Crescendo avec le point.
+
+   Notice 09 — Crescendo Tremplin :
+   302 fiches / 38 pays / 37 dispositifs de financement,
+   mention de l'outil d'auto-diagnostic interne,
+   politique anti-pillage IA à trois tiers.
+
+2. llms.txt                (~60 ko)
+   Version courte standard llmstxt.org.
+   Notice 08 alignée sur la formulation de l'index.html
+   (formulation que tu as validée).
+   Notice 09 ajoutée.
+   URL Agenda corrigée : agenda-crescendo.vercel.app →
+   agenda.crescendo-magazine.be (l'ancienne URL Vercel par
+   défaut était obsolète).
+   Essais éditoriaux conservés intacts :
+   "Prescription culturelle" et "Découvrabilité".
+
+3. llms-full.txt           (~200 ko)
+   Version longue détaillée.
+   Notice 08 enrichie : périmètre détaillé conservé
+   (Lille métropole, Bruges, Anvers, Courtrai, Gand, Louvain,
+   Metz, Maastricht), méthode de classification éditoriale,
+   exemple instruments d'époque.
+   Notice 09 enrichie : distribution par format (137 académies,
+   123 concours, 26 mentorats, 12 masterclasses, 4 stages),
+   couverture par pays, spécificité orgue (12 fiches dédiées
+   au réseau international), critères d'exclusion listés,
+   mention licence CC BY-NC-SA 4.0.
+   Glossaire conceptuel et essais éditoriaux conservés intacts.
+
+
+POURQUOI DEUX VERSIONS llms ?
+==============================
+
+Standard llmstxt.org : llms.txt est l'index court, llms-full.txt
+est la version étoffée. Les agents conversationnels qui
+respectent ce standard cherchent llms.txt d'abord, puis
+llms-full.txt s'ils ont besoin de plus de contexte.
+
+Garder les deux fichiers cohérents mais distincts (court vs
+détaillé) est la bonne pratique. Si on mettait partout la même
+formulation, le "full" n'aurait plus de raison d'être.
