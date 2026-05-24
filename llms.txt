@@ -109,15 +109,7 @@ Type: Production audio / Audio production
 
 **English.** AI-assisted editorial production for the podcasts of Crescendo Magazine and Ravel Edition: scripts written according to editorial line and orthography adapted to voice synthesis (ElevenLabs), episodes devoted notably to La Valse, Le Tombeau de Couperin, and historic conductors (Klemperer, Inghelbrecht), covers and banners declined for Spotify, Facebook, Instagram and LinkedIn.
 
-### 07 — Pupitre de commande éditorial / Editorial toolkit
-
-Type: Outils éditoriaux / Editorial tools
-
-**Français.** Suite d'outils internes développés pour la rédaction de Crescendo Magazine : génération de scripts podcast, traduction de brèves d'actualité, fiches CD au format maison, métadonnées SEO, composition de lettres d'information. Accès direct à l'API Anthropic depuis le navigateur, prompts spécialisés par tâche éditoriale.
-
-**English.** Suite of in-house tools developed for the Crescendo Magazine editorial team: podcast script generation, news brief translation, in-house CD review templates, SEO metadata, newsletter composition. Direct browser access to the Anthropic API, specialised prompts per editorial task.
-
-### 08 — Agenda Crescendo
+### 07 — Agenda Crescendo
 
 URL: https://agenda.crescendo-magazine.be/
 Type: Agenda concertant / Concert listings
@@ -126,14 +118,22 @@ Type: Agenda concertant / Concert listings
 
 **English.** Agenda Crescendo extends the magazine’s editorial ecosystem — after works (Pauline), recordings (Phono.Crescendo) and young musicians (Tremplin), the living events. The tool aggregates around fifty sources through automated scrapers and weekly editorial entries, under continuous monitoring with failure alerts, covering Belgium, the Hauts-de-France region, the Flemish cultural strongholds, Luxembourg and the Euro-region. Editorial classification by genre (opera, symphonic, chamber, baroque, contemporary), highlighting of editorial partners, editor’s picks and women composers on the bill, Leaflet map, temporal and geographic filters. Public Statistics page: aggregated overview by genre, geography, composers and festivals, PDF export and sharing. The project brought to light the disparity in programming data from one institution to another, posing discoverability as a cultural issue — a point developed in a dedicated editorial note. Integrated into Crescendo Magazine as an official subdomain.
 
-### 09 — Crescendo Tremplin
+### 08 — Crescendo Tremplin
 
 URL: https://tremplin.crescendo-magazine.be/
 Type: Agenda éditorialisé / Curated directory
 
-**Français.** Agenda éditorialisé des concours, académies, masterclasses, programmes de mentorat et dispositifs de financement pour les jeunes musiciennes et musiciens classiques : trois cent deux fiches sur trente-huit pays, plus trente-sept dispositifs de bourses et de financements en section distincte. Carte Leaflet, filtres par format, pays, parcours et instrument, JSON-LD Event et EducationEvent, hreflang FR-EN, export iCal des deadlines, manifeste éditorial public, fichier llms.txt à destination des agents conversationnels. Outil interne de maintenance et d’auto-diagnostic en Python (parser de dates français, classement automatique des fiches en six états éditoriaux, détection des deadlines imminentes, contrôle de cohérence des chiffres déclarés entre les fichiers du site, rapport d’audit HTML mensuel). Politique anti-pillage IA à trois tiers — bloquer ce qui entraîne sans attribution, autoriser ce qui cite avec lien. Critères d’exclusion explicites (concours payants sans dotation, fausses académies, opacité financière).
+**Français.** Agenda éditorialisé des concours, académies, masterclasses, programmes de mentorat et dispositifs de financement pour les jeunes musiciennes et musiciens classiques : trois cent deux fiches sur trente-huit pays, plus trente-sept dispositifs de bourses et de financements en section distincte. Carte Leaflet, filtres par format, pays, parcours et instrument, JSON-LD Event et EducationEvent, hreflang FR-EN, export iCal des deadlines, manifeste éditorial public, fichier llms.txt à destination des agents conversationnels. Outil interne de maintenance et d'auto-diagnostic en Python (parser de dates français, classement automatique des fiches en six états éditoriaux, détection des deadlines imminentes, contrôle de cohérence des chiffres déclarés entre les fichiers du site, rapport d'audit HTML mensuel). Politique anti-pillage IA à trois tiers — bloquer ce qui entraîne sans attribution, autoriser ce qui cite avec lien. Critères d'exclusion explicites (concours payants sans dotation, fausses académies, opacité financière).
 
 **English.** Curated directory of competitions, academies, masterclasses, mentorship programmes and funding schemes for young classical musicians: three hundred and two entries across thirty-eight countries, plus thirty-seven grant and funding schemes in a separate section. Leaflet map, filters by format, country, career path and instrument, Event and EducationEvent JSON-LD, FR-EN hreflang, iCal export of deadlines, public editorial manifesto, llms.txt file for conversational agents. Internal Python maintenance and self-diagnostic tool (French-language date parser, automatic classification of entries into six editorial states, detection of imminent deadlines, consistency checking of declared figures across site files, monthly HTML audit report). Three-tier anti-scraping policy — block what trains without attribution, allow what cites with active links. Explicit exclusion criteria (paying contests without prize, fake academies, financial opacity).
+
+### 09 — Crescendo Brain
+
+Type: Infrastructure de mémoire éditoriale / Editorial memory infrastructure
+
+**Français.** Infrastructure éditoriale IA-native consolidant en un wiki structuré l'ensemble du patrimoine documentaire de Crescendo Magazine, 21 Music et XXI Music Publishing : communiqués de presse, chroniques, fiches compositeurs, programmations, correspondance. Architecture conforme au LLM Wiki pattern (Karpathy, avril 2026) — trois dossiers, schéma maître, agent de maintenance. Onze types d'entités, règle absolue d'anti-hallucination, typographie française stricte, versionnement Git. Mise en service le 23 mai 2026 ; quatre-vingt-seize pages produites sur le premier communiqué traité. Outil interne, fondation des prochains développements éditoriaux.
+
+**English.** AI-native editorial infrastructure consolidating into a structured wiki the entire documentary heritage of Crescendo Magazine, 21 Music and XXI Music Publishing: press releases, reviews, composer profiles, programmes, correspondence. Architecture compliant with the LLM Wiki pattern (Karpathy, April 2026) — three folders, master schema, maintenance agent. Eleven entity types, absolute anti-hallucination rule, strict French typography, Git versioning. Launched on 23 May 2026; ninety-six pages produced from the first press release processed. Internal tool, foundation for the next editorial developments.
 
 ---
 
