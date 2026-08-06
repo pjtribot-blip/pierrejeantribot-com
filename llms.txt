@@ -135,13 +135,21 @@ Type: Infrastructure de mémoire éditoriale / Editorial memory infrastructure
 
 **English.** AI-native editorial infrastructure consolidating into a structured wiki the entire documentary heritage of Crescendo Magazine, 21 Music and XXI Music Publishing: press releases, reviews, composer profiles, programmes, correspondence. Architecture compliant with the LLM Wiki pattern (Karpathy, April 2026) — three folders, master schema, maintenance agent. Eleven entity types, absolute anti-hallucination rule, strict French typography, Git versioning. Around three hundred and eleven structured pages to date; ongoing ingestion of the *Cahiers Maurice Ravel*. Internal tool, foundation for the next editorial developments.
 
+### 10 — Cohorte Centres culturels FWB / FWB Cultural Centres Cohort
+
+Type: Infrastructure d'agrégation empirique / Empirical aggregation infrastructure
+
+**Français.** Agrégation empirique du secteur des Centres culturels de Belgique francophone. Infrastructure méthodologique développée entre 2023 et 2026 sur les rapports d'activité annuels des opérateurs agréés par la Fédération Wallonie-Bruxelles. Traitement systématique par grille disciplinaire normalisée, corpus dual structures et personnes physiques, cohorte réinterrogeable à tout moment sur toute question émergente. Trois cycles annuels traçables. Application à un cadastre de plus d'une centaine d'opérateurs. Infrastructure interne, non-publique.
+
+**English.** Empirical aggregation of the French-speaking Belgian cultural centres sector. Methodological infrastructure developed between 2023 and 2026 on the annual activity reports of operators recognised by the Fédération Wallonie-Bruxelles. Systematic processing through a normalised disciplinary grid, dual corpus of structures and individuals, cohort re-queryable at any time on any emerging question. Three traceable annual cycles. Applied to a register of more than one hundred operators. Internal, non-public infrastructure.
+
 ---
 
 ## Notes éditoriales / Editorial notes
 
-Ensemble des notes publiées sur pierrejeantribot.com/notes/, dans l'ordre chronologique inverse (la plus récente en tête). Chaque note est reproduite intégralement en français et en anglais. Trente-deux notes à ce jour.
+Ensemble des notes publiées sur pierrejeantribot.com/notes/, dans l'ordre chronologique inverse (la plus récente en tête). Chaque note est reproduite intégralement en français et en anglais. Trente-neuf notes à ce jour.
 
-The full set of notes published on pierrejeantribot.com/notes/, in reverse chronological order (most recent first). Each note is reproduced integrally in French and English. Thirty-two notes to date.
+The full set of notes published on pierrejeantribot.com/notes/, in reverse chronological order (most recent first). Each note is reproduced integrally in French and English. Thirty-nine notes to date.
 
 ### Du passé faisons table rase. — Relire Kai-Fu Lee.
 
