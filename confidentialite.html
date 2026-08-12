@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confidentialité — Pierre-Jean Tribot</title>
+<meta name="description" content="Politique de confidentialité et de traitement des données personnelles du site pierrejeantribot.com.">
+<meta name="author" content="Pierre-Jean Tribot">
+<meta name="theme-color" content="#f5efe2">
+<meta name="robots" content="noindex,follow">
+<meta property="og:title" content="Confidentialité — Pierre-Jean Tribot">
+<meta property="og:description" content="Politique de confidentialité et de traitement des données personnelles du site pierrejeantribot.com.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pierrejeantribot.com/confidentialite.html">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:site_name" content="Pierre-Jean Tribot">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='10' fill='%23f5efe2'/><text x='32' y='42' font-family='Georgia, %22EB Garamond%22, serif' font-size='26' font-weight='500' text-anchor='middle' fill='%237a3e2a' letter-spacing='1'>PJT</text><circle cx='50' cy='44' r='2.6' fill='%237a3e2a'/></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="alternate" type="application/rss+xml" title="Pierre-Jean Tribot — Notes (RSS)" href="https://pierrejeantribot.com/feed.xml">
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f26dfa4ac2e94ad097fdcde2ccdc7c35"}'></script><!-- End Cloudflare Web Analytics -->
+
+<style>
+:root {
+  --fond: #f5efe2;
+  --texte: #1a1a1a;
+  --texte-mute: #5a5a5a;
+  --accent: #7a3e2a;
+  --filet: #1a1a1a;
+  --filet-leger: #c8bfa6;
+  --serif: "EB Garamond", Georgia, "Times New Roman", serif;
+  --mono: "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--fond);
+  color: var(--texte);
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.65;
+  font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 32px 32px 80px;
+}
+
+[data-fr], [data-en] { display: none; }
+html[lang="fr"] [data-fr] { display: inline; }
+html[lang="en"] [data-en] { display: inline; }
+html[lang="fr"] p[data-fr], html[lang="fr"] div[data-fr], html[lang="fr"] section[data-fr], html[lang="fr"] li[data-fr], html[lang="fr"] h2[data-fr], html[lang="fr"] h3[data-fr] { display: block; }
+html[lang="en"] p[data-en], html[lang="en"] div[data-en], html[lang="en"] section[data-en], html[lang="en"] li[data-en], html[lang="en"] h2[data-en], html[lang="en"] h3[data-en] { display: block; }
+
+/* En-tête */
+.head {
+  border-bottom: 1px solid var(--filet);
+  padding-bottom: 12px;
+  margin-bottom: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+}
+.head .left a {
+  color: var(--texte);
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+  transition: all 0.15s ease;
+}
+.head .left a:hover {
+  background: var(--texte);
+  color: var(--fond);
+  border-bottom-color: var(--texte);
+}
+.head .right {
+  display: flex;
+  gap: 10px;
+}
+.head .right button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  text-transform: uppercase;
+  color: var(--texte-mute);
+  padding: 0;
+  transition: color 0.15s ease;
+}
+.head .right button:hover { color: var(--texte); }
+.head .right button.active { color: var(--accent); font-weight: 500; }
+
+/* Titre */
+h1 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+.subtitle {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--texte-mute);
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}
+
+/* Sections */
+section { margin-bottom: 40px; }
+h2 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 14px;
+  color: var(--accent);
+  letter-spacing: -0.005em;
+}
+p { margin-bottom: 14px; }
+p:last-child { margin-bottom: 0; }
+strong { font-weight: 600; }
+em { font-style: italic; }
+ul { margin: 8px 0 14px 20px; }
+li { margin-bottom: 6px; }
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--filet-leger);
+  transition: border-color 0.15s ease;
+}
+a:hover { border-bottom-color: var(--accent); }
+
+.date-maj {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: var(--texte-mute);
+  text-transform: uppercase;
+  margin-top: 56px;
+  padding-top: 20px;
+  border-top: 1px solid var(--filet-leger);
+}
+
+footer {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid var(--filet-leger);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: var(--texte-mute);
+  text-align: center;
+}
+footer a {
+  color: var(--texte-mute);
+  border-bottom: 1px solid var(--accent);
+}
+footer a:hover { color: var(--accent); }
+
+@media (max-width: 640px) {
+  body { font-size: 17px; }
+  h1 { font-size: 30px; }
+  h2 { font-size: 20px; }
+  .wrap { padding: 24px 22px 60px; }
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="head">
+    <div class="left"><a href="/">pierrejeantribot.com</a></div>
+    <div class="right">
+      <button id="btn-fr" class="active">FR</button>
+      <button id="btn-en">EN</button>
+    </div>
+  </div>
+
+  <h1>
+    <span data-fr>Confidentialité</span>
+    <span data-en>Privacy</span>
+  </h1>
+  <div class="subtitle">
+    <span data-fr>Traitement des données personnelles</span>
+    <span data-en>Personal data processing</span>
+  </div>
+
+  <section>
+    <p data-fr>Ce site se veut sobre dans ce qu'il collecte, honnête dans ce qu'il en fait. Les paragraphes qui suivent décrivent, sans jargon, ce qui est enregistré quand vous le consultez, par qui, où, et ce qui ne l'est pas.</p>
+    <p data-en>This site aims to be sober in what it collects, honest about what it does with it. The paragraphs below describe, without jargon, what is recorded when you visit, by whom, where, and what is not.</p>
+  </section>
+
+  <section>
+    <h2><span data-fr>Responsable du traitement</span><span data-en>Data controller</span></h2>
+    <p data-fr>Pierre-Jean Tribot, éditeur du site à titre personnel, établi à Linkebeek (Belgique). Contact : <a href="mailto:pjtribot@crescendo-magazine.be">pjtribot@crescendo-magazine.be</a>.</p>
+    <p data-en>Pierre-Jean Tribot, editor of the site in a personal capacity, based in Linkebeek (Belgium). Contact: <a href="mailto:pjtribot@crescendo-magazine.be">pjtribot@crescendo-magazine.be</a>.</p>
+  </section>
+
+  <section>
+    <h2><span data-fr>Ce qui est collecté</span><span data-en>What is collected</span></h2>
+    <p data-fr>Deux catégories de données uniquement, l'une et l'autre agrégées.</p>
+    <p data-en>Two categories of data only, both aggregated.</p>
+    <ul>
+      <li data-fr><strong>Statistiques de fréquentation</strong> — via <em>Cloudflare Web Analytics</em>, sans cookie et sans identifiant persistant. Ce service compte les pages vues, les visites, les référents (sites depuis lesquels vous êtes arrivé), les pays d'origine et le type d'appareil, sous forme purement agrégée. Aucun profil individuel n'est constitué.</li>
+      <li data-en><strong>Traffic statistics</strong> — via <em>Cloudflare Web Analytics</em>, without cookies or persistent identifiers. This service counts page views, visits, referrers (sites you came from), country of origin and device type, in purely aggregated form. No individual profile is built.</li>
+      <li data-fr><strong>Journaux techniques du serveur</strong> — l'hébergeur conserve pendant quelques jours des journaux standards contenant votre adresse IP, votre <em>user-agent</em> et l'URL consultée, à des fins strictes de sécurité et de diagnostic technique. Ces journaux sont supprimés automatiquement.</li>
+      <li data-en><strong>Server technical logs</strong> — the host retains for a few days standard logs containing your IP address, <em>user-agent</em> and the URL visited, strictly for security and technical diagnostic purposes. These logs are automatically deleted.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span data-fr>Ce qui n'est pas collecté</span><span data-en>What is not collected</span></h2>
+    <ul>
+      <li data-fr>Aucun cookie de traçage, aucun cookie publicitaire, aucun cookie de mesure d'audience nominatif.</li>
+      <li data-en>No tracking cookies, no advertising cookies, no personally identifying audience-measurement cookies.</li>
+      <li data-fr>Aucun profil personnel, aucun croisement avec des identifiants tiers, aucune revente de données à qui que ce soit.</li>
+      <li data-en>No personal profile, no cross-referencing with third-party identifiers, no sale of data to anyone.</li>
+      <li data-fr>Aucun outil publicitaire, aucun <em>pixel</em> de réseau social, aucune régie tierce.</li>
+      <li data-en>No advertising tool, no social-network <em>pixel</em>, no third-party ad network.</li>
+      <li data-fr>Aucun formulaire de contact stocké sur le site (les échanges se font par courrier électronique direct).</li>
+      <li data-en>No contact form stored on the site (exchanges take place by direct email).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span data-fr>Absence de bandeau cookies</span><span data-en>No cookie banner</span></h2>
+    <p data-fr>Le site n'affiche pas de bandeau de consentement parce qu'il ne dépose aucun cookie soumis à consentement. C'est un choix, pas un oubli.</p>
+    <p data-en>The site does not display a consent banner because it sets no cookies subject to consent. This is a choice, not an oversight.</p>
+  </section>
+
+  <section>
+    <h2><span data-fr>Hébergement et sous-traitants</span><span data-en>Hosting and processors</span></h2>
+    <p data-fr>Le site est hébergé par <em>Vercel Inc.</em> (États-Unis) et les statistiques agrégées sont opérées par <em>Cloudflare, Inc.</em> (États-Unis). Les transferts de données hors Union européenne sont encadrés par les clauses contractuelles types de la Commission européenne, conformément au RGPD.</p>
+    <p data-en>The site is hosted by <em>Vercel Inc.</em> (United States) and aggregated statistics are operated by <em>Cloudflare, Inc.</em> (United States). Data transfers outside the European Union are governed by the European Commission's standard contractual clauses, in accordance with the GDPR.</p>
+  </section>
+
+  <section>
+    <h2><span data-fr>Vos droits</span><span data-en>Your rights</span></h2>
+    <p data-fr>Conformément au Règlement général sur la protection des données (RGPD) et à la loi belge du 30 juillet 2018, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation et d'opposition sur les données personnelles vous concernant. Pour exercer ces droits, écrivez à <a href="mailto:pjtribot@crescendo-magazine.be">pjtribot@crescendo-magazine.be</a>.</p>
+    <p data-en>Under the General Data Protection Regulation (GDPR) and Belgian law of 30 July 2018, you have the right to access, rectify, erase, restrict and object to the processing of your personal data. To exercise these rights, write to <a href="mailto:pjtribot@crescendo-magazine.be">pjtribot@crescendo-magazine.be</a>.</p>
+    <p data-fr>Vous pouvez également introduire une réclamation auprès de l'<a href="https://www.autoriteprotectiondonnees.be/" target="_blank" rel="noopener">Autorité de protection des données belge</a> ou, si vous résidez en France, auprès de la <a href="https://www.cnil.fr/" target="_blank" rel="noopener">CNIL</a>.</p>
+    <p data-en>You may also lodge a complaint with the <a href="https://www.autoriteprotectiondonnees.be/en" target="_blank" rel="noopener">Belgian Data Protection Authority</a> or, if you reside in France, with the <a href="https://www.cnil.fr/en" target="_blank" rel="noopener">CNIL</a>.</p>
+  </section>
+
+  <section>
+    <h2><span data-fr>Modifications</span><span data-en>Changes</span></h2>
+    <p data-fr>Cette politique peut être mise à jour pour refléter les évolutions du site ou du cadre légal. La date de dernière mise à jour figure ci-dessous.</p>
+    <p data-en>This policy may be updated to reflect changes to the site or the legal framework. The date of the latest update appears below.</p>
+  </section>
+
+  <div class="date-maj">
+    <span data-fr>Dernière mise à jour : 12 août 2026</span>
+    <span data-en>Last updated: 12 August 2026</span>
+  </div>
+
+  <footer>
+    <span data-fr>← retour à <a href="/">pierrejeantribot.com</a></span>
+    <span data-en>← back to <a href="/">pierrejeantribot.com</a></span>
+  </footer>
+
+</div>
+
+<script>
+(function() {
+  var html = document.documentElement;
+  var btnFR = document.getElementById('btn-fr');
+  var btnEN = document.getElementById('btn-en');
+
+  function setLang(lang) {
+    html.lang = lang;
+    if (lang === 'fr') {
+      btnFR.classList.add('active');
+      btnEN.classList.remove('active');
+    } else {
+      btnEN.classList.add('active');
+      btnFR.classList.remove('active');
+    }
+    try { localStorage.setItem('pjt-lang', lang); } catch(e) {}
+  }
+
+  btnFR.addEventListener('click', function() { setLang('fr'); });
+  btnEN.addEventListener('click', function() { setLang('en'); });
+
+  // Initialiser depuis localStorage ou navigator
+  var stored = null;
+  try { stored = localStorage.getItem('pjt-lang'); } catch(e) {}
+  if (stored === 'fr' || stored === 'en') {
+    setLang(stored);
+  } else if ((navigator.language || 'fr').toLowerCase().startsWith('en')) {
+    setLang('en');
+  }
+})();
+</script>
+
+</body>
+</html>
