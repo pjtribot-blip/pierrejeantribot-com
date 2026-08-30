@@ -8662,7 +8662,9 @@ html.js-ready body.reading .texte.is-active {
       // Si c'est un slug d'article, on passe en mode lecture
       if (targetSlug && document.getElementById(targetSlug) && document.getElementById(targetSlug).classList.contains('texte')) {
         e.preventDefault();
-        history.pushState(null, '', window.location.pathname + window.location.search + '#' + targetSlug);
+        var curLang = html.getAttribute('lang') || 'fr';
+        var langSuffix = curLang === 'en' ? '-en' : '';
+        history.pushState(null, '', window.location.pathname + window.location.search + '#' + targetSlug + langSuffix);
         showReader(targetSlug);
         return;
       }
