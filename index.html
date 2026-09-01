@@ -25,18 +25,38 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Pierre-Jean Tribot",
-  "url": "https://pierrejeantribot.com/",
-  "email": "mailto:pjtribot@gmail.com",
-  "jobTitle": "Rédacteur en chef, éditeur culturel",
-  "nationality": "Belge",
-  "worksFor": [
-    { "@type": "Organization", "name": "Crescendo Magazine", "url": "https://www.crescendo-magazine.be" },
-    { "@type": "Organization", "name": "XXI Music Publishing", "url": "https://www.21music-publishing.com" }
-  ],
-  "knowsAbout": ["Intelligence artificielle et culture", "Édition musicale", "Critique musicale", "Patrimoine", "Découvrabilité", "Médiation culturelle"],
-  "description": "Historien et rédacteur en chef. Conception et déploiement d'outils éditoriaux assistés par intelligence artificielle pour la culture."
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://pierrejeantribot.com/#person",
+      "name": "Pierre-Jean Tribot",
+      "url": "https://pierrejeantribot.com/",
+      "email": "mailto:pjtribot@gmail.com",
+      "jobTitle": "Rédacteur en chef, éditeur culturel",
+      "nationality": "Belge",
+      "worksFor": [
+        { "@type": "Organization", "name": "Crescendo Magazine", "url": "https://www.crescendo-magazine.be" },
+        { "@type": "Organization", "name": "XXI Music Publishing", "url": "https://www.21music-publishing.com" }
+      ],
+      "knowsAbout": ["Intelligence artificielle et culture", "Édition musicale", "Critique musicale", "Patrimoine", "Découvrabilité", "Médiation culturelle"],
+      "description": "Historien et rédacteur en chef. Conception et déploiement d'outils éditoriaux assistés par intelligence artificielle pour la culture.",
+      "sameAs": [
+        "https://www.linkedin.com/in/pierre-jean-t-781a9316/",
+        "https://ssrn.com/author=12485448",
+        "https://orcid.org/0009-0002-0112-4155"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://pierrejeantribot.com/#website",
+      "url": "https://pierrejeantribot.com/",
+      "name": "Pierre-Jean Tribot",
+      "description": "Notes d'un éditeur francophone sur l'économie, la culture et l'éducation à l'âge de l'intelligence artificielle.",
+      "inLanguage": ["fr", "en"],
+      "author": { "@id": "https://pierrejeantribot.com/#person" },
+      "publisher": { "@id": "https://pierrejeantribot.com/#person" }
+    }
+  ]
 }
 </script>
 <style>
