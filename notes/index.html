@@ -586,6 +586,14 @@ a.mc-cell:hover .mc-title { color: var(--accent); }
 .mc-here .mc-title { color: var(--fond); white-space: normal; font-style: italic; }
 .mc-empty { opacity: 0.4; }
 @media (max-width: 640px) { .mc-title { font-size: 12px; } .mc-cell { padding: 8px 10px; } }
+
+/* Repère de série (volet k/n) — en tête de note */
+.serie-badge { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.08em; color: var(--texte-mute); margin: 2px 0 26px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; }
+.serie-badge .sb-label { text-transform: uppercase; letter-spacing: 0.14em; }
+.serie-badge .sb-name { color: var(--accent); }
+.serie-badge .sb-nav { display: inline-flex; gap: 10px; }
+.serie-badge a { color: var(--texte-mute); text-decoration: none; border-bottom: 1px solid var(--filet-leger); padding-bottom: 1px; transition: color 0.15s ease, border-color 0.15s ease; }
+.serie-badge a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 /* VAGUE2-CSS-END */
 
 /* En incubation (piste 10) — discret, en bas de l'index */
@@ -10817,6 +10825,34 @@ a.mc-cell:hover .mc-title { color: var(--accent); }
     var anchor = art.querySelector('.citation') || art.querySelector('.texte-date');
     if (anchor) anchor.parentNode.insertBefore(nav, anchor.nextSibling);
     else art.insertBefore(nav, art.firstChild);
+  });
+
+  // ---- Séries : repère « volet k/n » + navigation entre volets ----
+  var SERIES = [
+    { fr: "Taxer l'IA", en: "Taxing AI", notes: ["taxer-ia-1", "taxer-ia-2", "taxer-ia-3"] },
+    { fr: "Savoirs fondamentaux", en: "Foundational knowledge", notes: ["savoirs-fondamentaux", "fondamentaux-soustraction", "addition-transmission", "moment-volontariste", "formation-debranchee"] }
+  ];
+  SERIES.forEach(function (s) {
+    var total = s.notes.length;
+    s.notes.forEach(function (id, k) {
+      var art = document.getElementById(id);
+      if (!art || art.querySelector('.serie-badge')) return;
+      var prev = k > 0 ? s.notes[k - 1] : null;
+      var next = k < total - 1 ? s.notes[k + 1] : null;
+      var nav = [];
+      if (prev) nav.push('<a href="#' + prev + '">' + bothLang('◄ volet précédent', '◄ previous part') + '</a>');
+      if (next) nav.push('<a href="#' + next + '">' + bothLang('volet suivant ►', 'next part ►') + '</a>');
+      var badge = document.createElement('div');
+      badge.className = 'serie-badge';
+      badge.innerHTML =
+        '<span class="sb-label">' + bothLang('série', 'series') + '</span>' +
+        '<span class="sb-name">' + bothLang(s.fr, s.en) + '</span>' +
+        '<span>' + bothLang('· volet ' + (k + 1) + '/' + total, '· part ' + (k + 1) + '/' + total) + '</span>' +
+        (nav.length ? '<span class="sb-nav">' + nav.join('') + '</span>' : '');
+      var meta = art.querySelector('.texte-meta');
+      if (meta) meta.parentNode.insertBefore(badge, meta.nextSibling);
+      else art.insertBefore(badge, art.firstChild);
+    });
   });
 
   applyFilter();
