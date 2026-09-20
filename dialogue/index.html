@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-fr="Parler avec ma pensée — Pierre-Jean Tribot" data-en="Talk to my thinking — Pierre-Jean Tribot">Parler avec ma pensée — Pierre-Jean Tribot</title>
+<meta name="description" content="Un agent conversationnel qui répond à partir du corpus de notes de Pierre-Jean Tribot — avec renvoi aux sources, et sans sortir du corpus.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#f5efe2">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='10' fill='%23f5efe2'/><text x='32' y='42' font-family='Georgia, serif' font-size='26' font-weight='500' text-anchor='middle' fill='%237a3e2a'>PJT</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--fond:#f5efe2;--texte:#1a1a1a;--texte-mute:#5a5a5a;--accent:#7a3e2a;--filet:#1a1a1a;--filet-leger:#c8bfa6;--serif:"EB Garamond",Georgia,"Times New Roman",serif;--mono:"JetBrains Mono","SF Mono",Menlo,Consolas,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fond);color:var(--texte);font-family:var(--serif);font-size:18px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:680px;margin:0 auto;padding:32px 32px 48px}
+[data-fr],[data-en]{display:none}
+html[lang="fr"] [data-fr]{display:inline}
+html[lang="en"] [data-en]{display:inline}
+html[lang="fr"] p[data-fr],html[lang="fr"] .b[data-fr]{display:block}
+html[lang="en"] p[data-en],html[lang="en"] .b[data-en]{display:block}
+.head{border-bottom:1px solid var(--filet);padding-bottom:12px;margin-bottom:40px;display:flex;justify-content:space-between;align-items:baseline;font-family:var(--mono);font-size:11px;letter-spacing:.05em}
+.head a{color:var(--texte);text-decoration:none}
+.head .left a{font-weight:500;border-bottom:1px solid var(--accent);padding-bottom:1px}
+.head .middle{flex:1;text-align:center;font-weight:500}
+.head .middle a{border-bottom:1px solid var(--filet-leger);padding-bottom:1px;margin:0 2px}
+.head .lang button{background:none;border:none;font-family:inherit;font-size:inherit;color:var(--texte-mute);cursor:pointer;padding:0;border-bottom:1px solid var(--filet-leger);transition:all .15s}
+.head .lang button:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.head .lang button.active{color:var(--texte);font-weight:500;border-bottom:none;cursor:default}
+.head .lang .sep{margin:0 6px;color:var(--texte-mute)}
+.marqueur{font-family:var(--mono);font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);margin-bottom:18px;display:block}
+h1{font-size:40px;font-weight:400;letter-spacing:-.02em;margin:0 0 16px;line-height:1.05}
+h1 .point{color:var(--accent)}
+.lead{font-size:18px;color:var(--texte-mute);line-height:1.5;max-width:60ch;margin:0 0 10px}
+.regle{font-family:var(--mono);font-size:11px;color:var(--texte-mute);border:1px dashed var(--filet-leger);border-radius:3px;padding:8px 12px;margin:16px 0 28px;line-height:1.6}
+.suggestions{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.sugg{font-family:var(--mono);font-size:12px;border:1px solid var(--filet-leger);background:none;color:var(--texte);padding:7px 12px;border-radius:20px;cursor:pointer;text-align:left;transition:all .15s}
+.sugg:hover{border-color:var(--accent);color:var(--accent)}
+#thread{display:flex;flex-direction:column;gap:22px;margin-bottom:24px}
+.msg{max-width:100%}
+.msg .who{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--texte-mute);margin-bottom:6px}
+.msg.user .bubble{font-family:var(--serif);font-size:18px;color:var(--texte);border-left:2px solid var(--accent);padding-left:14px}
+.msg.bot .bubble p{font-family:var(--serif);font-size:17px;line-height:1.7;margin:0 0 12px}
+.msg.bot .bubble p:last-child{margin-bottom:0}
+.sources{margin-top:12px;font-family:var(--mono);font-size:11px;color:var(--texte-mute)}
+.sources .s-lab{letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:6px}
+.sources a{display:block;color:var(--texte);text-decoration:none;border-bottom:1px solid transparent;padding:2px 0;transition:all .15s}
+.sources a:hover{color:var(--accent)}
+.typing{font-family:var(--mono);font-size:12px;color:var(--texte-mute)}
+.compose{position:sticky;bottom:0;background:var(--fond);padding:14px 0;border-top:1px solid var(--filet);display:flex;gap:10px;align-items:flex-end}
+#q{flex:1;font-family:var(--serif);font-size:17px;color:var(--texte);background:var(--fond);border:1px solid var(--filet-leger);border-radius:4px;padding:11px 13px;resize:none;line-height:1.4;max-height:140px}
+#q:focus{outline:none;border-color:var(--accent)}
+#send{font-family:var(--mono);font-size:12px;letter-spacing:.05em;color:var(--fond);background:var(--texte);border:none;border-radius:4px;padding:12px 18px;cursor:pointer;transition:background .15s;white-space:nowrap}
+#send:hover{background:var(--accent)}
+#send:disabled{opacity:.5;cursor:default}
+.err{font-family:var(--mono);font-size:12px;color:var(--accent);line-height:1.6}
+.retour{margin-top:26px;font-family:var(--mono);font-size:11px}
+.retour a{color:var(--texte-mute);text-decoration:none;border-bottom:1px solid var(--filet-leger)}
+.retour a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+::selection{background:var(--accent);color:var(--fond)}
+@media(max-width:640px){.wrap{padding:24px 18px 40px}h1{font-size:31px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="head">
+    <span class="left"><a href="/">pierrejeantribot.com</a></span>
+    <span class="middle"><a href="/notes/">notes</a> · <a href="/corpus/">corpus</a> · <a href="/methode/"><span data-fr>méthode</span><span data-en>method</span></a></span>
+    <span class="lang">
+      <button id="btn-fr" type="button" aria-label="Français">FR</button><span class="sep">·</span><button id="btn-en" type="button" aria-label="English">EN</button>
+    </span>
+  </header>
+
+  <span class="marqueur"><span data-fr>◆ démonstrateur</span><span data-en>◆ demonstrator</span></span>
+  <h1><span data-fr>Parler avec ma pensée<span class="point">.</span></span><span data-en>Talk to my thinking<span class="point">.</span></span></h1>
+  <p class="lead"><span data-fr>On ne lit pas seulement le corpus — on le questionne. Cet agent répond <em>à partir des notes</em>, renvoie aux sources, et ne sort pas du corpus.</span><span data-en>You don't merely read the corpus — you question it. This agent answers <em>from the notes</em>, points back to the sources, and stays within the corpus.</span></p>
+  <div class="regle"><span data-fr>Règle : l'agent s'appuie uniquement sur les notes publiées et cite ce qu'il utilise. Hors corpus, il le dit plutôt que d'inventer. C'est un démonstrateur — une IA éditoriale qui argumente, pas qui récite.</span><span data-en>Rule: the agent relies only on the published notes and cites what it uses. Outside the corpus, it says so rather than inventing. It is a demonstrator — an editorial AI that argues, not one that recites.</span></div>
+
+  <div class="suggestions" id="suggestions">
+    <button class="sugg" type="button"><span data-fr>Pourquoi « un Airbus de l'IA » est une fausse piste ?</span><span data-en>Why is “an Airbus of AI” a false lead?</span></button>
+    <button class="sugg" type="button"><span data-fr>Que veut dire « souveraineté cognitive » ?</span><span data-en>What does “cognitive sovereignty” mean?</span></button>
+    <button class="sugg" type="button"><span data-fr>Comment travailles-tu avec l'IA ?</span><span data-en>How do you work with AI?</span></button>
+  </div>
+
+  <div id="thread"></div>
+
+  <div class="compose">
+    <textarea id="q" rows="1" data-ph-fr="Posez une question au corpus…" data-ph-en="Ask the corpus a question…"></textarea>
+    <button id="send" type="button"><span data-fr>Envoyer</span><span data-en>Send</span></button>
+  </div>
+
+  <div class="retour"><a href="/notes/"><span data-fr>↑ lire les notes</span><span data-en>↑ read the notes</span></a></div>
+</div>
+
+<script>
+(function(){
+  var html=document.documentElement, fr=document.getElementById('btn-fr'), en=document.getElementById('btn-en');
+  var q=document.getElementById('q'), send=document.getElementById('send'), thread=document.getElementById('thread');
+  function lang(){ return html.getAttribute('lang')||'fr'; }
+  function setLang(l){ if(l!=='en')l='fr'; html.setAttribute('lang',l); fr.classList.toggle('active',l==='fr'); en.classList.toggle('active',l==='en'); q.setAttribute('placeholder', q.getAttribute('data-ph-'+l)||''); try{localStorage.setItem('lang',l);}catch(e){} }
+  function detect(){ var h=location.hash; if(h==='#en')return'en'; if(h==='#fr')return'fr'; var s; try{s=localStorage.getItem('lang');}catch(e){} if(s==='fr'||s==='en')return s; return (navigator.language||'fr').toLowerCase().indexOf('en')===0?'en':'fr'; }
+  fr.onclick=function(){setLang('fr');}; en.onclick=function(){setLang('en');};
+  setLang(detect());
+
+  function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+  function el(cls,html){ var d=document.createElement('div'); d.className=cls; if(html!=null)d.innerHTML=html; return d; }
+
+  function addUser(text){
+    var m=el('msg user'); m.appendChild(el('who', lang()==='en'?'you':'vous'));
+    m.appendChild(el('bubble', esc(text))); thread.appendChild(m); m.scrollIntoView({block:'end'});
+  }
+  function addTyping(){
+    var m=el('msg bot'); m.appendChild(el('who', lang()==='en'?'the corpus':'le corpus'));
+    var t=el('bubble'); t.appendChild(el('typing', lang()==='en'?'thinking…':'réflexion…')); m.appendChild(t);
+    thread.appendChild(m); m.scrollIntoView({block:'end'}); return m;
+  }
+  function renderAnswer(m, data){
+    var b=el('bubble');
+    var paras=(data.answer||'').split(/\n\n+/).filter(Boolean);
+    if(!paras.length) paras=[lang()==='en'?'(no answer)':'(pas de réponse)'];
+    paras.forEach(function(p){ var pe=document.createElement('p'); pe.innerHTML=esc(p).replace(/\n/g,'<br>'); b.appendChild(pe); });
+    if(data.sources && data.sources.length){
+      var s=el('sources'); s.appendChild(el('s-lab', lang()==='en'?'sources':'sources'));
+      data.sources.forEach(function(src){
+        var a=document.createElement('a'); a.href=src.url; a.textContent='→ '+(lang()==='en'?(src.title_en||src.title):src.title); s.appendChild(a);
+      });
+      b.appendChild(s);
+    }
+    m.querySelector('.bubble').replaceWith(b);
+  }
+  function renderError(m, msg){
+    var b=el('bubble'); b.appendChild(el('err', msg)); m.querySelector('.bubble').replaceWith(b);
+  }
+
+  var busy=false;
+  function ask(text){
+    text=(text||q.value).trim(); if(!text||busy) return;
+    busy=true; send.disabled=true;
+    document.getElementById('suggestions').style.display='none';
+    addUser(text); q.value=''; q.style.height='auto';
+    var m=addTyping();
+    fetch('/api/chat',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({question:text})})
+      .then(function(r){ return r.json().then(function(j){ return {ok:r.ok, j:j}; }); })
+      .then(function(res){
+        if(res.ok){ renderAnswer(m, res.j); }
+        else if(res.j && res.j.error==='cle_api_absente'){ renderError(m, lang()==='en'?'The demonstrator is not activated yet (missing API key).':'Le démonstrateur n’est pas encore activé (clé API manquante).'); }
+        else { renderError(m, lang()==='en'?'Sorry — an error occurred. Try again.':'Désolé — une erreur est survenue. Réessayez.'); }
+      })
+      .catch(function(){ renderError(m, lang()==='en'?'Network error. Try again.':'Erreur réseau. Réessayez.'); })
+      .finally(function(){ busy=false; send.disabled=false; m.scrollIntoView({block:'end'}); });
+  }
+
+  send.onclick=function(){ ask(); };
+  q.addEventListener('keydown',function(e){ if(e.key==='Enter'&&!e.shiftKey){ e.preventDefault(); ask(); } });
+  q.addEventListener('input',function(){ q.style.height='auto'; q.style.height=Math.min(q.scrollHeight,140)+'px'; });
+  document.getElementById('suggestions').addEventListener('click',function(e){
+    var btn=e.target.closest('.sugg'); if(!btn)return;
+    var span=btn.querySelector('[data-'+lang()+']'); ask(span?span.textContent:btn.textContent);
+  });
+})();
+</script>
+</body>
+</html>
