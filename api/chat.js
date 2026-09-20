@@ -6,9 +6,28 @@ const CORPUS_URL = "https://pierrejeantribot.com/corpus-index.json";
 const MODEL = process.env.ANTHROPIC_MODEL || "claude-sonnet-5";
 const TOP_K = 4;              // notes envoyées au modèle par question
 const MAX_NOTE_CHARS = 6000;  // borne par note (coût)
-const MAX_TOKENS = 800;       // borne la réponse (coût)
+const MAX_TOKENS = 1400;      // borne la réponse (coût) — assez pour une réponse de fond complète
 
 let CORPUS = null; // cache d'invocation à chaud
+
+// Garde-fou coût/abus : plafond par IP (best-effort, en mémoire d'instance à chaud).
+// Protection robuste globale = Vercel KV/Redis (évolution possible). Ici : casse le harcèlement simple.
+const RL = new Map();
+const RL_MAX = 12;                 // questions max par fenêtre
+const RL_WINDOW = 10 * 60 * 1000;  // 10 minutes
+const MAX_HISTORY = 8;             // derniers tours envoyés au modèle (coût)
+function clientIp(req) {
+  const xff = req.headers["x-forwarded-for"];
+  return (xff ? String(xff).split(",")[0] : (req.socket && req.socket.remoteAddress) || "?").trim();
+}
+function rateLimited(ip) {
+  const now = Date.now();
+  const arr = (RL.get(ip) || []).filter(t => now - t < RL_WINDOW);
+  if (arr.length >= RL_MAX) { RL.set(ip, arr); return true; }
+  arr.push(now); RL.set(ip, arr);
+  if (RL.size > 800) { for (const [k, v] of RL) { if (!v.some(t => now - t < RL_WINDOW)) RL.delete(k); } }
+  return false;
+}
 
 async function loadCorpus() {
   if (CORPUS) return CORPUS;
@@ -75,10 +94,28 @@ module.exports = async (req, res) => {
   const key = process.env.ANTHROPIC_API_KEY;
   if (!key) { res.statusCode = 500; res.end(JSON.stringify({ error: "cle_api_absente", message: "ANTHROPIC_API_KEY non configurée dans Vercel." })); return; }
 
+  if (rateLimited(clientIp(req))) {
+    res.statusCode = 429;
+    res.end(JSON.stringify({ error: "trop_de_requetes", message: "Trop de questions en peu de temps. Réessayez dans quelques minutes." }));
+    return;
+  }
+
   try {
-    const { question } = await readBody(req);
-    const q = String(question || "").trim();
-    if (!q) { res.statusCode = 400; res.end(JSON.stringify({ error: "question_vide" })); return; }
+    const body = await readBody(req);
+    // Historique de conversation (mémoire) : soit un tableau messages[{role,content}], soit une question simple.
+    let history = [];
+    if (Array.isArray(body.messages)) {
+      history = body.messages
+        .filter(m => m && (m.role === "user" || m.role === "assistant") && typeof m.content === "string" && m.content.trim())
+        .slice(-MAX_HISTORY)
+        .map(m => ({ role: m.role, content: m.content.slice(0, 2000) }));
+    } else if (body.question) {
+      history = [{ role: "user", content: String(body.question).slice(0, 2000) }];
+    }
+    if (!history.length || history[history.length - 1].role !== "user") {
+      res.statusCode = 400; res.end(JSON.stringify({ error: "question_vide" })); return;
+    }
+    const q = history[history.length - 1].content.trim(); // dernière question, pour la récupération
     if (q.length > 1000) { res.statusCode = 400; res.end(JSON.stringify({ error: "question_trop_longue" })); return; }
 
     const corpus = await loadCorpus();
@@ -91,7 +128,7 @@ module.exports = async (req, res) => {
       model: MODEL,
       max_tokens: MAX_TOKENS,
       system: SYSTEM + "\n\n=== EXTRAITS DU CORPUS ===\n\n" + context,
-      messages: [{ role: "user", content: q }]
+      messages: history
     };
 
     const ar = await fetch("https://api.anthropic.com/v1/messages", {
