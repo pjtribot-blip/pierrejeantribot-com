@@ -1,0 +1,42 @@
+name: Mettre à jour le flux RSS
+
+# Régénère feed.xml automatiquement à chaque fois que les notes changent.
+# Ne se déclenche que sur notes/index.html : le commit de feed.xml ne peut
+# donc pas relancer le workflow (pas de boucle).
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "notes/index.html"
+      - "scripts/build-feed.rb"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-feed
+  cancel-in-progress: true
+
+jobs:
+  feed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Régénérer feed.xml
+        run: ruby scripts/build-feed.rb
+
+      - name: Committer si le flux a changé
+        run: |
+          if [ -n "$(git status --porcelain feed.xml)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add feed.xml
+            git commit -m "Mettre à jour feed.xml [skip ci]"
+            git push
+            echo "feed.xml mis à jour."
+          else
+            echo "feed.xml déjà à jour, rien à committer."
+          fi
