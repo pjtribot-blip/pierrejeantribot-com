@@ -535,6 +535,20 @@ html.js-ready body.reading .texte.is-active {
   color: var(--texte-mute);
   background: none;
 }
+.citation-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.citation-bibtex {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: var(--texte-mute);
+  background: none;
+  border: 1px solid var(--filet-leger);
+  padding: 5px 13px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.citation-bibtex:hover { color: var(--accent); border-color: var(--accent); }
+.citation-bibtex.ok { color: var(--texte-mute); border-color: var(--texte-mute); }
 /* VAGUE2-CSS-START */
 /* Vague 2 — filtres d'index (1) + fil d'Ariane thématique (2) */
 .filtres-v2 { margin: 4px 0 26px; }
@@ -10497,6 +10511,15 @@ a.mc-cell:hover .mc-title { color: var(--accent); }
         en: 'Tribot, Pierre-Jean. “' + noteTitle(art, 'en') + '” <em>Notes</em>, ' + noteDate(art, 'en') + '. ' + url
       };
 
+      var year = (noteDate(art, 'fr').match(/\d{4}/) || [''])[0];
+      var bib = '@misc{tribot_' + noteId.replace(/-/g, '') + (year || '') + ',\n' +
+        '  author       = {Tribot, Pierre-Jean},\n' +
+        '  title        = {{' + noteTitle(art, 'fr') + '}},\n' +
+        '  year         = {' + year + '},\n' +
+        '  howpublished = {\\url{' + url + '}},\n' +
+        '  note         = {Notes, ' + noteDate(art, 'fr') + '}\n' +
+        '}';
+
       var wrap = document.createElement('div');
       wrap.className = 'citation';
       wrap.innerHTML =
@@ -10507,10 +10530,15 @@ a.mc-cell:hover .mc-title { color: var(--accent); }
         '<div class="citation-corps" hidden>' +
           '<p class="citation-ref" data-fr>' + refs.fr + '</p>' +
           '<p class="citation-ref" data-en>' + refs.en + '</p>' +
-          '<button class="citation-copier" type="button">' +
-            '<span data-fr>copier la référence</span><span data-en>copy citation</span>' +
-          '</button>' +
+          '<div class="citation-actions">' +
+            '<button class="citation-copier" type="button">' +
+              '<span data-fr>copier la référence</span><span data-en>copy citation</span>' +
+            '</button>' +
+            '<button class="citation-bibtex" type="button">BibTeX</button>' +
+          '</div>' +
+          '<pre class="citation-bib" hidden></pre>' +
         '</div>';
+      wrap.querySelector('.citation-bib').textContent = bib;
 
       dateEl.parentNode.insertBefore(wrap, dateEl.nextSibling);
     });
@@ -10547,6 +10575,22 @@ a.mc-cell:hover .mc-title { color: var(--accent); }
         navigator.clipboard.writeText(text).then(done).catch(function() { fallbackCopy(text, done); });
       } else {
         fallbackCopy(text, done);
+      }
+    }
+    var bibBtn = e.target.closest('.citation-bibtex');
+    if (bibBtn) {
+      var bibEl = bibBtn.closest('.citation-corps').querySelector('.citation-bib');
+      var bibText = bibEl ? bibEl.textContent : '';
+      var lbl = bibBtn.textContent;
+      var okb = function() {
+        bibBtn.classList.add('ok');
+        bibBtn.textContent = (html.getAttribute('lang') === 'en') ? 'copied' : 'copié';
+        setTimeout(function() { bibBtn.classList.remove('ok'); bibBtn.textContent = lbl; }, 2000);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(bibText).then(okb).catch(function() { fallbackCopy(bibText, okb); });
+      } else {
+        fallbackCopy(bibText, okb);
       }
     }
   });
