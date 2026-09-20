@@ -12,14 +12,14 @@
     <copyright>Pierre-Jean Tribot</copyright>
     <managingEditor>pjtribot@crescendo-magazine.be (Pierre-Jean Tribot)</managingEditor>
     <webMaster>pjtribot@crescendo-magazine.be (Pierre-Jean Tribot)</webMaster>
-    <pubDate>Tue, 15 Sep 2026 12:00:00 +0200</pubDate>
-    <lastBuildDate>Tue, 15 Sep 2026 12:00:00 +0200</lastBuildDate>
+    <pubDate>Sun, 20 Sep 2026 12:00:00 +0200</pubDate>
+    <lastBuildDate>Sun, 20 Sep 2026 12:00:00 +0200</lastBuildDate>
     <ttl>1440</ttl>
     <item>
       <title>Le tampon et le texte</title>
       <link>https://pierrejeantribot.com/notes/#tampon-texte</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#tampon-texte</guid>
-      <pubDate>Tue, 15 Sep 2026 12:00:00 +0200</pubDate>
+      <pubDate>Sun, 20 Sep 2026 12:00:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Anatomie de l'article 50(4) de l'AI Act, entré en vigueur le 2 août 2026. Deux chaînes de production — l'une avec un clic humain, l'autre entièrement automatisée — aboutissent au même texte, mais le règlement les traite en sens opposé. La règle est incapable de mesurer la présence d'IA dans un texte ; ce qu'elle mesure, c'est la présence d'un geste humain identifiable dans la chaîne. Et son exception avale la règle : elle épargne tous ceux à qui elle pourrait s'appliquer et ne vise que ceux sur qui aucun État n'a de prise. Le régulateur a rebaptisé « transparence » un vieux dispositif de désignation d'un responsable — et un marché de conformité prospère sur la différence.]]></description>
       <content:encoded><![CDATA[<h3>Deux chaînes, un texte, deux régimes</h3>
@@ -57,11 +57,7 @@
 <p>La Commission européenne a vu le pattern. Ses Guidelines finales, adoptées le 20 juillet 2026 douze jours avant l'entrée en vigueur, précisent explicitement que la relecture confinée aux aspects formels — l'orthographe par exemple — ne suffit pas à bénéficier de l'exception. Il faut un examen délibéré de la substance du contenu, par une ou plusieurs personnes disposant de la connaissance et du jugement professionnel pertinents sur le sujet. La règle est raffinée sur le papier. Elle reste inapplicable en pratique. Aucune autorité de surveillance ne peut vérifier ex post ce qui s'est passé pendant les quelques secondes du clic de l'opérateur, ni si sa lecture a été substantielle ou formelle. Le tampon reste tampon, et la précision réglementaire se contente d'ajouter une couche déclarative à une règle qu'elle ne peut faire appliquer.</p>
 <p>Une industrie va prospérer sur ce dispositif. Elle prospère déjà. Des cabinets vendent la conformité au titre de l'AI Act. Des formations vendent la maîtrise du régime. Des logiciels d'audit vendent la traçabilité des chaînes éditoriales. Aucun de ces produits n'améliore la qualité informationnelle du texte reçu par le lecteur. Tous améliorent la position juridique du producteur. La règle a créé un marché de conformité qui capture de la ressource au titre d'un problème qu'elle ne résout pas.</p>
 <p>Le lecteur européen ne reçoit aucune information nouvelle sur la nature de ce qu'il lit. Le producteur européen dépense de la ressource pour se conformer à un régime qui ne protège personne. Un marché intermédiaire capture la différence.</p>
-<p>C'est ce que révèle le cas des deux chaînes du magazine spécialisé. Non pas une singularité éditoriale, mais l'anatomie complète d'un règlement qui légifère sur une chose en disant en légiférer sur une autre. Le mot « transparence » est utilisé pour désigner autre chose que ce qu'il désigne ordinairement, et le circuit institutionnel européen n'a pas d'intérêt structurel à le nommer.</p>
-<p>- Règlement UE 2024/1689 (AI Act), article 50 — version française consolidée : <a href="https://ai-act-service-desk.ec.europa.eu/fr/ai-act/article-50" target="_blank" rel="noopener">ai-act-service-desk.ec.europa.eu</a></p>
-<p>- Commission européenne, <em>Transparency obligations under Article 50 of the AI Act</em>, FAQ officielle — entrée en application 2 août 2026 : <a href="https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act" target="_blank" rel="noopener">digital-strategy.ec.europa.eu</a></p>
-<p>- Commission européenne, <em>Code of Practice on Transparency of AI-generated Content</em> — suppression de la distinction « entièrement IA »/« assisté par IA » dans le projet mars 2026 : <a href="https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content" target="_blank" rel="noopener">digital-strategy.ec.europa.eu</a></p>
-<p>- Commission européenne, <em>Guidelines on transparency obligations for providers and deployers of certain AI systems</em>, version finale adoptée le 20 juillet 2026 : <a href="https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-transparency-obligations" target="_blank" rel="noopener">digital-strategy.ec.europa.eu</a></p>]]></content:encoded>
+<p>C'est ce que révèle le cas des deux chaînes du magazine spécialisé. Non pas une singularité éditoriale, mais l'anatomie complète d'un règlement qui légifère sur une chose en disant en légiférer sur une autre. Le mot « transparence » est utilisé pour désigner autre chose que ce qu'il désigne ordinairement, et le circuit institutionnel européen n'a pas d'intérêt structurel à le nommer.</p>]]></content:encoded>
     </item>
     <item>
       <title>L'Airbus de l'IA</title>
