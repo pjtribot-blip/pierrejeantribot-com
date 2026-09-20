@@ -579,6 +579,17 @@ a.mc-cell:hover .mc-title { color: var(--accent); }
 .incubation-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 10px; }
 .incubation-txt { font-family: var(--serif); font-style: italic; font-size: 17px; line-height: 1.5; color: var(--texte-mute); margin: 0; max-width: 54ch; }
 
+/* Citation de règlement / texte de loi dans une note */
+.texte blockquote { margin: 0 0 22px; padding: 2px 0 2px 20px; border-left: 2px solid var(--accent); }
+.texte blockquote p { font-family: var(--serif); font-style: italic; font-size: 17px; line-height: 1.7; color: var(--texte-mute); margin-bottom: 0; }
+/* Sources en fin de note */
+.note-sources { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--filet-leger); }
+.note-sources .ns-label { font-family: var(--mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--texte-mute); display: block; margin-bottom: 12px; }
+.note-sources ul { margin: 0; padding-left: 18px; }
+.note-sources li { font-family: var(--mono); font-size: 12px; line-height: 1.7; color: var(--texte-mute); margin-bottom: 4px; }
+.note-sources a { color: var(--texte); border-bottom: 1px solid var(--accent); text-decoration: none; }
+.note-sources a:hover { color: var(--accent); }
+
 </style>
 <script type="application/ld+json">
 {
@@ -1528,6 +1539,26 @@ a.mc-cell:hover .mc-title { color: var(--accent); }
     </div>
 
     <div class="index">
+
+      <article class="index-item">
+        <div class="date">
+          <span data-fr>septembre 2026</span>
+          <span data-en>september 2026</span>
+        </div>
+        <div class="body">
+          <a href="#tampon-texte" class="index-title">
+            <span data-fr>Le tampon et le texte<span class="point">.</span></span>
+            <span data-en>The stamp and the text<span class="point">.</span></span>
+          </a>
+          <p class="resume" data-fr>
+            Anatomie de l'article 50(4) de l'AI Act, entré en vigueur le 2 août 2026. Deux chaînes de production — l'une avec un clic humain, l'autre entièrement automatisée — aboutissent au même texte, mais le règlement les traite en sens opposé. La règle est incapable de mesurer la présence d'IA dans un texte&nbsp;; ce qu'elle mesure, c'est la présence d'un geste humain identifiable dans la chaîne. Et son exception avale la règle&nbsp;: elle épargne tous ceux à qui elle pourrait s'appliquer et ne vise que ceux sur qui aucun État n'a de prise. Le régulateur a rebaptisé «&nbsp;transparence&nbsp;» un vieux dispositif de désignation d'un responsable — et un marché de conformité prospère sur la différence.
+          </p>
+          <p class="resume" data-en>
+            An anatomy of Article 50(4) of the AI Act, in force since 2 August 2026. Two production chains — one with a human click, the other fully automated — yield the same text, yet the regulation treats them in opposite ways. The rule cannot measure the presence of AI in a text; what it measures is the presence of an identifiable human gesture in the chain. And its exception swallows the rule: it spares everyone it could apply to and targets only those over whom no state has any purchase. The regulator has rebranded as “transparency” an old mechanism for designating a liable party — and a compliance market prospers on the difference.
+          </p>
+        </div>
+      </article>
+
 
       <article class="index-item">
         <div class="date">
@@ -2545,6 +2576,206 @@ a.mc-cell:hover .mc-title { color: var(--accent); }
       </p>
     </div>
   </section>
+
+<!-- ===== TEXTE 54 ===== -->
+  <article class="texte" id="tampon-texte">
+
+    <span class="texte-meta">
+      <span data-fr>&#9656; Texte 54</span>
+      <span data-en>&#9656; Essay 54</span>
+    </span>
+
+    <nav class="fil-ariane" aria-label="Fil d'Ariane">
+      <a href="#" class="lien-index">
+        <span data-fr>&uarr; Notes</span><span data-en>&uarr; Notes</span>
+      </a>
+      <span class="sep">&rsaquo;</span>
+      <span class="titre-courant"></span>
+    </nav>
+
+    <h2>
+      <span data-fr>Le tampon et le texte<span class="point">.</span><span class="subtitle">Deux chaînes de production, un texte identique, deux régimes juridiques opposés. L'article 50(4) de l'AI Act prétend légiférer sur la transparence informationnelle&nbsp;; il légifère en réalité sur la traçabilité juridique — un vieux dispositif de désignation d'un responsable, rebaptisé «&nbsp;transparence&nbsp;».</span></span>
+      <span data-en>The stamp and the text<span class="point">.</span><span class="subtitle">Two production chains, one identical text, two opposite legal regimes. Article 50(4) of the AI Act claims to legislate on informational transparency; it actually legislates on legal traceability — an old mechanism for designating a liable party, rebranded as “transparency.”</span></span>
+    </h2>
+
+    <span class="texte-date">
+      <span data-fr>septembre 2026 &middot; pierre-jean tribot</span>
+      <span data-en>september 2026 &middot; pierre-jean tribot</span>
+    </span>
+
+    <h3>
+      <span data-fr>Deux chaînes, un texte, deux régimes</span>
+      <span data-en>Two pipelines, one text, two regimes</span>
+    </h3>
+
+    <p data-fr>Un magazine spécialisé reçoit chaque jour des dizaines de communiqués de presse. Traiter un communiqué pour un flash info n'est pas un exercice journalistique. C'est une opération standardisée, sans plus-value éditoriale, purement informative : reprendre l'annonce et la mettre en forme selon les standards de la maison — un titre, une présentation du sujet, une citation, éventuellement un lien. Deux chaînes de production sont à portée de main en 2026 avec les outils disponibles pour cette opération. Elles aboutissent à un texte final rigoureusement identique. Le règlement européen les traite de manière opposée.</p>
+    <p data-en>A specialist magazine receives dozens of press releases every day. Reworking a press release into a news flash is not a journalistic exercise. It is a standardised operation with no editorial added value, purely informational: take the announcement and put it in the house format — a title, a summary of the subject, a quote, optionally a link. Two production chains are within reach in 2026 with the available tools for this operation. They produce a rigorously identical final text. The European regulation treats them in opposite ways.</p>
+
+    <p data-fr>Première chaîne. Un opérateur ouvre un modèle de langage, colle le communiqué reçu, tape une consigne du type « peux-tu me revoir ce communiqué selon les standards de la maison — un titre, une présentation du sujet, une citation, éventuellement un lien », regarde la sortie, valide d'un clic, copie-colle dans le système de publication, appuie sur publier. Temps de main humaine sur le texte : quatre-vingt-dix secondes, dont trois secondes de lecture réelle.</p>
+    <p data-en>First chain. An operator opens a language model, pastes the incoming press release, types an instruction along the lines of "please rework this in our house style — a title, a summary of the subject, a quote, optionally a link," reviews the output, clicks to approve, pastes it into the publishing system, and hits publish. Human time on the text: about ninety seconds, of which three are spent actually reading.</p>
+
+    <p data-fr>Seconde chaîne. Un agent automatisé est configuré une fois pour toutes selon ces mêmes critères. Les communiqués arrivent à une adresse dédiée. Le même modèle applique la même consigne de reformatage. Le même système de publication expose le résultat en ligne. Temps de main humaine sur chaque texte : zéro. Temps de main humaine sur la chaîne : quelques heures de configuration initiale.</p>
+    <p data-en>Second chain. An automated agent is configured once according to the same criteria. Press releases arrive at a dedicated address. The same model applies the same reformatting instruction. The same publishing system exposes the result online. Human time on each individual text: zero. Human time on the chain: a few hours of initial configuration.</p>
+
+    <p data-fr>Lecture littérale du règlement, entré en vigueur sur son étage transparence le 2 août 2026. La première chaîne est exemptée — il y a « examen humain » et « responsabilité éditoriale ». La seconde est soumise à obligation d'étiquetage. Deux régimes juridiques opposés pour une sortie textuelle identique. Le lecteur reçoit exactement la même chose dans les deux cas.</p>
+    <p data-en>Literal reading of the regulation, whose transparency layer came into force on 2 August 2026. The first chain is exempted — there is "human review" and "editorial responsibility." The second is subject to a labelling obligation. Two opposite legal regimes for an identical textual output. The reader receives exactly the same content in both cases.</p>
+
+    <h3>
+      <span data-fr>La formulation exacte</span>
+      <span data-en>The exact wording</span>
+    </h3>
+
+    <p data-fr>L'article 50(4) du règlement UE 2024/1689, dans son alinéa consacré au texte, dispose :</p>
+    <p data-en>Article 50(4) of Regulation (EU) 2024/1689, in its paragraph on text, provides:</p>
+
+    <blockquote>
+      <p data-fr>« Les déployeurs d'un système d'IA qui génère ou manipule des textes publiés dans le but d'informer le public sur des questions d'intérêt public indiquent que le texte a été généré ou manipulé par une IA. Cette obligation ne s'applique pas […] lorsque le contenu généré par l'IA a fait l'objet d'un processus d'examen humain ou de contrôle éditorial et lorsqu'une personne physique ou morale assume la responsabilité éditoriale de la publication du contenu. »</p>
+      <p data-en>"Deployers of an AI system that generates or manipulates text which is published with the purpose of informing the public on matters of public interest shall disclose that the text has been artificially generated or manipulated. This obligation shall not apply […] where the AI-generated content has undergone a process of human review or editorial control and where a natural or legal person holds editorial responsibility for the publication of the content."</p>
+    </blockquote>
+
+    <p data-fr>La formule pivot est « généré ou manipulé par une IA ». Le règlement ne définit ni « généré », ni « manipulé », ni le seuil qui distingue l'un et l'autre d'un état par défaut « humain ». Trois lignes plus bas, l'exception avale une bonne partie du champ d'application par simple invocation d'un examen humain, ou d'un contrôle éditorial, l'un ou l'autre suffisant. Aucun de ces deux termes n'est défini non plus.</p>
+    <p data-en>The pivotal phrase is "generated or manipulated." The regulation defines neither "generated," nor "manipulated," nor the threshold that distinguishes either from a default "human" state. Three lines below, the exception swallows a large share of the scope through a mere invocation of "human review" <em>or</em> "editorial control" — either one suffices, the conjunction is disjunctive. Neither term is defined either.</p>
+
+    <p data-fr>La notion d'« intérêt public » elle-même n'est pas définie par le règlement. La FAQ officielle de la Commission donne une liste ouverte à titre d'exemple — politique, économie, environnement — et, dans sa version développée, mentionne « les développements financiers, politiques, scientifiques ou culturels susceptibles d'être un sujet pertinent de débat public ». La culture y est explicitement citée. Toute nomination d'un directeur artistique, toute sortie d'un disque majeur, toute fermeture d'une institution musicale tombe donc dans le champ théorique de la règle dès lors qu'un débat public peut porter sur ce sujet. La liste étant « pour exemple », rien n'y est fermé. Le champ nominal est très large.</p>
+    <p data-en>The notion of "public interest" itself is not defined by the regulation. The Commission's official FAQ gives an open list by way of example — politics, economy, environment — and, in its expanded form, mentions "financial, political, scientific, or cultural developments that may be relevant subject of public debate." Culture is explicitly named. The appointment of an artistic director, the release of a major record, the closure of a musical institution all fall within the nominal scope of the rule the moment a public debate can turn on that subject. The list being "for example," nothing is closed. The nominal scope is very broad.</p>
+
+    <h3>
+      <span data-fr>Un couple indéfinissable</span>
+      <span data-en>An undefinable pair</span>
+    </h3>
+
+    <p data-fr>La règle présuppose que « généré » et « manipulé » désignent des états discrets, distinguables d'un état par défaut. La réalité technique du travail intellectuel en 2026 est un continuum. Quatre cas-tests que le texte est incapable de trancher.</p>
+    <p data-en>The rule presupposes that "generated" and "manipulated" refer to discrete states, distinguishable from a default. The technical reality of intellectual work in 2026 is a continuum. Four test cases the text cannot adjudicate.</p>
+
+    <p data-fr>Une phrase écrite intégralement à la main mais reformulée sur validation par un correcteur augmenté par modèle de langage — texte manipulé, ou non ?</p>
+    <p data-en>A sentence written entirely by hand but reformulated on validation by an LLM-augmented proof-reader — manipulated or not?</p>
+
+    <p data-fr>Une phrase suggérée par le modèle et retouchée à quatre-vingts pour cent — texte généré, ou non ?</p>
+    <p data-en>A sentence proposed by the model and retouched by eighty per cent — generated or not?</p>
+
+    <p data-fr>Un paragraphe rédigé dans un traitement de texte dont la fonction d'auto-complétion propose et fait valider un mot sur trois — texte manipulé à chaque signe, ou pas du tout ?</p>
+    <p data-en>A paragraph drafted in a word processor whose autocomplete function proposes and gets one word in three approved — manipulated at every character, or not at all?</p>
+
+    <p data-fr>Une traduction produite par modèle puis relue et corrigée — texte généré, manipulé, ou original de la version cible ?</p>
+    <p data-en>A translation produced by a model and then reviewed and corrected — generated, manipulated, or an original of the target-language version?</p>
+
+    <p data-fr>Le règlement ne dit rien. La Commission européenne elle-même, dans le deuxième projet de son Code de pratique sur la transparence des contenus IA publié en mars 2026, a supprimé la distinction entre contenu « entièrement IA » et « assisté par IA » : tout sera étiqueté de la même façon. C'est un aveu opérationnel — définir un seuil supposerait de résoudre techniquement le problème de la mesure de l'agentivité intellectuelle dans un dialogue humain-machine. Ce problème n'est pas résolu. La règle est écrite comme s'il l'était. Personne dans le circuit institutionnel européen ne peut le résoudre dans le cadre d'un texte réglementaire d'application générale, parce que la question est technique et non juridique.</p>
+    <p data-en>The regulation says nothing. The European Commission itself, in the second draft of its Code of Practice on the Transparency of AI-generated Content released in March 2026, removed the distinction between "fully AI" and "AI-assisted" content: everything will be labelled the same way. This is an operational admission — defining a threshold would require technically solving the problem of measuring intellectual agency in a human-machine dialogue. That problem is unsolved. The rule is written as if it were. No one in the European institutional circuit can solve it within a regulation of general application, because the question is technical, not legal.</p>
+
+    <p data-fr>Ce n'est pas le flou juridique ordinaire dont le droit s'accommode. Les notions de « bonnes mœurs », de « diligence normale » ou d'« intérêt légitime » sont floues à contours jurisprudentiels et fonctionnent parce que le juge peut, cas par cas, préciser un référent que le législateur a laissé ouvert. Ici, aucun référent technique n'existe à préciser. Le juge peut trancher qu'un texte donné est « généré », il ne peut pas dire selon quel critère mesurable. Le flou n'est pas juridique ; il porte sur l'existence même de l'objet que la règle prétend saisir.</p>
+    <p data-en>This is not the ordinary legal indeterminacy the law commonly accommodates. Notions such as "good morals," "reasonable diligence" or "legitimate interest" are indeterminate but function because a judge can, case by case, specify a referent the legislator left open. Here, no technical referent exists to be specified. A judge can rule that a given text is "generated," but cannot say against what measurable criterion. The indeterminacy is not legal; it bears on the very existence of the object the rule claims to address.</p>
+
+    <h3>
+      <span data-fr>L'exception qui avale la règle</span>
+      <span data-en>The exception that swallows the rule</span>
+    </h3>
+
+    <p data-fr>Le point le plus dévastateur est textuel. L'article 50(4) exempte les publications qui ont fait l'objet d'un examen humain <em>ou</em> d'un contrôle éditorial — l'un ou l'autre, la conjonction est disjonctive — et pour lesquelles une personne physique ou morale assume la responsabilité éditoriale.</p>
+    <p data-en>The most devastating point is textual. Article 50(4) exempts publications that have undergone human review <em>or</em> editorial control — either one, the conjunction is disjunctive — and for which a natural or legal person holds editorial responsibility.</p>
+
+    <p data-fr>Champ effectif de la règle après cette exception. Une rédaction avec un rédacteur en chef : exemptée. Un magazine avec un directeur de publication : exempté. Un blog personnel signé : exempté. Un cabinet d'avocats qui publie sur son site : exempté. Un média spécialisé quel qu'il soit : exempté. Un chercheur qui publie un article : exempté. Une entreprise qui publie un communiqué : exemptée.</p>
+    <p data-en>Effective scope of the rule after this exception. A newsroom with an editor-in-chief: exempted. A magazine with a publishing director: exempted. A signed personal blog: exempted. A law firm publishing on its own website: exempted. Any specialist media outlet: exempted. A researcher publishing a paper: exempted. A company issuing a press release: exempted.</p>
+
+    <p data-fr>Que reste-t-il ? Uniquement du contenu automatisé publié sans aucune personne assumant la responsabilité éditoriale — c'est-à-dire, empiriquement, des fermes à contenu de référencement offshore, des automates sociaux, du courrier indésirable automatisé. Autrement dit, exactement les producteurs qui n'appliqueront jamais la règle et sur lesquels aucun État membre n'a de prise juridique effective.</p>
+    <p data-en>What is left? Only automated content published with no one assuming editorial responsibility — that is, empirically, offshore SEO content farms, social bots, automated spam. In other words, precisely the producers who will never comply with the rule and over whom no member state has effective legal purchase.</p>
+
+    <p data-fr>La règle est donc structurée comme suit. Elle épargne tous ceux à qui elle pourrait s'appliquer, et cible ceux à qui elle ne peut pas s'appliquer. C'est un zéro fonctionnel. Pas relatif — sur l'objet même que la règle prétend saisir.</p>
+    <p data-en>The rule is therefore structured as follows. It spares everyone to whom it could apply, and targets everyone to whom it cannot apply. This is functional zero. Not relative — on the very object the rule claims to address.</p>
+
+    <h3>
+      <span data-fr>Ce que la règle mesure vraiment</span>
+      <span data-en>What the rule really measures</span>
+    </h3>
+
+    <p data-fr>Retour aux deux chaînes du magazine spécialisé. Les deux produisent le même texte. Le fond du problème que la règle prétend adresser — donner au lecteur une information sur la nature du contenu qu'il consomme — est identique dans les deux cas. Or la première chaîne est exemptée et la seconde est soumise à obligation d'étiquetage.</p>
+    <p data-en>Back to the two chains of the specialist magazine. Both produce the same text. The substantive problem the rule claims to address — giving the reader information about the nature of the content they consume — is identical in both cases. Yet the first chain is exempted and the second falls under a labelling obligation.</p>
+
+    <p data-fr>Ce que la règle mesure n'est donc pas la présence d'intelligence artificielle dans le texte. Elle est incapable de la mesurer, comme la section précédente l'a montré. Ce qu'elle mesure est la présence d'un geste humain identifiable dans la chaîne de production, quelle que soit la valeur informationnelle de ce geste. À la lettre du règlement, trois secondes de lecture et un clic suffisent à « restaurer » l'humanité du texte, quand bien même le contenu produit est rigoureusement identique à celui d'une chaîne entièrement automatisée.</p>
+    <p data-en>What the rule measures, then, is not the presence of artificial intelligence in the text. It is incapable of measuring that, as the previous section shows. What it measures is the presence of an identifiable human gesture within the production chain, whatever the informational value of that gesture. To the letter of the regulation, three seconds of reading and a click suffice to "restore" the humanity of the text, even when the resulting content is rigorously identical to that of a fully automated chain.</p>
+
+    <p data-fr>La conséquence est claire. L'article 50(4) n'est pas une règle sur le contenu. C'est une règle sur la chaîne de responsabilité juridique. Ce qui l'intéresse n'est pas si le lecteur reçoit du texte majoritairement produit par machine — c'est si une personne physique ou morale peut être poursuivie en cas de problème. L'examen humain n'est pas une garantie de qualité informationnelle. C'est un mécanisme de désignation d'un responsable civilement et pénalement exposable.</p>
+    <p data-en>The consequence is clear. Article 50(4) is not a rule about content. It is a rule about the chain of legal liability. What it cares about is not whether the reader is receiving text mostly produced by a machine — it is whether a natural or legal person can be sued in the event of a problem. "Human review" is not a guarantee of informational quality. It is a mechanism for designating a civilly and criminally exposable party.</p>
+
+    <p data-fr>Cette structure juridique n'est pas nouvelle. Le droit de la presse fonctionne ainsi depuis longtemps — LCEN en France, régimes équivalents partout en Europe : un directeur de publication assume la responsabilité éditoriale, un régime de responsabilité en cascade désigne l'actionnable en justice, la question de savoir qui a effectivement écrit tel paragraphe reste hors du champ juridique. Ce qui est nouveau avec l'article 50(4) n'est pas la structure — elle est classique — c'est le mot qu'on lui colle. Le régulateur a pris un dispositif éprouvé de désignation de responsable et l'a rebaptisé « transparence ». Le lecteur croit qu'on lui promet une information sur la nature du contenu qu'il consomme. On lui livre un dispositif de désignation d'un défendeur potentiel.</p>
+    <p data-en>This legal structure is not new. Press law has worked this way for a long time — LCEN in France, equivalent regimes throughout Europe: a publishing director assumes editorial responsibility, a cascading liability regime designates the party amenable to suit, the question of who actually wrote a given paragraph remains outside the legal frame. What is new with Article 50(4) is not the structure — it is classic — but the word attached to it. The regulator has taken a proven mechanism for designating a responsible party and rebranded it "transparency." The reader believes they are being promised information about the nature of the content they consume. What they get is a mechanism for designating a potential defendant.</p>
+
+    <p data-fr>Le régime européen légifère sur la traçabilité juridique en prétendant légiférer sur la transparence informationnelle. Ce sont deux régimes très différents. Le texte les confond. Le premier avait un sens et existait déjà en droit civil et pénal antérieur, dans lequel il pouvait s'inscrire par voie de précision. Le second aurait supposé une théorie de la mesure informationnelle qui n'existe pas et que le règlement ne construit pas.</p>
+    <p data-en>The European regime legislates on legal traceability while claiming to legislate on informational transparency. These are two very different regimes. The text conflates them. The first made sense and already existed in prior civil and criminal law, into which it could have been inserted by mere clarification. The second would have required a theory of informational measurement that does not exist and that the regulation does not construct.</p>
+
+    <p data-fr>Une objection circule dans les cercles concernés : l'article 50 serait un signal géopolitique adressé aux plateformes non-européennes, sans prétention à protéger réellement le lecteur européen. Peut-être — mais cette lecture n'est pas celle que le règlement donne à son lecteur, à qui le texte se présente comme une garantie informationnelle. Ce que le lecteur européen reçoit du régime n'est pas ce que le régime sait pratiquer.</p>
+    <p data-en>An objection circulates in the relevant circles: Article 50 would be a geopolitical signal aimed at non-European platforms, with no real claim to protect the European reader. Perhaps — but that reading is not the one the regulation offers to its reader, who is presented with an informational guarantee. What the European reader receives from the regime is not what the regime knows how to practise.</p>
+
+    <h3>
+      <span data-fr>Le tampon et le texte</span>
+      <span data-en>The stamp and the text</span>
+    </h3>
+
+    <p data-fr>L'exemption par contrôle éditorial produit un effet pervers structurel prévisible. Elle pousse les producteurs de contenu à recréer artificiellement une étape d'examen humain pour rester exempts, même quand cette étape est vidée de tout contenu réel. Un opérateur qui clique trois cents fois par jour sur des textes qu'il ne lit pas, à raison de quatre secondes par clic, ne fait pas de l'examen éditorial. Il exécute un geste rituel qui restaure la traçabilité juridique. La règle ne fait pas la différence entre un travail éditorial et un tampon de conformité, parce qu'elle n'a pas les moyens de la faire.</p>
+    <p data-en>The exemption by editorial review produces a predictable structural perverse effect. It pushes content producers to artificially recreate a human-review step to remain exempt, even when that step is emptied of any real content. An operator who clicks three hundred times a day on texts they do not read, four seconds per click, is not doing editorial review. They are performing a ritual gesture that restores legal traceability. The rule cannot distinguish between editorial work and a compliance stamp, because it has no means of doing so.</p>
+
+    <p data-fr>La Commission européenne a vu le pattern. Ses Guidelines finales, adoptées le 20 juillet 2026 douze jours avant l'entrée en vigueur, précisent explicitement que la relecture confinée aux aspects formels — l'orthographe par exemple — ne suffit pas à bénéficier de l'exception. Il faut un examen délibéré de la substance du contenu, par une ou plusieurs personnes disposant de la connaissance et du jugement professionnel pertinents sur le sujet. La règle est raffinée sur le papier. Elle reste inapplicable en pratique. Aucune autorité de surveillance ne peut vérifier ex post ce qui s'est passé pendant les quelques secondes du clic de l'opérateur, ni si sa lecture a été substantielle ou formelle. Le tampon reste tampon, et la précision réglementaire se contente d'ajouter une couche déclarative à une règle qu'elle ne peut faire appliquer.</p>
+    <p data-en>The European Commission has seen the pattern. Its final Guidelines, adopted on 20 July 2026, twelve days before the rules came into force, explicitly state that review confined to formal aspects — spelling, for example — is not sufficient to benefit from the exception. What is required is a deliberate examination of the substance of the content by one or more natural persons possessing relevant knowledge and professional judgement on the subject matter. The rule is refined on paper. It remains inapplicable in practice. No supervisory authority can verify ex post what happened during the few seconds of the operator's click, or whether their reading was substantive or formal. The stamp remains a stamp, and the regulatory refinement merely adds a declarative layer to a rule it cannot enforce.</p>
+
+    <p data-fr>Une industrie va prospérer sur ce dispositif. Elle prospère déjà. Des cabinets vendent la conformité au titre de l'AI Act. Des formations vendent la maîtrise du régime. Des logiciels d'audit vendent la traçabilité des chaînes éditoriales. Aucun de ces produits n'améliore la qualité informationnelle du texte reçu par le lecteur. Tous améliorent la position juridique du producteur. La règle a créé un marché de conformité qui capture de la ressource au titre d'un problème qu'elle ne résout pas.</p>
+    <p data-en>An industry will prosper on this apparatus. It is already prospering. Firms sell AI Act compliance solutions. Training programmes sell mastery of the regime. Audit software sells traceability of editorial chains. None of these products improves the informational quality of the text received by the reader. All of them improve the legal position of the producer. The rule has created a compliance market that captures resources on the basis of a problem it does not solve.</p>
+
+    <p data-fr>Le lecteur européen ne reçoit aucune information nouvelle sur la nature de ce qu'il lit. Le producteur européen dépense de la ressource pour se conformer à un régime qui ne protège personne. Un marché intermédiaire capture la différence.</p>
+    <p data-en>The European reader receives no new information about the nature of what they read. The European producer expends resources complying with a regime that protects no one. An intermediary market captures the difference.</p>
+
+    <p data-fr>C'est ce que révèle le cas des deux chaînes du magazine spécialisé. Non pas une singularité éditoriale, mais l'anatomie complète d'un règlement qui légifère sur une chose en disant en légiférer sur une autre. Le mot « transparence » est utilisé pour désigner autre chose que ce qu'il désigne ordinairement, et le circuit institutionnel européen n'a pas d'intérêt structurel à le nommer.</p>
+    <p data-en>This is what the case of the two chains of the specialist magazine reveals. Not an editorial curiosity, but the full anatomy of a regulation that legislates on one thing while claiming to legislate on another. The word "transparency" is used to designate something other than what it ordinarily designates, and the European institutional circuit has no structural interest in naming it.</p>
+
+    <div class="note-sources">
+      <span class="ns-label"><span data-fr>Sources</span><span data-en>Sources</span></span>
+      <div data-fr><ul>
+
+      </ul></div>
+      <div data-en><ul>
+
+      </ul></div>
+    </div>
+
+    <p data-fr>- Règlement UE 2024/1689 (AI Act), article 50 — version française consolidée : <a href="https://ai-act-service-desk.ec.europa.eu/fr/ai-act/article-50" target="_blank" rel="noopener">ai-act-service-desk.ec.europa.eu</a></p>
+    <p data-en>- Regulation (EU) 2024/1689 (AI Act), Article 50 — consolidated English version: <a href="https://artificialintelligenceact.eu/article/50/" target="_blank" rel="noopener">artificialintelligenceact.eu</a></p>
+
+    <p data-fr>- Commission européenne, <em>Transparency obligations under Article 50 of the AI Act</em>, FAQ officielle — entrée en application 2 août 2026 : <a href="https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act" target="_blank" rel="noopener">digital-strategy.ec.europa.eu</a></p>
+    <p data-en>- European Commission, <em>Transparency obligations under Article 50 of the AI Act</em>, official FAQ — 2 August 2026 entry into application: <a href="https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act" target="_blank" rel="noopener">digital-strategy.ec.europa.eu</a></p>
+
+    <p data-fr>- Commission européenne, <em>Code of Practice on Transparency of AI-generated Content</em> — suppression de la distinction « entièrement IA »/« assisté par IA » dans le projet mars 2026 : <a href="https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content" target="_blank" rel="noopener">digital-strategy.ec.europa.eu</a></p>
+    <p data-en>- European Commission, <em>Code of Practice on Transparency of AI-generated Content</em> — March 2026 draft removed the "fully AI" / "AI-assisted" distinction: <a href="https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content" target="_blank" rel="noopener">digital-strategy.ec.europa.eu</a></p>
+
+    <p data-fr>- Commission européenne, <em>Guidelines on transparency obligations for providers and deployers of certain AI systems</em>, version finale adoptée le 20 juillet 2026 : <a href="https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-transparency-obligations" target="_blank" rel="noopener">digital-strategy.ec.europa.eu</a></p>
+    <p data-en>- European Commission, <em>Guidelines on transparency obligations for providers and deployers of certain AI systems</em>, final version adopted on 20 July 2026: <a href="https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-transparency-obligations" target="_blank" rel="noopener">digital-strategy.ec.europa.eu</a></p>
+
+    <div class="partage">
+      <span class="partage-label">
+        <span data-fr>partager ce texte</span>
+        <span data-en>share this essay</span>
+      </span>
+      <div class="partage-liens" data-anchor="tampon-texte">
+        <a class="share-linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="sep">&middot;</span>
+        <a class="share-facebook" href="#" target="_blank" rel="noopener">Facebook</a>
+        <span class="sep">&middot;</span>
+        <a class="share-bluesky" href="#" target="_blank" rel="noopener">Bluesky</a>
+        <span class="sep">&middot;</span>
+        <a class="share-x" href="#" target="_blank" rel="noopener">X</a>
+        <span class="sep">&middot;</span>
+        <a class="share-email" href="#">
+          <span data-fr>email</span>
+          <span data-en>email</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="retour-haut">
+      <a href="#haut">
+        <span data-fr>&uarr; retour aux notes</span>
+        <span data-en>&uarr; back to notes</span>
+      </a>
+    </div>
+
+  </article>
 
 <!-- ===== TEXTE 53 ===== -->
   <article class="texte" id="airbus-ia">
@@ -9450,6 +9681,18 @@ a.mc-cell:hover .mc-title { color: var(--accent); }
 
   // Métadonnées de partage par texte (anchor id => fr/en)
   var SHARE_DATA = {
+    'tampon-texte': {
+      fr: {
+        title: "Le tampon et le texte.",
+        emailSubject: "Le tampon et le texte — Pierre-Jean Tribot",
+        emailBody: "Un texte de Pierre-Jean Tribot sur l'article 50(4) de l'AI Act. Deux chaînes de production aboutissent au même texte, mais le règlement les traite en sens opposé. La règle ne mesure pas la présence d'IA dans un texte — elle en est incapable — mais la présence d'un geste humain identifiable dans la chaîne. Ce qu'on présente comme de la « transparence » est en réalité un dispositif de désignation d'un responsable juridique :"
+      },
+      en: {
+        title: "The stamp and the text.",
+        emailSubject: "The stamp and the text — Pierre-Jean Tribot",
+        emailBody: "An essay by Pierre-Jean Tribot on Article 50(4) of the AI Act. Two production chains yield the same text, yet the regulation treats them in opposite ways. The rule does not measure the presence of AI in a text — it cannot — but the presence of an identifiable human gesture in the chain. What is presented as 'transparency' is in fact a mechanism for designating a legally liable party:"
+      }
+    },
     'texte-illisible': {
       fr: {
         title: "Ce que l’IA rend illisible.",
@@ -10379,7 +10622,7 @@ a.mc-cell:hover .mc-title { color: var(--accent); }
 <!-- VAGUE2-JS-START -->
 <script>
 (function () {
-  var D = {"themes":{"airbus-ia":"geopolitique","commun-numerique":"souverainete","ia-pas-oreilles":"methode","concert-desaccorde":"societe","formation-debranchee":"education","decelerer-pour-qui":"education","ai-for-all":"geopolitique","moment-volontariste":"education","taxer-ia-3":"geopolitique","taxer-ia-2":"geopolitique","taxer-ia-1":"geopolitique","travailler-avec-ia":"methode","sacem-ia":"patrimoine","apercu-erosion":"patrimoine","ia-miroir":"societe","europe-industrie":"geopolitique","texte-illisible":"souverainete","destination-substrat":"patrimoine","reinvestir-souverainete":"souverainete","souverainete-catalogues":"patrimoine","souverainete-cognitive":"souverainete","table-rase":"education","souverainete-six-ans":"education","philosophe-embarque":"souverainete","token-frugal":"economie","gouvernement-augmente":"economie","mauvais-etage":"economie","ia-tue-la-norme":"societe","machine-bibliotheque":"patrimoine","retour-des-cultives":"economie","entreprise-liquide":"economie","fable-5-precedent":"geopolitique","lecture-ia":"methode","angle-mort-infrastructure":"souverainete","spotify-onlyfans":"patrimoine","addition-transmission":"education","fondamentaux-soustraction":"education","ia-force-societe":"societe","mediation-machine":"patrimoine","porte-duree":"patrimoine","infrastructure-editoriale":"patrimoine","savoirs-fondamentaux":"education","ia-faible-fort":"societe","ia-competence-numerique":"education","metrique-ecoutes":"patrimoine","collection-catalogue":"patrimoine","institution-voix":"patrimoine","archive-presse":"patrimoine","patrimoine-image":"patrimoine","evaluation-secondaire":"education","programmation-donnee":"patrimoine","diplome-portfolio":"education","prescription-culturelle":"patrimoine"},"nb":{"airbus-ia":["taxer-ia-1","europe-industrie","taxer-ia-3","ai-for-all"],"commun-numerique":["angle-mort-infrastructure","reinvestir-souverainete","airbus-ia","souverainete-cognitive"],"ia-pas-oreilles":["travailler-avec-ia","archive-presse","metrique-ecoutes","retour-des-cultives"],"concert-desaccorde":["taxer-ia-1","ia-miroir","travailler-avec-ia","archive-presse"],"formation-debranchee":["evaluation-secondaire","travailler-avec-ia","savoirs-fondamentaux","moment-volontariste"],"decelerer-pour-qui":["souverainete-six-ans","addition-transmission","formation-debranchee","concert-desaccorde"],"ai-for-all":["airbus-ia","commun-numerique","mauvais-etage","souverainete-cognitive"],"moment-volontariste":["formation-debranchee","savoirs-fondamentaux","fondamentaux-soustraction","travailler-avec-ia"],"taxer-ia-3":["taxer-ia-2","taxer-ia-1","airbus-ia","fable-5-precedent"],"taxer-ia-2":["taxer-ia-1","taxer-ia-3","airbus-ia","entreprise-liquide"],"taxer-ia-1":["taxer-ia-2","airbus-ia","taxer-ia-3","travailler-avec-ia"],"travailler-avec-ia":["lecture-ia","formation-debranchee","taxer-ia-1","ia-pas-oreilles"],"sacem-ia":["mauvais-etage","taxer-ia-1","spotify-onlyfans","archive-presse"],"apercu-erosion":["destination-substrat","programmation-donnee","institution-voix","porte-duree"],"ia-miroir":["concert-desaccorde","europe-industrie","souverainete-six-ans","travailler-avec-ia"],"europe-industrie":["airbus-ia","angle-mort-infrastructure","taxer-ia-1","mauvais-etage"],"texte-illisible":["souverainete-cognitive","destination-substrat","souverainete-catalogues","reinvestir-souverainete"],"destination-substrat":["texte-illisible","souverainete-cognitive","souverainete-catalogues","programmation-donnee"],"reinvestir-souverainete":["souverainete-cognitive","souverainete-catalogues","texte-illisible","destination-substrat"],"souverainete-catalogues":["souverainete-cognitive","texte-illisible","reinvestir-souverainete","destination-substrat"],"souverainete-cognitive":["texte-illisible","souverainete-catalogues","reinvestir-souverainete","destination-substrat"],"table-rase":["evaluation-secondaire","addition-transmission","ia-competence-numerique","formation-debranchee"],"souverainete-six-ans":["addition-transmission","decelerer-pour-qui","reinvestir-souverainete","formation-debranchee"],"philosophe-embarque":["institution-voix","retour-des-cultives","taxer-ia-1","texte-illisible"],"token-frugal":["taxer-ia-2","retour-des-cultives","metrique-ecoutes","taxer-ia-1"],"gouvernement-augmente":["mauvais-etage","angle-mort-infrastructure","airbus-ia","taxer-ia-1"],"mauvais-etage":["sacem-ia","angle-mort-infrastructure","gouvernement-augmente","airbus-ia"],"ia-tue-la-norme":["evaluation-secondaire","fondamentaux-soustraction","porte-duree","addition-transmission"],"machine-bibliotheque":["archive-presse","travailler-avec-ia","institution-voix","concert-desaccorde"],"retour-des-cultives":["archive-presse","metrique-ecoutes","travailler-avec-ia","taxer-ia-1"],"entreprise-liquide":["taxer-ia-1","taxer-ia-2","metrique-ecoutes","spotify-onlyfans"],"fable-5-precedent":["taxer-ia-3","airbus-ia","europe-industrie","taxer-ia-2"],"lecture-ia":["travailler-avec-ia","evaluation-secondaire","mediation-machine","ia-competence-numerique"],"angle-mort-infrastructure":["commun-numerique","prescription-culturelle","europe-industrie","mauvais-etage"],"spotify-onlyfans":["metrique-ecoutes","angle-mort-infrastructure","sacem-ia","prescription-culturelle"],"addition-transmission":["fondamentaux-soustraction","evaluation-secondaire","souverainete-six-ans","ia-competence-numerique"],"fondamentaux-soustraction":["savoirs-fondamentaux","addition-transmission","formation-debranchee","travailler-avec-ia"],"ia-force-societe":["savoirs-fondamentaux","addition-transmission","evaluation-secondaire","concert-desaccorde"],"mediation-machine":["institution-voix","evaluation-secondaire","programmation-donnee","metrique-ecoutes"],"porte-duree":["ia-tue-la-norme","apercu-erosion","mediation-machine","archive-presse"],"infrastructure-editoriale":["institution-voix","mediation-machine","collection-catalogue","travailler-avec-ia"],"savoirs-fondamentaux":["fondamentaux-soustraction","formation-debranchee","ia-competence-numerique","ia-force-societe"],"ia-faible-fort":["patrimoine-image","metrique-ecoutes","prescription-culturelle","archive-presse"],"ia-competence-numerique":["formation-debranchee","savoirs-fondamentaux","travailler-avec-ia","angle-mort-infrastructure"],"metrique-ecoutes":["prescription-culturelle","spotify-onlyfans","collection-catalogue","angle-mort-infrastructure"],"collection-catalogue":["archive-presse","souverainete-catalogues","metrique-ecoutes","travailler-avec-ia"],"institution-voix":["mediation-machine","programmation-donnee","destination-substrat","collection-catalogue"],"archive-presse":["collection-catalogue","travailler-avec-ia","retour-des-cultives","machine-bibliotheque"],"patrimoine-image":["ia-faible-fort","programmation-donnee","ia-competence-numerique","prescription-culturelle"],"evaluation-secondaire":["formation-debranchee","mediation-machine","addition-transmission","ia-tue-la-norme"],"programmation-donnee":["institution-voix","destination-substrat","apercu-erosion","mediation-machine"],"diplome-portfolio":["evaluation-secondaire","mediation-machine","formation-debranchee","institution-voix"],"prescription-culturelle":["metrique-ecoutes","angle-mort-infrastructure","programmation-donnee","collection-catalogue"]},"labels":{"souverainete":["souveraineté cognitive","cognitive sovereignty"],"economie":["économie politique","political economy"],"geopolitique":["géopolitique","geopolitics"],"societe":["changements sociétaux","societal change"],"patrimoine":["culture & patrimoine","culture & heritage"],"education":["éducation","education"],"methode":["méthode","method"]},"order":["souverainete","economie","geopolitique","societe","patrimoine","education","methode"]};
+  var D = {"themes":{"tampon-texte":"geopolitique","airbus-ia":"geopolitique","commun-numerique":"souverainete","ia-pas-oreilles":"methode","concert-desaccorde":"societe","formation-debranchee":"education","decelerer-pour-qui":"education","ai-for-all":"geopolitique","moment-volontariste":"education","taxer-ia-3":"geopolitique","taxer-ia-2":"geopolitique","taxer-ia-1":"geopolitique","travailler-avec-ia":"methode","sacem-ia":"patrimoine","apercu-erosion":"patrimoine","ia-miroir":"societe","europe-industrie":"geopolitique","texte-illisible":"souverainete","destination-substrat":"patrimoine","reinvestir-souverainete":"souverainete","souverainete-catalogues":"patrimoine","souverainete-cognitive":"souverainete","table-rase":"education","souverainete-six-ans":"education","philosophe-embarque":"souverainete","token-frugal":"economie","gouvernement-augmente":"economie","mauvais-etage":"economie","ia-tue-la-norme":"societe","machine-bibliotheque":"patrimoine","retour-des-cultives":"economie","entreprise-liquide":"economie","fable-5-precedent":"geopolitique","lecture-ia":"methode","angle-mort-infrastructure":"souverainete","spotify-onlyfans":"patrimoine","addition-transmission":"education","fondamentaux-soustraction":"education","ia-force-societe":"societe","mediation-machine":"patrimoine","porte-duree":"patrimoine","infrastructure-editoriale":"patrimoine","savoirs-fondamentaux":"education","ia-faible-fort":"societe","ia-competence-numerique":"education","metrique-ecoutes":"patrimoine","collection-catalogue":"patrimoine","institution-voix":"patrimoine","archive-presse":"patrimoine","patrimoine-image":"patrimoine","evaluation-secondaire":"education","programmation-donnee":"patrimoine","diplome-portfolio":"education","prescription-culturelle":"patrimoine"},"nb":{"tampon-texte":["travailler-avec-ia","archive-presse","institution-voix","europe-industrie"],"airbus-ia":["taxer-ia-1","europe-industrie","taxer-ia-3","ai-for-all"],"commun-numerique":["angle-mort-infrastructure","reinvestir-souverainete","airbus-ia","souverainete-cognitive"],"ia-pas-oreilles":["travailler-avec-ia","archive-presse","metrique-ecoutes","retour-des-cultives"],"concert-desaccorde":["taxer-ia-1","ia-miroir","travailler-avec-ia","archive-presse"],"formation-debranchee":["evaluation-secondaire","travailler-avec-ia","savoirs-fondamentaux","moment-volontariste"],"decelerer-pour-qui":["souverainete-six-ans","addition-transmission","formation-debranchee","concert-desaccorde"],"ai-for-all":["airbus-ia","mauvais-etage","souverainete-cognitive","commun-numerique"],"moment-volontariste":["formation-debranchee","savoirs-fondamentaux","fondamentaux-soustraction","travailler-avec-ia"],"taxer-ia-3":["taxer-ia-2","taxer-ia-1","airbus-ia","fable-5-precedent"],"taxer-ia-2":["taxer-ia-1","taxer-ia-3","airbus-ia","entreprise-liquide"],"taxer-ia-1":["taxer-ia-2","airbus-ia","taxer-ia-3","travailler-avec-ia"],"travailler-avec-ia":["lecture-ia","formation-debranchee","taxer-ia-1","ia-pas-oreilles"],"sacem-ia":["mauvais-etage","taxer-ia-1","spotify-onlyfans","institution-voix"],"apercu-erosion":["destination-substrat","programmation-donnee","institution-voix","porte-duree"],"ia-miroir":["concert-desaccorde","europe-industrie","souverainete-six-ans","travailler-avec-ia"],"europe-industrie":["airbus-ia","angle-mort-infrastructure","taxer-ia-1","mauvais-etage"],"texte-illisible":["souverainete-cognitive","destination-substrat","souverainete-catalogues","reinvestir-souverainete"],"destination-substrat":["texte-illisible","souverainete-cognitive","souverainete-catalogues","programmation-donnee"],"reinvestir-souverainete":["souverainete-cognitive","souverainete-catalogues","texte-illisible","destination-substrat"],"souverainete-catalogues":["souverainete-cognitive","texte-illisible","reinvestir-souverainete","destination-substrat"],"souverainete-cognitive":["texte-illisible","souverainete-catalogues","reinvestir-souverainete","destination-substrat"],"table-rase":["evaluation-secondaire","addition-transmission","ia-competence-numerique","formation-debranchee"],"souverainete-six-ans":["addition-transmission","decelerer-pour-qui","reinvestir-souverainete","ia-competence-numerique"],"philosophe-embarque":["institution-voix","taxer-ia-1","retour-des-cultives","angle-mort-infrastructure"],"token-frugal":["taxer-ia-2","retour-des-cultives","metrique-ecoutes","taxer-ia-1"],"gouvernement-augmente":["mauvais-etage","angle-mort-infrastructure","airbus-ia","souverainete-six-ans"],"mauvais-etage":["sacem-ia","angle-mort-infrastructure","gouvernement-augmente","airbus-ia"],"ia-tue-la-norme":["evaluation-secondaire","fondamentaux-soustraction","porte-duree","addition-transmission"],"machine-bibliotheque":["archive-presse","travailler-avec-ia","institution-voix","concert-desaccorde"],"retour-des-cultives":["archive-presse","metrique-ecoutes","travailler-avec-ia","taxer-ia-1"],"entreprise-liquide":["taxer-ia-1","taxer-ia-2","metrique-ecoutes","spotify-onlyfans"],"fable-5-precedent":["taxer-ia-3","airbus-ia","europe-industrie","mauvais-etage"],"lecture-ia":["travailler-avec-ia","evaluation-secondaire","mediation-machine","ia-competence-numerique"],"angle-mort-infrastructure":["commun-numerique","prescription-culturelle","europe-industrie","mauvais-etage"],"spotify-onlyfans":["metrique-ecoutes","angle-mort-infrastructure","prescription-culturelle","sacem-ia"],"addition-transmission":["fondamentaux-soustraction","evaluation-secondaire","souverainete-six-ans","ia-competence-numerique"],"fondamentaux-soustraction":["savoirs-fondamentaux","addition-transmission","formation-debranchee","travailler-avec-ia"],"ia-force-societe":["savoirs-fondamentaux","addition-transmission","evaluation-secondaire","concert-desaccorde"],"mediation-machine":["institution-voix","evaluation-secondaire","programmation-donnee","metrique-ecoutes"],"porte-duree":["ia-tue-la-norme","apercu-erosion","mediation-machine","archive-presse"],"infrastructure-editoriale":["institution-voix","mediation-machine","collection-catalogue","travailler-avec-ia"],"savoirs-fondamentaux":["fondamentaux-soustraction","formation-debranchee","ia-competence-numerique","ia-force-societe"],"ia-faible-fort":["patrimoine-image","metrique-ecoutes","prescription-culturelle","archive-presse"],"ia-competence-numerique":["formation-debranchee","savoirs-fondamentaux","travailler-avec-ia","angle-mort-infrastructure"],"metrique-ecoutes":["prescription-culturelle","spotify-onlyfans","collection-catalogue","angle-mort-infrastructure"],"collection-catalogue":["archive-presse","souverainete-catalogues","metrique-ecoutes","institution-voix"],"institution-voix":["mediation-machine","programmation-donnee","destination-substrat","collection-catalogue"],"archive-presse":["collection-catalogue","travailler-avec-ia","retour-des-cultives","machine-bibliotheque"],"patrimoine-image":["ia-faible-fort","programmation-donnee","ia-competence-numerique","prescription-culturelle"],"evaluation-secondaire":["formation-debranchee","mediation-machine","addition-transmission","ia-tue-la-norme"],"programmation-donnee":["institution-voix","destination-substrat","apercu-erosion","mediation-machine"],"diplome-portfolio":["evaluation-secondaire","mediation-machine","formation-debranchee","institution-voix"],"prescription-culturelle":["metrique-ecoutes","angle-mort-infrastructure","programmation-donnee","collection-catalogue"]},"labels":{"souverainete":["souveraineté cognitive","cognitive sovereignty"],"economie":["économie politique","political economy"],"geopolitique":["géopolitique","geopolitics"],"societe":["changements sociétaux","societal change"],"patrimoine":["culture & patrimoine","culture & heritage"],"education":["éducation","education"],"methode":["méthode","method"]},"order":["souverainete","economie","geopolitique","societe","patrimoine","education","methode"]};
   var MOIS = {janvier:1,"février":2,fevrier:2,mars:3,avril:4,mai:5,juin:6,juillet:7,"août":8,aout:8,septembre:9,octobre:10,novembre:11,"décembre":12,decembre:12};
   var lang = function () { return document.documentElement.getAttribute('lang') || 'fr'; };
 
