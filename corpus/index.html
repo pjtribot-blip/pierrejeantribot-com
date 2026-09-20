@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-fr="Corpus — Pierre-Jean Tribot" data-en="Corpus — Pierre-Jean Tribot">Corpus — Pierre-Jean Tribot</title>
+<meta name="description" content="Cartographie du corpus de notes de Pierre-Jean Tribot : 53 textes sur l'IA, la culture, l'éducation et la souveraineté cognitive.">
+<meta name="author" content="Pierre-Jean Tribot">
+<meta name="theme-color" content="#f5efe2">
+<meta property="og:title" content="Corpus — Pierre-Jean Tribot">
+<meta property="og:description" content="Cartographie d'un travail éditorial : 53 notes, 81280 mots, six thèmes.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pierrejeantribot.com/corpus/">
+<meta property="og:image" content="https://pierrejeantribot.com/og-notes.png">
+<link rel="alternate" type="application/rss+xml" title="Pierre-Jean Tribot — Notes (RSS)" href="https://pierrejeantribot.com/feed.xml">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='10' fill='%23f5efe2'/><text x='32' y='42' font-family='Georgia, serif' font-size='26' font-weight='500' text-anchor='middle' fill='%237a3e2a'>PJT</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--fond:#f5efe2;--texte:#1a1a1a;--texte-mute:#5a5a5a;--accent:#7a3e2a;--filet:#1a1a1a;--filet-leger:#c8bfa6;--serif:"EB Garamond",Georgia,"Times New Roman",serif;--mono:"JetBrains Mono","SF Mono",Menlo,Consolas,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fond);color:var(--texte);font-family:var(--serif);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:680px;margin:0 auto;padding:32px 32px 60px}
+[data-fr],[data-en]{display:none}
+html[lang="fr"] [data-fr]{display:inline}
+html[lang="en"] [data-en]{display:inline}
+.head{border-bottom:1px solid var(--filet);padding-bottom:12px;margin-bottom:56px;display:flex;justify-content:space-between;align-items:baseline;font-family:var(--mono);font-size:11px;letter-spacing:.05em}
+.head a{color:var(--texte);text-decoration:none}
+.head .left a{font-weight:500;border-bottom:1px solid var(--accent);padding-bottom:1px;transition:all .15s}
+.head .left a:hover{background:var(--texte);color:var(--fond)}
+.head .middle{flex:1;text-align:center;font-weight:500}
+.head .middle a{border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
+.head .middle a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.head .right{color:var(--texte-mute)}
+.head .lang{color:var(--texte-mute);user-select:none}
+.head .lang button{background:none;border:none;font-family:inherit;font-size:inherit;letter-spacing:inherit;color:var(--texte-mute);cursor:pointer;padding:0;border-bottom:1px solid var(--filet-leger);padding-bottom:1px;transition:all .15s}
+.head .lang button:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.head .lang button.active{color:var(--texte);font-weight:500;border-bottom:none;cursor:default}
+.head .lang .sep{margin:0 6px}
+.hero{border-bottom:1px solid var(--filet);padding-bottom:36px;margin-bottom:40px}
+.marqueur{font-family:var(--mono);font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);margin-bottom:20px;display:block}
+h1{font-size:46px;font-weight:400;letter-spacing:-.02em;margin:0 0 16px;line-height:1}
+h1 .point{color:var(--accent)}
+.chapeau{font-size:19px;color:var(--texte-mute);line-height:1.5;max-width:56ch}
+.chapeau em{font-style:italic}
+.stats{display:flex;flex-wrap:wrap;gap:0;border-bottom:1px solid var(--filet);margin-bottom:44px}
+.stat{flex:1;min-width:96px;padding:4px 0 22px}
+.stat .v{font-family:var(--serif);font-size:30px;line-height:1;color:var(--texte)}
+.stat .l{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--texte-mute);margin-top:8px;display:block}
+.section-titre{font-family:var(--mono);font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--texte-mute);margin:0 0 6px;display:block}
+.section-intro{font-size:16px;color:var(--texte-mute);margin:0 0 28px;max-width:58ch}
+.cx-theme{margin-bottom:30px}
+.cx-theme-tete{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.cx-theme-tete h3{font-family:var(--serif);font-size:23px;font-weight:500;margin:0;letter-spacing:-.01em}
+.cx-theme-n{font-family:var(--mono);font-size:13px;color:var(--accent)}
+.cx-bar{height:3px;background:var(--filet-leger);margin:10px 0 14px;border-radius:2px;overflow:hidden}
+.cx-bar span{display:block;height:100%;background:var(--accent)}
+.cx-notes{display:flex;flex-direction:column}
+.cx-note{display:flex;gap:14px;align-items:baseline;text-decoration:none;color:var(--texte);padding:5px 0;border-bottom:1px solid rgba(200,191,166,.4);transition:all .15s}
+.cx-note:last-child{border-bottom:none}
+.cx-note:hover{color:var(--accent)}
+.cx-note-date{font-family:var(--mono);font-size:10.5px;color:var(--texte-mute);letter-spacing:.03em;width:92px;flex:none;text-transform:lowercase}
+.cx-note:hover .cx-note-date{color:var(--accent)}
+.cx-note-titre{font-size:16px;line-height:1.35}
+.chrono{border-top:1px solid var(--filet);margin-top:44px;padding-top:36px}
+.cx-mois-liste{display:flex;gap:10px;align-items:flex-end;height:130px;margin-top:20px}
+.cx-mois{flex:1;display:flex;flex-direction:column;align-items:center;height:100%;justify-content:flex-end}
+.cx-mois-bar{width:100%;max-width:44px;background:var(--accent);position:relative;border-radius:3px 3px 0 0;display:flex;justify-content:center;align-items:flex-start;min-height:6px}
+.cx-mois-n{font-family:var(--mono);font-size:11px;color:var(--fond);padding-top:4px;font-weight:500}
+.cx-mois-lab{font-family:var(--mono);font-size:10px;color:var(--texte-mute);margin-top:8px;text-transform:lowercase}
+.closing{border-top:1px solid var(--filet);margin-top:48px;padding-top:32px;font-size:17px;line-height:1.7;color:var(--texte)}
+.closing em{font-style:italic;color:var(--texte-mute)}
+.retour{margin-top:40px;font-family:var(--mono);font-size:11px}
+.retour a{color:var(--texte-mute);text-decoration:none;border-bottom:1px solid var(--filet-leger);padding-bottom:1px;transition:all .15s}
+.retour a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+::selection{background:var(--accent);color:var(--fond)}
+@media(max-width:640px){.wrap{padding:24px 20px 48px}h1{font-size:36px}.stat .v{font-size:24px}.cx-note{flex-direction:column;gap:2px}.cx-note-date{width:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="head">
+    <span class="left"><a href="/">pierrejeantribot.com</a></span>
+    <span class="middle"><a href="/notes/">notes</a> · <a href="/glossaire.html">glossaire</a> · <span style="color:#7a3e2a;">corpus</span></span>
+    <span class="lang">
+      <button id="btn-fr" type="button" aria-label="Français">FR</button>
+      <span class="sep">·</span>
+      <button id="btn-en" type="button" aria-label="English">EN</button>
+    </span>
+    <span class="right"><span data-fr>bruxelles · 2026</span><span data-en>brussels · 2026</span></span>
+  </header>
+
+  <section class="hero">
+    <span class="marqueur"><span data-fr>◆ le corpus</span><span data-en>◆ the corpus</span></span>
+    <h1>Corpus<span class="point">.</span></h1>
+    <p class="chapeau">
+      <span data-fr>Une cartographie du travail — non un flux de billets, mais un corpus organisé et citable. 53 notes écrites depuis Bruxelles sur l'économie politique de l'IA, la culture, l'éducation et la souveraineté cognitive. Voici son architecture, avant même la lecture.</span>
+      <span data-en>A cartography of the work — not a feed of posts, but an organized, citable corpus. 53 notes written from Brussels on the political economy of AI, culture, education and cognitive sovereignty. Here is its architecture, before any reading.</span>
+    </p>
+  </section>
+
+  <div class="stats">
+    <div class="stat"><span class="v">53</span><span class="l"><span data-fr>textes</span><span data-en>essays</span></span></div>
+    <div class="stat"><span class="v">81k</span><span class="l"><span data-fr>mots</span><span data-en>words</span></span></div>
+    <div class="stat"><span class="v">6</span><span class="l"><span data-fr>thèmes</span><span data-en>themes</span></span></div>
+    <div class="stat"><span class="v">2</span><span class="l"><span data-fr>langues</span><span data-en>languages</span></span></div>
+    <div class="stat"><span class="v" style="font-size:19px;letter-spacing:-.01em">mai–sept</span><span class="l"><span data-fr>2026</span><span data-en>2026</span></span></div>
+  </div>
+
+  <span class="section-titre"><span data-fr>cartographie par thème</span><span data-en>map by theme</span></span>
+  <p class="section-intro"><span data-fr>Chaque note est rattachée à un axe dominant. Les proximités fines entre notes se lisent, elles, en bas de chaque texte (« notes proches »).</span><span data-en>Each note is attached to one dominant axis. The finer proximities between notes are shown at the foot of each text (“related notes”).</span></p>
+
+  <section class="cx-theme">
+      <div class="cx-theme-tete">
+        <h3><span data-fr>souveraineté cognitive</span><span data-en>cognitive sovereignty</span></h3>
+        <span class="cx-theme-n">7</span>
+      </div>
+      <div class="cx-bar"><span style="width:44%"></span></div>
+      <div class="cx-notes"><a class="cx-note" href="/notes/#commun-numerique"><span class="cx-note-date"><span data-fr>septembre 2026</span><span data-en>september 2026</span></span><span class="cx-note-titre"><span data-fr>Le commun numérique</span><span data-en>The digital commons.</span></span></a><a class="cx-note" href="/notes/#ai-for-all"><span class="cx-note-date"><span data-fr>août 2026</span><span data-en>august 2026</span></span><span class="cx-note-titre"><span data-fr>AI for All : la Corée du Sud déploie ce que l'Europe débat</span><span data-en>AI for All: South Korea deploys what Europe debates.</span></span></a><a class="cx-note" href="/notes/#texte-illisible"><span class="cx-note-date"><span data-fr>juillet 2026</span><span data-en>july 2026</span></span><span class="cx-note-titre"><span data-fr>Ce que l'IA rend illisible</span><span data-en>What AI makes unreadable.</span></span></a><a class="cx-note" href="/notes/#souverainete-cognitive"><span class="cx-note-date"><span data-fr>juillet 2026</span><span data-en>july 2026</span></span><span class="cx-note-titre"><span data-fr>La souveraineté cognitive</span><span data-en>Cognitive sovereignty.</span></span></a><a class="cx-note" href="/notes/#reinvestir-souverainete"><span class="cx-note-date"><span data-fr>juillet 2026</span><span data-en>july 2026</span></span><span class="cx-note-titre"><span data-fr>Réinvestir la souveraineté cognitive</span><span data-en>Reinvesting cognitive sovereignty.</span></span></a><a class="cx-note" href="/notes/#philosophe-embarque"><span class="cx-note-date"><span data-fr>juin 2026</span><span data-en>june 2026</span></span><span class="cx-note-titre"><span data-fr>Le philosophe embarqué</span><span data-en>The embedded philosopher.</span></span></a><a class="cx-note" href="/notes/#angle-mort-infrastructure"><span class="cx-note-date"><span data-fr>juin 2026</span><span data-en>june 2026</span></span><span class="cx-note-titre"><span data-fr>L'angle mort — où se joue vraiment la transformation IA de la culture</span><span data-en>The blind spot — where the AI transformation of culture is really taking place.</span></span></a></div>
+    </section>
+<section class="cx-theme">
+      <div class="cx-theme-tete">
+        <h3><span data-fr>économie politique</span><span data-en>political economy</span></h3>
+        <span class="cx-theme-n">11</span>
+      </div>
+      <div class="cx-bar"><span style="width:69%"></span></div>
+      <div class="cx-notes"><a class="cx-note" href="/notes/#airbus-ia"><span class="cx-note-date"><span data-fr>septembre 2026</span><span data-en>september 2026</span></span><span class="cx-note-titre"><span data-fr>L'Airbus de l'IA</span><span data-en>The Airbus of AI.</span></span></a><a class="cx-note" href="/notes/#taxer-ia-3"><span class="cx-note-date"><span data-fr>août 2026</span><span data-en>august 2026</span></span><span class="cx-note-titre"><span data-fr>Les nouvelles Compagnies des Indes et le retour des cowboys</span><span data-en>The new East India Companies and the return of the cowboys.</span></span></a><a class="cx-note" href="/notes/#taxer-ia-2"><span class="cx-note-date"><span data-fr>août 2026</span><span data-en>august 2026</span></span><span class="cx-note-titre"><span data-fr>Taxer l'IA : les pistes pragmatiques et pourquoi elles échouent</span><span data-en>Taxing AI: the pragmatic paths and why they fail.</span></span></a><a class="cx-note" href="/notes/#taxer-ia-1"><span class="cx-note-date"><span data-fr>août 2026</span><span data-en>august 2026</span></span><span class="cx-note-titre"><span data-fr>Taxer l'IA : une question juste, une réponse impossible</span><span data-en>Taxing AI: a just question, an impossible answer.</span></span></a><a class="cx-note" href="/notes/#europe-industrie"><span class="cx-note-date"><span data-fr>août 2026</span><span data-en>august 2026</span></span><span class="cx-note-titre"><span data-fr>L’Europe régule une industrie qu’elle n’a pas</span><span data-en>Europe regulates an industry it does not have.</span></span></a><a class="cx-note" href="/notes/#token-frugal"><span class="cx-note-date"><span data-fr>juin 2026</span><span data-en>june 2026</span></span><span class="cx-note-titre"><span data-fr>Le token récompense les frugaux</span><span data-en>AI rewards the compute-poor.</span></span></a><a class="cx-note" href="/notes/#gouvernement-augmente"><span class="cx-note-date"><span data-fr>juin 2026</span><span data-en>june 2026</span></span><span class="cx-note-titre"><span data-fr>Le temps du gouvernement augmenté</span><span data-en>The time of augmented government.</span></span></a><a class="cx-note" href="/notes/#mauvais-etage"><span class="cx-note-date"><span data-fr>juin 2026</span><span data-en>june 2026</span></span><span class="cx-note-titre"><span data-fr>Le mauvais étage de la lutte</span><span data-en>The wrong floor.</span></span></a><a class="cx-note" href="/notes/#retour-des-cultives"><span class="cx-note-date"><span data-fr>juin 2026</span><span data-en>june 2026</span></span><span class="cx-note-titre"><span data-fr>Le retour des cultivés ?</span><span data-en>The return of the cultivated?</span></span></a><a class="cx-note" href="/notes/#entreprise-liquide"><span class="cx-note-date"><span data-fr>juin 2026</span><span data-en>june 2026</span></span><span class="cx-note-titre"><span data-fr>Le temps de l'entreprise liquide</span><span data-en>The time of the liquid enterprise.</span></span></a><a class="cx-note" href="/notes/#fable-5-precedent"><span class="cx-note-date"><span data-fr>juin 2026</span><span data-en>june 2026</span></span><span class="cx-note-titre"><span data-fr>Fable 5 : note sur un précédent</span><span data-en>Fable 5: note on a precedent.</span></span></a></div>
+    </section>
+<section class="cx-theme">
+      <div class="cx-theme-tete">
+        <h3><span data-fr>changements sociétaux</span><span data-en>societal change</span></h3>
+        <span class="cx-theme-n">5</span>
+      </div>
+      <div class="cx-bar"><span style="width:31%"></span></div>
+      <div class="cx-notes"><a class="cx-note" href="/notes/#concert-desaccorde"><span class="cx-note-date"><span data-fr>septembre 2026</span><span data-en>september 2026</span></span><span class="cx-note-titre"><span data-fr>Concert désaccordé</span><span data-en>Discordant concert.</span></span></a><a class="cx-note" href="/notes/#ia-miroir"><span class="cx-note-date"><span data-fr>août 2026</span><span data-en>august 2026</span></span><span class="cx-note-titre"><span data-fr>Tout le monde déteste l’IA (pour des raisons contraires)</span><span data-en>Everyone hates AI (for opposite reasons).</span></span></a><a class="cx-note" href="/notes/#ia-tue-la-norme"><span class="cx-note-date"><span data-fr>juin 2026</span><span data-en>june 2026</span></span><span class="cx-note-titre"><span data-fr>L'IA tue la norme</span><span data-en>AI kills the norm.</span></span></a><a class="cx-note" href="/notes/#ia-force-societe"><span class="cx-note-date"><span data-fr>juin 2026</span><span data-en>june 2026</span></span><span class="cx-note-titre"><span data-fr>L'IA va forcer la société à changer</span><span data-en>AI will force society to change.</span></span></a><a class="cx-note" href="/notes/#ia-faible-fort"><span class="cx-note-date"><span data-fr>mai 2026</span><span data-en>may 2026</span></span><span class="cx-note-titre"><span data-fr>Pourquoi l'IA écrase le faible et s'écrase contre le fort</span><span data-en>Why AI crushes the weak and shatters against the strong.</span></span></a></div>
+    </section>
+<section class="cx-theme">
+      <div class="cx-theme-tete">
+        <h3><span data-fr>culture & patrimoine</span><span data-en>culture & heritage</span></h3>
+        <span class="cx-theme-n">16</span>
+      </div>
+      <div class="cx-bar"><span style="width:100%"></span></div>
+      <div class="cx-notes"><a class="cx-note" href="/notes/#sacem-ia"><span class="cx-note-date"><span data-fr>août 2026</span><span data-en>august 2026</span></span><span class="cx-note-titre"><span data-fr>La SACEM de l’IA est une fausse bonne idée</span><span data-en>The “AI collecting society” is a false good idea.</span></span></a><a class="cx-note" href="/notes/#apercu-erosion"><span class="cx-note-date"><span data-fr>août 2026</span><span data-en>august 2026</span></span><span class="cx-note-titre"><span data-fr>Ce que l’aperçu ne prend pas</span><span data-en>What the overview does not take.</span></span></a><a class="cx-note" href="/notes/#destination-substrat"><span class="cx-note-date"><span data-fr>juillet 2026</span><span data-en>july 2026</span></span><span class="cx-note-titre"><span data-fr>De destination à substrat</span><span data-en>From destination to substrate.</span></span></a><a class="cx-note" href="/notes/#souverainete-catalogues"><span class="cx-note-date"><span data-fr>juillet 2026</span><span data-en>july 2026</span></span><span class="cx-note-titre"><span data-fr>La souveraineté cognitive passe aussi par les catalogues</span><span data-en>Cognitive sovereignty also runs through catalogs.</span></span></a><a class="cx-note" href="/notes/#machine-bibliotheque"><span class="cx-note-date"><span data-fr>juin 2026</span><span data-en>june 2026</span></span><span class="cx-note-titre"><span data-fr>La machine et la bibliothèque</span><span data-en>The machine and the library.</span></span></a><a class="cx-note" href="/notes/#spotify-onlyfans"><span class="cx-note-date"><span data-fr>juin 2026</span><span data-en>june 2026</span></span><span class="cx-note-titre"><span data-fr>Spotify, OnlyFans : la comparaison est-elle indécente ?</span><span data-en>Spotify, OnlyFans: is the comparison indecent?</span></span></a><a class="cx-note" href="/notes/#mediation-machine"><span class="cx-note-date"><span data-fr>mai 2026</span><span data-en>may 2026</span></span><span class="cx-note-titre"><span data-fr>La médiation et la machine</span><span data-en>Mediation and the machine.</span></span></a><a class="cx-note" href="/notes/#porte-duree"><span class="cx-note-date"><span data-fr>mai 2026</span><span data-en>may 2026</span></span><span class="cx-note-titre"><span data-fr>La porte et la durée</span><span data-en>The door and the duration.</span></span></a><a class="cx-note" href="/notes/#infrastructure-editoriale"><span class="cx-note-date"><span data-fr>mai 2026</span><span data-en>may 2026</span></span><span class="cx-note-titre"><span data-fr>Pourquoi une infrastructure éditoriale se construit désormais en quatre heures, un samedi</span><span data-en>Why an editorial infrastructure can now be built in four hours, on a Saturday.</span></span></a><a class="cx-note" href="/notes/#collection-catalogue"><span class="cx-note-date"><span data-fr>mai 2026</span><span data-en>may 2026</span></span><span class="cx-note-titre"><span data-fr>La collection et son catalogue. Pourquoi indexer ne suffit pas à valoriser</span><span data-en>The collection and its catalogue. Why indexing does not suffice to make a collection matter.</span></span></a><a class="cx-note" href="/notes/#institution-voix"><span class="cx-note-date"><span data-fr>mai 2026</span><span data-en>may 2026</span></span><span class="cx-note-titre"><span data-fr>L'institution et la voix. Pourquoi les agents conversationnels parlent désormais à la place des institutions culturelles</span><span data-en>The institution and the voice. Why conversational agents now speak for cultural institutions.</span></span></a><a class="cx-note" href="/notes/#archive-presse"><span class="cx-note-date"><span data-fr>mai 2026</span><span data-en>may 2026</span></span><span class="cx-note-titre"><span data-fr>L'archive et la machine. Pourquoi une presse spécialisée vaut moins par ce qu'elle a écrit que par ce qu'elle continue d'écrire</span><span data-en>The archive and the machine. Why specialised press is worth less for what it has written than for what it keeps writing.</span></span></a><a class="cx-note" href="/notes/#patrimoine-image"><span class="cx-note-date"><span data-fr>mai 2026</span><span data-en>may 2026</span></span><span class="cx-note-titre"><span data-fr>Le patrimoine et la machine. Pourquoi l'image générée menace la mémoire des bâtiments</span><span data-en>Heritage and the machine. Why the generated image threatens the memory of buildings.</span></span></a><a class="cx-note" href="/notes/#programmation-donnee"><span class="cx-note-date"><span data-fr>mai 2026</span><span data-en>may 2026</span></span><span class="cx-note-titre"><span data-fr>La programmation et la donnée. Pourquoi une saison peut rester invisible</span><span data-en>The programming and the data. Why a season can remain invisible.</span></span></a><a class="cx-note" href="/notes/#prescription-culturelle"><span class="cx-note-date"><span data-fr>mai 2026</span><span data-en>may 2026</span></span><span class="cx-note-titre"><span data-fr>L'IA et la prescription culturelle. Pourquoi ne pas tout laisser aux plateformes</span><span data-en>AI and cultural prescription. Why we shouldn't leave it all to the platforms.</span></span></a><a class="cx-note" href="/notes/#metrique-ecoutes"><span class="cx-note-date"><span data-fr>mai 2026</span><span data-en>may 2026</span></span><span class="cx-note-titre"><span data-fr>La métrique d'écoutes. Pourquoi la métrique d'écoutes perd son sens éditorial</span><span data-en>The streaming metric. Why the streaming metric is losing its editorial meaning.</span></span></a></div>
+    </section>
+<section class="cx-theme">
+      <div class="cx-theme-tete">
+        <h3><span data-fr>éducation</span><span data-en>education</span></h3>
+        <span class="cx-theme-n">11</span>
+      </div>
+      <div class="cx-bar"><span style="width:69%"></span></div>
+      <div class="cx-notes"><a class="cx-note" href="/notes/#formation-debranchee"><span class="cx-note-date"><span data-fr>septembre 2026</span><span data-en>september 2026</span></span><span class="cx-note-titre"><span data-fr>La formation à l'IA commence débranchée</span><span data-en>Training for AI begins unplugged.</span></span></a><a class="cx-note" href="/notes/#decelerer-pour-qui"><span class="cx-note-date"><span data-fr>août 2026</span><span data-en>august 2026</span></span><span class="cx-note-titre"><span data-fr>Décélérer pour qui ?</span><span data-en>Decelerate for whom?.</span></span></a><a class="cx-note" href="/notes/#moment-volontariste"><span class="cx-note-date"><span data-fr>août 2026</span><span data-en>august 2026</span></span><span class="cx-note-titre"><span data-fr>Le moment volontariste</span><span data-en>The voluntarist moment.</span></span></a><a class="cx-note" href="/notes/#table-rase"><span class="cx-note-date"><span data-fr>juillet 2026</span><span data-en>july 2026</span></span><span class="cx-note-titre"><span data-fr>Du passé faisons table rase</span><span data-en>Let us make a clean slate of the past.</span></span></a><a class="cx-note" href="/notes/#souverainete-six-ans"><span class="cx-note-date"><span data-fr>juillet 2026</span><span data-en>july 2026</span></span><span class="cx-note-titre"><span data-fr>La souveraineté cognitive commence à six ans</span><span data-en>Cognitive sovereignty starts at six.</span></span></a><a class="cx-note" href="/notes/#addition-transmission"><span class="cx-note-date"><span data-fr>juin 2026</span><span data-en>june 2026</span></span><span class="cx-note-titre"><span data-fr>Pourquoi l'addition tue la transmission</span><span data-en>Why addition kills transmission.</span></span></a><a class="cx-note" href="/notes/#fondamentaux-soustraction"><span class="cx-note-date"><span data-fr>juin 2026</span><span data-en>june 2026</span></span><span class="cx-note-titre"><span data-fr>Pourquoi l'IA redéfinit les fondamentaux par soustraction</span><span data-en>Why AI redefines the fundamentals by subtraction.</span></span></a><a class="cx-note" href="/notes/#savoirs-fondamentaux"><span class="cx-note-date"><span data-fr>mai 2026</span><span data-en>may 2026</span></span><span class="cx-note-titre"><span data-fr>Pourquoi nommer les savoirs fondamentaux à l'ère de l'intelligence artificielle</span><span data-en>Why we must name the foundational skills in the age of AI.</span></span></a><a class="cx-note" href="/notes/#ia-competence-numerique"><span class="cx-note-date"><span data-fr>mai 2026</span><span data-en>may 2026</span></span><span class="cx-note-titre"><span data-fr>Pourquoi l'IA n'est pas une compétence numérique</span><span data-en>Why AI is not a digital skill.</span></span></a><a class="cx-note" href="/notes/#evaluation-secondaire"><span class="cx-note-date"><span data-fr>mai 2026</span><span data-en>may 2026</span></span><span class="cx-note-titre"><span data-fr>L'école et l'évaluation. Pourquoi il va falloir réinventer la manière dont on mesure ce qu'un élève sait</span><span data-en>School and assessment. Why we will have to reinvent the way we measure what a pupil knows.</span></span></a><a class="cx-note" href="/notes/#diplome-portfolio"><span class="cx-note-date"><span data-fr>mai 2026</span><span data-en>may 2026</span></span><span class="cx-note-titre"><span data-fr>Le diplôme et le portfolio. Pourquoi la preuve directe remplace progressivement le titre</span><span data-en>The diploma and the portfolio. Why direct evidence is gradually replacing the title.</span></span></a></div>
+    </section>
+<section class="cx-theme">
+      <div class="cx-theme-tete">
+        <h3><span data-fr>méthode</span><span data-en>method</span></h3>
+        <span class="cx-theme-n">3</span>
+      </div>
+      <div class="cx-bar"><span style="width:19%"></span></div>
+      <div class="cx-notes"><a class="cx-note" href="/notes/#ia-pas-oreilles"><span class="cx-note-date"><span data-fr>septembre 2026</span><span data-en>september 2026</span></span><span class="cx-note-titre"><span data-fr>L'IA n'a pas d'oreilles</span><span data-en>AI has no ears.</span></span></a><a class="cx-note" href="/notes/#travailler-avec-ia"><span class="cx-note-date"><span data-fr>août 2026</span><span data-en>august 2026</span></span><span class="cx-note-titre"><span data-fr>Je travaille avec l'IA. Je le revendique</span><span data-en>I work with AI. I claim it.</span></span></a><a class="cx-note" href="/notes/#lecture-ia"><span class="cx-note-date"><span data-fr>juin 2026</span><span data-en>june 2026</span></span><span class="cx-note-titre"><span data-fr>Changer ses méthodes de lecture à l'ère de l'IA</span><span data-en>Changing reading methods in the age of AI.</span></span></a></div>
+    </section>
+
+  <section class="chrono">
+    <span class="section-titre"><span data-fr>chronologie</span><span data-en>timeline</span></span>
+    <p class="section-intro"><span data-fr>Rythme de publication, par mois — 2026.</span><span data-en>Publishing rhythm, by month — 2026.</span></p>
+    <div class="cx-mois-liste"><div class="cx-mois"><span class="cx-mois-bar" style="height:100%"><span class="cx-mois-n">15</span></span><span class="cx-mois-lab"><span data-fr>mai</span><span data-en>may</span></span></div><div class="cx-mois"><span class="cx-mois-bar" style="height:100%"><span class="cx-mois-n">15</span></span><span class="cx-mois-lab"><span data-fr>juin</span><span data-en>june</span></span></div><div class="cx-mois"><span class="cx-mois-bar" style="height:47%"><span class="cx-mois-n">7</span></span><span class="cx-mois-lab"><span data-fr>juil</span><span data-en>july</span></span></div><div class="cx-mois"><span class="cx-mois-bar" style="height:73%"><span class="cx-mois-n">11</span></span><span class="cx-mois-lab"><span data-fr>août</span><span data-en>augu</span></span></div><div class="cx-mois"><span class="cx-mois-bar" style="height:33%"><span class="cx-mois-n">5</span></span><span class="cx-mois-lab"><span data-fr>sept</span><span data-en>sept</span></span></div></div>
+  </section>
+
+  <p class="closing">
+    <span data-fr>Ce corpus est en cours. Il se lit par thème, par date, ou de proche en proche. Chaque note est citable — <em>une référence formatée figure en tête de chacune</em> — et partageable au passage précis. Le geste éditorial est là : faire d'un flux une architecture.</span>
+    <span data-en>This corpus is a work in progress. It can be read by theme, by date, or from one note to the next. Each note is citable — <em>a formatted reference sits at the head of each</em> — and shareable down to the precise passage. The editorial gesture is here: turning a feed into an architecture.</span>
+  </p>
+
+  <div class="retour"><a href="/notes/"><span data-fr>↑ lire les notes</span><span data-en>↑ read the notes</span></a></div>
+</div>
+
+<script>
+(function(){
+  var html=document.documentElement, fr=document.getElementById('btn-fr'), en=document.getElementById('btn-en');
+  function set(l){ if(l!=='en')l='fr'; html.setAttribute('lang',l); fr.classList.toggle('active',l==='fr'); en.classList.toggle('active',l==='en'); try{localStorage.setItem('lang',l);}catch(e){} }
+  function detect(){ var h=location.hash; if(h==='#en')return'en'; if(h==='#fr')return'fr'; var s; try{s=localStorage.getItem('lang');}catch(e){} if(s==='fr'||s==='en')return s; return (navigator.language||'fr').toLowerCase().indexOf('en')===0?'en':'fr'; }
+  fr.addEventListener('click',function(){set('fr');}); en.addEventListener('click',function(){set('en');});
+  set(detect());
+})();
+</script>
+</body>
+</html>
