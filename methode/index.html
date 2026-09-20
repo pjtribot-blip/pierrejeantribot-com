@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-fr="Méthode — Pierre-Jean Tribot" data-en="Method — Pierre-Jean Tribot">Méthode — Pierre-Jean Tribot</title>
+<meta name="description" content="Comment ces notes sont écrites : l'IA comme outillage du sujet compétent, pas comme labellisation externe. La méthode de travail de Pierre-Jean Tribot.">
+<meta name="author" content="Pierre-Jean Tribot">
+<meta name="theme-color" content="#f5efe2">
+<meta property="og:title" content="Méthode — Pierre-Jean Tribot">
+<meta property="og:description" content="L'IA comme outillage du sujet compétent, pas comme labellisation externe. Une pratique revendiquée.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://pierrejeantribot.com/methode/">
+<meta property="og:image" content="https://pierrejeantribot.com/og-notes.png">
+<link rel="alternate" type="application/rss+xml" title="Pierre-Jean Tribot — Notes (RSS)" href="https://pierrejeantribot.com/feed.xml">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='10' fill='%23f5efe2'/><text x='32' y='42' font-family='Georgia, serif' font-size='26' font-weight='500' text-anchor='middle' fill='%237a3e2a'>PJT</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--fond:#f5efe2;--texte:#1a1a1a;--texte-mute:#5a5a5a;--accent:#7a3e2a;--filet:#1a1a1a;--filet-leger:#c8bfa6;--serif:"EB Garamond",Georgia,"Times New Roman",serif;--mono:"JetBrains Mono","SF Mono",Menlo,Consolas,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fond);color:var(--texte);font-family:var(--serif);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:680px;margin:0 auto;padding:32px 32px 60px}
+[data-fr],[data-en]{display:none}
+html[lang="fr"] [data-fr]{display:inline}
+html[lang="en"] [data-en]{display:inline}
+html[lang="fr"] p[data-fr],html[lang="fr"] .lead[data-fr]{display:block}
+html[lang="en"] p[data-en],html[lang="en"] .lead[data-en]{display:block}
+.head{border-bottom:1px solid var(--filet);padding-bottom:12px;margin-bottom:56px;display:flex;justify-content:space-between;align-items:baseline;font-family:var(--mono);font-size:11px;letter-spacing:.05em}
+.head a{color:var(--texte);text-decoration:none}
+.head .left a{font-weight:500;border-bottom:1px solid var(--accent);padding-bottom:1px;transition:all .15s}
+.head .left a:hover{background:var(--texte);color:var(--fond)}
+.head .middle{flex:1;text-align:center;font-weight:500}
+.head .middle a{border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
+.head .middle a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.head .right{color:var(--texte-mute)}
+.head .lang{color:var(--texte-mute);user-select:none}
+.head .lang button{background:none;border:none;font-family:inherit;font-size:inherit;letter-spacing:inherit;color:var(--texte-mute);cursor:pointer;padding:0;border-bottom:1px solid var(--filet-leger);padding-bottom:1px;transition:all .15s}
+.head .lang button:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.head .lang button.active{color:var(--texte);font-weight:500;border-bottom:none;cursor:default}
+.head .lang .sep{margin:0 6px}
+.hero{border-bottom:1px solid var(--filet);padding-bottom:36px;margin-bottom:40px}
+.marqueur{font-family:var(--mono);font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);margin-bottom:20px;display:block}
+h1{font-size:46px;font-weight:400;letter-spacing:-.02em;margin:0 0 16px;line-height:1}
+h1 .point{color:var(--accent)}
+.lead{font-size:19px;color:var(--texte-mute);line-height:1.5;max-width:58ch;margin:0}
+.lead em{font-style:italic}
+h2{font-family:var(--serif);font-size:26px;font-weight:500;letter-spacing:-.01em;line-height:1.2;margin:44px 0 16px}
+h2 .point{color:var(--accent)}
+p{font-family:var(--serif);font-size:18px;line-height:1.75;margin:0 0 22px;color:var(--texte);max-width:64ch}
+p strong{font-weight:600;color:var(--accent)}
+p em{font-style:italic}
+.pour-aller{border-top:1px solid var(--filet);margin-top:48px;padding-top:28px}
+.pal{font-family:var(--mono);font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--texte-mute);margin-bottom:16px;display:block}
+.pal-liste{display:flex;flex-direction:column;gap:2px}
+.pal-item{display:flex;gap:12px;align-items:baseline;text-decoration:none;color:var(--texte);padding:8px 0;border-bottom:1px solid rgba(200,191,166,.4);transition:all .15s}
+.pal-item:hover{color:var(--accent)}
+.pal-item .num{font-family:var(--mono);font-size:10px;color:var(--texte-mute)}
+.pal-item:hover .num{color:var(--accent)}
+.pal-item .t{font-size:16px}
+.retour{margin-top:40px;font-family:var(--mono);font-size:11px}
+.retour a{color:var(--texte-mute);text-decoration:none;border-bottom:1px solid var(--filet-leger);padding-bottom:1px;transition:all .15s}
+.retour a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.note-brouillon{font-family:var(--mono);font-size:10px;letter-spacing:.05em;color:var(--texte-mute);border:1px dashed var(--filet-leger);border-radius:3px;padding:8px 12px;margin-bottom:24px}
+::selection{background:var(--accent);color:var(--fond)}
+@media(max-width:640px){.wrap{padding:24px 20px 48px}h1{font-size:36px}h2{font-size:22px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="head">
+    <span class="left"><a href="/">pierrejeantribot.com</a></span>
+    <span class="middle"><a href="/notes/">notes</a> · <a href="/glossaire.html">glossaire</a> · <a href="/corpus/">corpus</a> · <span style="color:#7a3e2a;">méthode</span></span>
+    <span class="lang">
+      <button id="btn-fr" type="button" aria-label="Français">FR</button>
+      <span class="sep">·</span>
+      <button id="btn-en" type="button" aria-label="English">EN</button>
+    </span>
+    <span class="right"><span data-fr>bruxelles · 2026</span><span data-en>brussels · 2026</span></span>
+  </header>
+
+  <section class="hero">
+    <span class="marqueur"><span data-fr>◆ méthode</span><span data-en>◆ method</span></span>
+    <h1><span data-fr>Méthode<span class="point">.</span></span><span data-en>Method<span class="point">.</span></span></h1>
+    <p class="lead" data-fr>Comment ces notes sont écrites. Non pas malgré l'intelligence artificielle, ni grâce à elle au sens paresseux — mais <em>avec</em> elle, comme outillage d'un sujet compétent. Une pratique revendiquée, pas une pratique à confesser.</p>
+    <p class="lead" data-en>How these notes are written. Not despite artificial intelligence, nor thanks to it in the lazy sense — but <em>with</em> it, as the tooling of a competent subject. A practice claimed, not a practice to confess.</p>
+  </section>
+
+  <h2><span data-fr>L'outillage du sujet compétent<span class="point">.</span></span><span data-en>The tooling of the competent subject<span class="point">.</span></span></h2>
+  <p data-fr>Je travaille quotidiennement avec plusieurs systèmes d'intelligence artificielle. Je le revendique. Je ne les utilise pas pour éviter de penser, ni pour produire à la chaîne des textes auxquels je n'aurais rien à ajouter : je les utilise parce qu'ils ont changé, de façon irréversible, les conditions concrètes du travail intellectuel — la recherche documentaire, la comparaison de sources, la mise à l'épreuve d'une hypothèse, l'organisation d'un corpus, la vitesse à laquelle une idée peut être discutée.</p>
+  <p data-fr>Le principe tient en une phrase : <strong>l'IA comme outillage du sujet compétent, pas comme labellisation externe.</strong> Le sujet compétent, c'est l'éditeur formé, qui écoute, qui juge, qui signe. L'outillage, c'est le modèle, qui accélère, contextualise, structure, propose. Rien n'est délégué au sens fort. Ce qui bouge, c'est l'échelle à laquelle le sujet peut opérer. La souveraineté cognitive se gagne ainsi par la pratique, pas par le principe.</p>
+  <p data-en>I work daily with several artificial-intelligence systems. I claim it. I do not use them to avoid thinking, nor to churn out texts I would have nothing to add to: I use them because they have irreversibly changed the concrete conditions of intellectual work — documentary research, the comparison of sources, the testing of a hypothesis, the organisation of a corpus, the speed at which an idea can be discussed.</p>
+  <p data-en>The principle holds in one sentence: <strong>AI as the tooling of the competent subject, not as external labelling.</strong> The competent subject is the trained editor, who listens, who judges, who signs. The tooling is the model, which accelerates, contextualises, structures, proposes. Nothing is delegated in the strong sense. What shifts is the scale at which the subject can operate. Cognitive sovereignty is won this way through practice, not through principle.</p>
+
+  <h2><span data-fr>Le dialogue dans la durée<span class="point">.</span></span><span data-en>Dialogue over time<span class="point">.</span></span></h2>
+  <p data-fr>Le débat sur le « prompting » me paraît mal posé. Le prompt n'est pas une compétence intellectuelle en soi : c'est une interface. Avant le prompt, il y a le travail qui compte — identifier ce que l'on sait, localiser ce que l'on ignore, formuler la tension qui mérite d'être explorée, décider de la question qu'il faut réellement poser. <em>Confondre le prompt et la problématisation, c'est confondre la plume et l'écriture.</em></p>
+  <p data-fr>Je ne demande donc pas à une IA de penser à ma place. Je pars d'une intuition, d'une contradiction, d'un problème concret ; je l'expose, souvent oralement, dans une forme incomplète ; je demande à l'outil de la déplier, de produire des objections, d'identifier les faits à vérifier, de suggérer une structure. Puis je reviens, je précise, je contredis, je coupe, je recommence. Un texte publié — a fortiori une série — est le sédiment d'une dizaine de sessions, parfois d'un mois de maturation, où l'IA a été tour à tour documentaliste, contradicteur, mémoire de travail et compagnon de pensée.</p>
+  <p data-en>The debate on “prompting” seems to me badly framed. The prompt is not an intellectual skill in itself: it is an interface. Before the prompt comes the work that matters — identifying what one knows, locating what one ignores, formulating the tension worth exploring, deciding the question one must really ask. <em>To confuse the prompt with problem-framing is to confuse the pen with writing.</em></p>
+  <p data-en>So I do not ask an AI to think in my place. I begin from an intuition, a contradiction, a concrete problem; I lay it out, often aloud, in an incomplete form; I ask the tool to unfold it, to produce objections, to identify the facts to check, to suggest a structure. Then I return, I sharpen, I contradict, I cut, I begin again. A published text — all the more a series — is the sediment of a dozen sessions, sometimes a month of maturation, in which the AI was in turn documentalist, contradictor, working memory and companion of thought.</p>
+
+  <h2><span data-fr>Ce qui ne se délègue pas<span class="point">.</span></span><span data-en>What cannot be delegated<span class="point">.</span></span></h2>
+  <p data-fr>Ce que l'IA fait bien change d'échelle : la vitesse d'accès au contexte factuel, la mémoire d'une conversation étalée, le tri partenaire de la matière. Ce qu'elle rate est plus instructif encore. Quand elle se trompe, elle produit ses erreurs avec exactement la même assurance stylistique, la même densité apparente que ses réussites : <strong>la confiance du style ne trie pas le vrai du faux.</strong> Seule la compétence extérieure du sujet le peut, en revérifiant, en confrontant, en mobilisant sa mémoire propre. Et elle n'écoute pas : toute la matière critique irréductible passe par l'oreille. L'IA peut faire semblant d'entendre ; elle n'entend pas.</p>
+  <p data-fr>Restent donc entièrement du côté du sujet : l'écoute, le jugement, la formule signature, l'architecture argumentative, et la responsabilité. Je signe ce que je publie. J'en assume les faits, les faiblesses, les angles, les erreurs éventuelles et les conséquences. <em>Cette responsabilité ne se délègue pas.</em></p>
+  <p data-en>What the AI does well changes scale: speed of access to factual context, the memory of a conversation spread over weeks, a partner in sorting the material. What it misses is more instructive still. When it errs, it produces its mistakes with exactly the same stylistic assurance, the same apparent density as its successes: <strong>the confidence of style does not sort the true from the false.</strong> Only the subject's outside competence can, by re-checking, by confronting, by drawing on its own memory. And it does not listen: all the irreducible critical material passes through the ear. The AI can pretend to hear; it does not hear.</p>
+  <p data-en>What remains entirely on the subject's side: listening, judgment, the signature phrase, the argumentative architecture, and responsibility. I sign what I publish. I answer for its facts, its weaknesses, its angles, its possible errors and its consequences. <em>This responsibility cannot be delegated.</em></p>
+
+  <h2><span data-fr>Une fracture qui s'approfondit<span class="point">.</span></span><span data-en>A widening divide<span class="point">.</span></span></h2>
+  <p data-fr>Je ne prétends pas que cette pratique soit généralisable. L'outillage du sujet compétent ne démocratise pas la compétence : il en amplifie l'écart avec celui qui n'en a pas. Ceux qui écoutent déjà écouteront plus et mieux ; ceux qui n'écoutaient pas produiront à grande échelle des textes plausibles sans écoute. La fracture ne va pas se combler, elle va s'approfondir. Documenter cette méthode ne prétend rien y changer : c'est un état des lieux, à la date où il est possible de le publier.</p>
+  <p data-en>I do not claim this practice can be generalised. The tooling of the competent subject does not democratise competence: it widens the gap with whoever lacks it. Those who already listen will listen more and better; those who did not listen will produce, at scale, plausible texts without listening. The divide will not close; it will deepen. Documenting this method claims to change none of that: it is a stocktaking, at the date it can be published.</p>
+
+  <nav class="pour-aller">
+    <span class="pal"><span data-fr>ces notes développent la méthode</span><span data-en>these notes develop the method</span></span>
+    <div class="pal-liste">
+      <a class="pal-item" href="/notes/#travailler-avec-ia"><span class="num">01</span><span class="t"><span data-fr>Je travaille avec l'IA. Je le revendique</span><span data-en>I work with AI. I claim it</span></span></a>
+      <a class="pal-item" href="/notes/#ia-pas-oreilles"><span class="num">02</span><span class="t"><span data-fr>L'IA n'a pas d'oreilles</span><span data-en>AI has no ears</span></span></a>
+      <a class="pal-item" href="/notes/#lecture-ia"><span class="num">03</span><span class="t"><span data-fr>Changer ses méthodes de lecture à l'ère de l'IA</span><span data-en>Changing one's reading methods in the age of AI</span></span></a>
+    </div>
+  </nav>
+
+  <div class="retour"><a href="/notes/"><span data-fr>↑ lire les notes</span><span data-en>↑ read the notes</span></a></div>
+</div>
+
+<script>
+(function(){
+  var html=document.documentElement, fr=document.getElementById('btn-fr'), en=document.getElementById('btn-en');
+  function set(l){ if(l!=='en')l='fr'; html.setAttribute('lang',l); fr.classList.toggle('active',l==='fr'); en.classList.toggle('active',l==='en'); try{localStorage.setItem('lang',l);}catch(e){} }
+  function detect(){ var h=location.hash; if(h==='#en')return'en'; if(h==='#fr')return'fr'; var s; try{s=localStorage.getItem('lang');}catch(e){} if(s==='fr'||s==='en')return s; return (navigator.language||'fr').toLowerCase().indexOf('en')===0?'en':'fr'; }
+  fr.addEventListener('click',function(){set('fr');}); en.addEventListener('click',function(){set('en');});
+  set(detect());
+})();
+</script>
+</body>
+</html>
