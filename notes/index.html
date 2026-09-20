@@ -558,6 +558,20 @@ html.js-ready body.reading .texte.is-active {
 .at-titre { font-family: var(--serif); font-size: 15px; line-height: 1.25; }
 .at-titre .point { color: var(--accent); }
 @media (max-width: 640px) { .at-liste { grid-template-columns: 1fr; } .fv2-lab { width: 100%; } }
+
+/* Mini-carte chronologique (piste 7) — en tête de note */
+.mini-carte { display: flex; margin: 0 0 34px; border: 1px solid var(--filet-leger); border-radius: 4px; overflow: hidden; }
+.mc-cell { flex: 1 1 0; min-width: 0; padding: 9px 13px; text-decoration: none; color: var(--texte-mute); display: flex; flex-direction: column; gap: 4px; transition: background 0.15s ease, color 0.15s ease; }
+.mc-cell + .mc-cell { border-left: 1px solid var(--filet-leger); }
+a.mc-cell:hover { background: rgba(26,26,26,0.03); color: var(--accent); }
+.mc-dir { font-family: var(--mono); font-size: 8.5px; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.75; }
+.mc-title { font-family: var(--serif); font-size: 13px; line-height: 1.25; color: var(--texte); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+a.mc-cell:hover .mc-title { color: var(--accent); }
+.mc-here { flex: 1.25 1 0; background: var(--accent); cursor: default; }
+.mc-here .mc-dir { color: var(--fond); opacity: 0.85; }
+.mc-here .mc-title { color: var(--fond); white-space: normal; font-style: italic; }
+.mc-empty { opacity: 0.4; }
+@media (max-width: 640px) { .mc-title { font-size: 12px; } .mc-cell { padding: 8px 10px; } }
 /* VAGUE2-CSS-END */
 
 /* En incubation (piste 10) — discret, en bas de l'index */
@@ -10388,6 +10402,13 @@ html.js-ready body.reading .texte.is-active {
     titres[id] = clone.innerHTML;
   });
 
+  // Ordre chronologique (vignettes d'index : plus récent d'abord)
+  var ordre = [];
+  document.querySelectorAll('.index-item a.index-title').forEach(function (a) {
+    var id = idFromHref(a); if (id) ordre.push(id);
+  });
+  var pos = {}; ordre.forEach(function (id, i) { pos[id] = i; });
+
   // ---- Piste 1 : tagger les vignettes + filtres ----
   var items = [].slice.call(document.querySelectorAll('.index-item'));
   items.forEach(function (it) {
@@ -10468,6 +10489,32 @@ html.js-ready body.reading .texte.is-active {
     var partage = art.querySelector('.partage');
     if (partage) partage.parentNode.insertBefore(block, partage);
     else { var rh = art.querySelector('.retour-haut'); if (rh) rh.parentNode.insertBefore(block, rh); else art.appendChild(block); }
+  });
+
+  // ---- Piste 7 : mini-carte chronologique en tête de note ----
+  function themeSpans(th) {
+    return th ? '<span data-fr>' + D.labels[th][0] + '</span><span data-en>' + D.labels[th][1] + '</span>' : '';
+  }
+  document.querySelectorAll('article.texte').forEach(function (art) {
+    var id = art.id;
+    if (!id || !(id in pos) || art.querySelector('.mini-carte')) return;
+    var i = pos[id];
+    var older = ordre[i + 1]; // celle qui l'annonce (plus ancienne)
+    var newer = ordre[i - 1]; // celle qui la prolonge (plus récente)
+    function cell(nid, dirFr, dirEn) {
+      if (nid && titres[nid]) {
+        return '<a class="mc-cell" href="#' + nid + '"><span class="mc-dir">' + bothLang(dirFr, dirEn) + '</span><span class="mc-title">' + titres[nid] + '</span></a>';
+      }
+      return '<span class="mc-cell mc-empty"><span class="mc-dir">' + bothLang(dirFr, dirEn) + '</span><span class="mc-title">—</span></span>';
+    }
+    var here = '<span class="mc-cell mc-here"><span class="mc-dir">' + bothLang('cette note', 'this note') + '</span><span class="mc-title">' + themeSpans(D.themes[id]) + '</span></span>';
+    var nav = document.createElement('nav');
+    nav.className = 'mini-carte';
+    nav.setAttribute('aria-label', 'Position dans le corpus');
+    nav.innerHTML = cell(older, '◄ précédente', '◄ earlier') + here + cell(newer, 'suivante ►', 'later ►');
+    var anchor = art.querySelector('.citation') || art.querySelector('.texte-date');
+    if (anchor) anchor.parentNode.insertBefore(nav, anchor.nextSibling);
+    else art.insertBefore(nav, art.firstChild);
   });
 
   applyFilter();
