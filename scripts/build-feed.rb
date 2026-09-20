@@ -108,7 +108,16 @@ html.scan(/<article class="index-item">(.*?)<\/article>/m).each_with_index do |(
   }
 end
 
-build_date = items.map { |i| i[:date] }.max || Time.new(2026, 1, 1, 12, 0, 0, "+02:00")
+# Les vignettes d'index sont déjà en ordre chronologique décroissant (ordre du site).
+# On force les pubDate à décroître strictement dans cet ordre, pour que les lecteurs
+# RSS respectent l'ordre du site même quand une note n'a qu'un mois (jour ambigu).
+prev = nil
+items.each do |it|
+  it[:date] = prev - 60 if prev && it[:date] >= prev
+  prev = it[:date]
+end
+
+build_date = items.first ? items.first[:date] : Time.new(2026, 1, 1, 12, 0, 0, "+02:00")
 
 xml = +%(<?xml version="1.0" encoding="UTF-8"?>\n)
 xml << %(<rss version="2.0"\n  xmlns:content="http://purl.org/rss/1.0/modules/content/"\n  xmlns:atom="http://www.w3.org/2005/Atom"\n  xmlns:dc="http://purl.org/dc/elements/1.1/">\n)
