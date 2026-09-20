@@ -3,7 +3,7 @@
 // La clé API reste côté serveur (variable d'env ANTHROPIC_API_KEY). Aucune dépendance npm.
 
 const CORPUS_URL = "https://pierrejeantribot.com/corpus-index.json";
-const MODEL = "claude-sonnet-5";
+const MODEL = process.env.ANTHROPIC_MODEL || "claude-sonnet-5";
 const TOP_K = 4;              // notes envoyées au modèle par question
 const MAX_NOTE_CHARS = 6000;  // borne par note (coût)
 const MAX_TOKENS = 800;       // borne la réponse (coût)
@@ -106,12 +106,22 @@ module.exports = async (req, res) => {
       return;
     }
     const data = await ar.json();
-    const answer = (data.content && data.content[0] && data.content[0].text) || "";
-    res.statusCode = 200;
-    res.end(JSON.stringify({
+    const blocks = Array.isArray(data.content) ? data.content : [];
+    const answer = blocks.filter(b => b && b.type === "text" && b.text).map(b => b.text).join("\n").trim();
+    const out = {
       answer: answer,
       sources: picked.map(n => ({ title: n.title_fr, title_en: n.title_en, url: n.url }))
-    }));
+    };
+    if (!answer) {
+      out._debug = {
+        model: data.model,
+        stop_reason: data.stop_reason,
+        types: blocks.map(b => b && b.type),
+        api_error: data.error || null
+      };
+    }
+    res.statusCode = 200;
+    res.end(JSON.stringify(out));
   } catch (e) {
     res.statusCode = 500;
     res.end(JSON.stringify({ error: "erreur_serveur", message: String(e && e.message || e) }));
