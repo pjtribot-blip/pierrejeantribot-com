@@ -449,6 +449,92 @@ html.js-ready body.reading .texte.is-active {
 .fil-ariane .titre-courant {
   color: var(--texte-mute);
 }
+
+/* ============================================================
+   Vague 1 — corpus citable
+   Ancres par section (4) + microformat citable (6)
+   ============================================================ */
+
+/* Ancre cliquable révélée au survol d'un titre de section */
+.texte h3 { position: relative; }
+.lien-section {
+  font-family: var(--mono);
+  font-size: 0.62em;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--filet-leger);
+  text-decoration: none;
+  margin-left: 0.45em;
+  vertical-align: 0.12em;
+  opacity: 0;
+  transition: opacity 0.15s ease, color 0.15s ease;
+}
+.texte h3:hover .lien-section,
+.lien-section:focus { opacity: 1; }
+.lien-section:hover { color: var(--accent); }
+@media (hover: none) { .lien-section { opacity: 0.45; } }
+
+/* Bloc « citer cette note », discret, en tête de note sous la date */
+.citation {
+  margin: -22px 0 40px;
+}
+.citation-toggle {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--texte-mute);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.citation-toggle:hover { color: var(--accent); }
+.citation-toggle .chev {
+  font-size: 9px;
+  transition: transform 0.15s ease;
+}
+.citation-toggle[aria-expanded="true"] .chev { transform: rotate(180deg); }
+.citation-corps {
+  margin-top: 14px;
+  padding: 16px 18px;
+  background: rgba(26, 26, 26, 0.025);
+  border-left: 2px solid var(--filet-leger);
+  max-width: 62ch;
+}
+.citation-ref {
+  font-family: var(--serif);
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--texte);
+  margin: 0 0 13px;
+  overflow-wrap: anywhere;
+}
+.citation-ref em { font-style: italic; }
+.citation-copier {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: var(--texte);
+  background: none;
+  border: 1px solid var(--accent);
+  padding: 5px 13px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.citation-copier:hover {
+  background: var(--texte);
+  color: var(--fond);
+  border-color: var(--texte);
+}
+.citation-copier.ok {
+  border-color: var(--texte-mute);
+  color: var(--texte-mute);
+  background: none;
+}
 </style>
 <script type="application/ld+json">
 {
@@ -9844,12 +9930,42 @@ html.js-ready body.reading .texte.is-active {
 
   var body = document.body;
 
-  // Extrait le slug d'un hash : #slug, #slug-fr, #slug-en, #fr, #en, ''
+  // Extrait le slug d'article d'un hash : #slug, #slug-fr, #slug-en,
+  // #slug--section, #slug--section-en, #fr, #en, ''  →  toujours le slug d'article
   function extractSlug(hash) {
     if (!hash || hash === '#' || hash === '#fr' || hash === '#en') return null;
     var clean = hash.replace(/^#/, '').replace(/-fr$|-en$/, '');
+    clean = clean.split('--')[0]; // ne garder que la partie article
     if (!clean || clean === 'haut') return null;
     return clean;
+  }
+
+  // Extrait l'identifiant complet de section (article--section) sans suffixe de langue,
+  // ou null si le hash ne vise pas une section précise.
+  function getSectionId(hash) {
+    if (!hash) return null;
+    var clean = hash.replace(/^#/, '').replace(/-fr$|-en$/, '');
+    return clean.indexOf('--') > -1 ? clean : null;
+  }
+
+  function cssEsc(s) {
+    if (window.CSS && CSS.escape) return CSS.escape(s);
+    return s.replace(/["\\]/g, '\\$&');
+  }
+
+  // Fait défiler jusqu'à une section, en choisissant la variante linguistique visible
+  function scrollToSection(full) {
+    if (!full) return false;
+    var els = document.querySelectorAll('[data-sec="' + cssEsc(full) + '"]');
+    for (var i = 0; i < els.length; i++) {
+      if (els[i].offsetParent !== null) {
+        els[i].scrollIntoView({ block: 'start' });
+        return true;
+      }
+    }
+    var el = document.getElementById(full);
+    if (el) { el.scrollIntoView({ block: 'start' }); return true; }
+    return false;
   }
 
   // Retourne le titre court d'un texte (pour le fil d'Ariane) à partir du SHARE_DATA
@@ -9866,7 +9982,7 @@ html.js-ready body.reading .texte.is-active {
     return t;
   }
 
-  function showReader(slug) {
+  function showReader(slug, sectionId) {
     var article = document.getElementById(slug);
     if (!article || !article.classList.contains('texte')) {
       showIndex();
@@ -9882,8 +9998,10 @@ html.js-ready body.reading .texte.is-active {
     var titre = getTitleForSlug(slug, lang);
     var span = article.querySelector('.fil-ariane .titre-courant');
     if (span) span.textContent = titre;
-    // Scroll en haut de l'article (instantané, l'utilisateur veut lire dès le début)
-    window.scrollTo(0, 0);
+    // Si une section est visée, s'y rendre ; sinon haut de l'article
+    if (!(sectionId && scrollToSection(sectionId))) {
+      window.scrollTo(0, 0);
+    }
   }
 
   function showIndex() {
@@ -9909,8 +10027,9 @@ html.js-ready body.reading .texte.is-active {
   function applyViewFromHash() {
     var h = window.location.hash;
     var slug = extractSlug(h);
+    var section = getSectionId(h);
     if (slug && document.getElementById(slug) && document.getElementById(slug).classList.contains('texte')) {
-      showReader(slug);
+      showReader(slug, section);
     } else {
       showIndex();
     }
@@ -9939,13 +10058,15 @@ html.js-ready body.reading .texte.is-active {
     // Cas 2 : lien interne #slug (vignette d'index, "retour aux notes" depuis article)
     if (href.charAt(0) === '#' && href.length > 1) {
       var targetSlug = extractSlug(href);
-      // Si c'est un slug d'article, on passe en mode lecture
+      var targetSection = getSectionId(href);
+      // Si c'est un slug d'article (éventuellement une section), on passe en mode lecture
       if (targetSlug && document.getElementById(targetSlug) && document.getElementById(targetSlug).classList.contains('texte')) {
         e.preventDefault();
         var curLang = html.getAttribute('lang') || 'fr';
         var langSuffix = curLang === 'en' ? '-en' : '';
-        history.pushState(null, '', window.location.pathname + window.location.search + '#' + targetSlug + langSuffix);
-        showReader(targetSlug);
+        var base = targetSection || targetSlug;
+        history.pushState(null, '', window.location.pathname + window.location.search + '#' + base + langSuffix);
+        showReader(targetSlug, targetSection);
         return;
       }
       // Si c'est #haut (retour aux notes depuis un article), on revient à l'index
@@ -9964,8 +10085,190 @@ html.js-ready body.reading .texte.is-active {
     applyViewFromHash();
   }
 
+  // ============================================================
+  // Vague 1 — corpus citable
+  // ============================================================
+
+  var CITE_BASE = 'https://pierrejeantribot.com/notes/';
+
+  // Slug stable à partir d'un intitulé (accents/apostrophes/ponctuation retirés)
+  function slugify(s) {
+    return (s || '')
+      .toLowerCase()
+      .normalize('NFD').replace(/[̀-ͯ]/g, '') // accents
+      .replace(/[’'‘`]/g, '')                            // apostrophes
+      .replace(/[^a-z0-9]+/g, '-')                        // reste → tirets
+      .replace(/^-+|-+$/g, '');
+  }
+
+  // (4) Ancres par section : id stable + lien « # » cliquable sur chaque h3.
+  // Gère les deux gabarits : <h3><span data-fr>…</span><span data-en>…</span></h3>
+  // et la paire <h3 data-fr>…</h3><h3 data-en>…</h3>.
+  function buildSectionAnchors() {
+    document.querySelectorAll('article.texte').forEach(function(art) {
+      var noteId = art.id;
+      if (!noteId) return;
+      var used = {};
+      var lastFR = null; // h3 FR autonome en attente de son pendant EN
+
+      art.querySelectorAll('h3').forEach(function(h3) {
+        var hasFrSpan = !!h3.querySelector('[data-fr]');
+        var hasEnSpan = !!h3.querySelector('[data-en]');
+        var isStandaloneFR = h3.matches('[data-fr]') && !hasFrSpan;
+        var isStandaloneEN = h3.matches('[data-en]') && !hasEnSpan;
+
+        // Pendant EN d'un h3 FR autonome : partage la même section, pas de nouvel id
+        if (isStandaloneEN && lastFR) {
+          var sec = lastFR.getAttribute('data-sec');
+          h3.setAttribute('data-sec', sec);
+          addSectionLink(h3, sec);
+          lastFR = null;
+          return;
+        }
+
+        // Texte source pour le slug : la variante FR
+        var frText;
+        if (hasFrSpan) frText = h3.querySelector('[data-fr]').textContent;
+        else frText = h3.textContent;
+
+        var base = slugify(frText);
+        if (!base) { lastFR = null; return; }
+        var slug = base, n = 2;
+        while (used[slug]) { slug = base + '-' + (n++); }
+        used[slug] = 1;
+
+        var full = noteId + '--' + slug;
+        if (!h3.id) h3.id = full;
+        h3.setAttribute('data-sec', full);
+        addSectionLink(h3, full);
+
+        // Un h3 combiné (spans FR+EN) est complet ; un h3 FR autonome attend son EN
+        lastFR = (isStandaloneFR && !hasEnSpan) ? h3 : null;
+      });
+    });
+  }
+
+  function addSectionLink(h3, full) {
+    if (h3.querySelector('.lien-section')) return;
+    var a = document.createElement('a');
+    a.className = 'lien-section';
+    a.href = '#' + full;
+    a.setAttribute('aria-label', 'Lien vers cette section');
+    a.textContent = '#';
+    h3.appendChild(a);
+  }
+
+  // (6) Microformat citable : bloc « citer cette note » sous la date de chaque note.
+  function noteTitle(art, lang) {
+    var h2 = art.querySelector('h2');
+    if (!h2) return '';
+    var src = h2.querySelector('[data-' + lang + ']') || h2;
+    var clone = src.cloneNode(true);
+    var sub = clone.querySelector('.subtitle');
+    if (sub) sub.parentNode.removeChild(sub);
+    return clone.textContent.replace(/\s+/g, ' ').trim();
+  }
+
+  function noteDate(art, lang) {
+    var d = art.querySelector('.texte-date [data-' + lang + ']');
+    var t = d ? d.textContent : '';
+    return t.split('·')[0].replace(/\s+/g, ' ').trim();
+  }
+
+  function buildCitations() {
+    document.querySelectorAll('article.texte').forEach(function(art) {
+      var noteId = art.id;
+      var dateEl = art.querySelector('.texte-date');
+      if (!noteId || !dateEl || art.querySelector('.citation')) return;
+
+      var url = CITE_BASE + '#' + noteId;
+      var refs = {
+        fr: 'Tribot, Pierre-Jean. « ' + noteTitle(art, 'fr') + ' » <em>Notes</em>, ' + noteDate(art, 'fr') + '. ' + url,
+        en: 'Tribot, Pierre-Jean. “' + noteTitle(art, 'en') + '” <em>Notes</em>, ' + noteDate(art, 'en') + '. ' + url
+      };
+
+      var wrap = document.createElement('div');
+      wrap.className = 'citation';
+      wrap.innerHTML =
+        '<button class="citation-toggle" type="button" aria-expanded="false">' +
+          '<span data-fr>citer cette note</span><span data-en>cite this note</span>' +
+          '<span class="chev">▾</span>' +
+        '</button>' +
+        '<div class="citation-corps" hidden>' +
+          '<p class="citation-ref" data-fr>' + refs.fr + '</p>' +
+          '<p class="citation-ref" data-en>' + refs.en + '</p>' +
+          '<button class="citation-copier" type="button">' +
+            '<span data-fr>copier la référence</span><span data-en>copy citation</span>' +
+          '</button>' +
+        '</div>';
+
+      dateEl.parentNode.insertBefore(wrap, dateEl.nextSibling);
+    });
+  }
+
+  // Interactions des blocs citation (délégation)
+  document.addEventListener('click', function(e) {
+    var toggle = e.target.closest('.citation-toggle');
+    if (toggle) {
+      var corps = toggle.parentNode.querySelector('.citation-corps');
+      var open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', open ? 'false' : 'true');
+      if (corps) corps.hidden = open;
+      return;
+    }
+    var copier = e.target.closest('.citation-copier');
+    if (copier) {
+      var lang = html.getAttribute('lang') || 'fr';
+      var ref = copier.parentNode.querySelector('.citation-ref[data-' + lang + ']');
+      var text = ref ? ref.textContent.replace(/\s+/g, ' ').trim() : '';
+      var done = function() {
+        copier.classList.add('ok');
+        var labels = copier.querySelectorAll('span');
+        var prev = [];
+        labels.forEach(function(s, i) { prev[i] = s.textContent; });
+        copier.querySelector('[data-fr]').textContent = 'référence copiée';
+        copier.querySelector('[data-en]').textContent = 'citation copied';
+        setTimeout(function() {
+          copier.classList.remove('ok');
+          labels.forEach(function(s, i) { s.textContent = prev[i]; });
+        }, 2000);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done).catch(function() { fallbackCopy(text, done); });
+      } else {
+        fallbackCopy(text, done);
+      }
+    }
+  });
+
+  function fallbackCopy(text, cb) {
+    try {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      cb();
+    } catch (err) {}
+  }
+
+  buildSectionAnchors();
+  buildCitations();
+
   setLang(detectLang());
   handleHashOnLoad();
+
+  // Lien profond ouvert à froid : recaler la section après le chargement des polices
+  // (le swap de fonte peut décaler la position atteinte au premier scroll).
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function() {
+      var s = getSectionId(window.location.hash);
+      if (s) scrollToSection(s);
+    });
+  }
 
   btnFR.addEventListener('click', function() {
     setLang('fr');
