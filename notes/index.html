@@ -560,6 +560,11 @@ html.js-ready body.reading .texte.is-active {
 @media (max-width: 640px) { .at-liste { grid-template-columns: 1fr; } .fv2-lab { width: 100%; } }
 /* VAGUE2-CSS-END */
 
+/* En incubation (piste 10) — discret, en bas de l'index */
+.incubation { margin-top: 10px; padding-top: 28px; border-top: 1px solid var(--filet-leger); }
+.incubation-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 10px; }
+.incubation-txt { font-family: var(--serif); font-style: italic; font-size: 17px; line-height: 1.5; color: var(--texte-mute); margin: 0; max-width: 54ch; }
+
 </style>
 <script type="application/ld+json">
 {
@@ -2516,6 +2521,14 @@ html.js-ready body.reading .texte.is-active {
         </div>
       </article>
 
+    </div>
+
+    <div class="incubation">
+      <span class="incubation-label"><span data-fr>◆ en incubation</span><span data-en>◆ in incubation</span></span>
+      <p class="incubation-txt">
+        <span data-fr>Le refus européen&nbsp;; le retour de la soustraction.</span>
+        <span data-en>The European refusal; the return of subtraction.</span>
+      </p>
     </div>
   </section>
 
