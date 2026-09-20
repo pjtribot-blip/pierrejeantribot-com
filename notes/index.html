@@ -10261,14 +10261,29 @@ html.js-ready body.reading .texte.is-active {
   setLang(detectLang());
   handleHashOnLoad();
 
-  // Lien profond ouvert à froid : recaler la section après le chargement des polices
-  // (le swap de fonte peut décaler la position atteinte au premier scroll).
-  if (document.fonts && document.fonts.ready) {
-    document.fonts.ready.then(function() {
-      var s = getSectionId(window.location.hash);
-      if (s) scrollToSection(s);
-    });
-  }
+  // Lien profond vers une section ouvert à froid : recaler plusieurs fois pour
+  // absorber les reflows tardifs (swap de polices, scripts tiers). S'arrête dès
+  // que la section est calée en haut (≤4 px) ou après ~1 s.
+  (function settleDeepLink() {
+    var target = getSectionId(window.location.hash);
+    if (!target) return;
+    var tries = 0;
+    function atTop() {
+      var els = document.querySelectorAll('[data-sec="' + cssEsc(target) + '"]');
+      for (var i = 0; i < els.length; i++) {
+        if (els[i].offsetParent !== null) return Math.abs(els[i].getBoundingClientRect().top) < 4;
+      }
+      return false;
+    }
+    function tick() {
+      if (atTop()) return;
+      scrollToSection(target);
+      if (++tries < 8) setTimeout(tick, 120);
+    }
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(tick);
+    window.addEventListener('load', tick);
+    setTimeout(tick, 60);
+  })();
 
   btnFR.addEventListener('click', function() {
     setLang('fr');
