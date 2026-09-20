@@ -86,4 +86,5 @@ Allow: /
 
 # --- Pointeurs ---
 
+Sitemap: https://pierrejeantribot.com/sitemap.xml
 Sitemap: https://pierrejeantribot.com/feed.xml
