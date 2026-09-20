@@ -80,7 +80,7 @@ h1 .point{color:var(--accent)}
   <p class="lead"><span data-fr>On ne lit pas seulement le corpus — on le questionne. Cet agent est nourri des notes du site : il répond <em>à partir d'elles</em>, renvoie aux sources, et ne sort pas du corpus.</span><span data-en>You don't merely read the corpus — you question it. This agent is fed by the site's notes: it answers <em>from them</em>, points back to the sources, and stays within the corpus.</span></p>
   <p class="say"><span data-fr>Ce n'est pas un assistant généraliste de plus. C'est une <em>démonstration</em> : l'IA éditoriale telle que je la conçois pour les autres — un outil qui argumente, cite ce qu'il mobilise et tient un niveau d'exigence, plutôt que de réciter des généralités. L'outillage du sujet compétent, appliqué à mon propre travail.</span><span data-en>This is not one more general-purpose assistant. It is a <em>demonstration</em>: editorial AI as I design it for others — a tool that argues, cites what it draws on and holds a standard, rather than reciting generalities. The tooling of the competent subject, applied to my own work.</span></p>
   <p class="say"><span data-fr>Posez une question de fond, contredisez une thèse, demandez où le corpus traite tel sujet. Si ce n'est pas (encore) écrit, l'agent le dira — et vous orientera vers la note la plus proche. Il ne parle pas à ma place : il donne accès à ce que le corpus, lui, a déjà établi.</span><span data-en>Ask a substantive question, push back on a thesis, ask where the corpus addresses a topic. If it isn't written (yet), the agent will say so — and point you to the closest note. It does not speak in my place: it opens what the corpus has already established.</span></p>
-  <div class="regle"><span data-fr>Règle : l'agent s'appuie uniquement sur les notes publiées et cite ce qu'il utilise. Hors corpus, il le dit plutôt que d'inventer. C'est un démonstrateur — une IA éditoriale qui argumente, pas qui récite.</span><span data-en>Rule: the agent relies only on the published notes and cites what it uses. Outside the corpus, it says so rather than inventing. It is a demonstrator — an editorial AI that argues, not one that recites.</span></div>
+  <div class="regle"><span data-fr>Règle : l'agent s'appuie uniquement sur les notes publiées et cite ce qu'il utilise. Hors corpus, il le dit plutôt que d'inventer. C'est un démonstrateur — une IA éditoriale qui argumente, pas qui récite.<br>Propulsé par Claude (Sonnet) d'Anthropic, ancré sur le corpus de ce site.</span><span data-en>Rule: the agent relies only on the published notes and cites what it uses. Outside the corpus, it says so rather than inventing. It is a demonstrator — an editorial AI that argues, not one that recites.<br>Powered by Claude (Sonnet) by Anthropic, grounded on this site's corpus.</span></div>
 
   <div class="suggestions" id="suggestions">
     <button class="sugg" type="button"><span data-fr>Pourquoi « un Airbus de l'IA » est une fausse piste ?</span><span data-en>Why is “an Airbus of AI” a false lead?</span></button>
@@ -138,21 +138,26 @@ h1 .point{color:var(--accent)}
     var b=el('bubble'); b.appendChild(el('err', msg)); m.querySelector('.bubble').replaceWith(b);
   }
 
+  var history=[];
   var busy=false;
   function ask(text){
     text=(text||q.value).trim(); if(!text||busy) return;
     busy=true; send.disabled=true;
     document.getElementById('suggestions').style.display='none';
     addUser(text); q.value=''; q.style.height='auto';
+    history.push({role:'user',content:text});
     var m=addTyping();
-    fetch('/api/chat',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({question:text})})
-      .then(function(r){ return r.json().then(function(j){ return {ok:r.ok, j:j}; }); })
+    fetch('/api/chat',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({messages:history.slice(-8)})})
+      .then(function(r){ return r.json().then(function(j){ return {ok:r.ok, status:r.status, j:j}; }); })
       .then(function(res){
-        if(res.ok){ renderAnswer(m, res.j); }
-        else if(res.j && res.j.error==='cle_api_absente'){ renderError(m, lang()==='en'?'The demonstrator is not activated yet (missing API key).':'Le démonstrateur n’est pas encore activé (clé API manquante).'); }
-        else { renderError(m, lang()==='en'?'Sorry — an error occurred. Try again.':'Désolé — une erreur est survenue. Réessayez.'); }
+        if(res.ok){ renderAnswer(m, res.j); if(res.j.answer) history.push({role:'assistant',content:res.j.answer}); }
+        else { history.pop(); // le tour raté ne pollue pas la mémoire
+          if(res.status===429 || (res.j && res.j.error==='trop_de_requetes')) renderError(m, lang()==='en'?'Too many questions in a short time. Try again in a few minutes.':'Trop de questions en peu de temps. Réessayez dans quelques minutes.');
+          else if(res.j && res.j.error==='cle_api_absente') renderError(m, lang()==='en'?'The demonstrator is not activated yet (missing API key).':'Le démonstrateur n’est pas encore activé (clé API manquante).');
+          else renderError(m, lang()==='en'?'Sorry — an error occurred. Try again.':'Désolé — une erreur est survenue. Réessayez.');
+        }
       })
-      .catch(function(){ renderError(m, lang()==='en'?'Network error. Try again.':'Erreur réseau. Réessayez.'); })
+      .catch(function(){ history.pop(); renderError(m, lang()==='en'?'Network error. Try again.':'Erreur réseau. Réessayez.'); })
       .finally(function(){ busy=false; send.disabled=false; m.scrollIntoView({block:'end'}); });
   }
 
