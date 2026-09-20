@@ -535,6 +535,31 @@ html.js-ready body.reading .texte.is-active {
   color: var(--texte-mute);
   background: none;
 }
+/* VAGUE2-CSS-START */
+/* Vague 2 — filtres d'index (1) + fil d'Ariane thématique (2) */
+.filtres-v2 { margin: 4px 0 26px; }
+.fv2-ligne { display: flex; flex-wrap: wrap; gap: 7px; align-items: baseline; margin-bottom: 10px; }
+.fv2-ligne:last-child { margin-bottom: 0; }
+.fv2-lab { font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--texte-mute); width: 64px; flex: none; }
+.fv2-chip { font-family: var(--mono); font-size: 12px; border: 1px solid var(--filet-leger); background: none; color: var(--texte); padding: 5px 11px; border-radius: 20px; cursor: pointer; transition: all 0.15s ease; }
+.fv2-chip:hover { border-color: var(--accent); }
+.fv2-chip.on { background: var(--accent); color: var(--fond); border-color: var(--accent); }
+.fv2-chip .fv2-n { opacity: 0.6; margin-left: 5px; font-size: 10px; }
+.index-item.fv2-hide { display: none; }
+.fv2-vide { font-family: var(--mono); font-size: 12px; color: var(--texte-mute); padding: 24px 0; }
+
+.ariane-thematique { margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--filet); }
+.at-label { font-family: var(--mono); font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--texte-mute); margin-bottom: 14px; display: block; }
+.at-liste { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.at-item { text-decoration: none; color: var(--texte); border: 1px solid var(--filet-leger); border-radius: 3px; padding: 11px 13px; transition: all 0.15s ease; display: block; }
+.at-item:hover { border-color: var(--accent); }
+.at-item:hover .at-titre { color: var(--accent); }
+.at-theme { font-family: var(--mono); font-size: 8.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texte-mute); display: block; margin-bottom: 3px; }
+.at-titre { font-family: var(--serif); font-size: 15px; line-height: 1.25; }
+.at-titre .point { color: var(--accent); }
+@media (max-width: 640px) { .at-liste { grid-template-columns: 1fr; } .fv2-lab { width: 100%; } }
+/* VAGUE2-CSS-END */
+
 </style>
 <script type="application/ld+json">
 {
@@ -10323,6 +10348,119 @@ html.js-ready body.reading .texte.is-active {
   });
 })();
 </script>
+
+<!-- VAGUE2-JS-START -->
+<script>
+(function () {
+  var D = {"themes":{"airbus-ia":"economie","commun-numerique":"souverainete","ia-pas-oreilles":"methode","concert-desaccorde":"societe","formation-debranchee":"education","decelerer-pour-qui":"education","ai-for-all":"souverainete","moment-volontariste":"education","taxer-ia-3":"economie","taxer-ia-2":"economie","taxer-ia-1":"economie","travailler-avec-ia":"methode","sacem-ia":"patrimoine","apercu-erosion":"patrimoine","ia-miroir":"societe","europe-industrie":"economie","texte-illisible":"souverainete","destination-substrat":"patrimoine","reinvestir-souverainete":"souverainete","souverainete-catalogues":"patrimoine","souverainete-cognitive":"souverainete","table-rase":"education","souverainete-six-ans":"education","philosophe-embarque":"souverainete","token-frugal":"economie","gouvernement-augmente":"economie","mauvais-etage":"economie","ia-tue-la-norme":"societe","machine-bibliotheque":"patrimoine","retour-des-cultives":"economie","entreprise-liquide":"economie","fable-5-precedent":"economie","lecture-ia":"methode","angle-mort-infrastructure":"souverainete","spotify-onlyfans":"patrimoine","addition-transmission":"education","fondamentaux-soustraction":"education","ia-force-societe":"societe","mediation-machine":"patrimoine","porte-duree":"patrimoine","infrastructure-editoriale":"patrimoine","savoirs-fondamentaux":"education","ia-faible-fort":"societe","ia-competence-numerique":"education","metrique-ecoutes":"patrimoine","collection-catalogue":"patrimoine","institution-voix":"patrimoine","archive-presse":"patrimoine","patrimoine-image":"patrimoine","evaluation-secondaire":"education","programmation-donnee":"patrimoine","diplome-portfolio":"education","prescription-culturelle":"patrimoine"},"nb":{"airbus-ia":["taxer-ia-1","europe-industrie","taxer-ia-3","ai-for-all"],"commun-numerique":["angle-mort-infrastructure","reinvestir-souverainete","airbus-ia","souverainete-cognitive"],"ia-pas-oreilles":["travailler-avec-ia","archive-presse","metrique-ecoutes","retour-des-cultives"],"concert-desaccorde":["taxer-ia-1","ia-miroir","travailler-avec-ia","archive-presse"],"formation-debranchee":["evaluation-secondaire","travailler-avec-ia","savoirs-fondamentaux","moment-volontariste"],"decelerer-pour-qui":["souverainete-six-ans","addition-transmission","formation-debranchee","concert-desaccorde"],"ai-for-all":["airbus-ia","commun-numerique","mauvais-etage","souverainete-cognitive"],"moment-volontariste":["formation-debranchee","savoirs-fondamentaux","fondamentaux-soustraction","travailler-avec-ia"],"taxer-ia-3":["taxer-ia-2","taxer-ia-1","airbus-ia","fable-5-precedent"],"taxer-ia-2":["taxer-ia-1","taxer-ia-3","airbus-ia","entreprise-liquide"],"taxer-ia-1":["taxer-ia-2","airbus-ia","taxer-ia-3","travailler-avec-ia"],"travailler-avec-ia":["lecture-ia","formation-debranchee","taxer-ia-1","ia-pas-oreilles"],"sacem-ia":["mauvais-etage","taxer-ia-1","spotify-onlyfans","archive-presse"],"apercu-erosion":["destination-substrat","programmation-donnee","institution-voix","porte-duree"],"ia-miroir":["concert-desaccorde","europe-industrie","souverainete-six-ans","travailler-avec-ia"],"europe-industrie":["airbus-ia","angle-mort-infrastructure","taxer-ia-1","mauvais-etage"],"texte-illisible":["souverainete-cognitive","destination-substrat","souverainete-catalogues","reinvestir-souverainete"],"destination-substrat":["texte-illisible","souverainete-cognitive","souverainete-catalogues","programmation-donnee"],"reinvestir-souverainete":["souverainete-cognitive","souverainete-catalogues","texte-illisible","destination-substrat"],"souverainete-catalogues":["souverainete-cognitive","texte-illisible","reinvestir-souverainete","destination-substrat"],"souverainete-cognitive":["texte-illisible","souverainete-catalogues","reinvestir-souverainete","destination-substrat"],"table-rase":["evaluation-secondaire","addition-transmission","ia-competence-numerique","formation-debranchee"],"souverainete-six-ans":["addition-transmission","decelerer-pour-qui","reinvestir-souverainete","formation-debranchee"],"philosophe-embarque":["institution-voix","retour-des-cultives","taxer-ia-1","texte-illisible"],"token-frugal":["taxer-ia-2","retour-des-cultives","metrique-ecoutes","taxer-ia-1"],"gouvernement-augmente":["mauvais-etage","angle-mort-infrastructure","airbus-ia","taxer-ia-1"],"mauvais-etage":["sacem-ia","angle-mort-infrastructure","gouvernement-augmente","airbus-ia"],"ia-tue-la-norme":["evaluation-secondaire","fondamentaux-soustraction","porte-duree","addition-transmission"],"machine-bibliotheque":["archive-presse","travailler-avec-ia","institution-voix","concert-desaccorde"],"retour-des-cultives":["archive-presse","metrique-ecoutes","travailler-avec-ia","taxer-ia-1"],"entreprise-liquide":["taxer-ia-1","taxer-ia-2","metrique-ecoutes","spotify-onlyfans"],"fable-5-precedent":["taxer-ia-3","airbus-ia","europe-industrie","taxer-ia-2"],"lecture-ia":["travailler-avec-ia","evaluation-secondaire","mediation-machine","ia-competence-numerique"],"angle-mort-infrastructure":["commun-numerique","prescription-culturelle","europe-industrie","mauvais-etage"],"spotify-onlyfans":["metrique-ecoutes","angle-mort-infrastructure","sacem-ia","prescription-culturelle"],"addition-transmission":["fondamentaux-soustraction","evaluation-secondaire","souverainete-six-ans","ia-competence-numerique"],"fondamentaux-soustraction":["savoirs-fondamentaux","addition-transmission","formation-debranchee","travailler-avec-ia"],"ia-force-societe":["savoirs-fondamentaux","addition-transmission","evaluation-secondaire","concert-desaccorde"],"mediation-machine":["institution-voix","evaluation-secondaire","programmation-donnee","metrique-ecoutes"],"porte-duree":["ia-tue-la-norme","apercu-erosion","mediation-machine","archive-presse"],"infrastructure-editoriale":["institution-voix","mediation-machine","collection-catalogue","travailler-avec-ia"],"savoirs-fondamentaux":["fondamentaux-soustraction","formation-debranchee","ia-competence-numerique","ia-force-societe"],"ia-faible-fort":["patrimoine-image","metrique-ecoutes","prescription-culturelle","archive-presse"],"ia-competence-numerique":["formation-debranchee","savoirs-fondamentaux","travailler-avec-ia","angle-mort-infrastructure"],"metrique-ecoutes":["prescription-culturelle","spotify-onlyfans","collection-catalogue","angle-mort-infrastructure"],"collection-catalogue":["archive-presse","souverainete-catalogues","metrique-ecoutes","travailler-avec-ia"],"institution-voix":["mediation-machine","programmation-donnee","destination-substrat","collection-catalogue"],"archive-presse":["collection-catalogue","travailler-avec-ia","retour-des-cultives","machine-bibliotheque"],"patrimoine-image":["ia-faible-fort","programmation-donnee","ia-competence-numerique","prescription-culturelle"],"evaluation-secondaire":["formation-debranchee","mediation-machine","addition-transmission","ia-tue-la-norme"],"programmation-donnee":["institution-voix","destination-substrat","apercu-erosion","mediation-machine"],"diplome-portfolio":["evaluation-secondaire","mediation-machine","formation-debranchee","institution-voix"],"prescription-culturelle":["metrique-ecoutes","angle-mort-infrastructure","programmation-donnee","collection-catalogue"]},"labels":{"souverainete":["souveraineté cognitive","cognitive sovereignty"],"economie":["économie politique","political economy"],"societe":["changements sociétaux","societal change"],"patrimoine":["culture & patrimoine","culture & heritage"],"education":["éducation","education"],"methode":["méthode","method"]},"order":["souverainete","economie","societe","patrimoine","education","methode"]};
+  var MOIS = {janvier:1,"février":2,fevrier:2,mars:3,avril:4,mai:5,juin:6,juillet:7,"août":8,aout:8,septembre:9,octobre:10,novembre:11,"décembre":12,decembre:12};
+  var lang = function () { return document.documentElement.getAttribute('lang') || 'fr'; };
+
+  function daysAgo(txt) {
+    if (!txt) return 1e9;
+    var m = txt.toLowerCase().match(/(\d{1,2})\s+(\S+)\s+(\d{4})/);
+    var d, mo, y;
+    if (m) { d = +m[1]; mo = MOIS[m[2]] || 1; y = +m[3]; }
+    else { var mm = txt.toLowerCase().match(/(\S+)\s+(\d{4})/); if (!mm || !MOIS[mm[1]]) return 1e9; d = 15; mo = MOIS[mm[1]]; y = +mm[2]; }
+    return Math.round((Date.now() - new Date(y, mo - 1, d)) / 86400000);
+  }
+  function idFromHref(a) { var h = a && a.getAttribute('href'); return h && h.charAt(0) === '#' ? h.slice(1) : null; }
+
+  // Table des titres (innerHTML bilingue) par id, depuis les vignettes d'index
+  var titres = {};
+  document.querySelectorAll('.index-item a.index-title').forEach(function (a) {
+    var id = idFromHref(a); if (!id) return;
+    var clone = a.cloneNode(true);
+    clone.querySelectorAll('.point').forEach(function (p) { p.remove(); });
+    titres[id] = clone.innerHTML;
+  });
+
+  // ---- Piste 1 : tagger les vignettes + filtres ----
+  var items = [].slice.call(document.querySelectorAll('.index-item'));
+  items.forEach(function (it) {
+    var a = it.querySelector('a.index-title'); var id = idFromHref(a);
+    it.setAttribute('data-theme', (id && D.themes[id]) || '');
+    var dEl = it.querySelector('.date [data-fr]');
+    it.setAttribute('data-days', dEl ? daysAgo(dEl.textContent) : 1e9);
+  });
+
+  var fTheme = 'all', fCad = 'all';
+  function applyFilter() {
+    var shown = 0;
+    items.forEach(function (it) {
+      var okT = fTheme === 'all' || it.getAttribute('data-theme') === fTheme;
+      var okC = fCad === 'all' || (+it.getAttribute('data-days')) <= (+fCad);
+      var vis = okT && okC;
+      it.classList.toggle('fv2-hide', !vis);
+      if (vis) shown++;
+    });
+    var vide = document.getElementById('fv2-vide');
+    if (vide) vide.style.display = shown ? 'none' : 'block';
+  }
+
+  function chip(attr, val, labelHTML, extra) {
+    return '<button class="fv2-chip' + (extra || '') + '" data-' + attr + '="' + val + '">' + labelHTML + '</button>';
+  }
+  function bothLang(fr, en) { return '<span data-fr>' + fr + '</span><span data-en>' + en + '</span>'; }
+
+  var counts = {}; items.forEach(function (it) { var t = it.getAttribute('data-theme'); counts[t] = (counts[t] || 0) + 1; });
+  var themeChips = chip('theme', 'all', bothLang('tout', 'all') + '<span class="fv2-n">' + items.length + '</span>', ' on');
+  D.order.forEach(function (k) {
+    if (!counts[k]) return;
+    var lab = bothLang(D.labels[k][0], D.labels[k][1]) + '<span class="fv2-n">' + counts[k] + '</span>';
+    themeChips += chip('theme', k, lab);
+  });
+
+  var bar = document.createElement('div');
+  bar.className = 'filtres-v2';
+  bar.innerHTML =
+    '<div class="fv2-ligne"><span class="fv2-lab">' + bothLang('thème', 'theme') + '</span><span class="fv2-chips">' + themeChips + '</span></div>' +
+    '<div class="fv2-ligne"><span class="fv2-lab">' + bothLang('cadence', 'pace') + '</span>' +
+      chip('cad', 'all', bothLang('tout', 'all'), ' on') +
+      chip('cad', '30', bothLang('30 derniers jours', 'last 30 days')) +
+      chip('cad', '90', bothLang('3 derniers mois', 'last 3 months')) +
+    '</div>';
+
+  var index = document.querySelector('.index');
+  if (index) {
+    index.parentNode.insertBefore(bar, index);
+    var vide = document.createElement('div');
+    vide.className = 'fv2-vide'; vide.id = 'fv2-vide'; vide.style.display = 'none';
+    vide.innerHTML = bothLang('Aucun texte pour ce filtre.', 'No essay for this filter.');
+    index.parentNode.insertBefore(vide, index.nextSibling);
+  }
+
+  bar.addEventListener('click', function (e) {
+    var th = e.target.closest('[data-theme]');
+    if (th) { fTheme = th.getAttribute('data-theme'); bar.querySelectorAll('[data-theme]').forEach(function (b) { b.classList.toggle('on', b === th); }); applyFilter(); return; }
+    var cd = e.target.closest('[data-cad]');
+    if (cd) { fCad = cd.getAttribute('data-cad'); bar.querySelectorAll('[data-cad]').forEach(function (b) { b.classList.toggle('on', b === cd); }); applyFilter(); }
+  });
+
+  // ---- Piste 2 : fil d'Ariane thématique en fin de note ----
+  document.querySelectorAll('article.texte').forEach(function (art) {
+    var id = art.id; var nb = D.nb[id];
+    if (!id || !nb || !nb.length || art.querySelector('.ariane-thematique')) return;
+    var liens = nb.map(function (nid) {
+      var t = titres[nid]; if (!t) return '';
+      var th = D.themes[nid];
+      var thLab = th ? '<span class="at-theme">' + bothLang(D.labels[th][0], D.labels[th][1]) + '</span>' : '';
+      return '<a class="at-item" href="#' + nid + '">' + thLab + '<span class="at-titre">' + t + '</span></a>';
+    }).join('');
+    if (!liens) return;
+    var block = document.createElement('nav');
+    block.className = 'ariane-thematique';
+    block.setAttribute('aria-label', 'Notes proches');
+    block.innerHTML = '<span class="at-label">' + bothLang('notes proches', 'related notes') + '</span><div class="at-liste">' + liens + '</div>';
+    var partage = art.querySelector('.partage');
+    if (partage) partage.parentNode.insertBefore(block, partage);
+    else { var rh = art.querySelector('.retour-haut'); if (rh) rh.parentNode.insertBefore(block, rh); else art.appendChild(block); }
+  });
+
+  applyFilter();
+})();
+</script>
+<!-- VAGUE2-JS-END -->
 
 </body>
 </html>
