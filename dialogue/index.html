@@ -33,7 +33,9 @@ html[lang="en"] p[data-en],html[lang="en"] .b[data-en]{display:block}
 .marqueur{font-family:var(--mono);font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);margin-bottom:18px;display:block}
 h1{font-size:40px;font-weight:400;letter-spacing:-.02em;margin:0 0 16px;line-height:1.05}
 h1 .point{color:var(--accent)}
-.lead{font-size:18px;color:var(--texte-mute);line-height:1.5;max-width:60ch;margin:0 0 10px}
+.lead{font-size:18px;color:var(--texte-mute);line-height:1.5;max-width:60ch;margin:0 0 14px}
+.say{font-family:var(--serif);font-size:17px;line-height:1.68;color:var(--texte);max-width:62ch;margin:0 0 14px}
+.say em{font-style:italic}
 .regle{font-family:var(--mono);font-size:11px;color:var(--texte-mute);border:1px dashed var(--filet-leger);border-radius:3px;padding:8px 12px;margin:16px 0 28px;line-height:1.6}
 .suggestions{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
 .sugg{font-family:var(--mono);font-size:12px;border:1px solid var(--filet-leger);background:none;color:var(--texte);padding:7px 12px;border-radius:20px;cursor:pointer;text-align:left;transition:all .15s}
@@ -67,7 +69,7 @@ h1 .point{color:var(--accent)}
 <div class="wrap">
   <header class="head">
     <span class="left"><a href="/">pierrejeantribot.com</a></span>
-    <span class="middle"><a href="/notes/">notes</a> · <a href="/corpus/">corpus</a> · <a href="/methode/"><span data-fr>méthode</span><span data-en>method</span></a></span>
+    <span class="middle"><a href="/notes/">notes</a> · <a href="/corpus/">corpus</a> · <a href="/methode/"><span data-fr>méthode</span><span data-en>method</span></a> · <span style="color:#7a3e2a;">dialogue</span></span>
     <span class="lang">
       <button id="btn-fr" type="button" aria-label="Français">FR</button><span class="sep">·</span><button id="btn-en" type="button" aria-label="English">EN</button>
     </span>
@@ -75,7 +77,9 @@ h1 .point{color:var(--accent)}
 
   <span class="marqueur"><span data-fr>◆ démonstrateur</span><span data-en>◆ demonstrator</span></span>
   <h1><span data-fr>Parler avec ma pensée<span class="point">.</span></span><span data-en>Talk to my thinking<span class="point">.</span></span></h1>
-  <p class="lead"><span data-fr>On ne lit pas seulement le corpus — on le questionne. Cet agent répond <em>à partir des notes</em>, renvoie aux sources, et ne sort pas du corpus.</span><span data-en>You don't merely read the corpus — you question it. This agent answers <em>from the notes</em>, points back to the sources, and stays within the corpus.</span></p>
+  <p class="lead"><span data-fr>On ne lit pas seulement le corpus — on le questionne. Cet agent est nourri des notes du site : il répond <em>à partir d'elles</em>, renvoie aux sources, et ne sort pas du corpus.</span><span data-en>You don't merely read the corpus — you question it. This agent is fed by the site's notes: it answers <em>from them</em>, points back to the sources, and stays within the corpus.</span></p>
+  <p class="say"><span data-fr>Ce n'est pas un assistant généraliste de plus. C'est une <em>démonstration</em> : l'IA éditoriale telle que je la conçois pour les autres — un outil qui argumente, cite ce qu'il mobilise et tient un niveau d'exigence, plutôt que de réciter des généralités. L'outillage du sujet compétent, appliqué à mon propre travail.</span><span data-en>This is not one more general-purpose assistant. It is a <em>demonstration</em>: editorial AI as I design it for others — a tool that argues, cites what it draws on and holds a standard, rather than reciting generalities. The tooling of the competent subject, applied to my own work.</span></p>
+  <p class="say"><span data-fr>Posez une question de fond, contredisez une thèse, demandez où le corpus traite tel sujet. Si ce n'est pas (encore) écrit, l'agent le dira — et vous orientera vers la note la plus proche. Il ne parle pas à ma place : il donne accès à ce que le corpus, lui, a déjà établi.</span><span data-en>Ask a substantive question, push back on a thesis, ask where the corpus addresses a topic. If it isn't written (yet), the agent will say so — and point you to the closest note. It does not speak in my place: it opens what the corpus has already established.</span></p>
   <div class="regle"><span data-fr>Règle : l'agent s'appuie uniquement sur les notes publiées et cite ce qu'il utilise. Hors corpus, il le dit plutôt que d'inventer. C'est un démonstrateur — une IA éditoriale qui argumente, pas qui récite.</span><span data-en>Rule: the agent relies only on the published notes and cites what it uses. Outside the corpus, it says so rather than inventing. It is a demonstrator — an editorial AI that argues, not one that recites.</span></div>
 
   <div class="suggestions" id="suggestions">
