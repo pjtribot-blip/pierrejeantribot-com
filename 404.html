@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Pierre-Jean Tribot</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#f5efe2">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='10' fill='%23f5efe2'/><text x='32' y='42' font-family='Georgia, serif' font-size='26' font-weight='500' text-anchor='middle' fill='%237a3e2a'>PJT</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--fond:#f5efe2;--texte:#1a1a1a;--texte-mute:#5a5a5a;--accent:#7a3e2a;--filet-leger:#c8bfa6;--serif:"EB Garamond",Georgia,serif;--mono:"JetBrains Mono",Menlo,monospace}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--fond);color:var(--texte);font-family:var(--serif);display:flex;align-items:center;justify-content:center;-webkit-font-smoothing:antialiased}
+[data-fr],[data-en]{display:none}
+html[lang="fr"] [data-fr]{display:inline}
+html[lang="en"] [data-en]{display:inline}
+.box{max-width:520px;padding:40px 32px;text-align:center}
+.k{font-family:var(--mono);font-size:12px;letter-spacing:.25em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:64px;font-weight:400;letter-spacing:-.02em;margin:14px 0 6px}
+h1 .point{color:var(--accent)}
+p{font-size:19px;color:var(--texte-mute);line-height:1.5;margin:0 0 26px}
+.liens{font-family:var(--mono);font-size:12px;letter-spacing:.03em}
+.liens a{color:var(--texte);text-decoration:none;border-bottom:1px solid var(--filet-leger);padding-bottom:1px;transition:all .15s;margin:0 4px}
+.liens a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+::selection{background:var(--accent);color:var(--fond)}
+</style>
+</head>
+<body>
+  <div class="box">
+    <span class="k"><span data-fr>erreur 404</span><span data-en>error 404</span></span>
+    <h1>404<span class="point">.</span></h1>
+    <p><span data-fr>Cette page n'existe pas — ou plus. Le corpus, lui, est toujours là.</span><span data-en>This page does not exist — or no longer does. The corpus, though, is still here.</span></p>
+    <div class="liens">
+      <a href="/"><span data-fr>accueil</span><span data-en>home</span></a> ·
+      <a href="/notes/"><span data-fr>notes</span><span data-en>notes</span></a> ·
+      <a href="/recherche.html"><span data-fr>recherche</span><span data-en>search</span></a> ·
+      <a href="/corpus/"><span data-fr>corpus</span><span data-en>corpus</span></a>
+    </div>
+  </div>
+<script>
+(function(){var h=document.documentElement;var l=(function(){try{var s=localStorage.getItem('lang');if(s==='fr'||s==='en')return s;}catch(e){}return (navigator.language||'fr').toLowerCase().indexOf('en')===0?'en':'fr';})();h.setAttribute('lang',l);})();
+</script>
+</body>
+</html>

@@ -165,7 +165,8 @@ count = 0
 notes.each do |n|
   dir = File.join(ROOT, "notes", n[:slug])
   FileUtils.mkdir_p(dir)
-  html_out = page(n, SITE, OGIMG).gsub("/notes/#slug-noscript", "/notes/##{n[:slug]}")
+  ogimg = File.exist?(File.join(ROOT, "og", "#{n[:slug]}.png")) ? "#{SITE}/og/#{n[:slug]}.png" : OGIMG
+  html_out = page(n, SITE, ogimg).gsub("/notes/#slug-noscript", "/notes/##{n[:slug]}")
   File.write(File.join(dir, "index.html"), html_out)
   count += 1
 end
