@@ -84,6 +84,22 @@ def page(n, site, ogimg)
     "isPartOf" => { "@type" => "Blog", "name" => "Pierre-Jean Tribot — Notes", "url" => "#{site}/notes/" }
   }.reject { |_, v| v.nil? }
   require "json"
+  cdate = n[:iso] ? n[:iso].tr("-", "/") : nil          # Google Scholar : YYYY/MM/DD
+  cite = +""
+  cite << %(<meta name="citation_title" content="#{esc(n[:title_fr])}">\n)
+  cite << %(    <meta name="citation_author" content="Pierre-Jean Tribot">\n)
+  cite << %(    <meta name="citation_publication_date" content="#{cdate}">\n) if cdate
+  cite << %(    <meta name="citation_online_date" content="#{cdate}">\n) if cdate
+  cite << %(    <meta name="citation_language" content="fr">\n)
+  cite << %(    <meta name="citation_public_url" content="#{url}">\n)
+  cite << %(    <meta name="citation_fulltext_world_readable" content="">\n)
+  cite << %(    <meta name="DC.title" content="#{esc(n[:title_fr])}">\n)
+  cite << %(    <meta name="DC.creator" content="Pierre-Jean Tribot">\n)
+  cite << %(    <meta name="DC.date" content="#{n[:iso]}">\n) if n[:iso]
+  cite << %(    <meta name="DC.language" content="fr">\n)
+  cite << %(    <meta name="DC.publisher" content="Pierre-Jean Tribot">\n)
+  cite << %(    <meta name="DC.type" content="Text">\n)
+  cite << %(    <meta name="DC.description" content="#{esc(desc)}">)
   <<~HTML
     <!DOCTYPE html>
     <html lang="fr">
@@ -110,6 +126,7 @@ def page(n, site, ogimg)
     <meta name="twitter:title" content="#{esc(n[:title_fr])}">
     <meta name="twitter:description" content="#{esc(desc)}">
     <meta name="twitter:image" content="#{ogimg}">
+    #{cite}
     <link rel="alternate" type="application/rss+xml" title="Pierre-Jean Tribot — Notes (RSS)" href="#{site}/feed.xml">
     <noscript><meta http-equiv="refresh" content="0;url=/notes/#slug-noscript"></noscript>
     <script type="application/ld+json">#{JSON.generate(jsonld)}</script>
