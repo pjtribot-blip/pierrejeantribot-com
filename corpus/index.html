@@ -75,6 +75,19 @@ h1 .point{color:var(--accent)}
 .retour a{color:var(--texte-mute);text-decoration:none;border-bottom:1px solid var(--filet-leger);padding-bottom:1px;transition:all .15s}
 .retour a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 ::selection{background:var(--accent);color:var(--fond)}
+.pk-intro{font-size:16px;color:var(--texte-mute);margin:0 0 26px;max-width:58ch}
+.parcours{border-top:1px solid var(--filet-leger);padding:20px 0}
+.parcours:first-of-type{border-top:1px solid var(--filet)}
+.parcours-num{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;color:var(--accent);text-transform:uppercase}
+.parcours h3{font-family:var(--serif);font-size:22px;font-weight:500;margin:7px 0 6px;letter-spacing:-.01em}
+.parcours-quoi{font-size:15.5px;color:var(--texte-mute);line-height:1.5;margin:0 0 14px;max-width:60ch}
+.parcours-etapes{list-style:none;margin:0;padding:0;counter-reset:etape}
+.parcours-etapes li{counter-increment:etape;position:relative;padding:5px 0 5px 28px;border-bottom:1px solid rgba(200,191,166,.4)}
+.parcours-etapes li:last-child{border-bottom:none}
+.parcours-etapes li::before{content:counter(etape);position:absolute;left:2px;top:6px;font-family:var(--mono);font-size:10px;color:var(--texte-mute)}
+.parcours-etapes a{text-decoration:none;color:var(--texte);font-size:16px;line-height:1.35;transition:color .15s}
+.parcours-etapes a:hover{color:var(--accent)}
+.parcours-sep{height:1px;background:var(--filet);border:0;margin:40px 0}
 @media(max-width:640px){.wrap{padding:24px 20px 48px}h1{font-size:36px}.stat .v{font-size:24px}.cx-note{flex-direction:column;gap:2px}.cx-note-date{width:auto}}
 </style>
 </head>
@@ -107,6 +120,89 @@ h1 .point{color:var(--accent)}
     <div class="stat"><span class="v">2</span><span class="l"><span data-fr>langues</span><span data-en>languages</span></span></div>
     <div class="stat"><span class="v" style="font-size:19px;letter-spacing:-.01em">mai–sept</span><span class="l"><span data-fr>2026</span><span data-en>2026</span></span></div>
   </div>
+
+  <span class="section-titre"><span data-fr>parcours de lecture</span><span data-en>reading paths</span></span>
+  <p class="pk-intro"><span data-fr>Cinquante-huit notes, ce n'est pas une file à remonter mais un territoire à traverser. Voici six entrées — du seuil pour un nouveau venu aux dossiers thématiques. Chaque parcours se lit dans l'ordre, ou pas.</span><span data-en>Fifty-eight notes are not a queue to scroll but a territory to cross. Here are six ways in — from a newcomer's threshold to the thematic dossiers. Each path reads in order, or not.</span></p>
+
+  <section class="parcours">
+    <span class="parcours-num"><span data-fr>parcours 1 · le seuil</span><span data-en>path 1 · the threshold</span></span>
+    <h3><span data-fr>Par où commencer</span><span data-en>Where to begin</span></h3>
+    <p class="parcours-quoi"><span data-fr>Cinq notes pour entrer dans la pensée : ce qu'est la souveraineté cognitive, pourquoi je travaille avec l'IA, le réflexe qu'il faut d'abord désamorcer, et l'enjeu porté à l'échelle d'un continent.</span><span data-en>Five notes to enter the thinking: what cognitive sovereignty is, why I work with AI, the reflex to defuse first, and the stakes raised to the scale of a continent.</span></p>
+    <ul class="parcours-etapes">
+      <li><a href="/notes/#souverainete-cognitive"><span data-fr>La souveraineté cognitive</span><span data-en>Cognitive sovereignty</span></a></li>
+      <li><a href="/notes/#travailler-avec-ia"><span data-fr>Je travaille avec l'IA. Je le revendique</span><span data-en>I work with AI. I claim it</span></a></li>
+      <li><a href="/notes/#en-meme-temps-cognitif"><span data-fr>Le « en même temps » cognitif</span><span data-en>The cognitive « en même temps »</span></a></li>
+      <li><a href="/notes/#savoirs-fondamentaux"><span data-fr>Nommer les savoirs fondamentaux</span><span data-en>Naming the foundational skills</span></a></li>
+      <li><a href="/notes/#instant-argentin"><span data-fr>L'instant argentin</span><span data-en>The Argentine moment</span></a></li>
+    </ul>
+  </section>
+
+  <section class="parcours">
+    <span class="parcours-num"><span data-fr>parcours 2</span><span data-en>path 2</span></span>
+    <h3><span data-fr>La souveraineté cognitive</span><span data-en>Cognitive sovereignty</span></h3>
+    <p class="parcours-quoi"><span data-fr>Le fil conducteur du corpus : garder la main sur ce qu'on pense, à l'ère où la machine formule. De l'illisible à l'école, en passant par l'infrastructure.</span><span data-en>The corpus's throughline: keeping a hand on what we think, in the age where the machine formulates. From the unreadable to school, by way of infrastructure.</span></p>
+    <ul class="parcours-etapes">
+      <li><a href="/notes/#texte-illisible"><span data-fr>Ce que l'IA rend illisible</span><span data-en>What AI makes unreadable</span></a></li>
+      <li><a href="/notes/#souverainete-cognitive"><span data-fr>La souveraineté cognitive</span><span data-en>Cognitive sovereignty</span></a></li>
+      <li><a href="/notes/#reinvestir-souverainete"><span data-fr>Réinvestir la souveraineté cognitive</span><span data-en>Reinvesting cognitive sovereignty</span></a></li>
+      <li><a href="/notes/#angle-mort-infrastructure"><span data-fr>L'angle mort</span><span data-en>The blind spot</span></a></li>
+      <li><a href="/notes/#souverainete-six-ans"><span data-fr>La souveraineté cognitive commence à six ans</span><span data-en>Cognitive sovereignty starts at six</span></a></li>
+    </ul>
+  </section>
+
+  <section class="parcours">
+    <span class="parcours-num"><span data-fr>parcours 3 · géopolitique</span><span data-en>path 3 · geopolitics</span></span>
+    <h3><span data-fr>La rente normative</span><span data-en>The normative rent</span></h3>
+    <p class="parcours-quoi"><span data-fr>L'Europe régule ce qu'elle ne produit pas. Un dossier en cinq temps, du diagnostic industriel à l'analyse historique — celui que prolonge <a href="/tableau/" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--filet-leger)">le tableau d'affichage</a>.</span><span data-en>Europe regulates what it does not produce. A five-part dossier, from industrial diagnosis to historical analysis — the one <a href="/tableau/" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--filet-leger)">the scoreboard</a> extends.</span></p>
+    <ul class="parcours-etapes">
+      <li><a href="/notes/#europe-industrie"><span data-fr>L'Europe régule une industrie qu'elle n'a pas</span><span data-en>Europe regulates an industry it does not have</span></a></li>
+      <li><a href="/notes/#airbus-ia"><span data-fr>L'Airbus de l'IA</span><span data-en>The Airbus of AI</span></a></li>
+      <li><a href="/notes/#taxer-ia-1"><span data-fr>Taxer l'IA : une question juste, une réponse impossible</span><span data-en>Taxing AI: a just question, an impossible answer</span></a></li>
+      <li><a href="/notes/#ai-for-all"><span data-fr>AI for All : la Corée du Sud déploie ce que l'Europe débat</span><span data-en>AI for All: South Korea deploys what Europe debates</span></a></li>
+      <li><a href="/notes/#instant-argentin"><span data-fr>L'instant argentin</span><span data-en>The Argentine moment</span></a></li>
+    </ul>
+  </section>
+
+  <section class="parcours">
+    <span class="parcours-num"><span data-fr>parcours 4 · éducation</span><span data-en>path 4 · education</span></span>
+    <h3><span data-fr>L'école et l'IA</span><span data-en>School and AI</span></h3>
+    <p class="parcours-quoi"><span data-fr>Ce que l'IA fait aux savoirs, à l'évaluation, au diplôme — et pourquoi la bonne réponse est la soustraction, pas l'addition.</span><span data-en>What AI does to knowledge, to assessment, to the diploma — and why the right answer is subtraction, not addition.</span></p>
+    <ul class="parcours-etapes">
+      <li><a href="/notes/#savoirs-fondamentaux"><span data-fr>Nommer les savoirs fondamentaux</span><span data-en>Naming the foundational skills</span></a></li>
+      <li><a href="/notes/#fondamentaux-soustraction"><span data-fr>Les fondamentaux par soustraction</span><span data-en>The fundamentals by subtraction</span></a></li>
+      <li><a href="/notes/#addition-transmission"><span data-fr>Pourquoi l'addition tue la transmission</span><span data-en>Why addition kills transmission</span></a></li>
+      <li><a href="/notes/#evaluation-secondaire"><span data-fr>L'école et l'évaluation</span><span data-en>School and assessment</span></a></li>
+      <li><a href="/notes/#syndrome-alpe-huez"><span data-fr>Le syndrome de l'Alpe d'Huez</span><span data-en>The Alpe d'Huez syndrome</span></a></li>
+    </ul>
+  </section>
+
+  <section class="parcours">
+    <span class="parcours-num"><span data-fr>parcours 5 · économie</span><span data-en>path 5 · economy</span></span>
+    <h3><span data-fr>L'économie politique de l'IA</span><span data-en>The political economy of AI</span></h3>
+    <p class="parcours-quoi"><span data-fr>Où se crée et où se capte la valeur : les couches stratégiques, les frugaux, l'entreprise, l'État.</span><span data-en>Where value is created and where it is captured: the strategic layers, the frugal, the firm, the state.</span></p>
+    <ul class="parcours-etapes">
+      <li><a href="/notes/#mauvais-etage"><span data-fr>Le mauvais étage de la lutte</span><span data-en>The wrong floor</span></a></li>
+      <li><a href="/notes/#token-frugal"><span data-fr>Le token récompense les frugaux</span><span data-en>AI rewards the compute-poor</span></a></li>
+      <li><a href="/notes/#entreprise-liquide"><span data-fr>Le temps de l'entreprise liquide</span><span data-en>The time of the liquid enterprise</span></a></li>
+      <li><a href="/notes/#gouvernement-augmente"><span data-fr>Le temps du gouvernement augmenté</span><span data-en>The time of augmented government</span></a></li>
+      <li><a href="/notes/#retour-des-cultives"><span data-fr>Le retour des cultivés ?</span><span data-en>The return of the cultivated?</span></a></li>
+    </ul>
+  </section>
+
+  <section class="parcours">
+    <span class="parcours-num"><span data-fr>parcours 6 · culture</span><span data-en>path 6 · culture</span></span>
+    <h3><span data-fr>Culture &amp; patrimoine</span><span data-en>Culture &amp; heritage</span></h3>
+    <p class="parcours-quoi"><span data-fr>L'angle d'origine : ce que l'IA change pour les œuvres, les catalogues, la médiation.</span><span data-en>The originating angle: what AI changes for works, catalogues, mediation.</span></p>
+    <ul class="parcours-etapes">
+      <li><a href="/notes/#sacem-ia"><span data-fr>La SACEM de l'IA est une fausse bonne idée</span><span data-en>The « AI collecting society » is a false good idea</span></a></li>
+      <li><a href="/notes/#metrique-ecoutes"><span data-fr>La métrique d'écoutes</span><span data-en>The streaming metric</span></a></li>
+      <li><a href="/notes/#collection-catalogue"><span data-fr>La collection et son catalogue</span><span data-en>The collection and its catalogue</span></a></li>
+      <li><a href="/notes/#archive-presse"><span data-fr>L'archive et la machine</span><span data-en>The archive and the machine</span></a></li>
+      <li><a href="/notes/#mediation-machine"><span data-fr>La médiation et la machine</span><span data-en>Mediation and the machine</span></a></li>
+    </ul>
+  </section>
+
+  <hr class="parcours-sep">
 
   <span class="section-titre"><span data-fr>cartographie par thème</span><span data-en>map by theme</span></span>
   <p class="section-intro"><span data-fr>Chaque note est rattachée à un axe dominant. Les proximités fines entre notes se lisent, elles, en bas de chaque texte (« notes proches »).</span><span data-en>Each note is attached to one dominant axis. The finer proximities between notes are shown at the foot of each text (“related notes”).</span></p>
