@@ -11442,5 +11442,29 @@ a.mc-cell:hover .mc-title { color: var(--accent); }
 </script>
 <!-- VAGUE2-JS-END -->
 
+<!-- READTIME-START -->
+<script>
+(function () {
+  document.querySelectorAll('article.texte').forEach(function (art) {
+    if (art.querySelector('.texte-lecture')) return;
+    var words = 0;
+    art.querySelectorAll('p[data-fr]').forEach(function (p) {
+      var t = p.textContent.replace(/\s+/g, ' ').trim();
+      if (t) words += t.split(' ').length;
+    });
+    if (!words) return;
+    var min = Math.max(1, Math.round(words / 200));
+    var d = art.querySelector('.texte-date');
+    if (!d) return;
+    var span = document.createElement('span');
+    span.className = 'texte-lecture';
+    span.innerHTML = ' &middot; <span data-fr>&#8776; ' + min + ' min de lecture</span>' +
+                     '<span data-en>&#8776; ' + min + ' min read</span>';
+    d.appendChild(span);
+  });
+})();
+</script>
+<!-- READTIME-END -->
+
 </body>
 </html>
