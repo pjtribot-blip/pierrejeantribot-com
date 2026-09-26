@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-fr="Le tableau d'affichage — Pierre-Jean Tribot" data-en="The scoreboard — Pierre-Jean Tribot">Le tableau d'affichage — Pierre-Jean Tribot</title>
+<meta name="description" content="Track-record de Pierre-Jean Tribot : des thèses datées sur l'IA confrontées à ce qui advient — advenu, en cours, à surveiller, infirmé.">
+<meta name="author" content="Pierre-Jean Tribot">
+<meta name="theme-color" content="#f5efe2">
+<meta property="og:title" content="Le tableau d'affichage — Pierre-Jean Tribot">
+<meta property="og:description" content="Des analyses datées confrontées au réel. Un pari, une date, et le score quand il tombe.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pierrejeantribot.com/tableau/">
+<meta property="og:image" content="https://pierrejeantribot.com/og-notes.png">
+<link rel="alternate" type="application/rss+xml" title="Pierre-Jean Tribot — Notes (RSS)" href="https://pierrejeantribot.com/feed.xml">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='10' fill='%23f5efe2'/><text x='32' y='42' font-family='Georgia, serif' font-size='26' font-weight='500' text-anchor='middle' fill='%237a3e2a'>PJT</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--fond:#f5efe2;--texte:#1a1a1a;--texte-mute:#5a5a5a;--accent:#7a3e2a;--filet:#1a1a1a;--filet-leger:#c8bfa6;--serif:"EB Garamond",Georgia,"Times New Roman",serif;--mono:"JetBrains Mono","SF Mono",Menlo,Consolas,monospace;--st-advenu:#7a3e2a;--st-encours:#b06a1f;--st-surveiller:#6f7458;--st-infirme:#9a3b3b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fond);color:var(--texte);font-family:var(--serif);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:680px;margin:0 auto;padding:32px 32px 60px}
+[data-fr],[data-en]{display:none}
+html[lang="fr"] [data-fr]{display:inline}
+html[lang="en"] [data-en]{display:inline}
+.head{border-bottom:1px solid var(--filet);padding-bottom:12px;margin-bottom:56px;display:flex;justify-content:space-between;align-items:baseline;font-family:var(--mono);font-size:11px;letter-spacing:.05em}
+.head a{color:var(--texte);text-decoration:none}
+.head .left a{font-weight:500;border-bottom:1px solid var(--accent);padding-bottom:1px;transition:all .15s}
+.head .left a:hover{background:var(--texte);color:var(--fond)}
+.head .middle{flex:1;text-align:center;font-weight:500}
+.head .middle a{border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
+.head .middle a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.head .right{color:var(--texte-mute)}
+.head .lang{color:var(--texte-mute);user-select:none}
+.head .lang button{background:none;border:none;font-family:inherit;font-size:inherit;letter-spacing:inherit;color:var(--texte-mute);cursor:pointer;padding:0;border-bottom:1px solid var(--filet-leger);padding-bottom:1px;transition:all .15s}
+.head .lang button:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.head .lang button.active{color:var(--texte);font-weight:500;border-bottom:none;cursor:default}
+.head .lang .sep{margin:0 6px}
+.hero{border-bottom:1px solid var(--filet);padding-bottom:36px;margin-bottom:36px}
+.marqueur{font-family:var(--mono);font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);margin-bottom:20px;display:block}
+h1{font-size:46px;font-weight:400;letter-spacing:-.02em;margin:0 0 16px;line-height:1}
+h1 .point{color:var(--accent)}
+.chapeau{font-size:19px;color:var(--texte-mute);line-height:1.5;max-width:56ch}
+.chapeau em{font-style:italic}
+.origine{font-family:var(--mono);font-size:11px;color:var(--texte-mute);margin-top:20px}
+.origine a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
+.origine a:hover{border-bottom-color:var(--accent)}
+/* Légende / filtre */
+.tf-legende{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
+.tf-chip{font-family:var(--mono);font-size:11px;letter-spacing:.02em;background:none;border:1px solid var(--filet-leger);color:var(--texte-mute);border-radius:20px;padding:5px 12px 5px 10px;cursor:pointer;display:inline-flex;align-items:center;gap:7px;transition:all .15s}
+.tf-chip:hover{border-color:var(--accent);color:var(--texte)}
+.tf-chip.on{border-color:var(--texte);color:var(--texte);font-weight:500}
+.tf-dot{width:9px;height:9px;border-radius:50%;flex:none;display:inline-block}
+.tf-dot.d-advenu{background:var(--st-advenu)}
+.tf-dot.d-encours{background:var(--st-encours)}
+.tf-dot.d-surveiller{background:var(--st-surveiller)}
+.tf-dot.d-infirme{background:var(--st-infirme)}
+.tf-chip .tf-n{color:var(--texte-mute);font-size:10px}
+.tf-note-methode{font-size:14px;color:var(--texte-mute);font-style:italic;margin:0 0 30px;max-width:60ch;line-height:1.5}
+/* Entrées */
+.tf-entry{border-top:1px solid var(--filet-leger);padding:22px 0}
+.tf-entry:first-of-type{border-top:1px solid var(--filet)}
+.tf-tete{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px}
+.tf-date{font-family:var(--mono);font-size:10.5px;color:var(--texte-mute);letter-spacing:.05em;text-transform:lowercase}
+.tf-statut{font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;display:inline-flex;align-items:center;gap:6px;padding:3px 9px;border-radius:20px;border:1px solid var(--filet-leger)}
+.tf-statut .tf-dot{width:8px;height:8px}
+.tf-s-advenu{color:var(--st-advenu);border-color:var(--st-advenu)}
+.tf-s-encours{color:var(--st-encours);border-color:var(--st-encours)}
+.tf-s-surveiller{color:var(--st-surveiller);border-color:var(--st-surveiller)}
+.tf-s-infirme{color:var(--st-infirme);border-color:var(--st-infirme)}
+.tf-titre{display:block;font-size:22px;font-weight:500;letter-spacing:-.01em;color:var(--texte);text-decoration:none;line-height:1.25;margin-bottom:10px}
+.tf-titre:hover{color:var(--accent)}
+.tf-titre .fl{font-family:var(--mono);font-size:12px;color:var(--filet-leger);margin-left:6px;font-weight:400}
+.tf-titre:hover .fl{color:var(--accent)}
+.tf-claim{font-size:17px;line-height:1.55;margin:0 0 14px}
+.tf-ligne{font-size:14.5px;line-height:1.5;color:var(--texte-mute);margin:0 0 6px;padding-left:16px;position:relative}
+.tf-ligne .tf-lab{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);display:inline-block;margin-right:6px}
+.tf-verdict .tf-lab{color:var(--texte-mute)}
+.tf-verdict em{font-style:italic}
+.tf-hide{display:none!important}
+.closing{border-top:1px solid var(--filet);margin-top:44px;padding-top:32px;font-size:17px;line-height:1.7;color:var(--texte)}
+.closing em{font-style:italic;color:var(--texte-mute)}
+.retour{margin-top:40px;font-family:var(--mono);font-size:11px}
+.retour a{color:var(--texte-mute);text-decoration:none;border-bottom:1px solid var(--filet-leger);padding-bottom:1px;transition:all .15s}
+.retour a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+::selection{background:var(--accent);color:var(--fond)}
+@media(max-width:640px){.wrap{padding:24px 20px 48px}h1{font-size:34px}.tf-titre{font-size:20px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="head">
+    <span class="left"><a href="/">pierrejeantribot.com</a></span>
+    <span class="middle"><a href="/notes/">notes</a> · <a href="/glossaire.html">glossaire</a> · <a href="/corpus/">corpus</a> · <span style="color:#7a3e2a;">tableau</span> · <a href="/methode/">méthode</a> · <a href="/dialogue/">dialogue</a></span>
+    <span class="lang">
+      <button id="btn-fr" type="button" aria-label="Français">FR</button>
+      <span class="sep">·</span>
+      <button id="btn-en" type="button" aria-label="English">EN</button>
+    </span>
+    <span class="right"><span data-fr>bruxelles · 2026</span><span data-en>brussels · 2026</span></span>
+  </header>
+
+  <section class="hero">
+    <span class="marqueur"><span data-fr>◆ le tableau d'affichage</span><span data-en>◆ the scoreboard</span></span>
+    <h1><span data-fr>Le tableau d'affichage</span><span data-en>The scoreboard</span><span class="point">.</span></h1>
+    <p class="chapeau">
+      <span data-fr>Une analyse ne vaut que ce qu'elle risque contre le temps. Cette page confronte des thèses <em>datées</em> à ce qui advient — advenu, en cours, à surveiller, infirmé. Pas de curseur prudent : un pari, une date, et le score quand il tombe.</span>
+      <span data-en>An analysis is worth only what it risks against time. This page confronts <em>dated</em> claims with what happens — confirmed, unfolding, to watch, refuted. No cautious cursor: a bet, a date, and the score when it comes in.</span>
+    </p>
+    <p class="origine">
+      <span data-fr>◆ d'où vient l'idée : </span><span data-en>◆ where the idea comes from: </span>
+      <a href="/notes/#en-meme-temps-cognitif"><span data-fr>Le « en même temps » cognitif</span><span data-en>The cognitive « en même temps »</span></a>
+    </p>
+  </section>
+
+  <div class="tf-legende" id="tf-legende"></div>
+  <p class="tf-note-methode">
+    <span data-fr>Méthode : chaque thèse est reliée à la note où elle a été formulée, à sa date, et à un critère de vérification explicite. Les statuts sont révisés dans le temps ; un « infirmé » reste affiché. La honnêteté du bilan fait la valeur de la preuve.</span>
+    <span data-en>Method: each claim is tied to the note where it was made, to its date, and to an explicit test. Statuses are revised over time; a « refuted » stays on display. The honesty of the ledger is what makes the proof.</span>
+  </p>
+
+  <div id="tf-liste">
+
+    <article class="tf-entry" data-status="surveiller">
+      <div class="tf-tete">
+        <span class="tf-date"><span data-fr>septembre 2026</span><span data-en>september 2026</span></span>
+        <span class="tf-statut tf-s-surveiller"><span class="tf-dot d-surveiller"></span><span data-fr>à surveiller</span><span data-en>to watch</span></span>
+      </div>
+      <a class="tf-titre" href="/notes/#en-meme-temps-cognitif"><span data-fr>Le « en même temps » cognitif</span><span data-en>The cognitive « en même temps »</span><span class="fl">→</span></a>
+      <p class="tf-claim"><span data-fr>Le réflexe du « oui mais » n'est pas de la nuance mais un péage : le symptôme d'une économie qui mesure la norme et non la production. Le jour où la production devient mesurable, il perdra sa prime.</span><span data-en>The « yes but » reflex is not nuance but a toll: the symptom of an economy that measures the norm, not production. The day production becomes measurable, it loses its premium.</span></p>
+      <p class="tf-ligne"><span class="tf-lab" data-fr>à vérifier</span><span class="tf-lab" data-en>test</span><span data-fr>L'apparition d'une mesure partagée de « qui a construit quoi » — et le déclassement des postures de pure réserve.</span><span data-en>The emergence of a shared measure of « who built what » — and the discrediting of pure-caveat postures.</span></p>
+      <p class="tf-ligne tf-verdict"><span class="tf-lab" data-fr>verdict</span><span class="tf-lab" data-en>verdict</span><em><span data-fr>— à établir.</span><span data-en>— to be established.</span></em></p>
+    </article>
+
+    <article class="tf-entry" data-status="encours">
+      <div class="tf-tete">
+        <span class="tf-date"><span data-fr>septembre 2026</span><span data-en>september 2026</span></span>
+        <span class="tf-statut tf-s-encours"><span class="tf-dot d-encours"></span><span data-fr>en cours</span><span data-en>unfolding</span></span>
+      </div>
+      <a class="tf-titre" href="/notes/#instant-argentin"><span data-fr>L'instant argentin</span><span data-en>The Argentine moment</span><span class="fl">→</span></a>
+      <p class="tf-claim"><span data-fr>En sauvant sa rente normative (RGPD, AI Act) au lieu de financer un pivot productif, l'Europe s'expose à un décrochage « à l'argentine » — un déclin relatif sans choc visible. La fenêtre est encore ouverte.</span><span data-en>By saving its normative rent (GDPR, AI Act) instead of funding a productive pivot, Europe risks an « Argentine » decoupling — relative decline with no visible shock. The window is still open.</span></p>
+      <p class="tf-ligne"><span class="tf-lab" data-fr>à vérifier</span><span class="tf-lab" data-en>test</span><span data-fr>Le sort du plan Draghi (750-800 Md€/an) ; l'écart de productivité UE vs États-Unis et Chine ; toute dette commune de rang senior — ou son absence.</span><span data-en>The fate of the Draghi plan (€750-800bn/yr); the productivity gap EU vs US and China; any senior common debt — or its absence.</span></p>
+      <p class="tf-ligne tf-verdict"><span class="tf-lab" data-fr>verdict</span><span class="tf-lab" data-en>verdict</span><em><span data-fr>— à établir.</span><span data-en>— to be established.</span></em></p>
+    </article>
+
+    <article class="tf-entry" data-status="surveiller">
+      <div class="tf-tete">
+        <span class="tf-date"><span data-fr>septembre 2026</span><span data-en>september 2026</span></span>
+        <span class="tf-statut tf-s-surveiller"><span class="tf-dot d-surveiller"></span><span data-fr>à surveiller</span><span data-en>to watch</span></span>
+      </div>
+      <a class="tf-titre" href="/notes/#airbus-ia"><span data-fr>L'Airbus de l'IA</span><span data-en>The Airbus of AI</span><span class="fl">→</span></a>
+      <p class="tf-claim"><span data-fr>Un « Airbus de l'IA » par consolidation dirigée échouera comme ses précédents (Alstom-Siemens, bloqué en 2019). La souveraineté se joue par couche technologique, pas par champion national.</span><span data-en>An « Airbus of AI » built by top-down consolidation will fail like its precedents (Alstom-Siemens, blocked in 2019). Sovereignty is played by technological layer, not by national champion.</span></p>
+      <p class="tf-ligne"><span class="tf-lab" data-fr>à vérifier</span><span class="tf-lab" data-en>test</span><span data-fr>Tout projet de champion européen de l'IA annoncé — et son issue réglementaire et industrielle.</span><span data-en>Any announced European AI-champion project — and its regulatory and industrial outcome.</span></p>
+      <p class="tf-ligne tf-verdict"><span class="tf-lab" data-fr>verdict</span><span class="tf-lab" data-en>verdict</span><em><span data-fr>— à établir.</span><span data-en>— to be established.</span></em></p>
+    </article>
+
+    <article class="tf-entry" data-status="encours">
+      <div class="tf-tete">
+        <span class="tf-date"><span data-fr>août 2026</span><span data-en>august 2026</span></span>
+        <span class="tf-statut tf-s-encours"><span class="tf-dot d-encours"></span><span data-fr>en cours</span><span data-en>unfolding</span></span>
+      </div>
+      <a class="tf-titre" href="/notes/#europe-industrie"><span data-fr>L'Europe régule une industrie qu'elle n'a pas</span><span data-en>Europe regulates an industry it does not have</span><span class="fl">→</span></a>
+      <p class="tf-claim"><span data-fr>L'Europe régule une industrie de l'IA qu'elle ne possède pas. Les États-Unis n'ont pas « pris du retard » : ils ont fait un autre choix — construire d'abord, réguler ensuite.</span><span data-en>Europe regulates an AI industry it does not own. The US has not « fallen behind »: it made another choice — build first, regulate later.</span></p>
+      <p class="tf-ligne"><span class="tf-lab" data-fr>à vérifier</span><span class="tf-lab" data-en>test</span><span data-fr>La part européenne réelle dans les modèles de fondation, le cloud d'infrastructure et le silicium.</span><span data-en>Europe's real share in foundation models, infrastructure cloud and silicon.</span></p>
+      <p class="tf-ligne tf-verdict"><span class="tf-lab" data-fr>verdict</span><span class="tf-lab" data-en>verdict</span><em><span data-fr>— à établir.</span><span data-en>— to be established.</span></em></p>
+    </article>
+
+    <article class="tf-entry" data-status="encours">
+      <div class="tf-tete">
+        <span class="tf-date"><span data-fr>août 2026</span><span data-en>august 2026</span></span>
+        <span class="tf-statut tf-s-encours"><span class="tf-dot d-encours"></span><span data-fr>en cours</span><span data-en>unfolding</span></span>
+      </div>
+      <a class="tf-titre" href="/notes/#ai-for-all"><span data-fr>AI for All : la Corée du Sud déploie ce que l'Europe débat</span><span data-en>AI for All: South Korea deploys what Europe debates</span><span class="fl">→</span></a>
+      <p class="tf-claim"><span data-fr>La souveraineté cognitive se construit par la saturation d'usage (pari sud-coréen « AI for All »), pas par le vocabulaire de l'encadrement (pari européen). Deux hypothèses opposées ; une seule sera validée par les faits.</span><span data-en>Cognitive sovereignty is built by saturation of use (South Korea's « AI for All » bet), not by the vocabulary of containment (Europe's bet). Two opposing hypotheses; only one will be borne out.</span></p>
+      <p class="tf-ligne"><span class="tf-lab" data-fr>à vérifier</span><span class="tf-lab" data-en>test</span><span data-fr>Les taux d'adoption et de compétence IA comparés Corée du Sud / Europe dans les deux prochaines années.</span><span data-en>Comparative AI-adoption and skill rates, South Korea vs Europe, over the next two years.</span></p>
+      <p class="tf-ligne tf-verdict"><span class="tf-lab" data-fr>verdict</span><span class="tf-lab" data-en>verdict</span><em><span data-fr>— à établir.</span><span data-en>— to be established.</span></em></p>
+    </article>
+
+    <article class="tf-entry" data-status="encours">
+      <div class="tf-tete">
+        <span class="tf-date"><span data-fr>août 2026</span><span data-en>august 2026</span></span>
+        <span class="tf-statut tf-s-encours"><span class="tf-dot d-encours"></span><span data-fr>en cours</span><span data-en>unfolding</span></span>
+      </div>
+      <a class="tf-titre" href="/notes/#taxer-ia-1"><span data-fr>Taxer l'IA : une question juste, une réponse impossible</span><span data-en>Taxing AI: a just question, an impossible answer</span><span class="fl">→</span></a>
+      <p class="tf-claim"><span data-fr>Les mécanismes proposés pour redistribuer la valeur de l'IA (taxation, propriété publique, dividende universel) se heurtent à des obstacles structurels que les propositions politiques sous-estiment systématiquement.</span><span data-en>The mechanisms proposed to redistribute AI's value (taxation, public ownership, universal dividend) run into structural obstacles that political proposals systematically underestimate.</span></p>
+      <p class="tf-ligne"><span class="tf-lab" data-fr>à vérifier</span><span class="tf-lab" data-en>test</span><span data-fr>Toute mise en œuvre effective d'une taxe IA ou d'un dividende — et l'écart avec ses promesses.</span><span data-en>Any effective implementation of an AI tax or dividend — and the gap with its promises.</span></p>
+      <p class="tf-ligne tf-verdict"><span class="tf-lab" data-fr>verdict</span><span class="tf-lab" data-en>verdict</span><em><span data-fr>— à établir.</span><span data-en>— to be established.</span></em></p>
+    </article>
+
+    <article class="tf-entry" data-status="encours">
+      <div class="tf-tete">
+        <span class="tf-date"><span data-fr>juin 2026</span><span data-en>june 2026</span></span>
+        <span class="tf-statut tf-s-encours"><span class="tf-dot d-encours"></span><span data-fr>en cours</span><span data-en>unfolding</span></span>
+      </div>
+      <a class="tf-titre" href="/notes/#mauvais-etage"><span data-fr>Le mauvais étage de la lutte</span><span data-en>The wrong floor</span><span class="fl">→</span></a>
+      <p class="tf-claim"><span data-fr>La position stratégique dans l'IA se joue par couche : silicium et modèles de fondation sont des couches déjà perdues pour l'Europe à horizon dix ans. Se battre ailleurs, c'est lutter au mauvais étage.</span><span data-en>Strategic position in AI is played by layer: silicon and foundation models are layers already lost to Europe on a ten-year horizon. Fighting elsewhere is fighting on the wrong floor.</span></p>
+      <p class="tf-ligne"><span class="tf-lab" data-fr>à vérifier</span><span class="tf-lab" data-en>test</span><span data-fr>Toute percée européenne — ou son absence — sur le silicium et les modèles de fondation.</span><span data-en>Any European breakthrough — or its absence — in silicon and foundation models.</span></p>
+      <p class="tf-ligne tf-verdict"><span class="tf-lab" data-fr>verdict</span><span class="tf-lab" data-en>verdict</span><em><span data-fr>— à établir.</span><span data-en>— to be established.</span></em></p>
+    </article>
+
+    <article class="tf-entry" data-status="surveiller">
+      <div class="tf-tete">
+        <span class="tf-date"><span data-fr>juin 2026</span><span data-en>june 2026</span></span>
+        <span class="tf-statut tf-s-surveiller"><span class="tf-dot d-surveiller"></span><span data-fr>à surveiller</span><span data-en>to watch</span></span>
+      </div>
+      <a class="tf-titre" href="/notes/#gouvernement-augmente"><span data-fr>Le temps du gouvernement augmenté</span><span data-en>The time of augmented government</span><span class="fl">→</span></a>
+      <p class="tf-claim"><span data-fr>L'acte de gouverner — arbitrer, légiférer, trancher — s'exerce encore à peu près comme en 1995. Le prochain saut d'État sera le « gouvernement augmenté » : la décision publique outillée par l'IA.</span><span data-en>The act of governing — arbitrating, legislating, deciding — is still performed roughly as in 1995. The next leap of the state will be « augmented government »: public decision-making tooled by AI.</span></p>
+      <p class="tf-ligne"><span class="tf-lab" data-fr>à vérifier</span><span class="tf-lab" data-en>test</span><span data-fr>L'apparition de simulations d'impact et d'aide à la décision par IA dans les cabinets et les budgets publics.</span><span data-en>The appearance of impact simulations and AI decision-support in ministerial offices and public budgets.</span></p>
+      <p class="tf-ligne tf-verdict"><span class="tf-lab" data-fr>verdict</span><span class="tf-lab" data-en>verdict</span><em><span data-fr>— à établir.</span><span data-en>— to be established.</span></em></p>
+    </article>
+
+  </div>
+
+  <p class="closing">
+    <span data-fr>Ce tableau est tenu à découvert. Il vieillira — c'est le but : une thèse qui ne prend jamais de risque n'en est pas une. <em>Le score arrive.</em></span>
+    <span data-en>This scoreboard is kept in the open. It will age — that is the point: a claim that never takes a risk is not one. <em>The score is coming.</em></span>
+  </p>
+
+  <div class="retour"><a href="/notes/"><span data-fr>↑ lire les notes</span><span data-en>↑ read the notes</span></a></div>
+</div>
+
+<script>
+(function(){
+  var html=document.documentElement, fr=document.getElementById('btn-fr'), en=document.getElementById('btn-en');
+  function set(l){ if(l!=='en')l='fr'; html.setAttribute('lang',l); fr.classList.toggle('active',l==='fr'); en.classList.toggle('active',l==='en'); try{localStorage.setItem('lang',l);}catch(e){} }
+  function detect(){ var h=location.hash; if(h==='#en')return'en'; if(h==='#fr')return'fr'; var s; try{s=localStorage.getItem('lang');}catch(e){} if(s==='fr'||s==='en')return s; return (navigator.language||'fr').toLowerCase().indexOf('en')===0?'en':'fr'; }
+  fr.addEventListener('click',function(){set('fr');}); en.addEventListener('click',function(){set('en');});
+  set(detect());
+
+  // ---- Légende + filtre par statut ----
+  var STATUTS=[
+    {k:'all',       fr:'tout',         en:'all'},
+    {k:'advenu',    fr:'advenu',       en:'confirmed'},
+    {k:'encours',   fr:'en cours',     en:'unfolding'},
+    {k:'surveiller',fr:'à surveiller', en:'to watch'},
+    {k:'infirme',   fr:'infirmé',      en:'refuted'}
+  ];
+  var entries=[].slice.call(document.querySelectorAll('.tf-entry'));
+  var counts={}; entries.forEach(function(e){var s=e.getAttribute('data-status');counts[s]=(counts[s]||0)+1;});
+  var leg=document.getElementById('tf-legende'), cur='all';
+  function bl(fr,en){return '<span data-fr>'+fr+'</span><span data-en>'+en+'</span>';}
+  STATUTS.forEach(function(s){
+    if(s.k!=='all' && !counts[s.k]) return;
+    var n = s.k==='all' ? entries.length : counts[s.k];
+    var dot = s.k==='all' ? '' : '<span class="tf-dot d-'+s.k+'"></span>';
+    var b=document.createElement('button');
+    b.className='tf-chip'+(s.k==='all'?' on':'');
+    b.setAttribute('data-k',s.k);
+    b.innerHTML=dot+bl(s.fr,s.en)+'<span class="tf-n">'+n+'</span>';
+    leg.appendChild(b);
+  });
+  leg.addEventListener('click',function(e){
+    var b=e.target.closest('.tf-chip'); if(!b) return;
+    cur=b.getAttribute('data-k');
+    leg.querySelectorAll('.tf-chip').forEach(function(x){x.classList.toggle('on',x===b);});
+    entries.forEach(function(en){ en.classList.toggle('tf-hide', cur!=='all' && en.getAttribute('data-status')!==cur); });
+  });
+})();
+</script>
+</body>
+</html>
