@@ -177,7 +177,9 @@ fixed = [
   ["#{SITE}/notes/",                 "weekly",  "0.9"],
   ["#{SITE}/corpus/",                "weekly",  "0.8"],
   ["#{SITE}/tableau/",               "monthly", "0.8"],
+  ["#{SITE}/recherche.html",         "monthly", "0.5"],
   ["#{SITE}/methode/",               "monthly", "0.7"],
+  ["#{SITE}/dossier/",               "monthly", "0.6"],
   ["#{SITE}/glossaire.html",         "monthly", "0.6"],
   ["#{SITE}/confidentialite.html",   "yearly",  "0.2"]
 ]
