@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-fr="Dossier — Pierre-Jean Tribot" data-en="Dossier — Pierre-Jean Tribot">Dossier — Pierre-Jean Tribot</title>
+<meta name="description" content="Dossier de présentation de Pierre-Jean Tribot : profil, méthode, corpus, réalisations — expertise par la preuve et par l'usage dans la culture et l'IA.">
+<meta name="author" content="Pierre-Jean Tribot">
+<meta name="theme-color" content="#f5efe2">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="Dossier — Pierre-Jean Tribot">
+<meta property="og:description" content="Profil, méthode, corpus, réalisations. L'expertise par la preuve et par l'usage.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://pierrejeantribot.com/dossier/">
+<meta property="og:image" content="https://pierrejeantribot.com/og-notes.png">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='10' fill='%23f5efe2'/><text x='32' y='42' font-family='Georgia, serif' font-size='26' font-weight='500' text-anchor='middle' fill='%237a3e2a'>PJT</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--fond:#f5efe2;--texte:#1a1a1a;--texte-mute:#5a5a5a;--accent:#7a3e2a;--filet:#1a1a1a;--filet-leger:#c8bfa6;--serif:"EB Garamond",Georgia,"Times New Roman",serif;--mono:"JetBrains Mono","SF Mono",Menlo,Consolas,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fond);color:var(--texte);font-family:var(--serif);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:680px;margin:0 auto;padding:32px 32px 60px}
+[data-fr],[data-en]{display:none}
+html[lang="fr"] [data-fr]{display:inline}
+html[lang="en"] [data-en]{display:inline}
+html[lang="fr"] [data-fr].blk,html[lang="en"] [data-en].blk{display:block}
+.head{border-bottom:1px solid var(--filet);padding-bottom:12px;margin-bottom:48px;display:flex;justify-content:space-between;align-items:baseline;font-family:var(--mono);font-size:11px;letter-spacing:.05em}
+.head a{color:var(--texte);text-decoration:none}
+.head .left a{font-weight:500;border-bottom:1px solid var(--accent);padding-bottom:1px}
+.head .middle{flex:1;text-align:center;font-weight:500}
+.head .middle a{border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
+.head .middle a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.head .lang button{background:none;border:none;font-family:inherit;font-size:inherit;letter-spacing:inherit;color:var(--texte-mute);cursor:pointer;padding:0;border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
+.head .lang button.active{color:var(--texte);font-weight:500;border-bottom:none;cursor:default}
+.head .lang .sep{margin:0 6px}
+.marqueur{font-family:var(--mono);font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);margin-bottom:18px;display:block}
+h1{font-size:44px;font-weight:400;letter-spacing:-.02em;margin:0 0 6px;line-height:1.02}
+.role{font-family:var(--mono);font-size:12px;color:var(--texte-mute);letter-spacing:.03em;margin-bottom:18px;display:block}
+.signature{font-size:20px;font-style:italic;color:var(--accent);margin:0 0 8px}
+.print-btn{font-family:var(--mono);font-size:11px;letter-spacing:.04em;background:none;border:1px solid var(--filet-leger);color:var(--texte-mute);border-radius:20px;padding:6px 14px;cursor:pointer;transition:all .15s;margin-top:6px}
+.print-btn:hover{border-color:var(--accent);color:var(--accent)}
+h2{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--texte-mute);margin:40px 0 14px;padding-top:20px;border-top:1px solid var(--filet)}
+p{margin:0 0 14px}
+.lead{font-size:19px;color:var(--texte)}
+.stats{display:flex;flex-wrap:wrap;gap:0;border-top:1px solid var(--filet-leger);border-bottom:1px solid var(--filet-leger)}
+.stat{flex:1;min-width:88px;padding:14px 0}
+.stat .v{font-size:27px;line-height:1}
+.stat .l{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--texte-mute);margin-top:7px;display:block}
+.projets{list-style:none;margin:0;padding:0}
+.projets li{display:flex;justify-content:space-between;gap:14px;align-items:baseline;padding:7px 0;border-bottom:1px solid rgba(200,191,166,.5)}
+.projets li:last-child{border-bottom:none}
+.projets .pt{font-size:17px}
+.projets .pc{font-family:var(--mono);font-size:10px;letter-spacing:.04em;color:var(--texte-mute);text-transform:uppercase;text-align:right;flex:none;max-width:44%}
+.citer{background:rgba(122,62,42,.05);border:1px solid var(--filet-leger);border-radius:4px;padding:16px 18px;font-size:15px;line-height:1.55}
+.citer .ref{font-family:var(--mono);font-size:12.5px;color:var(--texte);line-height:1.6}
+.citer .todo{color:var(--texte-mute);font-style:italic}
+.liens a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
+.liens a:hover{border-bottom-color:var(--accent)}
+.retour{margin-top:44px;font-family:var(--mono);font-size:11px}
+.retour a{color:var(--texte-mute);text-decoration:none;border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
+.retour a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+::selection{background:var(--accent);color:var(--fond)}
+@media(max-width:640px){.wrap{padding:24px 20px 48px}h1{font-size:34px}.projets li{flex-direction:column;gap:2px}.projets .pc{text-align:left;max-width:none}}
+@media print{
+  @page{margin:18mm}
+  body{background:#fff;color:#000;font-size:11.5pt;line-height:1.45}
+  .wrap{max-width:none;margin:0;padding:0}
+  .head .lang,.print-btn,.retour,.marqueur{display:none!important}
+  .head{border-color:#000;margin-bottom:20px}
+  .head .middle{display:none}
+  h1{font-size:26pt}
+  h2{border-color:#000;color:#000;margin:20px 0 8px;padding-top:12px;page-break-after:avoid}
+  .signature{color:#000}
+  a{color:#000;text-decoration:none}
+  .citer{background:none;border:1px solid #000}
+  section,.stats,.citer,.projets li{page-break-inside:avoid}
+  .stat .v{color:#000}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="head">
+    <span class="left"><a href="/">pierrejeantribot.com</a></span>
+    <span class="middle"><a href="/notes/">notes</a> · <a href="/corpus/">corpus</a> · <a href="/tableau/">tableau</a> · <a href="/methode/">méthode</a> · <a href="/dialogue/">dialogue</a></span>
+    <span class="lang">
+      <button id="btn-fr" type="button" aria-label="Français">FR</button>
+      <span class="sep">·</span>
+      <button id="btn-en" type="button" aria-label="English">EN</button>
+    </span>
+  </header>
+
+  <span class="marqueur"><span data-fr>◆ dossier</span><span data-en>◆ dossier</span></span>
+  <h1>Pierre-Jean Tribot<span style="color:var(--accent)">.</span></h1>
+  <span class="role">
+    <span data-fr>historien · rédacteur en chef, Crescendo Magazine · administrateur, XXI Music Publishing · bruxelles</span>
+    <span data-en>historian · editor-in-chief, Crescendo Magazine · board member, XXI Music Publishing · brussels</span>
+  </span>
+  <p class="signature"><span data-fr>« Je ne commente pas l'IA dans la culture. Je la construis. »</span><span data-en>“I don't comment on AI in culture. I build it.”</span></p>
+  <button class="print-btn" onclick="window.print()"><span data-fr>⎙ imprimer / enregistrer en PDF</span><span data-en>⎙ print / save as PDF</span></button>
+
+  <h2><span data-fr>Profil</span><span data-en>Profile</span></h2>
+  <p class="lead"><span data-fr>Éditeur et historien de formation, je conçois et déploie des outils éditoriaux augmentés par l'intelligence artificielle pour le secteur culturel — depuis une pratique professionnelle réelle, pas un discours sur la technologie. En parallèle, je tiens un corpus public de notes qui en théorise les enjeux. La ligne est constante : l'expertise par la preuve et par l'usage.</span><span data-en>An editor and historian by training, I design and deploy AI-augmented editorial tools for the cultural sector — from real professional practice, not talk about technology. Alongside, I maintain a public corpus of notes that theorises the stakes. One constant line: expertise through proof and practice.</span></p>
+
+  <h2><span data-fr>Parcours</span><span data-en>Background</span></h2>
+  <p><span data-fr>Formé à la musique (cor d'harmonie) et à l'histoire à l'Université Paris-IV Sorbonne et à l'Université Libre de Bruxelles. Rédacteur en chef de <em>ResMusica</em> (2009-2015), vice-président des International Classical Music Awards (2012-2015), chroniqueur pour la RTBF Musiq3. Depuis 2018, rédacteur en chef de <em>Crescendo Magazine</em> et administrateur de <em>XXI Music Publishing</em>, qui édite la <em>Ravel Edition</em>.</span><span data-en>Trained in music (French horn) and history at Paris-IV Sorbonne and the Université Libre de Bruxelles. Editor-in-chief of <em>ResMusica</em> (2009-2015), vice-president of the International Classical Music Awards (2012-2015), contributor to RTBF Musiq3. Since 2018, editor-in-chief of <em>Crescendo Magazine</em> and board member of <em>XXI Music Publishing</em>, which publishes the <em>Ravel Edition</em>.</span></p>
+  <p><span data-fr>Auteur d'ouvrages sur les communes bruxelloises, l'Exposition universelle de 1958 et l'Atomium. Collabore avec la Fédération Wallonie-Bruxelles sur des projets numériques éducatifs, le programme PECA et le secteur des centres culturels. Depuis 2024, intègre l'IA dans une chaîne éditoriale réelle : critique musicale, éditions critiques, médiation patrimoniale, production de podcasts.</span><span data-en>Author of works on the Brussels municipalities, the 1958 World Fair and the Atomium. Collaborates with the Fédération Wallonie-Bruxelles on educational digital projects, the PECA programme and the cultural-centres sector. Since 2024, integrates AI into a real editorial chain: music criticism, critical editions, heritage mediation, podcast production.</span></p>
+
+  <h2><span data-fr>Le corpus en chiffres</span><span data-en>The corpus in figures</span></h2>
+  <div class="stats">
+    <div class="stat"><span class="v">58</span><span class="l"><span data-fr>notes</span><span data-en>notes</span></span></div>
+    <div class="stat"><span class="v">88k</span><span class="l"><span data-fr>mots</span><span data-en>words</span></span></div>
+    <div class="stat"><span class="v">7</span><span class="l"><span data-fr>thèmes</span><span data-en>themes</span></span></div>
+    <div class="stat"><span class="v">2</span><span class="l"><span data-fr>langues</span><span data-en>languages</span></span></div>
+  </div>
+  <p style="margin-top:14px"><span data-fr>Un corpus éditorial bilingue (français / anglais), écrit depuis Bruxelles depuis mai 2026, sur sept axes : souveraineté cognitive, économie politique de l'IA, géopolitique, changements sociétaux, culture &amp; patrimoine, éducation, méthode. Chaque note est datée, citable et reliée aux autres. Objectif : cent notes au printemps 2027. Le corpus est interrogeable en langage naturel (agent <a class="liens" href="/dialogue/">« Parler avec ma pensée »</a>) et ses thèses datées sont suivies dans <a class="liens" href="/tableau/">un tableau d'affichage</a>.</span><span data-en>A bilingual editorial corpus (French / English), written from Brussels since May 2026, on seven axes: cognitive sovereignty, the political economy of AI, geopolitics, societal change, culture &amp; heritage, education, method. Each note is dated, citable and cross-linked. Target: one hundred notes by spring 2027. The corpus is queryable in natural language (the <a class="liens" href="/dialogue/">“Talk with my thought”</a> agent) and its dated claims are tracked on <a class="liens" href="/tableau/">a scoreboard</a>.</span></p>
+
+  <h2><span data-fr>Méthode</span><span data-en>Method</span></h2>
+  <p><span data-fr>L'IA y est un <strong>outillage du sujet compétent</strong>, non un substitut. Le prompt n'est pas la problématisation. Ce qui ne se délègue pas : l'écoute, le jugement, la formule, l'architecture, la responsabilité éditoriale. Chaque livrable est produit, vérifié et signé par un éditeur non-développeur, et intégré à des structures établies plutôt qu'à des prototypes isolés. <a class="liens" href="/methode/">Lire la méthode →</a></span><span data-en>Here AI is a <strong>tool of the competent subject</strong>, not a substitute. The prompt is not the framing of the problem. What is not delegated: listening, judgement, phrasing, architecture, editorial responsibility. Every deliverable is produced, verified and signed by a non-developer editor, and integrated into established structures rather than isolated prototypes. <a class="liens" href="/methode/">Read the method →</a></span></p>
+
+  <h2><span data-fr>Réalisations — onze outils déployés</span><span data-en>Work — eleven deployed tools</span></h2>
+  <ul class="projets">
+    <li><span class="pt">Pauline — Le Voyage Musical</span><span class="pc"><span data-fr>application musicale</span><span data-en>music application</span></span></li>
+    <li><span class="pt">XXI Music Publishing</span><span class="pc"><span data-fr>site institutionnel</span><span data-en>institutional website</span></span></li>
+    <li><span class="pt"><span data-fr>Art Déco Belgique</span><span data-en>Art Deco Belgium</span></span><span class="pc"><span data-fr>patrimoine architectural</span><span data-en>architectural heritage</span></span></li>
+    <li><span class="pt">Crescendo Festivals 2026</span><span class="pc"><span data-fr>cartographie culturelle</span><span data-en>cultural cartography</span></span></li>
+    <li><span class="pt">Phono Crescendo</span><span class="pc"><span data-fr>base discographique</span><span data-en>discographic database</span></span></li>
+    <li><span class="pt"><span data-fr>Studio podcast</span><span data-en>Podcast studio</span></span><span class="pc"><span data-fr>production audio</span><span data-en>audio production</span></span></li>
+    <li><span class="pt">Agenda Crescendo</span><span class="pc"><span data-fr>agenda concerts</span><span data-en>concerts agenda</span></span></li>
+    <li><span class="pt">Crescendo Tremplin</span><span class="pc"><span data-fr>agenda éditorialisé</span><span data-en>curated directory</span></span></li>
+    <li><span class="pt">Crescendo Brain</span><span class="pc"><span data-fr>mémoire éditoriale</span><span data-en>editorial memory</span></span></li>
+    <li><span class="pt"><span data-fr>Cohorte Centres culturels FWB</span><span data-en>FWB Cultural Centres Cohort</span></span><span class="pc"><span data-fr>agrégation empirique</span><span data-en>empirical aggregation</span></span></li>
+    <li><span class="pt"><span data-fr>Répertoire Crescendo</span><span data-en>Crescendo Repertoire</span></span><span class="pc"><span data-fr>outil de programmation</span><span data-en>programming tool</span></span></li>
+  </ul>
+  <p style="margin-top:12px;font-size:15px;color:var(--texte-mute)"><span data-fr>Détail et « la pensée derrière » chaque outil : <a class="liens" href="/">page d'accueil</a>.</span><span data-en>Details and “the thinking behind” each tool: <a class="liens" href="/">home page</a>.</span></p>
+
+  <h2><span data-fr>Comment citer ce travail</span><span data-en>How to cite this work</span></h2>
+  <div class="citer">
+    <p class="ref">Pierre-Jean Tribot, <em data-fr>Notes — un corpus sur l'IA, la culture, l'éducation et la souveraineté cognitive</em><em data-en>Notes — a corpus on AI, culture, education and cognitive sovereignty</em>, pierrejeantribot.com, 2026.</p>
+    <p style="margin:10px 0 0"><span class="ref">ORCID : <a class="liens" href="https://orcid.org/0009-0002-0112-4155">0009-0002-0112-4155</a></span><br>
+    <span class="ref todo"><span data-fr>DOI (dépôt Zenodo) : à venir.</span><span data-en>DOI (Zenodo deposit): forthcoming.</span></span></p>
+  </div>
+
+  <h2><span data-fr>Contact</span><span data-en>Contact</span></h2>
+  <p class="liens"><a href="mailto:pjtribot@gmail.com?subject=Contact%20—%20culture%20%26%20IA">pjtribot@gmail.com</a> · <a href="https://www.linkedin.com/in/pierre-jean-t-781a9316/">LinkedIn</a> · <a href="https://pierrejeantribot.com/">pierrejeantribot.com</a></p>
+
+  <div class="retour"><a href="/notes/"><span data-fr>↑ lire les notes</span><span data-en>↑ read the notes</span></a></div>
+</div>
+
+<script>
+(function(){
+  var html=document.documentElement, fr=document.getElementById('btn-fr'), en=document.getElementById('btn-en');
+  function set(l){ if(l!=='en')l='fr'; html.setAttribute('lang',l); fr.classList.toggle('active',l==='fr'); en.classList.toggle('active',l==='en'); try{localStorage.setItem('lang',l);}catch(e){} }
+  function detect(){ var h=location.hash; if(h==='#en')return'en'; if(h==='#fr')return'fr'; var s; try{s=localStorage.getItem('lang');}catch(e){} if(s==='fr'||s==='en')return s; return (navigator.language||'fr').toLowerCase().indexOf('en')===0?'en':'fr'; }
+  fr.addEventListener('click',function(){set('fr');}); en.addEventListener('click',function(){set('en');});
+  set(detect());
+})();
+</script>
+</body>
+</html>
