@@ -10794,11 +10794,10 @@ a.mc-cell:hover .mc-title { color: var(--accent); }
   }
 
   function buildShareUrl(anchor, lang) {
-    var base = window.location.origin + window.location.pathname;
-    if (lang === 'en') {
-      return base + '#' + anchor + '-en';
-    }
-    return base + '#' + anchor;
+    // URL crawlable par note (page statique avec balises OG/Twitter),
+    // qui redirige l'humain vers la SPA /notes/#anchor.
+    var base = window.location.origin + '/notes/' + anchor + '/';
+    return lang === 'en' ? base + '?lang=en' : base;
   }
 
   function updateAllShareLinks(lang) {
