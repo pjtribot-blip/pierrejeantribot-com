@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-fr="Carte du corpus — Pierre-Jean Tribot" data-en="Corpus map — Pierre-Jean Tribot">Carte du corpus — Pierre-Jean Tribot</title>
+<meta name="description" content="Carte conceptuelle interactive du corpus de Pierre-Jean Tribot : les notes comme nœuds, reliées par proximité, colorées par thème.">
+<meta name="author" content="Pierre-Jean Tribot">
+<meta name="theme-color" content="#f5efe2">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="Carte du corpus — Pierre-Jean Tribot">
+<meta property="og:description" content="Naviguer la pensée spatialement : les notes reliées par proximité, colorées par thème.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pierrejeantribot.com/carte/">
+<meta property="og:image" content="https://pierrejeantribot.com/og/section-corpus.png">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='10' fill='%23f5efe2'/><text x='32' y='42' font-family='Georgia, serif' font-size='26' font-weight='500' text-anchor='middle' fill='%237a3e2a'>PJT</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--fond:#f5efe2;--texte:#1a1a1a;--texte-mute:#5a5a5a;--accent:#7a3e2a;--filet:#1a1a1a;--filet-leger:#c8bfa6;--serif:"EB Garamond",Georgia,serif;--mono:"JetBrains Mono","SF Mono",Menlo,Consolas,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fond);color:var(--texte);font-family:var(--serif);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:960px;margin:0 auto;padding:32px 32px 60px}
+[data-fr],[data-en]{display:none}
+html[lang="fr"] [data-fr]{display:inline}
+html[lang="en"] [data-en]{display:inline}
+.head{border-bottom:1px solid var(--filet);padding-bottom:12px;margin-bottom:36px;display:flex;justify-content:space-between;align-items:baseline;font-family:var(--mono);font-size:11px;letter-spacing:.05em}
+.head a{color:var(--texte);text-decoration:none}
+.head .left a{font-weight:500;border-bottom:1px solid var(--accent);padding-bottom:1px}
+.head .middle{flex:1;text-align:center;font-weight:500}
+.head .middle a{border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
+.head .middle a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.head .lang button{background:none;border:none;font-family:inherit;font-size:inherit;letter-spacing:inherit;color:var(--texte-mute);cursor:pointer;padding:0;border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
+.head .lang button.active{color:var(--texte);font-weight:500;border-bottom:none;cursor:default}
+.head .lang .sep{margin:0 6px}
+.marqueur{font-family:var(--mono);font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;display:block}
+h1{font-size:44px;font-weight:400;letter-spacing:-.02em;margin:0 0 12px;line-height:1}
+h1 .point{color:var(--accent)}
+.chapeau{font-size:17px;color:var(--texte-mute);line-height:1.5;max-width:64ch;margin:0 0 20px}
+.legende{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
+.lg{font-family:var(--mono);font-size:11px;background:none;border:1px solid var(--filet-leger);color:var(--texte-mute);border-radius:20px;padding:4px 11px 4px 9px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all .12s}
+.lg:hover{border-color:var(--accent);color:var(--texte)}
+.lg.off{opacity:.4}
+.dot{width:9px;height:9px;border-radius:50%;flex:none}
+.canvas-box{position:relative;border:1px solid var(--filet-leger);border-radius:6px;overflow:hidden;background:#f7f1e4}
+#g{display:block;width:100%;height:66vh;min-height:420px;touch-action:none}
+.tip{position:absolute;pointer-events:none;background:var(--texte);color:var(--fond);font-family:var(--serif);font-size:14px;padding:5px 10px;border-radius:4px;max-width:260px;opacity:0;transition:opacity .1s;transform:translate(-50%,-130%);white-space:normal;line-height:1.25;z-index:2}
+.hint{font-family:var(--mono);font-size:11px;color:var(--texte-mute);margin-top:10px}
+.retour{margin-top:34px;font-family:var(--mono);font-size:11px}
+.retour a{color:var(--texte-mute);text-decoration:none;border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
+.retour a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+::selection{background:var(--accent);color:var(--fond)}
+@media(max-width:640px){.wrap{padding:22px 16px 44px}h1{font-size:32px}#g{height:60vh}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="head">
+    <span class="left"><a href="/">pierrejeantribot.com</a></span>
+    <span class="middle"><a href="/notes/">notes</a> · <a href="/corpus/">corpus</a> · <a href="/tableau/">tableau</a> · <a href="/dialogue/">dialogue</a></span>
+    <span class="lang">
+      <button id="btn-fr" type="button" aria-label="Français">FR</button>
+      <span class="sep">·</span>
+      <button id="btn-en" type="button" aria-label="English">EN</button>
+    </span>
+  </header>
+
+  <span class="marqueur"><span data-fr>◆ carte du corpus</span><span data-en>◆ corpus map</span></span>
+  <h1><span data-fr>Carte</span><span data-en>Map</span><span class="point">.</span></h1>
+  <p class="chapeau"><span data-fr>La pensée dans l'espace, pas en liste. Chaque point est une note, reliée à ses plus proches ; la couleur dit le thème. Survolez pour lire, cliquez pour ouvrir. Les carrefours — les gros points — sont les notes qui tiennent le corpus.</span><span data-en>Thinking in space, not in a list. Each dot is a note, linked to its closest ones; colour marks the theme. Hover to read, click to open. The hubs — the larger dots — are the notes that hold the corpus together.</span></p>
+
+  <div class="legende" id="legende"></div>
+
+  <div class="canvas-box">
+    <canvas id="g"></canvas>
+    <div class="tip" id="tip"></div>
+  </div>
+  <p class="hint"><span data-fr>Astuce : glissez un point pour réorganiser · cliquez pour ouvrir la note · cliquez une couleur pour l'isoler.</span><span data-en>Tip: drag a dot to rearrange · click to open the note · click a colour to isolate it.</span></p>
+
+  <div class="retour"><a href="/corpus/"><span data-fr>↑ le corpus par thème</span><span data-en>↑ the corpus by theme</span></a></div>
+</div>
+
+<script>
+(function(){
+  var html=document.documentElement, fr=document.getElementById('btn-fr'), en=document.getElementById('btn-en');
+  function setLang(l){ if(l!=='en')l='fr'; html.setAttribute('lang',l); fr.classList.toggle('active',l==='fr'); en.classList.toggle('active',l==='en'); try{localStorage.setItem('lang',l);}catch(e){} buildLegend(); }
+  function detect(){ var h=location.hash; if(h==='#en')return'en'; if(h==='#fr')return'fr'; var s; try{s=localStorage.getItem('lang');}catch(e){} if(s==='fr'||s==='en')return s; return (navigator.language||'fr').toLowerCase().indexOf('en')===0?'en':'fr'; }
+  function lang(){ return html.getAttribute('lang')||'fr'; }
+  fr.addEventListener('click',function(){setLang('fr');}); en.addEventListener('click',function(){setLang('en');});
+
+  var COL={souverainete:"#7a3e2a",economie:"#c07a1e",geopolitique:"#3f6f6a",societe:"#9a5b86",patrimoine:"#6f7b39",education:"#b58a3c",methode:"#7c7c74"};
+  var cv=document.getElementById('g'), ctx=cv.getContext('2d'), tip=document.getElementById('tip');
+  var W=0,H=0,DPR=Math.min(2,window.devicePixelRatio||1);
+  var NODES=[],LINKS=[],byId={},LABELS={},ORDER=[],off={},hover=null,drag=null,downXY=null;
+
+  function resize(){ var r=cv.getBoundingClientRect(); W=r.width; H=r.height; cv.width=W*DPR; cv.height=H*DPR; ctx.setTransform(DPR,0,0,DPR,0,0); }
+  window.addEventListener('resize',resize);
+
+  function buildLegend(){
+    var el=document.getElementById('legende'); if(!ORDER.length){el.innerHTML='';return;}
+    el.innerHTML='';
+    ORDER.forEach(function(k){
+      if(!LABELS[k]) return;
+      var b=document.createElement('button'); b.className='lg'+(off[k]?' off':'');
+      b.innerHTML='<span class="dot" style="background:'+COL[k]+'"></span>'+(lang()==='en'?LABELS[k][1]:LABELS[k][0]);
+      b.addEventListener('click',function(){ off[k]=!off[k]; b.classList.toggle('off',off[k]); });
+      el.appendChild(b);
+    });
+  }
+
+  fetch('graph.json').then(function(r){return r.json();}).then(function(d){
+    LABELS=d.labels||{}; ORDER=d.order||Object.keys(COL);
+    resize();
+    var cx=W/2, cy=H/2;
+    NODES=d.nodes.map(function(n,i){
+      var a=i/d.nodes.length*6.283;
+      return {id:n.id,title:n.title,theme:n.theme,deg:n.deg||0,
+              x:cx+Math.cos(a)*140+(Math.random()-.5)*40, y:cy+Math.sin(a)*140+(Math.random()-.5)*40, vx:0,vy:0};
+    });
+    NODES.forEach(function(n){byId[n.id]=n;});
+    LINKS=d.links.map(function(l){return {s:byId[l.source],t:byId[l.target]};}).filter(function(l){return l.s&&l.t;});
+    buildLegend(); loop();
+  }).catch(function(){ tip.style.opacity=1; tip.style.left='50%'; tip.style.top='50%'; tip.textContent=(lang()==='en'?'Map data unavailable.':'Données de la carte indisponibles.'); });
+
+  function visible(n){ return !off[n.theme]; }
+  function radius(n){ return 4+Math.min(9,n.deg*1.1); }
+
+  function step(){
+    var cx=W/2, cy=H/2, i, j, a, b, dx, dy, d2, d, f;
+    // répulsion
+    for(i=0;i<NODES.length;i++){ a=NODES[i]; if(!visible(a))continue;
+      for(j=i+1;j<NODES.length;j++){ b=NODES[j]; if(!visible(b))continue;
+        dx=a.x-b.x; dy=a.y-b.y; d2=dx*dx+dy*dy||0.01; if(d2>90000)continue;
+        d=Math.sqrt(d2); f=2600/d2; var ux=dx/d*f, uy=dy/d*f;
+        a.vx+=ux; a.vy+=uy; b.vx-=ux; b.vy-=uy;
+      }
+      // centrage
+      a.vx+=(cx-a.x)*0.006; a.vy+=(cy-a.y)*0.006;
+    }
+    // ressorts
+    for(i=0;i<LINKS.length;i++){ a=LINKS[i].s; b=LINKS[i].t; if(!visible(a)||!visible(b))continue;
+      dx=b.x-a.x; dy=b.y-a.y; d=Math.sqrt(dx*dx+dy*dy)||0.01; f=(d-78)*0.03;
+      var vx=dx/d*f, vy=dy/d*f; a.vx+=vx; a.vy+=vy; b.vx-=vx; b.vy-=vy;
+    }
+    for(i=0;i<NODES.length;i++){ a=NODES[i];
+      if(a===drag) continue;
+      a.vx*=0.86; a.vy*=0.86; a.x+=a.vx; a.y+=a.vy;
+      a.x=Math.max(12,Math.min(W-12,a.x)); a.y=Math.max(12,Math.min(H-12,a.y));
+    }
+  }
+
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    var hi=hover, nb={};
+    if(hi){ LINKS.forEach(function(l){ if(l.s===hi)nb[l.t.id]=1; if(l.t===hi)nb[l.s.id]=1; }); }
+    // liens
+    for(var i=0;i<LINKS.length;i++){ var a=LINKS[i].s,b=LINKS[i].t; if(!visible(a)||!visible(b))continue;
+      var on = hi && (a===hi||b===hi);
+      ctx.strokeStyle = on ? "rgba(122,62,42,.55)" : "rgba(122,62,42,.13)";
+      ctx.lineWidth = on ? 1.6 : 0.8;
+      ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke();
+    }
+    // nœuds
+    for(i=0;i<NODES.length;i++){ var n=NODES[i]; if(!visible(n))continue;
+      var dim = hi && n!==hi && !nb[n.id];
+      ctx.globalAlpha = dim ? 0.28 : 1;
+      ctx.beginPath(); ctx.arc(n.x,n.y,radius(n),0,6.283);
+      ctx.fillStyle=COL[n.theme]||"#7c7c74"; ctx.fill();
+      if(n===hi){ ctx.lineWidth=2; ctx.strokeStyle="#1a1a1a"; ctx.stroke(); }
+      ctx.globalAlpha=1;
+    }
+    // libellés : survol + voisins
+    if(hi){
+      ctx.globalAlpha=1;
+      drawLabel(hi,true);
+      for(i=0;i<NODES.length;i++){ if(nb[NODES[i].id]) drawLabel(NODES[i],false); }
+    }
+  }
+  function drawLabel(n,strong){
+    ctx.font=(strong?"600 ":"")+"13px Georgia, serif";
+    var t=n.title.length>34?n.title.slice(0,33)+"…":n.title;
+    var w=ctx.measureText(t).width, x=n.x, y=n.y-radius(n)-8;
+    ctx.fillStyle="rgba(245,239,226,.85)"; ctx.fillRect(x-w/2-4,y-13,w+8,17);
+    ctx.fillStyle="#1a1a1a"; ctx.textAlign="center"; ctx.fillText(t,x,y);
+    ctx.textAlign="left";
+  }
+
+  function loop(){ step(); draw(); requestAnimationFrame(loop); }
+
+  function pos(e){ var r=cv.getBoundingClientRect(); var p=(e.touches&&e.touches[0])||e; return {x:p.clientX-r.left,y:p.clientY-r.top}; }
+  function pick(p){ var best=null,bd=1e9; for(var i=0;i<NODES.length;i++){ var n=NODES[i]; if(!visible(n))continue; var dx=n.x-p.x,dy=n.y-p.y,d=dx*dx+dy*dy; var rr=(radius(n)+6)*(radius(n)+6); if(d<rr&&d<bd){bd=d;best=n;} } return best; }
+
+  function onMove(e){ var p=pos(e); if(drag){ drag.x=p.x; drag.y=p.y; drag.vx=0; drag.vy=0; return; }
+    var n=pick(p); hover=n; cv.style.cursor=n?'pointer':'default';
+    if(n){ tip.style.opacity=1; tip.style.left=n.x+'px'; tip.style.top=n.y+'px'; tip.textContent=n.title; }
+    else tip.style.opacity=0;
+  }
+  function onDown(e){ var p=pos(e); downXY=p; var n=pick(p); if(n){ drag=n; } }
+  function onUp(e){ var p=pos(e);
+    if(drag && downXY && Math.hypot(p.x-downXY.x,p.y-downXY.y)<5){ location.href='/notes/#'+drag.id; }
+    drag=null; downXY=null;
+  }
+  cv.addEventListener('mousemove',onMove); cv.addEventListener('mousedown',onDown); window.addEventListener('mouseup',onUp);
+  cv.addEventListener('touchstart',function(e){onDown(e);},{passive:true});
+  cv.addEventListener('touchmove',function(e){onMove(e);},{passive:true});
+  cv.addEventListener('touchend',onUp);
+  cv.addEventListener('mouseleave',function(){ if(!drag){hover=null; tip.style.opacity=0;} });
+
+  setLang(detect());
+})();
+</script>
+</body>
+</html>
