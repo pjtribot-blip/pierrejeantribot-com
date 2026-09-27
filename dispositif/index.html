@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-fr="Le dispositif — Pierre-Jean Tribot" data-en="The apparatus — Pierre-Jean Tribot">Le dispositif — Pierre-Jean Tribot</title>
+<meta name="description" content="Ce site n'est pas un blog, c'est un dispositif : un corpus daté, relié, cherchable, interrogeable par une IA, citable (DOI) et branchable. Comment il fonctionne, et pourquoi.">
+<meta name="author" content="Pierre-Jean Tribot">
+<meta name="theme-color" content="#f5efe2">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="Le dispositif — Pierre-Jean Tribot">
+<meta property="og:description" content="Ce site n'est pas un blog. C'est un dispositif — la forme dit la thèse.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pierrejeantribot.com/dispositif/">
+<meta property="og:image" content="https://pierrejeantribot.com/og/section-corpus.png">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='10' fill='%23f5efe2'/><text x='32' y='42' font-family='Georgia, serif' font-size='26' font-weight='500' text-anchor='middle' fill='%237a3e2a'>PJT</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--fond:#f5efe2;--texte:#1a1a1a;--texte-mute:#5a5a5a;--accent:#7a3e2a;--filet:#1a1a1a;--filet-leger:#c8bfa6;--serif:"EB Garamond",Georgia,serif;--mono:"JetBrains Mono","SF Mono",Menlo,Consolas,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fond);color:var(--texte);font-family:var(--serif);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:680px;margin:0 auto;padding:32px 32px 60px}
+[data-fr],[data-en]{display:none}
+html[lang="fr"] [data-fr]{display:inline}
+html[lang="en"] [data-en]{display:inline}
+.head{border-bottom:1px solid var(--filet);padding-bottom:12px;margin-bottom:48px;display:flex;justify-content:space-between;align-items:baseline;font-family:var(--mono);font-size:11px;letter-spacing:.05em}
+.head a{color:var(--texte);text-decoration:none}
+.head .left a{font-weight:500;border-bottom:1px solid var(--accent);padding-bottom:1px}
+.head .middle{flex:1;text-align:center;font-weight:500}
+.head .middle a{border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
+.head .middle a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.head .lang button{background:none;border:none;font-family:inherit;font-size:inherit;letter-spacing:inherit;color:var(--texte-mute);cursor:pointer;padding:0;border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
+.head .lang button.active{color:var(--texte);font-weight:500;border-bottom:none;cursor:default}
+.head .lang .sep{margin:0 6px}
+.marqueur{font-family:var(--mono);font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);margin-bottom:18px;display:block}
+h1{font-size:46px;font-weight:400;letter-spacing:-.02em;margin:0 0 16px;line-height:1}
+h1 .point{color:var(--accent)}
+.chapeau{font-size:19px;color:var(--texte-mute);line-height:1.55;max-width:60ch}
+.chapeau em{font-style:italic}
+.bloc{border-top:1px solid var(--filet-leger);padding:24px 0}
+.bloc:first-of-type{border-top:1px solid var(--filet);margin-top:36px}
+.bloc .n{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+.bloc h2{font-family:var(--serif);font-size:24px;font-weight:500;letter-spacing:-.01em;margin:8px 0 10px}
+.bloc p{margin:0 0 12px;font-size:17px;line-height:1.6}
+.bloc .pourquoi{font-size:15.5px;color:var(--texte-mute);font-style:italic}
+.bloc .liens{font-family:var(--mono);font-size:12px;margin-top:10px}
+.bloc .liens a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--filet-leger);padding-bottom:1px;margin-right:4px}
+.bloc .liens a:hover{border-bottom-color:var(--accent)}
+.closing{border-top:1px solid var(--filet);margin-top:44px;padding-top:32px;font-size:18px;line-height:1.7}
+.closing em{font-style:italic;color:var(--texte-mute)}
+.retour{margin-top:40px;font-family:var(--mono);font-size:11px}
+.retour a{color:var(--texte-mute);text-decoration:none;border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
+.retour a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+::selection{background:var(--accent);color:var(--fond)}
+@media(max-width:640px){.wrap{padding:24px 20px 48px}h1{font-size:34px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="head">
+    <span class="left"><a href="/">pierrejeantribot.com</a></span>
+    <span class="middle"><a href="/notes/">notes</a> · <a href="/corpus/">corpus</a> · <a href="/tableau/">tableau</a> · <a href="/methode/">méthode</a> · <a href="/dialogue/">dialogue</a></span>
+    <span class="lang">
+      <button id="btn-fr" type="button" aria-label="Français">FR</button>
+      <span class="sep">·</span>
+      <button id="btn-en" type="button" aria-label="English">EN</button>
+    </span>
+  </header>
+
+  <span class="marqueur"><span data-fr>◆ le dispositif</span><span data-en>◆ the apparatus</span></span>
+  <h1><span data-fr>Le dispositif</span><span data-en>The apparatus</span><span class="point">.</span></h1>
+  <p class="chapeau">
+    <span data-fr>Ce site n'est pas un blog. C'est un <em>dispositif</em> — une manière de faire tenir une pensée : la dater, la relier, la rendre cherchable, interrogeable, citable, archivée, et branchable dans d'autres machines. Voici la mécanique, et surtout pourquoi elle est faite ainsi. Car la forme, ici, <em>est</em> la thèse.</span>
+    <span data-en>This site is not a blog. It is an <em>apparatus</em> — a way of making a body of thought hold together: dating it, linking it, making it searchable, queryable, citable, archived, and pluggable into other machines. Here is the mechanics, and above all why it is built this way. Because here, the form <em>is</em> the argument.</span>
+  </p>
+
+  <section class="bloc">
+    <span class="n"><span data-fr>01 · le socle</span><span data-en>01 · the base</span></span>
+    <h2><span data-fr>Un corpus, pas un flux</span><span data-en>A corpus, not a feed</span></h2>
+    <p><span data-fr>Chaque note est datée, reliée à ses voisines, bilingue, et dotée d'une référence prête à citer. L'ensemble se lit par thème, par date, ou de proche en proche — jamais comme une simple pile chronologique.</span><span data-en>Each note is dated, linked to its neighbours, bilingual, with a ready-to-cite reference. The whole reads by theme, by date, or from one note to the next — never as a mere chronological stack.</span></p>
+    <p class="pourquoi"><span data-fr>Pourquoi : un flux s'oublie ; un corpus s'attend, se cite, se tient. On passe de « billets » à « expertise par la preuve ».</span><span data-en>Why: a feed is forgotten; a corpus is expected, cited, held together. From "posts" to "expertise through proof."</span></p>
+    <div class="liens"><a href="/corpus/"><span data-fr>corpus →</span><span data-en>corpus →</span></a></div>
+  </section>
+
+  <section class="bloc">
+    <span class="n"><span data-fr>02 · s'orienter</span><span data-en>02 · finding your way</span></span>
+    <h2><span data-fr>Naviguer la pensée</span><span data-en>Navigating the thought</span></h2>
+    <p><span data-fr>Filtres par thème et par cadence, parcours de lecture guidés, recherche plein-texte instantanée, et une carte conceptuelle où les notes sont des nœuds reliés par proximité.</span><span data-en>Theme and pace filters, guided reading paths, instant full-text search, and a concept map where notes are nodes linked by proximity.</span></p>
+    <p class="pourquoi"><span data-fr>Pourquoi : à l'échelle d'un corpus qui grandit, la structure vaut le contenu. On doit pouvoir entrer par où l'on veut.</span><span data-en>Why: at the scale of a growing corpus, structure is worth as much as content. One must be able to enter from anywhere.</span></p>
+    <div class="liens"><a href="/carte/"><span data-fr>carte →</span><span data-en>map →</span></a> <a href="/recherche.html"><span data-fr>recherche →</span><span data-en>search →</span></a> <a href="/corpus/"><span data-fr>parcours →</span><span data-en>paths →</span></a></div>
+  </section>
+
+  <section class="bloc">
+    <span class="n"><span data-fr>03 · interroger</span><span data-en>03 · questioning</span></span>
+    <h2><span data-fr>Parler avec ma pensée</span><span data-en>Talk with my thinking</span></h2>
+    <p><span data-fr>Un agent conversationnel répond <em>à partir</em> du corpus, cite ses sources, et refuse d'inventer une position qui n'y est pas. On ne lit plus seulement : on questionne.</span><span data-en>A conversational agent answers <em>from</em> the corpus, cites its sources, and refuses to invent a stance that isn't there. You no longer just read: you question.</span></p>
+    <p class="pourquoi"><span data-fr>Pourquoi : la meilleure preuve qu'un corpus tient, c'est qu'il peut répondre — et dire quand il ne sait pas.</span><span data-en>Why: the best proof a corpus holds together is that it can answer — and say when it doesn't know.</span></p>
+    <div class="liens"><a href="/dialogue/"><span data-fr>dialogue →</span><span data-en>dialogue →</span></a></div>
+  </section>
+
+  <section class="bloc">
+    <span class="n"><span data-fr>04 · le risque du temps</span><span data-en>04 · the risk of time</span></span>
+    <h2><span data-fr>La preuve par le temps</span><span data-en>Proof against time</span></h2>
+    <p><span data-fr>Un tableau d'affichage confronte des thèses datées à ce qui advient — advenu, en cours, à surveiller, infirmé. Les verdicts restent affichés, y compris les erreurs.</span><span data-en>A scoreboard confronts dated claims with what happens — confirmed, unfolding, to watch, refuted. Verdicts stay on display, mistakes included.</span></p>
+    <p class="pourquoi"><span data-fr>Pourquoi : une analyse ne vaut que ce qu'elle risque. Dater, c'est accepter d'avoir tort — l'inverse du commentaire.</span><span data-en>Why: an analysis is worth only what it risks. To date a claim is to accept being wrong — the opposite of commentary.</span></p>
+    <div class="liens"><a href="/tableau/"><span data-fr>tableau d'affichage →</span><span data-en>scoreboard →</span></a></div>
+  </section>
+
+  <section class="bloc">
+    <span class="n"><span data-fr>05 · faire foi</span><span data-en>05 · standing as record</span></span>
+    <h2><span data-fr>Citable et archivé</span><span data-en>Citable and archived</span></h2>
+    <p><span data-fr>Chaque note porte sa référence ; le corpus a un DOI permanent (archivé au CERN via Zenodo), un identifiant d'auteur ORCID, et une licence ouverte CC BY 4.0. Un dossier imprimable rassemble le tout.</span><span data-en>Each note carries its reference; the corpus has a permanent DOI (archived at CERN via Zenodo), an ORCID author identifier, and an open CC BY 4.0 licence. A printable dossier gathers it all.</span></p>
+    <p class="pourquoi"><span data-fr>Pourquoi : pour exister dans le monde académique, un travail doit être citable de façon stable, et attribuable sans ambiguïté.</span><span data-en>Why: to exist in the academic world, work must be stably citable and unambiguously attributable.</span></p>
+    <div class="liens"><a href="/dossier/"><span data-fr>dossier →</span><span data-en>dossier →</span></a></div>
+  </section>
+
+  <section class="bloc">
+    <span class="n"><span data-fr>06 · circuler</span><span data-en>06 · circulating</span></span>
+    <h2><span data-fr>Diffuser sans capturer</span><span data-en>Distribute without capturing</span></h2>
+    <p><span data-fr>Pas d'infolettre, pas de collecte d'adresses, pas de mur. La diffusion passe par le flux RSS (abonnement sans données), le référencement (Google, Bing) et donc la citation par les IA de recherche (dont ChatGPT). On vient au corpus ; il ne poursuit personne.</span><span data-en>No newsletter, no address harvesting, no wall. Distribution runs through the RSS feed (subscription without data), search indexing (Google, Bing) and therefore citation by search AIs (including ChatGPT). One comes to the corpus; it chases no one.</span></p>
+    <p class="pourquoi"><span data-fr>Pourquoi : capturer des données pour « retenir » son lecteur, c'est le modèle qu'on critique. Le pull plutôt que le push — et zéro surface RGPD.</span><span data-en>Why: harvesting data to "retain" a reader is the very model one criticises. Pull rather than push — and zero GDPR surface.</span></p>
+  </section>
+
+  <section class="bloc">
+    <span class="n"><span data-fr>07 · la frontière</span><span data-en>07 · the frontier</span></span>
+    <h2><span data-fr>Le corpus comme outil pour les IA</span><span data-en>The corpus as a tool for AIs</span></h2>
+    <p><span data-fr>Le corpus s'expose comme une API publique et un serveur MCP : n'importe quel agent (Claude, ChatGPT…) peut l'interroger comme un outil, et citer la source au lieu de paraphraser de mémoire. Ma pensée cesse d'être un contenu avalé ; elle devient une brique appelée.</span><span data-en>The corpus exposes itself as a public API and an MCP server: any agent (Claude, ChatGPT…) can query it as a tool, and cite the source instead of paraphrasing from memory. My thinking stops being swallowed content; it becomes a called brick.</span></p>
+    <p class="pourquoi"><span data-fr>Pourquoi : c'est la souveraineté cognitive retournée en acte. Face à la médiation algorithmique, je deviens moi-même une brique de médiation — sur mes termes, avec mes mots exacts.</span><span data-en>Why: this is cognitive sovereignty turned into action. Faced with algorithmic mediation, I become a mediation brick myself — on my terms, in my exact words.</span></p>
+    <div class="liens"><a href="/corpus-api/"><span data-fr>brancher ma pensée →</span><span data-en>plug in my thinking →</span></a></div>
+  </section>
+
+  <p class="closing">
+    <span data-fr>Rien de tout cela n'est décoratif. Un corpus qui traite de <em>souveraineté cognitive</em> devait être, lui-même, un objet souverain : possédé et non loué, structuré et non empilé, ouvert et non capté. Le site ne parle pas de la méthode — il <em>est</em> la méthode. La forme dit la thèse.</span>
+    <span data-en>None of this is decorative. A corpus that deals with <em>cognitive sovereignty</em> had to be, itself, a sovereign object: owned not rented, structured not stacked, open not captured. The site does not talk about the method — it <em>is</em> the method. The form states the argument.</span>
+  </p>
+
+  <div class="retour"><a href="/notes/"><span data-fr>↑ lire les notes</span><span data-en>↑ read the notes</span></a></div>
+</div>
+
+<script>
+(function(){
+  var html=document.documentElement, fr=document.getElementById('btn-fr'), en=document.getElementById('btn-en');
+  function set(l){ if(l!=='en')l='fr'; html.setAttribute('lang',l); fr.classList.toggle('active',l==='fr'); en.classList.toggle('active',l==='en'); try{localStorage.setItem('lang',l);}catch(e){} }
+  function detect(){ var h=location.hash; if(h==='#en')return'en'; if(h==='#fr')return'fr'; var s; try{s=localStorage.getItem('lang');}catch(e){} if(s==='fr'||s==='en')return s; return (navigator.language||'fr').toLowerCase().indexOf('en')===0?'en':'fr'; }
+  fr.addEventListener('click',function(){set('fr');}); en.addEventListener('click',function(){set('en');});
+  set(detect());
+})();
+</script>
+</body>
+</html>
