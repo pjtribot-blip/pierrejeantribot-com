@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-fr="Brancher ma pensée — API du corpus — Pierre-Jean Tribot" data-en="Plug in my thinking — Corpus API — Pierre-Jean Tribot">Brancher ma pensée — API du corpus — Pierre-Jean Tribot</title>
+<meta name="description" content="Le corpus de Pierre-Jean Tribot comme outil interrogeable : une API publique de récupération que tout agent IA peut appeler pour citer la source, pas la paraphrase.">
+<meta name="author" content="Pierre-Jean Tribot">
+<meta name="theme-color" content="#f5efe2">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="Brancher ma pensée — API du corpus">
+<meta property="og:description" content="Le corpus comme outil interrogeable par les agents IA. Citer la source, pas la paraphrase.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pierrejeantribot.com/corpus-api/">
+<meta property="og:image" content="https://pierrejeantribot.com/og/section-dialogue.png">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='10' fill='%23f5efe2'/><text x='32' y='42' font-family='Georgia, serif' font-size='26' font-weight='500' text-anchor='middle' fill='%237a3e2a'>PJT</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--fond:#f5efe2;--texte:#1a1a1a;--texte-mute:#5a5a5a;--accent:#7a3e2a;--filet:#1a1a1a;--filet-leger:#c8bfa6;--code:#efe7d6;--serif:"EB Garamond",Georgia,serif;--mono:"JetBrains Mono","SF Mono",Menlo,Consolas,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fond);color:var(--texte);font-family:var(--serif);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:680px;margin:0 auto;padding:32px 32px 60px}
+[data-fr],[data-en]{display:none}
+html[lang="fr"] [data-fr]{display:inline}
+html[lang="en"] [data-en]{display:inline}
+html[lang="fr"] [data-fr].blk,html[lang="en"] [data-en].blk{display:block}
+.head{border-bottom:1px solid var(--filet);padding-bottom:12px;margin-bottom:48px;display:flex;justify-content:space-between;align-items:baseline;font-family:var(--mono);font-size:11px;letter-spacing:.05em}
+.head a{color:var(--texte);text-decoration:none}
+.head .left a{font-weight:500;border-bottom:1px solid var(--accent);padding-bottom:1px}
+.head .middle{flex:1;text-align:center;font-weight:500}
+.head .middle a{border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
+.head .middle a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.head .lang button{background:none;border:none;font-family:inherit;font-size:inherit;letter-spacing:inherit;color:var(--texte-mute);cursor:pointer;padding:0;border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
+.head .lang button.active{color:var(--texte);font-weight:500;border-bottom:none;cursor:default}
+.head .lang .sep{margin:0 6px}
+.marqueur{font-family:var(--mono);font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);margin-bottom:18px;display:block}
+h1{font-size:44px;font-weight:400;letter-spacing:-.02em;margin:0 0 16px;line-height:1.02}
+h1 .point{color:var(--accent)}
+.chapeau{font-size:19px;color:var(--texte-mute);line-height:1.5;max-width:58ch}
+.chapeau em{font-style:italic}
+h2{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--texte-mute);margin:44px 0 14px;padding-top:22px;border-top:1px solid var(--filet)}
+p{margin:0 0 14px}
+code.inl{font-family:var(--mono);font-size:13.5px;background:var(--code);padding:1px 6px;border-radius:3px}
+pre{background:var(--code);border:1px solid var(--filet-leger);border-radius:5px;padding:16px 18px;overflow:auto;font-family:var(--mono);font-size:13px;line-height:1.5;margin:0 0 16px}
+pre .c{color:var(--accent)}
+.trybox{display:flex;gap:8px;margin:4px 0 10px}
+.trybox input{flex:1;font-family:var(--serif);font-size:17px;border:none;border-bottom:2px solid var(--filet);background:transparent;padding:8px 2px;outline:none}
+.trybox input:focus{border-bottom-color:var(--accent)}
+.trybox button{font-family:var(--mono);font-size:12px;background:var(--accent);color:var(--fond);border:none;border-radius:20px;padding:8px 16px;cursor:pointer}
+.tryout{font-family:var(--mono);font-size:12px;color:var(--texte-mute);white-space:pre-wrap;word-break:break-word;max-height:280px;overflow:auto;margin-top:6px}
+.liens a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
+.retour{margin-top:44px;font-family:var(--mono);font-size:11px}
+.retour a{color:var(--texte-mute);text-decoration:none;border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
+.retour a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+::selection{background:var(--accent);color:var(--fond)}
+@media(max-width:640px){.wrap{padding:24px 20px 48px}h1{font-size:34px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="head">
+    <span class="left"><a href="/">pierrejeantribot.com</a></span>
+    <span class="middle"><a href="/notes/">notes</a> · <a href="/corpus/">corpus</a> · <a href="/dialogue/">dialogue</a></span>
+    <span class="lang">
+      <button id="btn-fr" type="button" aria-label="Français">FR</button>
+      <span class="sep">·</span>
+      <button id="btn-en" type="button" aria-label="English">EN</button>
+    </span>
+  </header>
+
+  <span class="marqueur"><span data-fr>◆ brancher ma pensée</span><span data-en>◆ plug in my thinking</span></span>
+  <h1><span data-fr>Le corpus comme outil</span><span data-en>The corpus as a tool</span><span class="point">.</span></h1>
+  <p class="chapeau">
+    <span data-fr>Une IA peut <em>avaler</em> mes textes et les paraphraser de mémoire. Ou bien elle peut <em>appeler</em> le corpus à la source, et citer. Cette page ouvre la seconde voie : une API publique de récupération, gratuite, sans clé, que n'importe quel agent peut brancher comme outil. De « contenu avalé » à « source appelée ».</span>
+    <span data-en>An AI can <em>swallow</em> my texts and paraphrase them from memory. Or it can <em>call</em> the corpus at the source, and cite. This page opens the second path: a public retrieval API, free, keyless, that any agent can plug in as a tool. From "swallowed content" to "called source."</span>
+  </p>
+
+  <h2><span data-fr>L'endpoint</span><span data-en>The endpoint</span></h2>
+  <p><span data-fr>Une requête, les notes les plus pertinentes en retour (JSON). Rien à installer.</span><span data-en>One query, the most relevant notes back (JSON). Nothing to install.</span></p>
+<pre><span class="c">GET</span> https://pierrejeantribot.com/api/search?q=<span class="c">souveraineté cognitive</span>&amp;k=5</pre>
+  <p><span data-fr>Paramètres : <code class="inl">q</code> (la question, requis) et <code class="inl">k</code> (nombre de résultats, 1–12, défaut 5). CORS ouvert, aussi disponible en <code class="inl">POST</code> avec un corps JSON <code class="inl">{"q":"…","k":5}</code>.</span><span data-en>Parameters: <code class="inl">q</code> (the query, required) and <code class="inl">k</code> (number of results, 1–12, default 5). Open CORS, also available via <code class="inl">POST</code> with a JSON body <code class="inl">{"q":"…","k":5}</code>.</span></p>
+
+  <h2><span data-fr>Essayer maintenant</span><span data-en>Try it now</span></h2>
+  <div class="trybox">
+    <input id="tq" type="text" value="souveraineté cognitive" data-ph-fr="Une question au corpus…" data-ph-en="A question for the corpus…">
+    <button id="tgo" type="button"><span data-fr>Interroger</span><span data-en>Query</span></button>
+  </div>
+  <div class="tryout" id="tout"></div>
+
+  <h2><span data-fr>La réponse</span><span data-en>The response</span></h2>
+<pre>{
+  "query": "souveraineté cognitive",
+  "count": 5,
+  "source": "Corpus de Pierre-Jean Tribot — pierrejeantribot.com",
+  "license": "CC BY 4.0",
+  "results": [
+    {
+      "id": "souverainete-cognitive",
+      "title_fr": "La souveraineté cognitive",
+      "title_en": "Cognitive sovereignty",
+      "url": "https://pierrejeantribot.com/notes/#souverainete-cognitive",
+      "score": 42,
+      "excerpt": "…la capacité d'une communauté à maintenir des processus autonomes…"
+    }
+  ]
+}</pre>
+
+  <h2><span data-fr>Le brancher dans un agent</span><span data-en>Plug it into an agent</span></h2>
+  <p><span data-fr>Donnez cet outil à votre assistant (Claude, ChatGPT, agent maison). Il interrogera le corpus <em>avant</em> de répondre, et citera les notes réelles au lieu d'inventer une position.</span><span data-en>Give this tool to your assistant (Claude, ChatGPT, a custom agent). It will query the corpus <em>before</em> answering, and cite the real notes instead of inventing a stance.</span></p>
+<pre>{
+  "name": "search_tribot_corpus",
+  "description": "Cherche dans le corpus de Pierre-Jean Tribot (IA, culture, éducation, souveraineté cognitive) et renvoie les notes pertinentes avec leur URL. À utiliser pour citer sa pensée à la source.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "q": { "type": "string", "description": "La question ou le thème" },
+      "k": { "type": "integer", "description": "Nombre de notes (défaut 5)" }
+    },
+    "required": ["q"]
+  }
+}</pre>
+  <p><span data-fr>Puis, à l'exécution, l'outil appelle simplement <code class="inl">GET /api/search?q={q}&amp;k={k}</code>. En ligne de commande :</span><span data-en>Then, at runtime, the tool simply calls <code class="inl">GET /api/search?q={q}&amp;k={k}</code>. From the command line:</span></p>
+<pre>curl "https://pierrejeantribot.com/api/search?q=taxer%20l%27IA&amp;k=3"</pre>
+
+  <h2><span data-fr>Pourquoi</span><span data-en>Why</span></h2>
+  <p><span data-fr>C'est la souveraineté cognitive appliquée à ma propre diffusion. Plutôt que de laisser les modèles me médier de mémoire — approximatifs, sans lien, sans attribution —, j'expose la source, sur mes termes, avec mes mots exacts. Le corpus cesse d'être un contenu à ingérer&nbsp;: il devient une brique de médiation qu'on appelle. Ouvert, gratuit, sous licence <a class="liens" href="/dossier/">CC BY 4.0</a>. Pour dialoguer directement avec, voir <a class="liens" href="/dialogue/">l'agent du site</a>.</span><span data-en>This is cognitive sovereignty applied to my own distribution. Rather than letting models mediate me from memory — approximate, unlinked, unattributed — I expose the source, on my terms, in my exact words. The corpus stops being content to ingest: it becomes a mediation brick that gets called. Open, free, under a <a class="liens" href="/dossier/">CC BY 4.0</a> licence. To converse with it directly, see <a class="liens" href="/dialogue/">the site's agent</a>.</span></p>
+
+  <div class="retour"><a href="/notes/"><span data-fr>↑ lire les notes</span><span data-en>↑ read the notes</span></a></div>
+</div>
+
+<script>
+(function(){
+  var html=document.documentElement, fr=document.getElementById('btn-fr'), en=document.getElementById('btn-en'), tq=document.getElementById('tq');
+  function setLang(l){ if(l!=='en')l='fr'; html.setAttribute('lang',l); fr.classList.toggle('active',l==='fr'); en.classList.toggle('active',l==='en'); tq.setAttribute('placeholder', tq.getAttribute('data-ph-'+l)||''); try{localStorage.setItem('lang',l);}catch(e){} }
+  function detect(){ var h=location.hash; if(h==='#en')return'en'; if(h==='#fr')return'fr'; var s; try{s=localStorage.getItem('lang');}catch(e){} if(s==='fr'||s==='en')return s; return (navigator.language||'fr').toLowerCase().indexOf('en')===0?'en':'fr'; }
+  fr.addEventListener('click',function(){setLang('fr');}); en.addEventListener('click',function(){setLang('en');});
+  setLang(detect());
+
+  var tout=document.getElementById('tout');
+  function run(){
+    var q=tq.value.trim(); if(!q) return;
+    tout.textContent=(html.getAttribute('lang')==='en'?'Querying…':'Interrogation…');
+    fetch('/api/search?q='+encodeURIComponent(q)+'&k=5')
+      .then(function(r){return r.json();})
+      .then(function(d){ tout.textContent=JSON.stringify(d,null,2); })
+      .catch(function(){ tout.textContent=(html.getAttribute('lang')==='en'?'Endpoint available once deployed (Vercel).':'Endpoint disponible une fois déployé (Vercel).'); });
+  }
+  document.getElementById('tgo').addEventListener('click',run);
+  tq.addEventListener('keydown',function(e){ if(e.key==='Enter') run(); });
+})();
+</script>
+</body>
+</html>
