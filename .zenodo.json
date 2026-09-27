@@ -1,0 +1,25 @@
+{
+  "title": "Notes — un corpus sur l'IA, la culture, l'éducation et la souveraineté cognitive",
+  "description": "Corpus éditorial bilingue (français / anglais) de Pierre-Jean Tribot, écrit depuis Bruxelles, sur l'intelligence artificielle et ses effets dans la culture, le patrimoine, l'éducation, l'économie politique, la géopolitique et la souveraineté cognitive. Chaque note est datée, citable et reliée aux autres. Le dépôt contient l'intégralité du site pierrejeantribot.com (notes, corpus, méthode, agent conversationnel, outillage éditorial). Ligne directrice : l'expertise par la preuve et par l'usage.",
+  "upload_type": "publication",
+  "publication_type": "other",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "creators": [
+    {
+      "name": "Tribot, Pierre-Jean",
+      "orcid": "0009-0002-0112-4155",
+      "affiliation": "Crescendo Magazine ; XXI Music Publishing"
+    }
+  ],
+  "keywords": [
+    "intelligence artificielle",
+    "souveraineté cognitive",
+    "culture et patrimoine",
+    "éducation",
+    "économie politique de l'IA",
+    "géopolitique",
+    "humanités numériques"
+  ],
+  "language": "fra"
+}
