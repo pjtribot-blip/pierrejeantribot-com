@@ -12,14 +12,30 @@
     <copyright>Pierre-Jean Tribot</copyright>
     <managingEditor>pjtribot@crescendo-magazine.be (Pierre-Jean Tribot)</managingEditor>
     <webMaster>pjtribot@crescendo-magazine.be (Pierre-Jean Tribot)</webMaster>
-    <pubDate>Sat, 26 Sep 2026 12:00:00 +0200</pubDate>
-    <lastBuildDate>Sat, 26 Sep 2026 12:00:00 +0200</lastBuildDate>
+    <pubDate>Sun, 27 Sep 2026 12:00:00 +0200</pubDate>
+    <lastBuildDate>Sun, 27 Sep 2026 12:00:00 +0200</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>Diffuser sans capturer</title>
+      <link>https://pierrejeantribot.com/notes/#diffuser-sans-capturer</link>
+      <guid isPermaLink="true">https://pierrejeantribot.com/notes/#diffuser-sans-capturer</guid>
+      <pubDate>Sun, 27 Sep 2026 12:00:00 +0200</pubDate>
+      <dc:creator>Pierre-Jean Tribot</dc:creator>
+      <description><![CDATA[On mesure désormais l'existence d'une œuvre au nombre d'adresses qu'elle a captées. Ce site n'a pas d'infolettre, et n'en aura pas — par position, non par négligence. Car l'infolettre est un dispositif de rétention, qui fait du lecteur une donnée à conserver ; et retenir se paie en surveillance. Le flux RSS, lui, offre l'abonnement sans la capture. On ne peut écrire sur la souveraineté cognitive et confier sa diffusion à la logique qu'on critique : la forme de la publication est déjà une thèse. Diffuser sans capturer, c'est refuser de tenir ses lecteurs — et leur donner une raison de revenir.]]></description>
+      <content:encoded><![CDATA[<p>Tout projet un peu sérieux s'entend dire la même chose : il lui faut une infolettre. Une liste. Un tunnel. On mesure désormais l'existence d'une œuvre au nombre d'adresses qu'elle a su capter. Ce site n'en a pas, et n'en aura pas. Ce n'est pas une négligence : c'est une position.</p>
+<p>Une infolettre, débarrassée de son vocabulaire aimable, est un dispositif de rétention. On collecte une adresse pour pousser un contenu dans une boîte que le lecteur n'a pas ouverte pour ça. Le geste appartient à l'économie de l'attention : retenir, relancer, mesurer l'ouverture, entretenir la présence. Le lecteur y devient une audience à garder — et, techniquement, une donnée à conserver.</p>
+<p>Car retenir a un prix, et il se paie en surveillance. Pour « garder » un lecteur, il faut le collecter : consentement, base légale, stockage, sous-traitant, droit à l'effacement. On devient responsable d'un traitement pour le confort d'un envoi. Le RGPD n'est pas ici une contrainte administrative : c'est le rappel qu'une adresse est une personne, et qu'en la captant on contracte une dette.</p>
+<p>L'alternative existe pourtant, plus ancienne et plus sobre : le flux. Le lecteur qui veut être prévenu s'abonne avec son propre outil, garde son abonnement chez lui, et ne me donne rien. Il vient parce qu'il choisit de venir, pas parce qu'une relance l'a ramené. C'est l'abonnement sans la capture ; le <em>pull</em> plutôt que le <em>push</em>.</p>
+<p>Et l'infolettre n'est qu'un cas particulier d'un choix plus large : publier sur un sol qu'on possède plutôt que sur un sol qu'on loue. Écrire sur une plateforme — quel que soit son confort — c'est en devenir le substrat : elle possède la relation, prélève sa part, décide de la visibilité, change les règles quand elle veut. On y est locataire de sa propre voix.</p>
+<p>Ce refus n'est pas une coquetterie technique. Il découle de ce que ce corpus défend. On ne peut pas écrire sur la souveraineté cognitive — garder la main sur ce qu'on pense et sur la manière d'y accéder — et confier sa propre diffusion à la logique qu'on critique. La forme de la publication est déjà une thèse. Un texte contre la capture qui capterait ses lecteurs se réfuterait lui-même.</p>
+<p>Reste la vraie question : si l'on ne retient pas, comment est-on lu ? En renversant le geste. Non pas capter des lecteurs, mais rendre le travail trouvable, daté, citable — et désormais interrogeable par les machines elles-mêmes, à la source. Ne pas courir après l'audience : déposer quelque chose que d'autres viendront chercher, et qu'ils pourront citer sans le déformer.</p>
+<p>Diffuser sans capturer, ce n'est pas se priver de lecteurs. C'est refuser de les tenir. La seule fidélité qui vaille est celle qu'on ne force pas : on ne retient pas un lecteur, on lui donne une raison de revenir.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Le « en même temps » cognitif</title>
       <link>https://pierrejeantribot.com/notes/#en-meme-temps-cognitif</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#en-meme-temps-cognitif</guid>
-      <pubDate>Sat, 26 Sep 2026 12:00:00 +0200</pubDate>
+      <pubDate>Sat, 26 Sep 2026 11:59:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Dès qu'il est question d'IA, une phrase est devenue obligatoire : « oui, mais ». Impossible d'affirmer un gain sans aussitôt payer sa dette en réserve. Cette note nomme ce réflexe — le « en même temps » cognitif — et refuse d'y voir de la nuance : c'est un péage, et surtout le symptôme d'une économie qui a déplacé la valeur de la production vers la norme, et n'a plus d'organe pour enregistrer un saut de production. Un seul champ a résisté : le sport, parce qu'il a un tableau d'affichage. L'IA aura le sien ; le jour où le score tombera, le « en même temps » perdra sa prime.]]></description>
       <content:encoded><![CDATA[<p>Il existe une phrase qu'on n'a plus le droit de ne pas prononcer dès qu'il est question d'intelligence artificielle. « Oui, mais. » « Déployer les outils, et garder l'esprit critique. » « Saisir les opportunités, et encadrer les risques. » Le curseur entre enthousiasme et scepticisme, qu'on vous demande de placer comme s'il s'agissait des deux pôles naturels du sujet.</p>
@@ -35,7 +51,7 @@
       <title>Le syndrome de l'Alpe d'Huez</title>
       <link>https://pierrejeantribot.com/notes/#syndrome-alpe-huez</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#syndrome-alpe-huez</guid>
-      <pubDate>Thu, 24 Sep 2026 11:59:00 +0200</pubDate>
+      <pubDate>Thu, 24 Sep 2026 11:58:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Face à l'IA, le champ éducatif francophone n'a qu'un geste : en rajouter. Plus de calcul exact, plus de dissertations, plus de contrôles — on renforce l'épreuve que la machine vient de rendre gratuite, et l'on affronte l'outil sur la seule pente où il est imbattable. Cette note nomme le « syndrome de l'Alpe d'Huez » et remonte à sa cause : le méritocrate normatif, trié par l'épreuve et vivant de la norme, qui ne peut ni alléger l'étape ni toucher l'outil sans se déclasser. Le geste manquant a un nom — la soustraction — et son absence a un prix, payé d'abord par ceux qui décrochent.]]></description>
       <content:encoded><![CDATA[<p>Face à une technologie qui va vite, le champ éducatif francophone a trouvé sa réponse, et c'est un geste unique, répété à tous les étages : en rajouter. Plus de mathématiques exactes, plus de dissertations, plus de savoir à restituer, plus de contrôle. Devant l'accélération, on alourdit l'épreuve existante — un col de plus, un contrôle de plus — et l'on nomme ce réflexe « exigence ». Le paradoxe passe inaperçu de ceux qui l'accomplissent : on renforce précisément l'épreuve que la machine vient de rendre gratuite.</p>
@@ -67,7 +83,7 @@
       <title>L'instant argentin</title>
       <link>https://pierrejeantribot.com/notes/#instant-argentin</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#instant-argentin</guid>
-      <pubDate>Thu, 24 Sep 2026 11:58:00 +0200</pubDate>
+      <pubDate>Thu, 24 Sep 2026 11:57:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[En 1913, l'Argentine était plus riche par habitant que la France ; en une génération, sans guerre ni catastrophe, elle a décroché. Le point de bascule fut un choix d'élite : le pacte Roca-Runciman de 1933, qui sauva la rente exportatrice au prix de tout pivot productif. Cette note isole « l'instant argentin » — quand une élite confond les rendements d'un modèle ancien avec la preuve qu'il reste optimal — et le retourne sur l'Europe de 2026, dont la rente normative (RGPD, AI Act) tient lieu de stratégie pendant que ses béquilles se retirent. À trois différences près qui décident de tout. Non une prophétie : une bifurcation, et une fenêtre encore ouverte.]]></description>
       <content:encoded><![CDATA[<h3>Le sommet</h3>
@@ -106,7 +122,7 @@
       <title>Ce qui change quand un corpus répond</title>
       <link>https://pierrejeantribot.com/notes/#corpus-qui-repond</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#corpus-qui-repond</guid>
-      <pubDate>Sun, 20 Sep 2026 11:57:00 +0200</pubDate>
+      <pubDate>Sun, 20 Sep 2026 11:56:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[On a longtemps lu des textes ; on va de plus en plus interroger des corpus. Mais toutes les « réponses d'IA » ne se valent pas : un agent ancré qui cite ses sources et un chatbot génératif partagent le même moteur et diffèrent par l'épistémè — l'un atteste (la réponse renvoie à une source vérifiable), l'autre convainc (elle repose sur sa seule vraisemblance). Prolongement de ce que l'IA a rendu illisible : l'autorité ne tient plus à la fluidité mais à la traçabilité. Reste la vigilance du lecteur — interroger n'est pas lire ; un agent honnête renvoie au texte plutôt que d'en dispenser.]]></description>
       <content:encoded><![CDATA[<p>On a longtemps lu des textes. On va de plus en plus interroger des corpus. L'aperçu de recherche, l'assistant greffé sur une documentation, la conversation posée sur un fonds d'archives : l'interface d'accès au savoir glisse de la lecture vers la question. Le geste paraît anodin. Il ne l'est pas.</p>
@@ -120,7 +136,7 @@
       <title>Le tampon et le texte</title>
       <link>https://pierrejeantribot.com/notes/#tampon-texte</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#tampon-texte</guid>
-      <pubDate>Sun, 20 Sep 2026 11:56:00 +0200</pubDate>
+      <pubDate>Sun, 20 Sep 2026 11:55:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Anatomie de l'article 50(4) de l'AI Act, entré en vigueur le 2 août 2026. Deux chaînes de production — l'une avec un clic humain, l'autre entièrement automatisée — aboutissent au même texte, mais le règlement les traite en sens opposé. La règle est incapable de mesurer la présence d'IA dans un texte ; ce qu'elle mesure, c'est la présence d'un geste humain identifiable dans la chaîne. Et son exception avale la règle : elle épargne tous ceux à qui elle pourrait s'appliquer et ne vise que ceux sur qui aucun État n'a de prise. Le régulateur a rebaptisé « transparence » un vieux dispositif de désignation d'un responsable — et un marché de conformité prospère sur la différence.]]></description>
       <content:encoded><![CDATA[<h3>Deux chaînes, un texte, deux régimes</h3>
@@ -164,7 +180,7 @@
       <title>L'Airbus de l'IA</title>
       <link>https://pierrejeantribot.com/notes/#airbus-ia</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#airbus-ia</guid>
-      <pubDate>Sun, 13 Sep 2026 11:55:00 +0200</pubDate>
+      <pubDate>Sun, 13 Sep 2026 11:54:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[« Il faut un Airbus de l'IA. » La formule circule depuis trois ans dans les cercles décisionnels européens. Trois vérifications suffisent à en montrer l'incantation. D'abord, l'idée d'« Airbus de X », testée dans presque tous les secteurs stratégiques depuis quarante ans — ferroviaire, nucléaire, spatial, défense — a échoué presque partout : Airbus est le cas isolé d'un secteur singulier, pas un modèle. Ensuite, le vrai Airbus a mis trente ans à s'équilibrer, sauvé en 1977 par Eastern Airlines — un canal qui n'existe plus. Enfin, l'arithmétique de 2026 ferme l'argument : 725 milliards de dollars de capex pour les seuls quatre hyperscalers américains, contre 30 à 50 milliards d'euros par an mobilisables côté européen. Reste un périmètre jouable — intermédiation, infrastructures cognitives, reset de l'enseignement — que la consolation lexicale empêche justement de nommer.]]></description>
       <content:encoded><![CDATA[<p>« Il faut un Airbus de l'IA. » La formule circule depuis trois ans dans les cercles décisionnels européens, reprise par les chefs d'État, les rapports Draghi et Letta, les plateaux économiques et jusqu'aux experts de second rang. Elle a passé la barrière du sérieux institutionnel et vaut donc examen. Trois vérifications suffisent à en montrer l'incantation : le paysage des champions européens réels au-delà d'Airbus lui-même, la temporalité qu'a exigée le vrai Airbus pour advenir, les magnitudes du secteur IA en 2026.</p>
@@ -214,7 +230,7 @@
       <title>Le commun numérique</title>
       <link>https://pierrejeantribot.com/notes/#commun-numerique</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#commun-numerique</guid>
-      <pubDate>Fri, 11 Sep 2026 11:54:00 +0200</pubDate>
+      <pubDate>Fri, 11 Sep 2026 11:53:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Le débat européen sur l'IA est enfermé entre deux impasses : le verrou régulateur (AI Act, RGPD, DSA, DMA), qui produit du droit sans construire d'infrastructure, et le laisser-faire, qui abandonne les infrastructures cognitives aux plateformes. Le concept de commun numérique — d'Ostrom à Lessig — devait occuper cet espace ; à l'échelle européenne il n'a pas produit les infrastructures que la vague IA rend urgentes. Europeana en est le cas paradigmatique : l'Europe a livré une agrégation quand il aurait fallu une infrastructure — Europeana quand il aurait fallu Airbus. Le déplacement proposé : penser le commun numérique comme service public cognitif européen — public dans la garantie, commun dans la production, ouvert dans l'accès. Une reformulation stratégique qui rend possible une coalition inhabituelle, à un moment où la fenêtre d'action se referme.]]></description>
       <content:encoded><![CDATA[<p>Le débat européen sur l'intelligence artificielle est enfermé entre deux impasses. La première est celle du verrou régulateur — l'AI Act, le RGPD, le DSA, le DMA — dispositif défensif qui produit du droit sans construire d'infrastructure, et qui protège d'autant moins qu'il n'offre pas d'alternative à ce qu'il prétend encadrer. La seconde est celle du laisser-faire — abandonner les infrastructures cognitives fondamentales aux plateformes américaines et chinoises au nom de la neutralité technologique et de la liberté d'entreprendre.</p>
@@ -242,7 +258,7 @@
       <title>L'IA n'a pas d'oreilles</title>
       <link>https://pierrejeantribot.com/notes/#ia-pas-oreilles</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#ia-pas-oreilles</guid>
-      <pubDate>Fri, 11 Sep 2026 11:53:00 +0200</pubDate>
+      <pubDate>Fri, 11 Sep 2026 11:52:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Anatomie d'un article de fond écrit avec un LLM. En août 2026, une critique de trois mille mots du coffret Zubin Mehta — The Philharmonic Edition (Deutsche Grammophon, 57 CD) a été rédigée en trois jours au lieu de trois semaines. La note documente le mécanisme réel : trois temps enchevêtrés (écoute, dictée vocale, contextualisation-rédaction), ce que l'IA fait bien (vitesse d'accès au contexte factuel, mémoire de conversation), ce qu'elle rate (elle produit ses erreurs avec la même assurance stylistique que ses réussites — seule la compétence extérieure trie), et ce qui ne se délègue à rien : l'écoute, le jugement, la formule signature, l'architecture, la responsabilité. L'IA peut faire semblant d'entendre. Elle n'entend pas.]]></description>
       <content:encoded><![CDATA[<p><em>Cette note prolonge dans un cas concret « <a href="#travailler-avec-ia">Je travaille avec l'IA. Je le revendique.</a> » (12 août 2026), qui posait le principe. Elle en montre ici la mécanique réelle, sur un article de fond publié.</em></p>
@@ -279,7 +295,7 @@
       <title>Concert désaccordé</title>
       <link>https://pierrejeantribot.com/notes/#concert-desaccorde</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#concert-desaccorde</guid>
-      <pubDate>Thu, 03 Sep 2026 11:52:00 +0200</pubDate>
+      <pubDate>Thu, 03 Sep 2026 11:51:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Cette note prolonge « Tout le monde déteste l'IA (pour des raisons contraires) » (5 août 2026). Août 2026 en offre une illustration presque expérimentale : le 8, Libération consacre un dossier aux robots humanoïdes (édito « Vertigineux », entretien Hamon sur la taxe-robot) ; le 12, Le Figaro publie un long format sur le rapport AI 2027 et la superintelligence. Deux registres, deux publics — social contre existentiel — mais trois convergences : l'IA traitée comme abstraction sans matière, un corpus américain filtré à l'identique, une carte sans la Chine ni l'histoire des paniques passées. La variable dominante n'est pas la ligne éditoriale, c'est l'appartenance au champ de la presse française de référence. Le clivage tient lieu de débat ; le miroir tient lieu d'analyse.]]></description>
       <content:encoded><![CDATA[<p><em>Cette note prolonge « <a href="#ia-miroir">Tout le monde déteste l'IA (pour des raisons contraires)</a> » (5 août 2026), qui posait la structure du miroir gauche/droite sur le plan idéologique. Elle en montre ici l'incarnation dans la fabrique éditoriale des deux plus grands quotidiens français de référence — sur un cas empirique daté, à quatre jours d'intervalle.</em></p>
@@ -328,7 +344,7 @@
       <title>La formation à l'IA commence débranchée</title>
       <link>https://pierrejeantribot.com/notes/#formation-debranchee</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#formation-debranchee</guid>
-      <pubDate>Thu, 03 Sep 2026 11:51:00 +0200</pubDate>
+      <pubDate>Thu, 03 Sep 2026 11:50:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Cinquième volet de la série. Presque toutes les formations à l'IA portent sur la maîtrise du prompt — une confusion de niveau. Le prompt est la plume ; la problématisation est l'écriture. La compétence rare n'est pas d'utiliser l'IA mais d'arriver à l'outil avec une pensée déjà construite. La note plaide pour des ateliers de problématique et des espaces protégés d'expérimentation pédagogique — avec droit à l'échec — sur le modèle de l'Estonie (AI Leap) et à rebours des systèmes éducatifs taylorisés.]]></description>
       <content:encoded><![CDATA[<p><em>Cette note prolonge « <a href="#moment-volontariste">Le moment volontariste</a> » (20 août 2026), qui posait la question ouverte : à quoi préparons-nous les élèves ? Elle propose la compétence — problématiser — qui permet de poser cette question.</em></p>
@@ -360,7 +376,7 @@
       <title>Décélérer pour qui ?</title>
       <link>https://pierrejeantribot.com/notes/#decelerer-pour-qui</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#decelerer-pour-qui</guid>
-      <pubDate>Mon, 31 Aug 2026 11:50:00 +0200</pubDate>
+      <pubDate>Mon, 31 Aug 2026 11:49:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[À propos de l'objection de conscience « Sans-IAg » défendue à l'école (Cailleaux et Hart, Mediapart, 27 août 2026). Décélérer suppose des ressources temporelles et matérielles que tous n'ont pas : l'école lente et sans outil n'est vécue comme respiration que par les foyers qui compensent hors de l'école. Face à la même vague, Manchester outille sa jeunesse quand le camp Sans-IAg la tient à distance. La seule décélération défendable porte sur la question — plus de temps pour problématiser — pas sur l'interdiction de l'outil.]]></description>
       <content:encoded><![CDATA[<p>Le 27 août 2026, Christophe Cailleaux et Amélie Hart publient sur Mediapart <em>IA et école : résister à la fuite en avant</em>. Le texte s'inscrit dans une série portée par l'Atecopol — manifeste « Face à l'IA générative, l'objection de conscience » (30 novembre 2025), puis « Appel du 18 juin 2026, pour un label Sans-IAg dans l'enseignement, la culture, le journalisme et les entreprises ». En moins d'un an, un dispositif organisationnel identifiable s'est constitué autour d'un geste central : obtenir, dans les institutions vulnérables au productivisme, une garantie négative. Le sans-IA comme label positif, l'objection de conscience comme posture individuelle protégée.</p>
@@ -406,7 +422,7 @@
       <title>AI for All : la Corée du Sud déploie ce que l'Europe débat</title>
       <link>https://pierrejeantribot.com/notes/#ai-for-all</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#ai-for-all</guid>
-      <pubDate>Fri, 28 Aug 2026 11:49:00 +0200</pubDate>
+      <pubDate>Fri, 28 Aug 2026 11:48:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Le 28 août 2026, Séoul désigne trois consortiums nationaux — SK Telecom, KT, Kakao — pour opérer un service d'IA générative gratuit et illimité pour tout citoyen. Deux grammaires opposées de la souveraineté cognitive : Séoul parie sur l'usage populaire massif distribué sur infrastructures nationales, Bruxelles sur la certification préalable. Mais le geste sud-coréen repose sur un socle industriel de vingt ans que l'Europe a démantelé au nom du marché unique. Le cas Naver éclaire l'asymétrie : la Corée peut refuser un opérateur, l'Europe n'a personne à refuser.]]></description>
       <content:encoded><![CDATA[<p>Le ministère sud-coréen des Sciences et TIC a désigné le 28 août 2026 trois consortiums — pilotés par SK Telecom, KT et Kakao — pour opérer AI for All, service national d'intelligence artificielle générative accessible gratuitement et sans limite à tout citoyen<sup><a href="#note-aiforall-1" id="ref-aiforall-1">1</a></sup>. 512 GPU Nvidia B200 alloués cette année, agréments signés en septembre, bêta ouverte fin 2026, financement public partiel des coûts opérationnels à partir de 2027. Le vice-Premier ministre en charge du portefeuille pilote un mandat transversal — infrastructure, industrie, recherche, éducation — sans distribution entre commissaires spécialisés.</p>
@@ -422,7 +438,7 @@
       <title>Le moment volontariste</title>
       <link>https://pierrejeantribot.com/notes/#moment-volontariste</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#moment-volontariste</guid>
-      <pubDate>Thu, 20 Aug 2026 11:48:00 +0200</pubDate>
+      <pubDate>Thu, 20 Aug 2026 11:47:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Quatrième volet de la série. Après avoir nommé les six fondamentaux, la question du comment. Tyler Cowen appelle « moment volontariste » ce mardi matin ordinaire où l'IA amplifie l'impact des choix individuels — rendant chacun plus puissant ou plus obsolète que la veille. Cinq dispositions font vivre les fondamentaux ; une méthode — « viser grand » plutôt que la progression par petits pas — les rend démocratiquement accessibles. Reste à distinguer l'IA sparring partner de l'IA béquille.]]></description>
       <content:encoded><![CDATA[<p><em>Ce texte est le quatrième d'une série. Les trois précédents — « <a href="#savoirs-fondamentaux">Pourquoi nommer les savoirs fondamentaux à l'ère de l'intelligence artificielle</a> » (mai 2026), « <a href="#fondamentaux-soustraction">Pourquoi l'IA redéfinit les fondamentaux par soustraction</a> » (5 juin 2026), « <a href="#addition-transmission">Pourquoi l'addition tue la transmission</a> » (6 juin 2026) — proposaient une liste de six fondamentaux, posaient leur mécanisme d'identification par soustraction, et décrivaient la logique institutionnelle qui les asphyxie. Cette quatrième note aborde une question laissée ouverte : nommer les fondamentaux ne suffit pas à les cultiver.</em></p>
@@ -460,7 +476,7 @@
       <title>Les nouvelles Compagnies des Indes et le retour des cowboys</title>
       <link>https://pierrejeantribot.com/notes/#taxer-ia-3</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#taxer-ia-3</guid>
-      <pubDate>Wed, 12 Aug 2026 11:47:00 +0200</pubDate>
+      <pubDate>Wed, 12 Aug 2026 11:46:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Troisième volet de la série. En juin 2026, une agence américaine désactive des modèles d'IA pour des ressortissants étrangers ; l'Europe ne réagit pas. La note relit cette dépendance à la lumière de la Compagnie des Indes orientales : des entités technologiques extraterritoriales — datacenters sous-marins et orbitaux, hors de toute juridiction westphalienne — exercent le pouvoir d'un État sans en avoir les obligations. Thiel, Musk, Milei et sa non-human corporation en sont les cowboys. La question des cinquante prochaines années n'est plus « qui contrôle les modèles ? » mais « depuis quel espace juridique ? ».]]></description>
       <content:encoded><![CDATA[<p><em>Ce texte est le troisième d'une série. Le premier — « <a href="#taxer-ia-1">Taxer l'IA : une question juste, une réponse impossible</a> » — posait la question de la propriété du dividende de l'IA et démontait les mécanismes classiques de redistribution. Le deuxième — « <a href="#taxer-ia-2">Taxer l'IA : les pistes pragmatiques et pourquoi elles échouent</a> » — examinait les mécanismes fiscaux concrets et pourquoi ils butent tous sur la même complexité. Ce troisième texte élargit la question à sa dimension géopolitique.</em></p>
@@ -501,7 +517,7 @@
       <title>Taxer l'IA : les pistes pragmatiques et pourquoi elles échouent</title>
       <link>https://pierrejeantribot.com/notes/#taxer-ia-2</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#taxer-ia-2</guid>
-      <pubDate>Wed, 12 Aug 2026 11:46:00 +0200</pubDate>
+      <pubDate>Wed, 12 Aug 2026 11:45:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Deuxième volet de la série. Après la question de principe, les mécanismes concrets : taxer l'abonnement, le compute, les API, les données d'entraînement, les datacenters. La note montre pourquoi chacun bute sur la même impasse — on ne taxe qu'une approximation de la valeur, jamais la valeur elle-même — et pourquoi l'infrastructure de l'IA, apatride par conception, échappe à la juridiction : du token qui traverse trois pays en quelques millisecondes aux datacenters sous-marins et orbitaux. Reste, non un mécanisme fiscal, mais la politique.]]></description>
       <content:encoded><![CDATA[<p><em>Ce texte est le deuxième d'une série de trois. Le premier — « <a href="#taxer-ia-1">Taxer l'IA : une question juste, une réponse impossible</a> » — posait le problème de fond : la question de la propriété du dividende de l'IA est légitime, mais les mécanismes classiques de redistribution s'y brisent. Le troisième — « <a href="#taxer-ia-3">Les nouvelles Compagnies des Indes et le retour des cowboys</a> » — élargira la question à sa dimension géopolitique.</em></p>
@@ -563,7 +579,7 @@
       <title>Taxer l'IA : une question juste, une réponse impossible</title>
       <link>https://pierrejeantribot.com/notes/#taxer-ia-1</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#taxer-ia-1</guid>
-      <pubDate>Wed, 12 Aug 2026 11:45:00 +0200</pubDate>
+      <pubDate>Wed, 12 Aug 2026 11:44:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Premier volet d'une série de trois. La tribune de Bruno Colmant (« l'IA ne cotise pas ») pose une question légitime — à qui appartient la valeur créée par l'IA, comment la redistribuer ? La note reconnaît la légitimité du dividende collectif, puis démonte les cinq obstacles structurels qui rendent la taxation classique impraticable (localisation, définition, fluidité, compétitivité géopolitique, vitesse), démolit l'esquive du revenu universel avec les chiffres réels d'OpenAI et d'Anthropic, et pose la souveraineté cognitive comme seule réponse politique tenable.]]></description>
       <content:encoded><![CDATA[<p>Cette série s'était concentrée sur l'IA et son application dans la culture, par des réflexions sur l'éducation, par des conséquences de l'IA sur nos pratiques. Un pas de côté aujourd'hui, avec la question fiscale. Dans une tribune récente de <em>Trends-Tendances</em>, l'économiste Bruno Colmant pose sans détour ce que le débat politique européen évite : l'intelligence artificielle ne cotise pas<sup><a href="#note-taxer1-1" id="ref-taxer1-1">1</a></sup>. Elle capte des gains de productivité sans acquitter les prélèvements que l'emploi humain finançait. Aux États-Unis, la journaliste Jasmine Sun documente, sur son Substack <em>jasmi.news</em>, la manière dont cette même question devient un levier électoral : Abdul El-Sayed vient de gagner la primaire démocrate du Sénat au Michigan sur une ligne hostile au déploiement non régulé des data centers, aux côtés de Bernie Sanders et d'Alexandria Ocasio-Cortez — ce qui ne l'empêche pas, dans le même mouvement, de proposer des mécanismes concrets pour encadrer et faire contribuer les fournisseurs d'IA aux externalités qu'ils génèrent<sup><a href="#note-taxer1-2" id="ref-taxer1-2">2</a></sup>. Ce qui, il y a deux ans encore, relevait de la note d'économiste — à qui appartient la valeur créée par l'IA, et comment en redistribuer une part ? — s'installe simultanément dans la chronique bruxelloise et dans les urnes du Midwest.</p>
@@ -619,7 +635,7 @@
       <title>Je travaille avec l'IA. Je le revendique</title>
       <link>https://pierrejeantribot.com/notes/#travailler-avec-ia</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#travailler-avec-ia</guid>
-      <pubDate>Wed, 12 Aug 2026 11:44:00 +0200</pubDate>
+      <pubDate>Wed, 12 Aug 2026 11:43:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Témoignage de méthode. Je travaille quotidiennement avec plusieurs systèmes d'IA (Claude, Manus, Gemini, Kimi, Qwen) dans un esprit de benchmark permanent : cartographie documentaire, construction, discussion critique, réécriture. Je ne délègue ni la problématisation, ni le jugement, ni la responsabilité factuelle. La note démonte le fantasme du prompt engineering (« confondre la plume et l'écriture »), documente une pratique de dialogue permanent sur plusieurs semaines adossée à un corpus documentaire continu, et livre une fiche de traçabilité complète sur la série Taxer l'IA : plus honnête qu'un watermark. L'analogie du pilote de ligne referme la démonstration : la compétence a été redéfinie autour de la supervision, pas de l'exécution intégrale.]]></description>
       <content:encoded><![CDATA[<p>Je travaille quotidiennement avec plusieurs systèmes d'intelligence artificielle. Je le revendique.</p>
@@ -676,7 +692,7 @@
       <title>La SACEM de l’IA est une fausse bonne idée</title>
       <link>https://pierrejeantribot.com/notes/#sacem-ia</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#sacem-ia</guid>
-      <pubDate>Fri, 07 Aug 2026 11:43:00 +0200</pubDate>
+      <pubDate>Fri, 07 Aug 2026 11:42:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Étendre la SACEM aux œuvres qu’ingèrent les IA : l’idée, popularisée par Usbek & Rica, semble rendre justice aux créateurs. La note montre pourquoi c’est une fausse bonne idée — la gestion collective vit de l’identification, or l’entraînement dissout les œuvres —, puis pourquoi même la version savante, la licence collective étendue du CSPLA, ne fait que ratifier la dépossession : toute solution en opt-out dit « oui par défaut ». La seule issue est en amont : le consentement.]]></description>
       <content:encoded><![CDATA[<p>Je l’ai vue revenir à chaque été, séduisante comme une évidence. Elle a resurgi sous la plume d’Usbek & Rica, qui l’a parée d’un nom flatteur — une « SACEM de l’IA » —, mais elle n’a rien d’inédit : elle n’est que la transposition mécanique d’une vieille logique française, celle de la gestion collective et de la rémunération pour copie privée, ce réflexe qui répond depuis quarante ans à toute nouvelle technologie de reproduction par un prélèvement mutualisé. Le principe est simple : puisque la gestion collective sait déjà rémunérer un auteur quand sa musique passe dans un bar, un film ou une radio, pourquoi ne pas l’étendre aux œuvres que les modèles engloutissent pour s’entraîner ? Une redevance mensuelle, versée par les propriétaires des logiciels, redistribuée à tous les affiliés — peintres, écrivains, compositeurs. Cela sonne juste. C’est pourtant une fausse bonne idée, et je le dis depuis le monde même qu’elle prétend sauver.</p>
@@ -701,7 +717,7 @@
       <title>Ce que l’aperçu ne prend pas</title>
       <link>https://pierrejeantribot.com/notes/#apercu-erosion</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#apercu-erosion</guid>
-      <pubDate>Fri, 07 Aug 2026 11:42:00 +0200</pubDate>
+      <pubDate>Fri, 07 Aug 2026 11:41:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Le 22 juillet 2026, les Aperçus IA de Google arrivent en France, et avec eux la peur d’une érosion du trafic. La note refuse la panique globale : l’aperçu ne coupe qu’une catégorie de requêtes, celles dont la réponse est compressible. Reste à cartographier ce qui résiste — trois régimes de valeur (transactionnel, distributif, littéraire), dont le plus visible, l’agenda, est aussi le plus fragile puisque le Mode IA l’absorbe. La vraie fragilité n’est logée dans aucun outil : elle tient à ce que ces médias reposent sur un très petit nombre de têtes. Et la lucidité, seul actif qui ne se copie pas, peut se publier sans se livrer.]]></description>
       <content:encoded><![CDATA[<p>Le 22 juillet 2026, Google a activé en France ses Aperçus IA. La France était l’un des derniers territoires à y échapper, moins par vertu que par contentieux : des années de litige sur les droits voisins avaient retardé l’inévitable. L’inévitable est arrivé. Et comme souvent, l’événement n’a rien créé : il a révélé. Un aperçu génératif ne fragilise pas un média, il montre lequel était déjà creux.</p>
@@ -727,7 +743,7 @@
       <title>Tout le monde déteste l’IA (pour des raisons contraires)</title>
       <link>https://pierrejeantribot.com/notes/#ia-miroir</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#ia-miroir</guid>
-      <pubDate>Wed, 05 Aug 2026 11:41:00 +0200</pubDate>
+      <pubDate>Wed, 05 Aug 2026 11:40:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[La gauche déteste l’IA parce qu’elle est fabriquée par Musk, Thiel et les milliardaires de la Silicon Valley ; la droite la déteste parce qu’elle serait « woke ». Le même objet, honni par les deux bords pour des raisons opposées : la note en fait un miroir où chacun projette son ennemi, avant de montrer ce que l’IA menace vraiment — le travail comme totem partagé — et pourquoi la seule question qui vaille n’est pas la technique, mais le partage.]]></description>
       <content:encoded><![CDATA[<p>Je l’ai toujours pensé : l’intelligence artificielle n’est pas une technologie — ou pas seulement. Un moteur, un vaccin, un algorithme de tri se jugent à ce qu’ils font, et l’affaire est close. L’IA, elle, est devenue un objet au sens anthropologique : une de ces surfaces rares où une époque dépose ses désirs et ses terreurs, et qui finit par ne renvoyer que le visage de qui la regarde. Techniquement, ce n’est qu’un instrument, l’héritier du métier à tisser et du tableur. Mais nous ne la traitons pas en instrument : nous la traitons en idole ou en épouvantail. C’est cette disproportion qui mérite qu’on s’y arrête.</p>
@@ -756,7 +772,7 @@
       <title>L’Europe régule une industrie qu’elle n’a pas</title>
       <link>https://pierrejeantribot.com/notes/#europe-industrie</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#europe-industrie</guid>
-      <pubDate>Mon, 03 Aug 2026 11:40:00 +0200</pubDate>
+      <pubDate>Mon, 03 Aug 2026 11:39:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[L’Union européenne se félicite d’avoir la première régulation générale de l’IA, et l’on répète que « les États-Unis sont à la traîne ». La note défait la formule : l’Europe n’a pas de l’avance, elle a inversé l’ordre des opérations — elle écrit le droit d’une industrie qu’elle ne possède pas, américaine comme chinoise. La régulation n’y est pas la maladie mais son symptôme, le seul levier qui reste en main quand on a renoncé à la souveraineté financière et industrielle. Et même l’argent ne suffirait pas : il faudrait les hommes — ceux qui comprennent les implications de l’IA et qui, en Europe, sont à la fenêtre plutôt qu’à la table.]]></description>
       <content:encoded><![CDATA[<p>Depuis ce mois d’août, l’Union européenne peut se targuer d’une première mondiale : un cadre juridique général et contraignant pour l’intelligence artificielle. L’AI Act entre progressivement en application, un Bureau européen de l’IA fort de cent quarante-cinq personnes se met en ordre de bataille, et les commentateurs saluent une Europe « pionnière ». On nous explique, comme l’a fait récemment le spécialiste Nicolas Moës sur les ondes de la RTBF, que « les États-Unis sont à la traîne » en matière d’encadrement. La formule est flatteuse pour notre amour-propre continental. Elle est aussi profondément trompeuse — mais pas là où on l’attend.</p>
@@ -783,7 +799,7 @@
       <title>Ce que l'IA rend illisible</title>
       <link>https://pierrejeantribot.com/notes/#texte-illisible</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#texte-illisible</guid>
-      <pubDate>Sun, 26 Jul 2026 11:39:00 +0200</pubDate>
+      <pubDate>Sun, 26 Jul 2026 11:38:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Le texte a longtemps été lu comme la trace d’une opération mentale — la correction attestait la pensée, l’erreur trahissait l’inattention, la tournure inattendue signalait l’intuition. Cette infrastructure silencieuse de la lecture ne fonctionne plus. Un texte peut être correct dans chacune de ses phrases et n’être la trace de rien. La preuve d’une pensée ne se lit plus dans le texte isolé : elle se lit dans son contexte — corpus, trajectoire, conversation. Ce que ça change à la lecture, à la décision éditoriale, à la reconnaissance des inconnus.]]></description>
       <content:encoded><![CDATA[<p>Un contributeur envoie un premier texte à la rédaction. Une chronique de disque, trois mille signes, sur un enregistrement récent. Elle est correcte — bien construite, informée, sans erreur factuelle, avec les tournures qu'on attend d'une chronique de ce format. Le rédacteur en chef la lit et hésite. Il ne trouve rien à reprendre. Il ne trouve pas non plus ce qu'il cherchait sans savoir le nommer — la trace que quelqu'un a écouté ce disque, s'est arrêté sur un passage, a douté d'un jugement avant de le formuler, s'est rappelé une autre version pour la comparer. Le texte n'a pas ces marques, et il n'en a pas parce qu'il n'a peut-être pas eu besoin d'elles pour exister. Le rédacteur en chef ne peut pas le prouver. Il ne peut pas non plus le prouver du contraire. Il publie, il refuse, il demande une réécriture — chacun de ces gestes reposera sur autre chose que le texte lui-même, parce que le texte, en 2026, ne suffit plus à en attester.</p>
@@ -800,7 +816,7 @@
       <title>De destination à substrat</title>
       <link>https://pierrejeantribot.com/notes/#destination-substrat</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#destination-substrat</guid>
-      <pubDate>Sun, 26 Jul 2026 11:38:00 +0200</pubDate>
+      <pubDate>Sun, 26 Jul 2026 11:37:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Le mouvement destination → substrat, décrit ailleurs pour les métriques d’écoute, les programmations d’institutions et la voix des établissements culturels, prend dans le cas du média critique une forme particulière. Double asymétrie : le texte est le seul service qu’un média critique rend, et il est lui-même le substrat qui alimente la couche qui le remplace. La note tire depuis cette position les conséquences éditoriales, pas les conséquences juridiques ou commerciales habituelles.]]></description>
       <content:encoded><![CDATA[<p>Un critique termine une chronique un dimanche soir. Il a passé trois heures sur une nouvelle Troisième de Bruckner par un orchestre sur instruments d'époque, dirigée par un chef dont il attendait beaucoup. Le texte fait trois mille signes, il est signé, il porte la trace d'une écoute — une remarque sur le grain de la trompette naturelle dans le thème d'ouverture, une réserve sur le tempo du scherzo, une comparaison avec un enregistrement des années soixante-dix qu'il connaît par cœur, une note sur le choix de version. Le lundi matin, l'article est mis en ligne. Il fera, sur les six mois qui suivent, environ mille cinq cents lectures.</p>
@@ -817,7 +833,7 @@
       <title>Réinvestir la souveraineté cognitive</title>
       <link>https://pierrejeantribot.com/notes/#reinvestir-souverainete</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#reinvestir-souverainete</guid>
-      <pubDate>Sat, 18 Jul 2026 11:37:00 +0200</pubDate>
+      <pubDate>Sat, 18 Jul 2026 11:36:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Le diagnostic est établi et on en connaît la mécanique. Cette note propose de sortir du registre du constat et de décrire ce que fait, concrètement, un pays qui décide de reconstruire sa souveraineté cognitive. Trois gestes conjoints, plus une doctrine qui les articule : réinvestir les institutions existantes (Finlande), créer ce qui manque (Québec / BAnQ, Catalogne / Aina, Islande, France / Argimi), cultiver les pratiques individuelles. Ce qui manque n’est pas les moyens — c’est le cadre politique transversal qui nomme et articule l’ensemble.]]></description>
       <content:encoded><![CDATA[<p>Le diagnostic est établi et on en connaît la mécanique — les infrastructures cognitives d’une communauté se contractent au moment précis où elles deviennent stratégiques, et le régime IA amplifie chaque contraction. Cette note propose de sortir du registre du constat. Elle décrit ce que fait, concrètement, un pays qui décide de reconstruire sa souveraineté cognitive plutôt que de la laisser s’éroder. Le programme n’a rien de mystérieux : il est documenté, il a des équivalents dans d’autres domaines de souveraineté — alimentaire, énergétique, numérique — et il tient en trois gestes conjoints, plus une doctrine qui les articule.</p>
@@ -843,7 +859,7 @@
       <title>La souveraineté cognitive passe aussi par les catalogues</title>
       <link>https://pierrejeantribot.com/notes/#souverainete-catalogues</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#souverainete-catalogues</guid>
-      <pubDate>Sat, 18 Jul 2026 11:36:00 +0200</pubDate>
+      <pubDate>Sat, 18 Jul 2026 11:35:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Les médiathèques et centres de ressources documentaires sont, pour beaucoup de gouvernements européens, un actif dont on ne sait plus très bien quoi faire. Fondés sur la logique de la collection physique, ils ont vu le streaming effondrer leur modèle en une décennie. On voit la fonction de collection s’éteindre ; on ne voit pas encore la fonction qui pourrait justifier une pérennisation stratégique. Or ces institutions constituent l’une des strates fondamentales de la souveraineté cognitive — sélection, classification, médiation, trois fonctions que les modèles génératifs ne remplacent pas.]]></description>
       <content:encoded><![CDATA[<p>Les médiathèques et les centres de ressources documentaires sont, pour beaucoup de gouvernements européens, un actif dont on ne sait plus très bien quoi faire. Ces institutions ont été fondées au milieu du XX<sup>e</sup> siècle sur la logique de la collection physique — vinyle, cassette, DVD, livre, magazine — et sur celle du prêt encadré par une médiation professionnelle. Le streaming a fait s’effondrer la première logique en une décennie. La seconde, prise au dépourvu, cherche depuis quinze ans un point d’équilibre entre reconversion numérique, réduction budgétaire et adossement à d’autres réseaux — bibliothèques publiques, universités, opérateurs culturels sectoriels. Chaque mutation en appelle une autre. Chaque nouvelle direction reformule les missions. Chaque changement de nom laisse en héritage un peu plus de fatigue institutionnelle et d’illisibilité pour le public. On voit la fonction de collection s’éteindre. On ne voit pas encore émerger, à sa place, la fonction qui pourrait justifier une pérennisation stratégique. Et faute de la voir, on rétrécit.</p>
@@ -871,7 +887,7 @@
       <title>La souveraineté cognitive</title>
       <link>https://pierrejeantribot.com/notes/#souverainete-cognitive</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#souverainete-cognitive</guid>
-      <pubDate>Sat, 18 Jul 2026 11:35:00 +0200</pubDate>
+      <pubDate>Sat, 18 Jul 2026 11:34:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Le terme n’est pas nouveau — il a été forgé dans la pensée décoloniale sud-américaine, chez Boaventura de Sousa Santos avec ses épistémologies du Sud. Son déplacement vers le terrain européen contemporain change de contenu sans perdre son geste critique : l’extériorité, pour un citoyen belge, catalan ou québécois de 2026, ce n’est plus la matrice coloniale — c’est le régime algorithmique privé qui médie désormais son accès aux savoirs. Distincte de la souveraineté numérique et de la souveraineté informationnelle, elle articule un triangle individuel-institutionnel-politique dont chaque sommet dépend structurellement des deux autres. Fenêtre courte : 2023-2030.]]></description>
       <content:encoded><![CDATA[<p>Le terme n’est pas nouveau. Il a été forgé dans la pensée décoloniale sud-américaine — chez Boaventura de Sousa Santos notamment, avec ses <em>épistémologies du Sud</em>, et dans les débats boliviens et brésiliens sur les savoirs autochtones — pour nommer la capacité d’une communauté à maintenir ses propres régimes de savoir face à un régime cognitif imposé de l’extérieur. Dans son foyer d’origine, l’extériorité désignait la matrice coloniale. Son déplacement vers le terrain européen contemporain change de contenu sans perdre son geste critique : pour un citoyen belge, catalan ou québécois de 2026, l’extériorité, ce n’est plus la matrice coloniale — c’est le régime algorithmique privé qui médie désormais son accès aux savoirs. La continuité structurelle est réelle. Il faut la nommer pour ce qu’elle devient : la question de l’autonomie cognitive d’une communauté face à un régime de médiation automatisé.</p>
@@ -898,7 +914,7 @@
       <title>Du passé faisons table rase</title>
       <link>https://pierrejeantribot.com/notes/#table-rase</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#table-rase</guid>
-      <pubDate>Tue, 07 Jul 2026 11:34:00 +0200</pubDate>
+      <pubDate>Tue, 07 Jul 2026 11:33:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Une littérature d'accompagnement s'écrit à cadence rapide sur l'IA en éducation. Elle a un mot d'ordre : adapter. Le résultat, à la lecture, est toujours le même — des opérations de troisième ordre présentées comme une refondation. L'imprimerie, la calculatrice, Internet modifiaient l'accès aux savoirs sans exécuter à la place de l'élève l'opération que l'école prétendait former. L'IA générative, si. Ce qu'il faudrait n'est pas un manuel supplémentaire mais un renversement délibéré. Kai-Fu Lee l'écrivait il y a près de huit ans. Il faudra bien, un jour, le lire.]]></description>
       <content:encoded><![CDATA[<p>Une littérature d'accompagnement s'écrit à cadence rapide sur l'IA en éducation. Elle a un mot d'ordre : adapter. Adapter les curriculums, adapter les évaluations, adapter les pratiques. Le vocabulaire de la « transformation », de la « bascule », du « changement de paradigme » y est massivement mobilisé. Le résultat, à la lecture, est toujours le même. Des opérations de troisième ordre présentées comme une refondation. Ajouter un oral. Demander un prompt réflexif. Faire comparer à l'étudiant sa production et celle de la machine. Aucune de ces opérations ne touche à ce qui vient de se passer.</p>
@@ -915,7 +931,7 @@
       <title>La souveraineté cognitive commence à six ans</title>
       <link>https://pierrejeantribot.com/notes/#souverainete-six-ans</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#souverainete-six-ans</guid>
-      <pubDate>Fri, 03 Jul 2026 11:33:00 +0200</pubDate>
+      <pubDate>Fri, 03 Jul 2026 11:32:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Bruno Retailleau vient d'annoncer son Plan Vauban pour la souveraineté numérique française : cloud souverain, sortie de Windows, interdiction des IA étrangères, remparts, places fortes. Il n'est ni le premier ni le dernier à parler ce langage. Mais la souveraineté numérique ne se joue pas dans les cabinets ministériels — elle se dépose, année après année, dans le rapport que les enfants d'une nation entretiennent avec les objets techniques qui structurent leur pensée. Elle commence à l'âge où l'on apprend à distinguer un outil qu'on utilise d'un outil qui nous utilise — soit, empiriquement, autour de six ans. Défendre le vide, c'est encore le vide. Vauban ne peut pas ceinturer une ville qui n'a pas été bâtie.]]></description>
       <content:encoded><![CDATA[<p>Bruno Retailleau vient d'annoncer son « Plan Vauban » pour la souveraineté numérique française : cloud souverain, sortie de Windows, interdiction des IA étrangères, remparts, places fortes, ceinture territoriale. Il n'est ni le premier ni le dernier à parler ce langage. À gauche comme à droite, la souveraineté numérique est devenue synonyme de forteresse — un périmètre à défendre, une frontière à durcir. On y ajoute un ingénieur militaire du Grand Siècle pour la couleur, on décrète cent jours d'urgence, et l'on croit avoir pensé le problème.</p>
@@ -935,7 +951,7 @@
       <title>Le philosophe embarqué</title>
       <link>https://pierrejeantribot.com/notes/#philosophe-embarque</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#philosophe-embarque</guid>
-      <pubDate>Tue, 30 Jun 2026 11:32:00 +0200</pubDate>
+      <pubDate>Tue, 30 Jun 2026 11:31:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[The Economist documente un déplacement qui mérite mieux qu'une note de bas de page : les grands laboratoires d'IA recrutent des philosophes professionnels à six chiffres — Amanda Askell chez Anthropic, Iason Gabriel et Henry Shevlin chez Google DeepMind, « des centaines » chez OpenAI selon Sam Altman. L'anecdote prête à sourire. La transformation qu'elle révèle est plus sérieuse : la philosophie morale de la technique quitte l'université — où elle disposait d'une extériorité minimale — pour devenir un département de R&D interne des entreprises qu'elle est censée évaluer. Le problème n'est pas la corruption des personnes, souvent intègres. Il est dans la configuration objective d'un dispositif où le travail le plus sincère remplit, à son insu, une fonction de légitimation.]]></description>
       <content:encoded><![CDATA[<p>Un article récent de <em>The Economist</em> (« Why big AI labs are hiring so many philosophers », 24 juin 2026) documente un déplacement qui mérite plus qu'une note de bas de page. Les grands laboratoires d'intelligence artificielle — Anthropic, Google DeepMind, OpenAI — recrutent désormais des philosophes professionnels, parfois à six chiffres annuels, pour traiter les questions d'alignement, de conscience artificielle et de « droits » des modèles. Amanda Askell est philosophe résidente chez Anthropic, Iason Gabriel et Henry Shevlin officient chez Google DeepMind, et Sam Altman affirme qu'OpenAI aurait employé « des centaines de philosophes moraux » pour façonner les règles de ChatGPT. Aux États-Unis, les diplômés de philosophie auraient désormais un taux d'emploi supérieur à celui de leurs camarades informaticiens.</p>
@@ -956,7 +972,7 @@
       <title>Le token récompense les frugaux</title>
       <link>https://pierrejeantribot.com/notes/#token-frugal</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#token-frugal</guid>
-      <pubDate>Thu, 25 Jun 2026 11:31:00 +0200</pubDate>
+      <pubDate>Thu, 25 Jun 2026 11:30:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[L'Humanité titre que la Silicon Valley fait marche arrière sur le tout-IA — coupes Microsoft sur Claude Code, budget Uber brûlé en quatre mois, deux gigawatts de datacenters annulés. La conclusion va de soi : la bulle se dégonfle. Le titre est faux, les faits sont vrais. Ce qui a été coupé n'a pas été coupé parce que l'outil ne fonctionnait pas, mais parce qu'il fonctionnait trop, sans gouvernance. La tarification au token réinjecte mécaniquement du skin in the game dans le compute et avantage structurellement l'opérateur frugal solo face aux grandes structures mal gouvernées.]]></description>
       <content:encoded><![CDATA[<p><em>L'Humanité</em> titre cette semaine que les géants de la Silicon Valley font marche arrière sur le tout-IA. Microsoft a coupé en juin l'accès interne à Claude Code pour ses cinq mille ingénieurs ; Uber a annoncé en avril avoir épuisé son budget annuel d'outils d'intelligence artificielle en quatre mois<sup><a href="#note-token-1" id="ref-token-1">1</a></sup> ; Microsoft a annulé l'an dernier deux gigawatts de baux de datacenters. La conclusion va de soi : la bulle se dégonfle.</p>
@@ -974,7 +990,7 @@
       <title>Le temps du gouvernement augmenté</title>
       <link>https://pierrejeantribot.com/notes/#gouvernement-augmente</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#gouvernement-augmente</guid>
-      <pubDate>Wed, 24 Jun 2026 11:30:00 +0200</pubDate>
+      <pubDate>Wed, 24 Jun 2026 11:29:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Suite du Mauvais étage. Les gouvernements européens célèbrent l'IA dans les sommets, financent l'IA dans les budgets, exigent de leurs citoyens qu'ils deviennent des opérateurs augmentés — et refusent, pour la fonction qui les définit, le même geste. Aucune politique publique majeure n'a été préparée avec les outils d'analyse, de simulation et de consultation que ces outils rendent possibles. La question n'est pas technique. Elle est ailleurs.]]></description>
       <content:encoded><![CDATA[<p>Depuis sept ou huit ans, les gouvernements européens parlent d'intelligence artificielle avec une constance remarquable. Les sommets se succèdent — Paris en février 2025, Bletchley avant lui, Séoul entre les deux —, les stratégies nationales s'empilent — <em>France 2030</em>, plans fédéraux belges, programmes flamands, lignes Horizon Europe —, les ministres inaugurent des datacenters, visitent les <em>start-up</em>, posent devant des robots. La grammaire de la modernité technologique est devenue le décor obligatoire de l'action publique. À écouter les discours, l'Europe serait au seuil d'une transformation civilisationnelle conduite par ses propres dirigeants.</p>
@@ -1007,7 +1023,7 @@
       <title>Le mauvais étage de la lutte</title>
       <link>https://pierrejeantribot.com/notes/#mauvais-etage</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#mauvais-etage</guid>
-      <pubDate>Tue, 23 Jun 2026 11:29:00 +0200</pubDate>
+      <pubDate>Tue, 23 Jun 2026 11:28:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[De la souveraineté numérique à la défense des ayants droit, la même erreur. La pile de l'IA contemporaine se joue par couches : silicium, modèles de fondation, cloud — perdus. Orchestration — disputable. Composition — entièrement souveraine, parce que sa valeur n'est pas transférable. Or Mistral et la SACEM se battent à l'étage où la partie est jouée, et ignorent celui où ils pourraient encore agir. Ce mauvais choix n'est pas une erreur : il est la condition de leur préservation institutionnelle.]]></description>
       <content:encoded><![CDATA[<p>Le débat européen sur la souveraineté numérique souffre d'un vice de cadrage qu'on retrouve, identique, dans la mobilisation des ayants droit contre l'intelligence artificielle générative. La même grammaire, la même erreur stratégique, le même refus de regarder ce qui reste réellement disponible. Il faut nommer cette pathologie pour pouvoir en sortir.</p>
@@ -1039,7 +1055,7 @@
       <title>L'IA tue la norme</title>
       <link>https://pierrejeantribot.com/notes/#ia-tue-la-norme</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#ia-tue-la-norme</guid>
-      <pubDate>Sun, 21 Jun 2026 11:28:00 +0200</pubDate>
+      <pubDate>Sun, 21 Jun 2026 11:27:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Nos sociétés modernes sont des machines à produire de la norme : État-nation, concours, agrégation, dissertation, PRINCE2, Scrum. L'IA générative est techniquement, exactement cela : une machine à produire de la norme. Elle ne casse pas la norme par excès de créativité ; elle la pulvérise par excès de conformité. Et nos sociétés, qui n'ont pas de plan B, vacillent.]]></description>
       <content:encoded><![CDATA[<p><em>Réponse à l'interview de Laurence Devillers sur franceinfo, publiée le 17 juin 2026 à l'occasion du G7 sur la sécurisation de l'intelligence artificielle.</em></p>
@@ -1064,7 +1080,7 @@
       <title>La machine et la bibliothèque</title>
       <link>https://pierrejeantribot.com/notes/#machine-bibliotheque</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#machine-bibliotheque</guid>
-      <pubDate>Fri, 19 Jun 2026 11:27:00 +0200</pubDate>
+      <pubDate>Fri, 19 Jun 2026 11:26:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Cent cinquante personnalités appellent au boycott de l'IA générative dans Le Monde. La tribune rate sa cible. Le vrai problème n'est pas celui qu'elle dénonce — il est épistémique. Le corpus d'entraînement des LLM est massivement anglophone, et les penseurs francophones n'y existent qu'à travers leur réception américaine. Boycotter, c'est céder le terrain. La langue ne se défend pas : elle se publie.]]></description>
       <content:encoded><![CDATA[<p><em>Réponse à la tribune des 150 personnalités appelant au boycott de l'IA générative, publiée dans <em>Le Monde</em> du 18 juin 2026.</em></p>
@@ -1099,7 +1115,7 @@
       <title>Le retour des cultivés ?</title>
       <link>https://pierrejeantribot.com/notes/#retour-des-cultives</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#retour-des-cultives</guid>
-      <pubDate>Wed, 17 Jun 2026 11:26:00 +0200</pubDate>
+      <pubDate>Wed, 17 Jun 2026 11:25:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Première d'une série de cinq Notes sur un déplacement économique encore peu commenté. En mai 2024, News Corp signe avec OpenAI pour 250 millions de dollars sur cinq ans ; un an plus tard, le New York Times signe avec Amazon pour 20 à 25 millions par an. Ces accords ne sont pas des manœuvres défensives : ils sont la première preuve comptable, à grande échelle, que les modèles d'IA ont un besoin structurel de contenu validé, daté, signé, traçable. La valeur économique se déplace vers ce qu'on a méprisé.]]></description>
       <content:encoded><![CDATA[<p><em>Ce texte ouvre une série de cinq notes consacrées à un déplacement économique encore peu commenté : le retour en valeur des fonctions de jugement, de curation et d'autorité éditoriale dans un environnement saturé d'intelligence artificielle. Les quatre notes suivantes paraîtront à intervalles réguliers et peuvent se lire indépendamment.</em></p>
@@ -1131,7 +1147,7 @@
       <title>Le temps de l'entreprise liquide</title>
       <link>https://pierrejeantribot.com/notes/#entreprise-liquide</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#entreprise-liquide</guid>
-      <pubDate>Wed, 17 Jun 2026 11:25:00 +0200</pubDate>
+      <pubDate>Wed, 17 Jun 2026 11:24:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Sur deux termes qu'il faut distinguer : l'opérateur augmenté et l'entreprise liquide. Le premier est une personne — un travailleur intellectuel dont l'IA multiplie la productivité par trois à dix. La seconde est une forme — faible matérialité, faible effectif, coordination algorithmique, mobilité géographique native. Et un paradoxe : leur combinaison produit, pour les États classiques, une économie qui crée plus de valeur que jamais, captée par des outils fiscaux qui en voient moins que jamais.]]></description>
       <content:encoded><![CDATA[<p>Deux termes circulent depuis quelques années dans la conversation des fondateurs, et l'on aurait tort de les confondre. <em>Opérateur augmenté</em> d'un côté, <em>entreprise liquide</em> de l'autre.</p>
@@ -1151,7 +1167,7 @@
       <title>Fable 5 : note sur un précédent</title>
       <link>https://pierrejeantribot.com/notes/#fable-5-precedent</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#fable-5-precedent</guid>
-      <pubDate>Sat, 13 Jun 2026 11:24:00 +0200</pubDate>
+      <pubDate>Sat, 13 Jun 2026 11:23:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Sur la suspension de Claude Fable 5 et Mythos 5 par directive du Département du Commerce américain le 12 juin 2026. Indépendamment de son issue, un précédent : un modèle d'IA déjà déployé peut désormais être désactivé pour des ressortissants étrangers, en quelques heures, sur motif de sécurité nationale. Et un angle mort : vingt-quatre heures après, aucune réaction des institutions européennes ; en France, la première voix audible est celle du Rassemblement national.]]></description>
       <content:encoded><![CDATA[<p>Le 12 juin 2026, Anthropic reçoit en fin d'après-midi une directive de contrôle à l'export du Département du Commerce américain. Fable 5 et Mythos 5, ses deux modèles les plus avancés, mis en service trois jours plus tôt, doivent devenir inaccessibles à tout ressortissant étranger — y compris aux salariés non américains de l'entreprise, y compris sur le sol des États-Unis. Pour s'y conformer, Anthropic n'a d'autre option que de couper les deux modèles pour l'ensemble de ses clients dans le monde. L'entreprise conteste la décision, parle d'un malentendu, et travaille à la lever. Il est tout à fait possible qu'elle y parvienne dans les jours qui viennent.</p>
@@ -1168,7 +1184,7 @@
       <title>Changer ses méthodes de lecture à l'ère de l'IA</title>
       <link>https://pierrejeantribot.com/notes/#lecture-ia</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#lecture-ia</guid>
-      <pubDate>Fri, 12 Jun 2026 11:23:00 +0200</pubDate>
+      <pubDate>Fri, 12 Jun 2026 11:22:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Réflexion à voix haute, plutôt que note prospective close : quatre pistes que j'expérimente en ce moment pour lire autrement avec les agents conversationnels — la fiche assistée à partir de ses propres annotations, le livre transformé en interlocuteur, le dialogue critique, et le dialogue oral en cours de lecture. Trois écueils restent à nommer, dont je n'ai pas la solution complète.]]></description>
       <content:encoded><![CDATA[<p><em>Réflexion à voix haute. Ce texte n'a pas la forme habituelle de mes notes prospectives. Il met à plat quatre pistes que j'expérimente en ce moment, et les soumet à la discussion. Ce sont des revers de méthode, pas un manifeste.</em></p>
@@ -1203,7 +1219,7 @@
       <title>L'angle mort — où se joue vraiment la transformation IA de la culture</title>
       <link>https://pierrejeantribot.com/notes/#angle-mort-infrastructure</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#angle-mort-infrastructure</guid>
-      <pubDate>Fri, 12 Jun 2026 11:22:00 +0200</pubDate>
+      <pubDate>Fri, 12 Jun 2026 11:21:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Sur un déplacement systématique du débat européen IA-culture : tous les rapports, tous les avis, tous les colloques parlent des créateurs, pendant que la transformation se joue ailleurs — dans les infrastructures éditoriales, critiques, patrimoniales. Quatre conséquences en cascade d'une mauvaise allocation publique, dont la captation par les grandes plateformes américaines et la fuite des compétences hybrides.]]></description>
       <content:encoded><![CDATA[<p>Il y a, dans le débat européen actuel sur l'intelligence artificielle et la culture, un déplacement systématique qui mérite d'être nommé : tous les rapports, tous les avis, tous les colloques parlent des créateurs. De leurs droits d'auteur menacés, de leur emploi en danger, de leur autonomie artistique. La question est légitime et les enjeux sont réels. Mais cette concentration du regard masque, par sa surreprésentation même, là où se joue véritablement la transformation IA de la culture en cours.</p>
@@ -1228,7 +1244,7 @@
       <title>Spotify, OnlyFans : la comparaison est-elle indécente ?</title>
       <link>https://pierrejeantribot.com/notes/#spotify-onlyfans</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#spotify-onlyfans</guid>
-      <pubDate>Fri, 12 Jun 2026 11:21:00 +0200</pubDate>
+      <pubDate>Fri, 12 Jun 2026 11:20:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Sur une analogie qui paraît grossière mais qui résiste à l'examen : lorsqu'on met entre parenthèses la nature du contenu et qu'on examine la structure des deux plateformes, on découvre une parenté économique qu'il faut au moins reconnaître avant de la discuter. Et au bout de cette comparaison, un constat : le musicien sur Spotify est, économiquement, dans une situation plus précaire que le créateur OnlyFans.]]></description>
       <content:encoded><![CDATA[<p>La question paraît grossière. Elle mérite d'être posée sérieusement.</p>
@@ -1251,7 +1267,7 @@
       <title>Pourquoi l'addition tue la transmission</title>
       <link>https://pierrejeantribot.com/notes/#addition-transmission</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#addition-transmission</guid>
-      <pubDate>Sat, 06 Jun 2026 11:20:00 +0200</pubDate>
+      <pubDate>Sat, 06 Jun 2026 11:19:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Sur le geste que l'école francophone refuse de poser depuis un siècle : choisir des fondamentaux, c'est implicitement assumer ce qu'on n'enseignera plus. Comment la logique additive — ajouter chaque génération un domaine nouveau au curriculum sans jamais en retirer — a produit une école où plus rien n'est vraiment transmis, parce que tout doit l'être un peu. Deuxième texte d'une série sur les savoirs fondamentaux à l'ère de l'IA.]]></description>
       <content:encoded><![CDATA[<p>Dans une précédente Note, j'ai proposé que le fondamental se reconnaisse à ce qui résiste à la délégation à la machine. Reste à dire ce que ce critère implique en retour : un renoncement. Choisir des fondamentaux, c'est implicitement assumer qu'il y a beaucoup de choses qu'on n'enseignera plus, ou qu'on enseignera moins. Et c'est précisément ce geste que l'école francophone refuse de poser depuis un siècle.</p>
@@ -1271,7 +1287,7 @@
       <title>Pourquoi l'IA redéfinit les fondamentaux par soustraction</title>
       <link>https://pierrejeantribot.com/notes/#fondamentaux-soustraction</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#fondamentaux-soustraction</guid>
-      <pubDate>Fri, 05 Jun 2026 11:19:00 +0200</pubDate>
+      <pubDate>Fri, 05 Jun 2026 11:18:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Sur ce que l'intelligence artificielle révèle en négatif : à quel critère reconnaît-on qu'un savoir devient fondamental ? Plutôt que d'ajouter au curriculum encore et encore, on observe ce que la machine peut désormais déléguer — et l'on en déduit, par soustraction, ce qui demeure le propre de l'humain. Premier texte d'une série qui prolonge l'esquisse des six savoirs fondamentaux.]]></description>
       <content:encoded><![CDATA[<p>Dans une précédente Note, j'ai esquissé six savoirs qui me semblaient devenir fondamentaux à l'ère de l'intelligence artificielle : lire profondément, écrire pour penser, raisonner quantitativement, penser historiquement, faire avec ses mains, soutenir son attention. La liste tenait, mais elle laissait une question en suspens — à quel critère reconnaît-on qu'un savoir devient fondamental ?</p>
@@ -1294,7 +1310,7 @@
       <title>L'IA va forcer la société à changer</title>
       <link>https://pierrejeantribot.com/notes/#ia-force-societe</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#ia-force-societe</guid>
-      <pubDate>Wed, 03 Jun 2026 11:18:00 +0200</pubDate>
+      <pubDate>Wed, 03 Jun 2026 11:17:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Sur la manière dont l'IA cesse d'être lue comme une innovation technique pour révéler ce qu'elle est vraiment : un changement de société. À partir d'un titre du Figaro sur les mathématiques comme « ultime bastion de l'intelligence humaine », pourquoi le filtre méritocratique cesse de filtrer — et pourquoi la sidération qui tient lieu de pensée chez les commentateurs n'est qu'un refus de nommer ce qui vient.]]></description>
       <content:encoded><![CDATA[<p>Ce que nous traversons n'est pas une innovation technique. Ce n'est pas un saut de productivité, ce n'est pas un outil de plus, ce n'est pas un épisode dans l'histoire de l'informatique. C'est un changement de société. Et l'IA ne va pas l'accompagner : elle va le forcer. Au même titre que l'imprimerie n'a pas été une innovation technique mais l'avènement d'une autre société — autre rapport à l'autorité, autre rapport au savoir, autre rapport à la légitimité de qui parle et au nom de quoi.</p>
@@ -1318,7 +1334,7 @@
       <title>La médiation et la machine</title>
       <link>https://pierrejeantribot.com/notes/#mediation-machine</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#mediation-machine</guid>
-      <pubDate>Sun, 31 May 2026 11:17:00 +0200</pubDate>
+      <pubDate>Sun, 31 May 2026 11:16:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Sur le déplacement, en 2026, du métier de médiateur culturel : ce qui pouvait être livré sous forme de fichier — notice, dossier, parcours pré-enregistré — migre vers la machine, et restitue à la médiation ce qui ne peut être livré que sous forme de présence : l'atelier, l'immersion longue, la conversation en salle.]]></description>
       <content:encoded><![CDATA[<p>Une visite guidée dans un musée francophone, en 2026. Le médiateur, micro-casque allumé, fait passer son groupe devant un retable du XV<sup>e</sup> siècle. Il explique l'iconographie, situe l'atelier, donne les dates. Quinze minutes plus tard, dans la même salle, un visiteur seul approche son téléphone du tableau et lit une notice plus précise, mieux contextualisée, traduite dans sa langue, calibrée sur son niveau supposé. Le médiateur ne le sait pas, ou feint de ne pas le savoir. Mais la scène a basculé. Le visiteur seul n'est plus en déficit d'information. Il est en surplus.</p>
@@ -1373,7 +1389,7 @@
       <title>La porte et la durée</title>
       <link>https://pierrejeantribot.com/notes/#porte-duree</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#porte-duree</guid>
-      <pubDate>Sun, 31 May 2026 11:16:00 +0200</pubDate>
+      <pubDate>Sun, 31 May 2026 11:15:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Sur ce que l'IA trie : entre la porte qui vend l'accès à un stock — et que l'IA pulvérise —, et la durée qui vend du temps tenu — et que l'IA fait monter en valeur. Pourquoi Chegg meurt et Duolingo prospère sous la même technologie. Et la question retournée vers soi : de quelle rareté est-ce que je vis ?]]></description>
       <content:encoded><![CDATA[<p>La CNIL a publié cette semaine, conjointement avec son homologue coréenne, une affiche en six questions destinée aux écoles. Sujet : l'IA générative et la vie privée. Format : sensibilisation. L'objet est anodin. Ce qu'il révèle ne l'est pas — et c'est l'occasion d'écrire ce qu'on hésitait à écrire jusque-là.</p>
@@ -1392,7 +1408,7 @@
       <title>Pourquoi une infrastructure éditoriale se construit désormais en quatre heures, un samedi</title>
       <link>https://pierrejeantribot.com/notes/#infrastructure-editoriale</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#infrastructure-editoriale</guid>
-      <pubDate>Sat, 23 May 2026 11:15:00 +0200</pubDate>
+      <pubDate>Sat, 23 May 2026 11:14:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Sept semaines après le LLM Wiki pattern de Karpathy, un mois après l'assistant de Vivian Balakrishnan, mise en service d'une infrastructure éditoriale IA-native pour Crescendo Magazine, 21 Music et XXI Music Publishing. Note datée sur la nouvelle répartition du travail entre la machine et l'humain — et sur ce que la formation humaniste classique devient à l'ère de l'IA : le facteur limitant le plus précieux.]]></description>
       <content:encoded><![CDATA[<p><em>Bruxelles, 23 mai 2026.</em></p>
@@ -1415,7 +1431,7 @@
       <title>Pourquoi nommer les savoirs fondamentaux à l'ère de l'intelligence artificielle</title>
       <link>https://pierrejeantribot.com/notes/#savoirs-fondamentaux</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#savoirs-fondamentaux</guid>
-      <pubDate>Fri, 15 May 2026 11:14:00 +0200</pubDate>
+      <pubDate>Fri, 15 May 2026 11:13:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Première esquisse d'une liste qui mériterait d'être discutée et prolongée : lire profondément, écrire pour penser, raisonner quantitativement, penser historiquement, faire de ses mains, soutenir son attention. Six fondamentaux presque tous classiques, qui deviennent structurellement plus importants à mesure que l'IA prend en charge le reste.]]></description>
       <content:encoded><![CDATA[<p>Autrefois, les savoirs fondamentaux étaient nommés simplement : lire, écrire, compter. La formule a tenu plusieurs siècles parce qu'elle disait quelque chose de juste sur ce que l'école devait donner à tous. À l'ère de l'intelligence artificielle, cette trinité ne suffit plus, mais le principe reste le même : il y a des compétences sans lesquelles tout le reste devient impossible, et il faut nommer lesquelles.</p>
@@ -1448,7 +1464,7 @@
       <title>Pourquoi l'IA écrase le faible et s'écrase contre le fort</title>
       <link>https://pierrejeantribot.com/notes/#ia-faible-fort</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#ia-faible-fort</guid>
-      <pubDate>Fri, 15 May 2026 11:13:00 +0200</pubDate>
+      <pubDate>Fri, 15 May 2026 11:12:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Sur ce que Goude, Toscani et les langages forts de la seconde moitié du XXe siècle font apparaître par contraste, sur l'aplatissement publicitaire et artistique antérieur à l'IA, et sur ce qui résiste — non un style, mais un système construit contre quelque chose et pour quelque chose.]]></description>
       <content:encoded><![CDATA[<p>Il y a des images qui, à leur sortie, ont été immédiatement cultes. <em>Coco</em> de Chanel en 1991, Vanessa Paradis peinte en oiseau dans une cage suspendue, signée Jean-Paul Goude. <em>Égoïste</em>, la même année, ces femmes en peignoir qui hurlent à leurs balcons sur un fragment du <em>Roméo et Juliette</em> de Prokofiev, encore Goude. <em>Égoïste Platinum</em>, en 1993, le boxeur noir qui shadow-box dans une lumière de cathédrale. Ces films n'étaient pas regardés comme des publicités, ils étaient regardés comme des événements. On en parlait au bureau, dans les magazines, dans les conversations cultivées. Ils circulaient comme des œuvres : commentés, parodiés, archivés, cités. Goude n'avait pas filmé un parfum, il avait inscrit une signature dans l'imaginaire collectif d'une époque entière. Au même moment, Oliviero Toscani plaçait pour Benetton le visage d'un malade du sida en pleine page d'un magazine de mode, un prêtre embrassant une religieuse, les vêtements ensanglantés d'un soldat tué à Mostar. La publicité comme dispositif moral, comme provocation construite, comme prise de position assumée. Là aussi, cultissime. Là aussi, événement.</p>
@@ -1472,7 +1488,7 @@
       <title>Pourquoi l'IA n'est pas une compétence numérique</title>
       <link>https://pierrejeantribot.com/notes/#ia-competence-numerique</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#ia-competence-numerique</guid>
-      <pubDate>Fri, 15 May 2026 11:12:00 +0200</pubDate>
+      <pubDate>Fri, 15 May 2026 11:11:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Sur ce qui sépare le substrat technique d'un phénomène de sa portée civilisationnelle, sur l'analogie avec l'imprimerie et l'électricité, et sur ce que l'IA récompense — non une certification, mais une formation au jugement, à la culture et à la pensée critique.]]></description>
       <content:encoded><![CDATA[<p>Depuis bientôt deux ans, je construis des outils. Une base discographique de plus de cinq mille critiques avec ses pages compositeurs et ses index thématiques. Un guide cartographique de cent treize festivals européens. Un outil de découverte des compositeurs assorti d'une quinzaine de fonctionnalités d'aide à l'écoute. Une carte commentée de trois cent quinze bâtiments Art déco. Un répertoire raisonné de concours et d'académies pour jeunes musiciens. À chaque fois, l'IA est au cœur du dispositif — non pas comme produit fini, mais comme partenaire de réflexion, de structuration, de mise en forme. Je ne suis pas développeur. Je suis un éditeur qui pense à voix haute avec une intelligence artificielle, et qui en sort des objets éditoriaux qui n'auraient pas existé autrement.</p>
@@ -1495,7 +1511,7 @@
       <title>La métrique d'écoutes. Pourquoi la métrique d'écoutes perd son sens éditorial</title>
       <link>https://pierrejeantribot.com/notes/#metrique-ecoutes</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#metrique-ecoutes</guid>
-      <pubDate>Fri, 15 May 2026 11:11:00 +0200</pubDate>
+      <pubDate>Fri, 15 May 2026 11:10:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Sur la dilution silencieuse de la playlist Nouveautés classique sur Spotify, sur ce qui distingue un outil d'infrastructure d'un modèle économique, et sur la nécessité, pour les artistes classiques et les labels, de construire ailleurs ce que la plateforme ne sait plus faire.]]></description>
       <content:encoded><![CDATA[<p>Il y a, dans le métier de critique musical, un geste hebdomadaire qui structure la semaine. Chaque vendredi, jour traditionnel de sortie discographique, on parcourt la playlist <em>Nouveautés classique</em> sur Spotify. On y cherche ce qui mérite l'écoute attentive, on identifie ce qu'il faudra chroniquer dans les jours qui viennent, on repère les sorties qui tombent dans le bruit et celles qui font signe. Pendant des années, ce geste a fait son travail. La playlist donnait un panorama lisible des sorties de la semaine, hiérarchisé selon une logique éditoriale dont on pouvait discuter les choix, mais dont on comprenait la grammaire. Elle était une fenêtre sur l'actualité du secteur, et même si cette fenêtre était toujours partielle, elle restait utilisable.</p>
@@ -1518,7 +1534,7 @@
       <title>La collection et son catalogue. Pourquoi indexer ne suffit pas à valoriser</title>
       <link>https://pierrejeantribot.com/notes/#collection-catalogue</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#collection-catalogue</guid>
-      <pubDate>Fri, 15 May 2026 11:10:00 +0200</pubDate>
+      <pubDate>Fri, 15 May 2026 11:09:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Sur ce qui distingue donner accès et faire valoir une collection, sur la mise en relation éditoriale que l'IA ne sait pas accomplir, et sur le temps libéré par l'IA qui devrait être un investissement éditorial — non une économie comptable.]]></description>
       <content:encoded><![CDATA[<p>Il y a, dans le travail éditorial autour des fonds culturels, une scène qui revient avec une régularité presque comique. Une institution — un orchestre, un opéra, un musée, une revue, un éditeur — décide de valoriser sa collection. Elle investit, parfois lourdement, dans une infrastructure numérique : numérisation des documents, catalogue en ligne, recherche par auteur, par date, par genre, par mots-clés, tags automatiques générés par intelligence artificielle, présentation soignée. Tout est là, accessible, navigable, propre. Et le public ne vient pas, ou consulte trois fiches et part. L'institution s'étonne : tout est là, pourquoi personne ne s'en sert ? La question est mal posée, et c'est ce qui mérite d'être examiné, parce que cette confusion silencieuse coûte à la culture francophone, depuis quelques années, des sommes considérables et des renoncements éditoriaux dont on n'a pas mesuré la portée.</p>
@@ -1537,7 +1553,7 @@
       <title>L'institution et la voix. Pourquoi les agents conversationnels parlent désormais à la place des institutions culturelles</title>
       <link>https://pierrejeantribot.com/notes/#institution-voix</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#institution-voix</guid>
-      <pubDate>Fri, 15 May 2026 11:09:00 +0200</pubDate>
+      <pubDate>Fri, 15 May 2026 11:08:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Sur la délégation silencieuse de la représentation institutionnelle aux agents conversationnels, sur ce qui sépare la lisibilité de la délégation, et sur la question politique d'une médiation culturelle sans médiateur.]]></description>
       <content:encoded><![CDATA[<p>Il y a, dans la vie d'une institution culturelle, un acte qu'on accomplit cent fois par semaine sans presque jamais y penser : répondre à une question du public. <em>Quel est le programme de la saison ?</em> <em>À quoi peut-on s'attendre dans cette production ?</em> <em>Pourquoi avoir choisi cette œuvre, cet artiste, cette mise en scène ?</em> Ces questions, depuis toujours, trouvaient leur réponse au guichet, dans une brochure, sur le site officiel, dans la bouche d'un médiateur, dans un article de presse. La caractéristique commune de toutes ces réponses, c'est qu'elles étaient <em>tenues</em> — par une personne identifiable, par un service responsable, par une institution qui s'engageait dans ce qu'elle disait. La réponse, même quand elle était banale, avait toujours, en arrière-plan, quelqu'un qui répondait.</p>
@@ -1559,7 +1575,7 @@
       <title>L'archive et la machine. Pourquoi une presse spécialisée vaut moins par ce qu'elle a écrit que par ce qu'elle continue d'écrire</title>
       <link>https://pierrejeantribot.com/notes/#archive-presse</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#archive-presse</guid>
-      <pubDate>Fri, 15 May 2026 11:08:00 +0200</pubDate>
+      <pubDate>Fri, 15 May 2026 11:07:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Sur ce qui distingue le stock cessible d'une archive de presse de la « longue date » qui ne l'est pas, sur la recomposition récente du paysage francophone après la disparition de Pianiste et la réinvention numérique de Classica, et sur la position particulière de la critique musicale en libre accès face à l'absorption algorithmique.]]></description>
       <content:encoded><![CDATA[<p>Il y a, dans la vie d'une publication culturelle spécialisée, un moment où l'on commence à parler d'« archive ». C'est un terme rassurant — il dit l'accumulation, la patience, la valeur sédimentée. Au bout de quinze ou vingt ans, une revue dispose typiquement de plusieurs milliers d'articles, signés, datés, organisés, qui constituent son fonds. Ce fonds a longtemps été pensé comme un patrimoine : quelque chose qu'on conservait, qu'on republiait éventuellement, qu'on rééditait sous forme d'anthologies, et qui était surtout, dans la pratique courante, peu consulté hors des moteurs de recherche. L'arrivée des modèles génératifs change la nature de cette archive — non pas dans ce qu'elle contient, mais dans ce qu'on peut en faire. Et la conversation publique sur ce changement reste, à mes yeux, étrangement à côté du sujet, parce qu'elle s'est presque entièrement laissée enfermer dans la question juridique. Il y a pourtant une question conceptuelle préalable, plus simple et plus difficile, qui mérite d'être posée : qu'est-ce, exactement, qu'une archive de presse ? Et, accessoirement : qu'est-ce qu'on cède quand on cède une archive — si tant est qu'on puisse la céder ?</p>
@@ -1582,7 +1598,7 @@
       <title>Le patrimoine et la machine. Pourquoi l'image générée menace la mémoire des bâtiments</title>
       <link>https://pierrejeantribot.com/notes/#patrimoine-image</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#patrimoine-image</guid>
-      <pubDate>Fri, 15 May 2026 11:07:00 +0200</pubDate>
+      <pubDate>Fri, 15 May 2026 11:06:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Sur la fonction d'attestation de la photographie patrimoniale, le mécanisme d'effondrement des modèles génératifs qui efface en premier les bâtiments les plus singuliers, et ce qui se joue, depuis la Maison du Peuple de Horta jusqu'au patrimoine modeste, dans la dilution silencieuse de l'image authentique.]]></description>
       <content:encoded><![CDATA[<p>Il y a, dans le travail d'inventaire patrimonial, une opération très simple en apparence et qui s'est compliquée sans qu'on s'en aperçoive. Quand on documente un bâtiment — un immeuble Art Nouveau de Saint-Gilles, une villa Art Déco de Schaerbeek, une façade des années 1930 du quartier des squares — on recherche, parmi d'autres choses, des images. Anciennes ou récentes, en noir et blanc ou en couleurs, professionnelles ou amateurs, peu importe : ce qu'on demande à ces images, c'est d'attester. <em>Cela existait, à cet endroit, dans cet état, à cette date</em>. C'est leur fonction la plus humble et la plus précieuse. Cette fonction, depuis trois ou quatre ans, est en train de s'effacer silencieusement, et le mécanisme par lequel elle s'efface mérite qu'on s'y attarde — parce qu'il décide, en grande partie, de ce que la prochaine génération de citoyens pourra connaître du patrimoine bâti que la nôtre lui transmet.</p>
@@ -1601,7 +1617,7 @@
       <title>L'école et l'évaluation. Pourquoi il va falloir réinventer la manière dont on mesure ce qu'un élève sait</title>
       <link>https://pierrejeantribot.com/notes/#evaluation-secondaire</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#evaluation-secondaire</guid>
-      <pubDate>Fri, 15 May 2026 11:06:00 +0200</pubDate>
+      <pubDate>Fri, 15 May 2026 11:05:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Sur l'effondrement de l'axiome qui fondait l'évaluation au secondaire, ce que l'IA fait aux quatre compétences héritées du décret « Missions », et les deux leviers — reformuler les énoncés, faire de l'évaluation un événement — par lesquels un diplôme peut continuer à signifier quelque chose.]]></description>
       <content:encoded><![CDATA[<p>Il y a, dans le débat public sur l'intelligence artificielle et l'école, une question qu'on contourne soigneusement parce qu'elle est plus dérangeante que les autres. Ce n'est ni la question des usages, ni celle du programme, ni celle de la formation des enseignants. C'est celle, plus radicale, de l'évaluation. Que mesure-t-on, exactement, quand on évalue un élève du secondaire ? Et que continue-t-on de mesurer, dans un monde où une machine produit en trente secondes ce qu'on demandait à l'adolescent de fabriquer en trois heures ? Tant qu'on n'aura pas regardé cette question en face, toutes les autres tourneront à vide.</p>
@@ -1622,7 +1638,7 @@
       <title>La programmation et la donnée. Pourquoi une saison peut rester invisible</title>
       <link>https://pierrejeantribot.com/notes/#programmation-donnee</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#programmation-donnee</guid>
-      <pubDate>Fri, 15 May 2026 11:05:00 +0200</pubDate>
+      <pubDate>Fri, 15 May 2026 11:04:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Sur la lisibilité numérique des institutions culturelles, la fracture entre données accessibles et données opaques, et la découvrabilité comme question d'infrastructure.]]></description>
       <content:encoded><![CDATA[<p>Il y a une question que les institutions culturelles ne se posent presque jamais, et qui décide pourtant d'une part croissante de leur visibilité : leur programmation est-elle lisible par une machine ?</p>
@@ -1641,7 +1657,7 @@
       <title>Le diplôme et le portfolio. Pourquoi la preuve directe remplace progressivement le titre</title>
       <link>https://pierrejeantribot.com/notes/#diplome-portfolio</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#diplome-portfolio</guid>
-      <pubDate>Fri, 15 May 2026 11:04:00 +0200</pubDate>
+      <pubDate>Fri, 15 May 2026 11:03:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Sur la rupture du contrat implicite du diplôme, l'accélération provoquée par l'IA, et l'émergence du portfolio comme nouvelle preuve de capacité.]]></description>
       <content:encoded><![CDATA[<p>Quelque chose se déplace, lentement mais sûrement, dans la manière dont les sociétés évaluent les compétences. Et l'intelligence artificielle, en accélérant brutalement le mouvement, oblige à le regarder en face.</p>
@@ -1664,7 +1680,7 @@
       <title>L'IA et la prescription culturelle. Pourquoi ne pas tout laisser aux plateformes</title>
       <link>https://pierrejeantribot.com/notes/#prescription-culturelle</link>
       <guid isPermaLink="true">https://pierrejeantribot.com/notes/#prescription-culturelle</guid>
-      <pubDate>Fri, 15 May 2026 11:03:00 +0200</pubDate>
+      <pubDate>Fri, 15 May 2026 11:02:00 +0200</pubDate>
       <dc:creator>Pierre-Jean Tribot</dc:creator>
       <description><![CDATA[Sur la pauvreté éditoriale des playlists algorithmiques, le sort fait aux compositrices et aux répertoires confidentiels, et le rôle d'une IA mise entre des mains éditoriales.]]></description>
       <content:encoded><![CDATA[<p>Il y a quelque chose qui se joue, dans le silence des algorithmes, et qui mérite qu'on y regarde de plus près.</p>
