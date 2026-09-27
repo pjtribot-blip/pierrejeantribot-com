@@ -43,6 +43,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://pierrejeantribot.com/dispositif/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://pierrejeantribot.com/methode/</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
