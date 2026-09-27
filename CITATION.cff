@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Si vous utilisez ce corpus, merci de le citer comme suit."
+title: "Notes — un corpus sur l'IA, la culture, l'éducation et la souveraineté cognitive"
+abstract: "Corpus éditorial bilingue (français / anglais) de Pierre-Jean Tribot sur l'intelligence artificielle et ses effets dans la culture, le patrimoine, l'éducation, l'économie politique et la souveraineté cognitive."
+type: dataset
+authors:
+  - family-names: Tribot
+    given-names: Pierre-Jean
+    orcid: "https://orcid.org/0009-0002-0112-4155"
+url: "https://pierrejeantribot.com"
+repository-code: "https://github.com/pjtribot-blip/pierrejeantribot-com"
+license: CC-BY-4.0
+keywords:
+  - intelligence artificielle
+  - souveraineté cognitive
+  - culture et patrimoine
+  - éducation
+  - économie politique
