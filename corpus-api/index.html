@@ -124,6 +124,19 @@ pre .c{color:var(--accent)}
   <p><span data-fr>Puis, à l'exécution, l'outil appelle simplement <code class="inl">GET /api/search?q={q}&amp;k={k}</code>. En ligne de commande :</span><span data-en>Then, at runtime, the tool simply calls <code class="inl">GET /api/search?q={q}&amp;k={k}</code>. From the command line:</span></p>
 <pre>curl "https://pierrejeantribot.com/api/search?q=taxer%20l%27IA&amp;k=3"</pre>
 
+  <h2><span data-fr>Dans Claude, en une ligne (MCP)</span><span data-en>In Claude, in one line (MCP)</span></h2>
+  <p><span data-fr>Le corpus est aussi un <strong>serveur MCP distant</strong> — le standard qui branche une source directement dans un assistant. Pas de code : on l'ajoute une fois, et l'assistant gagne deux outils natifs (<code class="inl">search_corpus</code>, <code class="inl">get_note</code>) qu'il appelle tout seul quand c'est pertinent.</span><span data-en>The corpus is also a <strong>remote MCP server</strong> — the standard that plugs a source straight into an assistant. No code: add it once, and the assistant gains two native tools (<code class="inl">search_corpus</code>, <code class="inl">get_note</code>) it calls on its own when relevant.</span></p>
+<pre>https://pierrejeantribot.com/api/mcp</pre>
+  <p><span data-fr>Dans Claude : <em>Réglages → Connecteurs → Ajouter un connecteur personnalisé</em>, puis collez l'adresse ci-dessus. Pour les clients qui passent par un fichier de configuration :</span><span data-en>In Claude: <em>Settings → Connectors → Add custom connector</em>, then paste the address above. For clients using a config file:</span></p>
+<pre>{
+  "mcpServers": {
+    "corpus-tribot": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://pierrejeantribot.com/api/mcp"]
+    }
+  }
+}</pre>
+
   <h2><span data-fr>Pourquoi</span><span data-en>Why</span></h2>
   <p><span data-fr>C'est la souveraineté cognitive appliquée à ma propre diffusion. Plutôt que de laisser les modèles me médier de mémoire — approximatifs, sans lien, sans attribution —, j'expose la source, sur mes termes, avec mes mots exacts. Le corpus cesse d'être un contenu à ingérer&nbsp;: il devient une brique de médiation qu'on appelle. Ouvert, gratuit, sous licence <a class="liens" href="/dossier/">CC BY 4.0</a>. Pour dialoguer directement avec, voir <a class="liens" href="/dialogue/">l'agent du site</a>.</span><span data-en>This is cognitive sovereignty applied to my own distribution. Rather than letting models mediate me from memory — approximate, unlinked, unattributed — I expose the source, on my terms, in my exact words. The corpus stops being content to ingest: it becomes a mediation brick that gets called. Open, free, under a <a class="liens" href="/dossier/">CC BY 4.0</a> licence. To converse with it directly, see <a class="liens" href="/dialogue/">the site's agent</a>.</span></p>
 
