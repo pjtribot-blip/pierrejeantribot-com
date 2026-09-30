@@ -86,8 +86,8 @@ h1 .point{color:var(--accent)}
   <div id="episodes"></div>
 
   <p class="closing">
-    <span data-fr>Disponible sur Spotify — <a href="https://podcasters.spotify.com/pod/show/pierre-jean-tribot2" target="_blank" rel="noopener">s'abonner à l'émission</a> — ou dans l'app de votre choix via le <a href="https://anchor.fm/s/117f3088c/podcast/rss" target="_blank" rel="noopener">flux RSS</a>. Chaque capsule renvoie à la note dont elle est tirée, avec ses sources.</span>
-    <span data-en>Available on Spotify — <a href="https://podcasters.spotify.com/pod/show/pierre-jean-tribot2" target="_blank" rel="noopener">subscribe to the show</a> — or in any app via the <a href="https://anchor.fm/s/117f3088c/podcast/rss" target="_blank" rel="noopener">RSS feed</a>. Each capsule links back to the note it is drawn from, with its sources.</span>
+    <span data-fr>Les capsules sont en français. Disponible sur Spotify — <a href="https://podcasters.spotify.com/pod/show/pierre-jean-tribot2" target="_blank" rel="noopener">s'abonner à l'émission</a> — ou dans l'app de votre choix via le <a href="https://anchor.fm/s/117f3088c/podcast/rss" target="_blank" rel="noopener">flux RSS</a>. Chaque capsule renvoie à la note dont elle est tirée, avec ses sources.</span>
+    <span data-en><strong>The capsules are in French.</strong> Available on Spotify — <a href="https://podcasters.spotify.com/pod/show/pierre-jean-tribot2" target="_blank" rel="noopener">subscribe to the show</a> — or in any app via the <a href="https://anchor.fm/s/117f3088c/podcast/rss" target="_blank" rel="noopener">RSS feed</a>. Each capsule links back to the note it is drawn from, with its sources.</span>
   </p>
 
   <div class="retour"><a href="/notes/"><span data-fr>↑ lire les notes</span><span data-en>↑ read the notes</span></a></div>
@@ -125,7 +125,7 @@ h1 .point{color:var(--accent)}
   EPISODES.forEach(function(e){
     var art=document.createElement('section'); art.className='ep';
     art.innerHTML =
-      '<span class="ep-k"><span data-fr>capsule '+e.n+' &middot; '+e.dur+'</span><span data-en>capsule '+e.n+' &middot; '+e.dur+'</span></span>'+
+      '<span class="ep-k"><span data-fr>capsule '+e.n+' &middot; '+e.dur+' &middot; en français</span><span data-en>capsule '+e.n+' &middot; '+e.dur+' &middot; in French</span></span>'+
       '<h2><span data-fr>'+esc(e.fr[0])+'</span><span data-en>'+esc(e.en[0])+'</span></h2>'+
       '<p class="ep-teaser"><span data-fr>'+esc(e.fr[1])+'</span><span data-en>'+esc(e.en[1])+'</span></p>'+
       '<audio controls preload="none" src="'+e.audio+'"></audio>'+
