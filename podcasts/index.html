@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-fr="À voix haute — Pierre-Jean Tribot" data-en="Aloud — Pierre-Jean Tribot">À voix haute — Pierre-Jean Tribot</title>
+<meta name="description" content="Le corpus de Pierre-Jean Tribot, dit à voix haute : des capsules d'environ trois minutes sur l'IA, la culture et la souveraineté cognitive.">
+<meta name="author" content="Pierre-Jean Tribot">
+<meta name="theme-color" content="#f5efe2">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="À voix haute — Pierre-Jean Tribot">
+<meta property="og:description" content="Le corpus, dit à voix haute. Des capsules de trois minutes.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pierrejeantribot.com/podcasts/">
+<meta property="og:image" content="https://pierrejeantribot.com/og/section-dialogue.png">
+<link rel="alternate" type="application/rss+xml" title="Pierre-Jean Tribot — Notes (RSS)" href="https://pierrejeantribot.com/feed.xml">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='10' fill='%23f5efe2'/><text x='32' y='42' font-family='Georgia, serif' font-size='26' font-weight='500' text-anchor='middle' fill='%237a3e2a'>PJT</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--fond:#f5efe2;--texte:#1a1a1a;--texte-mute:#5a5a5a;--accent:#7a3e2a;--filet:#1a1a1a;--filet-leger:#c8bfa6;--serif:"EB Garamond",Georgia,serif;--mono:"JetBrains Mono","SF Mono",Menlo,Consolas,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fond);color:var(--texte);font-family:var(--serif);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:680px;margin:0 auto;padding:32px 32px 60px}
+[data-fr],[data-en]{display:none}
+html[lang="fr"] [data-fr]{display:inline}
+html[lang="en"] [data-en]{display:inline}
+.head{border-bottom:1px solid var(--filet);padding-bottom:12px;margin-bottom:48px;display:flex;justify-content:space-between;align-items:baseline;font-family:var(--mono);font-size:11px;letter-spacing:.05em}
+.head a{color:var(--texte);text-decoration:none}
+.head .left a{font-weight:500;border-bottom:1px solid var(--accent);padding-bottom:1px}
+.head .middle{flex:1;text-align:center;font-weight:500}
+.head .middle a{border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
+.head .middle a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.head .lang button{background:none;border:none;font-family:inherit;font-size:inherit;letter-spacing:inherit;color:var(--texte-mute);cursor:pointer;padding:0;border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
+.head .lang button.active{color:var(--texte);font-weight:500;border-bottom:none;cursor:default}
+.head .lang .sep{margin:0 6px}
+.marqueur{font-family:var(--mono);font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);margin-bottom:18px;display:block}
+h1{font-size:46px;font-weight:400;letter-spacing:-.02em;margin:0 0 16px;line-height:1}
+h1 .point{color:var(--accent)}
+.chapeau{font-size:19px;color:var(--texte-mute);line-height:1.5;max-width:58ch}
+.chapeau em{font-style:italic}
+.aveu{font-family:var(--mono);font-size:12px;color:var(--texte-mute);line-height:1.6;margin-top:16px;padding:12px 14px;border:1px solid var(--filet-leger);border-radius:5px}
+.ep{border-top:1px solid var(--filet-leger);padding:24px 0}
+.ep:first-of-type{border-top:1px solid var(--filet);margin-top:34px}
+.ep-k{font-family:var(--mono);font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent)}
+.ep h2{font-family:var(--serif);font-size:25px;font-weight:500;letter-spacing:-.01em;margin:7px 0 8px}
+.ep-teaser{font-size:16.5px;color:var(--texte-mute);line-height:1.5;margin:0 0 14px;max-width:60ch}
+.ep audio{width:100%;margin:4px 0 10px;filter:sepia(.12)}
+.ep-soon{font-family:var(--mono);font-size:12px;color:var(--texte-mute);background:rgba(122,62,42,.05);border:1px dashed var(--filet-leger);border-radius:5px;padding:10px 12px;margin:4px 0 10px}
+.ep-lien{font-family:var(--mono);font-size:12px}
+.ep-lien a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
+.ep-lien a:hover{border-bottom-color:var(--accent)}
+.closing{border-top:1px solid var(--filet);margin-top:44px;padding-top:28px;font-size:15px;color:var(--texte-mute);line-height:1.6}
+.closing a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--filet-leger)}
+.retour{margin-top:36px;font-family:var(--mono);font-size:11px}
+.retour a{color:var(--texte-mute);text-decoration:none;border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
+.retour a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+::selection{background:var(--accent);color:var(--fond)}
+@media(max-width:640px){.wrap{padding:24px 20px 48px}h1{font-size:34px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="head">
+    <span class="left"><a href="/">pierrejeantribot.com</a></span>
+    <span class="middle"><a href="/notes/">notes</a> · <a href="/corpus/">corpus</a> · <a href="/tableau/">tableau</a> · <a href="/dialogue/">dialogue</a></span>
+    <span class="lang">
+      <button id="btn-fr" type="button" aria-label="Français">FR</button>
+      <span class="sep">·</span>
+      <button id="btn-en" type="button" aria-label="English">EN</button>
+    </span>
+  </header>
+
+  <span class="marqueur"><span data-fr>◆ à voix haute</span><span data-en>◆ aloud</span></span>
+  <h1><span data-fr>À voix haute</span><span data-en>Aloud</span><span class="point">.</span></h1>
+  <p class="chapeau">
+    <span data-fr>Le corpus ne se lit pas seulement — il se dit. Des capsules d'environ trois minutes, chacune adaptée d'une note, pour entrer dans une idée le temps d'un trajet.</span>
+    <span data-en>The corpus is not only read — it is spoken. Capsules of about three minutes, each adapted from a note, to step into one idea in the time of a commute.</span>
+  </p>
+  <p class="aveu">
+    <span data-fr>◆ En toute transparence : ces capsules sont lues par <strong>ma voix, clonée avec ElevenLabs</strong>, sur un script tiré de mes notes et mis en forme avec Claude. Je le dis parce que c'est, précisément, le sujet de ce corpus — travailler avec la machine, et le revendiquer.</span>
+    <span data-en>◆ In full transparency: these capsules are read by <strong>my voice, cloned with ElevenLabs</strong>, from a script drawn from my notes and shaped with Claude. I say so because it is, precisely, the subject of this corpus — working with the machine, and claiming it.</span>
+  </p>
+
+  <div id="episodes"></div>
+
+  <p class="closing">
+    <span data-fr>Bientôt sur les plateformes d'écoute. En attendant, chaque capsule renvoie à la note dont elle est tirée, avec ses sources.</span>
+    <span data-en>Coming soon to podcast platforms. In the meantime, each capsule links back to the note it is drawn from, with its sources.</span>
+  </p>
+
+  <div class="retour"><a href="/notes/"><span data-fr>↑ lire les notes</span><span data-en>↑ read the notes</span></a></div>
+</div>
+
+<script>
+(function(){
+  var html=document.documentElement, fr=document.getElementById('btn-fr'), en=document.getElementById('btn-en');
+  function set(l){ if(l!=='en')l='fr'; html.setAttribute('lang',l); fr.classList.toggle('active',l==='fr'); en.classList.toggle('active',l==='en'); try{localStorage.setItem('lang',l);}catch(e){} }
+  function detect(){ var h=location.hash; if(h==='#en')return'en'; if(h==='#fr')return'fr'; var s; try{s=localStorage.getItem('lang');}catch(e){} if(s==='fr'||s==='en')return s; return (navigator.language||'fr').toLowerCase().indexOf('en')===0?'en':'fr'; }
+  fr.addEventListener('click',function(){set('fr');}); en.addEventListener('click',function(){set('en');});
+  set(detect());
+
+  // Épisodes. Le lecteur apparaît automatiquement dès que le MP3 existe (test HEAD).
+  var EPISODES=[
+    { n:1, note:"souverainete-cognitive", file:"/podcasts/01-souverainete-cognitive.mp3",
+      fr:["La souveraineté cognitive","Garder la main sur sa façon de penser — connaître, juger, transmettre — quand une machine s'intercale entre nous et le savoir."],
+      en:["Cognitive sovereignty","Keeping a hold on how we think — knowing, judging, transmitting — when a machine slips between us and knowledge."] },
+    { n:2, note:"commun-numerique", file:"/podcasts/02-commun-numerique.mp3",
+      fr:["Le commun numérique","Ni réguler le vide, ni le creuser : construire. Le commun numérique comme service public cognitif européen."],
+      en:["The digital commons","Neither regulating the void nor digging it: building. The digital commons as a European cognitive public service."] },
+    { n:3, note:"archive-presse", file:"/podcasts/03-longue-date.mp3",
+      fr:["La longue date","Une revue vaut moins par ce qu'elle a écrit que par ce qu'elle continue d'écrire — ce que la machine ne peut pas prendre."],
+      en:["The long-dated","A review is worth less for what it has written than for what it keeps writing — what the machine cannot take."] }
+  ];
+  var box=document.getElementById('episodes');
+  function lang(){ return html.getAttribute('lang')||'fr'; }
+  function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+  EPISODES.forEach(function(e){
+    var art=document.createElement('section'); art.className='ep';
+    art.innerHTML =
+      '<span class="ep-k"><span data-fr>capsule '+e.n+' &middot; ~3 min</span><span data-en>capsule '+e.n+' &middot; ~3 min</span></span>'+
+      '<h2><span data-fr>'+esc(e.fr[0])+'</span><span data-en>'+esc(e.en[0])+'</span></h2>'+
+      '<p class="ep-teaser"><span data-fr>'+esc(e.fr[1])+'</span><span data-en>'+esc(e.en[1])+'</span></p>'+
+      '<div class="ep-slot"></div>'+
+      '<div class="ep-lien"><a href="/notes/#'+e.note+'"><span data-fr>lire la note &rarr;</span><span data-en>read the note &rarr;</span></a></div>';
+    var slot=art.querySelector('.ep-slot');
+    var soon='<div class="ep-soon"><span data-fr>&#127908; enregistrement bientôt disponible</span><span data-en>&#127908; recording coming soon</span></div>';
+    slot.innerHTML=soon;
+    // Teste la présence du MP3 ; si présent, remplace par le lecteur.
+    fetch(e.file,{method:"HEAD"}).then(function(r){
+      if(r.ok){ slot.innerHTML='<audio controls preload="none" src="'+e.file+'"></audio>'; }
+    }).catch(function(){});
+    box.appendChild(art);
+  });
+})();
+</script>
+</body>
+</html>
