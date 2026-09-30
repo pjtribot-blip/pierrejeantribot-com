@@ -86,8 +86,8 @@ h1 .point{color:var(--accent)}
   <div id="episodes"></div>
 
   <p class="closing">
-    <span data-fr>Bientôt sur les plateformes d'écoute. En attendant, chaque capsule renvoie à la note dont elle est tirée, avec ses sources.</span>
-    <span data-en>Coming soon to podcast platforms. In the meantime, each capsule links back to the note it is drawn from, with its sources.</span>
+    <span data-fr>Disponible sur Spotify — <a href="https://podcasters.spotify.com/pod/show/pierre-jean-tribot2" target="_blank" rel="noopener">s'abonner à l'émission</a> — ou dans l'app de votre choix via le <a href="https://anchor.fm/s/117f3088c/podcast/rss" target="_blank" rel="noopener">flux RSS</a>. Chaque capsule renvoie à la note dont elle est tirée, avec ses sources.</span>
+    <span data-en>Available on Spotify — <a href="https://podcasters.spotify.com/pod/show/pierre-jean-tribot2" target="_blank" rel="noopener">subscribe to the show</a> — or in any app via the <a href="https://anchor.fm/s/117f3088c/podcast/rss" target="_blank" rel="noopener">RSS feed</a>. Each capsule links back to the note it is drawn from, with its sources.</span>
   </p>
 
   <div class="retour"><a href="/notes/"><span data-fr>↑ lire les notes</span><span data-en>↑ read the notes</span></a></div>
@@ -101,37 +101,35 @@ h1 .point{color:var(--accent)}
   fr.addEventListener('click',function(){set('fr');}); en.addEventListener('click',function(){set('en');});
   set(detect());
 
-  // Épisodes. Le lecteur apparaît automatiquement dès que le MP3 existe (test HEAD).
+  // Épisodes — audio hébergé sur Spotify for Podcasters (flux Anchor).
   var EPISODES=[
-    { n:1, note:"souverainete-cognitive", file:"/podcasts/01-souverainete-cognitive.mp3",
+    { n:1, note:"souverainete-cognitive", dur:"3:31",
+      audio:"https://anchor.fm/s/117f3088c/podcast/play/126576447/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-8-30%2F18e92eef-b615-b9b3-bb01-e37f3fb61bd3.mp3",
+      spotify:"https://podcasters.spotify.com/pod/show/pierre-jean-tribot2/episodes/La-souverainet-cognitive-e3plabv",
       fr:["La souveraineté cognitive","Garder la main sur sa façon de penser — connaître, juger, transmettre — quand une machine s'intercale entre nous et le savoir."],
       en:["Cognitive sovereignty","Keeping a hold on how we think — knowing, judging, transmitting — when a machine slips between us and knowledge."] },
-    { n:2, note:"commun-numerique", file:"/podcasts/02-commun-numerique.mp3",
+    { n:2, note:"commun-numerique", dur:"3:53",
+      audio:"https://anchor.fm/s/117f3088c/podcast/play/126576656/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-8-30%2Ff72aa9be-50f5-cf87-dd4e-30aee4106e8b.mp3",
+      spotify:"https://podcasters.spotify.com/pod/show/pierre-jean-tribot2/episodes/Le-commun-numrique-e3plaig",
       fr:["Le commun numérique","Ni réguler le vide, ni le creuser : construire. Le commun numérique comme service public cognitif européen."],
       en:["The digital commons","Neither regulating the void nor digging it: building. The digital commons as a European cognitive public service."] },
-    { n:3, note:"archive-presse", file:"/podcasts/03-longue-date.mp3",
+    { n:3, note:"archive-presse", dur:"4:09",
+      audio:"https://anchor.fm/s/117f3088c/podcast/play/126577518/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-8-30%2Fdfb6e7b7-fd69-555d-088c-e507bbd62d36.mp3",
+      spotify:"https://podcasters.spotify.com/pod/show/pierre-jean-tribot2/episodes/La-longue-date-e3plbde",
       fr:["La longue date","Une revue vaut moins par ce qu'elle a écrit que par ce qu'elle continue d'écrire — ce que la machine ne peut pas prendre."],
       en:["The long-dated","A review is worth less for what it has written than for what it keeps writing — what the machine cannot take."] }
   ];
   var box=document.getElementById('episodes');
-  function lang(){ return html.getAttribute('lang')||'fr'; }
   function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
   EPISODES.forEach(function(e){
     var art=document.createElement('section'); art.className='ep';
     art.innerHTML =
-      '<span class="ep-k"><span data-fr>capsule '+e.n+' &middot; ~3 min</span><span data-en>capsule '+e.n+' &middot; ~3 min</span></span>'+
+      '<span class="ep-k"><span data-fr>capsule '+e.n+' &middot; '+e.dur+'</span><span data-en>capsule '+e.n+' &middot; '+e.dur+'</span></span>'+
       '<h2><span data-fr>'+esc(e.fr[0])+'</span><span data-en>'+esc(e.en[0])+'</span></h2>'+
       '<p class="ep-teaser"><span data-fr>'+esc(e.fr[1])+'</span><span data-en>'+esc(e.en[1])+'</span></p>'+
-      '<div class="ep-slot"></div>'+
-      '<div class="ep-lien"><a href="/notes/#'+e.note+'"><span data-fr>lire la note &rarr;</span><span data-en>read the note &rarr;</span></a></div>';
-    var slot=art.querySelector('.ep-slot');
-    var soon='<div class="ep-soon"><span data-fr>&#127908; enregistrement bientôt disponible</span><span data-en>&#127908; recording coming soon</span></div>';
-    slot.innerHTML=soon;
-    // Teste la présence du MP3 ; si présent, remplace par le lecteur.
-    fetch(e.file,{method:"HEAD"}).then(function(r){
-      if(r.ok){ slot.innerHTML='<audio controls preload="none" src="'+e.file+'"></audio>'; }
-    }).catch(function(){});
+      '<audio controls preload="none" src="'+e.audio+'"></audio>'+
+      '<div class="ep-lien"><a href="'+e.spotify+'" target="_blank" rel="noopener"><span data-fr>écouter sur Spotify &rarr;</span><span data-en>listen on Spotify &rarr;</span></a> &middot; <a href="/notes/#'+e.note+'"><span data-fr>lire la note &rarr;</span><span data-en>read the note &rarr;</span></a></div>';
     box.appendChild(art);
   });
 })();
