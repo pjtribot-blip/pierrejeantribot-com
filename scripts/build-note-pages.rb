@@ -182,6 +182,7 @@ fixed = [
   ["#{SITE}/recherche.html",         "monthly", "0.5"],
   ["#{SITE}/corpus-api/",            "monthly", "0.5"],
   ["#{SITE}/dispositif/",            "monthly", "0.6"],
+  ["#{SITE}/podcasts/",             "monthly", "0.6"],
   ["#{SITE}/methode/",               "monthly", "0.7"],
   ["#{SITE}/dossier/",               "monthly", "0.6"],
   ["#{SITE}/glossaire.html",         "monthly", "0.6"],
