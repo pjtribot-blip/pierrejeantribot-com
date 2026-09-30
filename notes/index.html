@@ -10945,6 +10945,10 @@ a.mc-cell:hover .mc-title { color: var(--accent); }
     var h = window.location.hash;
     if (h === '#en' || h.endsWith('-en')) return 'en';
     if (h === '#fr' || h.endsWith('-fr')) return 'fr';
+    // Un slug d'article/section sans suffixe (#slug, #slug--section) est l'URL
+    // canonique française — les liens de la home pointent ainsi. On force le FR
+    // pour ne pas hériter d'une préférence EN mémorisée (bug : lien FR → texte EN).
+    if (extractSlug(h)) return 'fr';
     var stored;
     try { stored = localStorage.getItem('lang'); } catch(e) {}
     if (stored === 'fr' || stored === 'en') return stored;
