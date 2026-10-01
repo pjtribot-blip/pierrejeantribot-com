@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-fr="Suivre — Pierre-Jean Tribot" data-en="Follow — Pierre-Jean Tribot">Suivre — Pierre-Jean Tribot</title>
+<meta name="description" content="Suivre les Notes sans être capturé : pas d'infolettre, mais un flux RSS, un podcast et une API ouverte — à vos conditions.">
+<meta name="author" content="Pierre-Jean Tribot">
+<meta name="theme-color" content="#f5efe2">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://pierrejeantribot.com/suivre/">
+<meta property="og:title" content="Suivre — Pierre-Jean Tribot">
+<meta property="og:description" content="Pas d'infolettre. Un flux, un podcast, une API — vous suivez à vos conditions, sans rien me donner.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pierrejeantribot.com/suivre/">
+<meta property="og:image" content="https://pierrejeantribot.com/og/section-corpus.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://pierrejeantribot.com/og/section-corpus.png">
+<link rel="alternate" type="application/rss+xml" title="Pierre-Jean Tribot — Notes (RSS)" href="https://pierrejeantribot.com/feed.xml">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='10' fill='%23f5efe2'/><text x='32' y='42' font-family='Georgia, serif' font-size='26' font-weight='500' text-anchor='middle' fill='%237a3e2a'>PJT</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>(function(){try{if(localStorage.getItem('pjt-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
+<style>
+:root{--fond:#f5efe2;--texte:#1a1a1a;--texte-mute:#5a5a5a;--accent:#7a3e2a;--filet:#1a1a1a;--filet-leger:#c8bfa6;--serif:"EB Garamond",Georgia,"Times New Roman",serif;--mono:"JetBrains Mono","SF Mono",Menlo,Consolas,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fond);color:var(--texte);font-family:var(--serif);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:680px;margin:0 auto;padding:32px 32px 60px}
+[data-fr],[data-en]{display:none}
+html[lang="fr"] [data-fr]{display:inline}
+html[lang="en"] [data-en]{display:inline}
+.head{border-bottom:1px solid var(--filet);padding-bottom:12px;margin-bottom:56px;display:flex;justify-content:space-between;align-items:baseline;font-family:var(--mono);font-size:11px;letter-spacing:.05em}
+.head a{color:var(--texte);text-decoration:none}
+.head .left a{font-weight:500;border-bottom:1px solid var(--accent);padding-bottom:1px;transition:all .15s}
+.head .left a:hover{background:var(--texte);color:var(--fond)}
+.head .middle{flex:1;text-align:center;font-weight:500}
+.head .middle a{border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
+.head .middle a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.head .middle a, .head .middle span[data-fr], .head .middle span[data-en]{white-space:nowrap}
+.head .right{color:var(--texte-mute)}
+.head .lang{color:var(--texte-mute);user-select:none;margin:0 16px}
+.head .lang button{background:none;border:none;font-family:inherit;font-size:inherit;letter-spacing:inherit;color:var(--texte-mute);cursor:pointer;padding:0;border-bottom:1px solid var(--filet-leger);padding-bottom:1px;transition:all .15s}
+.head .lang button:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.head .lang button.active{color:var(--texte);font-weight:500;border-bottom:none;cursor:default}
+.head .lang .sep{margin:0 6px}
+.hero{margin-bottom:30px}
+.marqueur{font-family:var(--mono);font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);margin-bottom:18px;display:block}
+h1{font-size:44px;font-weight:400;letter-spacing:-.02em;margin:0 0 14px;line-height:1.05}
+h1 .point{color:var(--accent)}
+.chapeau{font-size:18px;color:var(--texte-mute);line-height:1.55;max-width:58ch;margin:0;font-style:italic}
+.principe{border-top:1px solid var(--filet);margin-top:34px;padding-top:22px;font-size:17px;line-height:1.6;max-width:60ch}
+.principe strong{font-weight:500;color:var(--texte)}
+.ways{margin-top:14px}
+.way{border-top:1px solid var(--filet-leger);padding:26px 0}
+.way:first-of-type{border-top:none}
+.way-k{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:8px;display:block}
+.way h2{font-family:var(--serif);font-size:24px;font-weight:500;letter-spacing:-.01em;margin:0 0 8px}
+.way p{font-size:16.5px;color:var(--texte-mute);line-height:1.55;margin:0 0 14px;max-width:58ch}
+.way-liens{display:flex;flex-wrap:wrap;gap:8px 10px;font-family:var(--mono);font-size:12px}
+.way-liens a{color:var(--texte);text-decoration:none;border:1px solid var(--filet-leger);border-radius:3px;padding:8px 13px;transition:all .15s}
+.way-liens a:hover{color:var(--accent);border-color:var(--accent)}
+.clore{border-top:1px solid var(--filet);margin-top:40px;padding-top:22px;font-size:16px;color:var(--texte-mute);line-height:1.6;max-width:60ch}
+.clore a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
+.clore a:hover{border-bottom-color:var(--accent)}
+.retour{margin-top:40px;font-family:var(--mono);font-size:11px}
+.retour a{color:var(--texte-mute);text-decoration:none;border-bottom:1px solid var(--filet-leger);padding-bottom:1px;margin-right:16px;transition:all .15s}
+.retour a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+::selection{background:var(--accent);color:var(--fond)}
+@media(max-width:640px){.wrap{padding:24px 20px 48px}h1{font-size:34px}}
+
+/* dark-mode v1 */
+html[data-theme="dark"]{--fond:#1a1611;--texte:#ece4d4;--texte-mute:#9d9480;--accent:#d58a66;--filet:#6a6152;--filet-leger:#352f26;}
+#theme-toggle{position:fixed;right:18px;bottom:18px;z-index:60;width:40px;height:40px;border-radius:50%;border:1px solid var(--filet-leger);background:var(--fond);color:var(--texte-mute);font-size:17px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:color .15s,border-color .15s;box-shadow:0 1px 5px rgba(0,0,0,.10)}
+#theme-toggle:hover{color:var(--accent);border-color:var(--accent)}
+@media print{#theme-toggle{display:none}}
+
+/* a11y-focus */
+a:focus-visible,button:focus-visible,[tabindex]:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--accent,#a35a42);outline-offset:2px;border-radius:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="head">
+    <span class="left"><a href="/">pierrejeantribot.com</a></span>
+    <span class="middle"><a href="/notes/">notes</a> · <a href="/corpus/">corpus</a> · <a href="/dialogue/">dialogue</a> <span data-fr>&middot; <a href="/podcasts/">à voix haute</a></span></span>
+    <span class="lang">
+      <button id="btn-fr" type="button" aria-label="Français">FR</button>
+      <span class="sep">·</span>
+      <button id="btn-en" type="button" aria-label="English">EN</button>
+    </span>
+    <span class="right"><span data-fr>bruxelles · 2026</span><span data-en>brussels · 2026</span></span>
+  </header>
+
+  <section class="hero">
+    <span class="marqueur"><span data-fr>◆ suivre</span><span data-en>◆ follow</span></span>
+    <h1><span data-fr>Suivre</span><span data-en>Follow</span><span class="point">.</span></h1>
+    <p class="chapeau"><span data-fr>Sans infolettre, sans compte, sans rien me donner. Vous suivez à vos conditions, avec vos propres outils.</span><span data-en>No newsletter, no account, nothing to give me. You follow on your own terms, with your own tools.</span></p>
+    <p class="principe"><span data-fr>Une infolettre est un dispositif de rétention : elle capte une adresse pour pousser un contenu dans une boîte. Ce site fait l'inverse — il se rend <strong>trouvable et durable</strong>, et vous laisse venir quand vous le décidez. Trois manières, toutes du côté du lecteur.</span><span data-en>A newsletter is a retention device: it captures an address to push content into an inbox. This site does the opposite — it makes itself <strong>findable and durable</strong>, and lets you come when you decide to. Three ways, all on the reader's side.</span></p>
+  </section>
+
+  <section class="ways">
+    <div class="way">
+      <span class="way-k"><span data-fr>01 — le flux</span><span data-en>01 — the feed</span></span>
+      <h2><span data-fr>S'abonner en RSS</span><span data-en>Subscribe via RSS</span></h2>
+      <p><span data-fr>Le flux vit chez vous, dans votre lecteur. Vous êtes prévenu de chaque note sans me laisser votre adresse, et vous vous désabonnez d'un clic, sans rien demander à personne.</span><span data-en>The feed lives with you, in your reader. You are notified of every note without leaving me your address, and you unsubscribe in one click, asking no one.</span></p>
+      <div class="way-liens">
+        <a href="/feed.xml"><span data-fr>le flux RSS →</span><span data-en>the RSS feed →</span></a>
+      </div>
+    </div>
+
+    <div class="way">
+      <span class="way-k"><span data-fr>02 — à voix haute</span><span data-en>02 — out loud</span></span>
+      <h2><span data-fr>Écouter le podcast</span><span data-en>Listen to the podcast</span></h2>
+      <p><span data-fr>Des capsules qui prolongent les notes-clés, lues à voix haute — en français. Sur Spotify, ou en flux, comme vous préférez.</span><span data-en>Short capsules extending the key notes, read aloud — in French. On Spotify, or as a feed, as you prefer.</span></p>
+      <div class="way-liens">
+        <a href="/podcasts/"><span data-fr>la page du podcast →</span><span data-en>the podcast page →</span></a>
+      </div>
+    </div>
+
+    <div class="way">
+      <span class="way-k"><span data-fr>03 — interroger</span><span data-en>03 — query</span></span>
+      <h2><span data-fr>Dialoguer avec le corpus</span><span data-en>Converse with the corpus</span></h2>
+      <p><span data-fr>Le corpus s'expose comme un outil : un agent ancré sur lui seul répond à vos questions, et une API ouverte permet à d'autres intelligences — humaines ou machines — de l'interroger et de le citer sans le déformer.</span><span data-en>The corpus exposes itself as a tool: an agent grounded on it alone answers your questions, and an open API lets other intelligences — human or machine — query and cite it without distortion.</span></p>
+      <div class="way-liens">
+        <a href="/dialogue/"><span data-fr>parler avec le corpus →</span><span data-en>talk with the corpus →</span></a>
+        <a href="/corpus-api/"><span data-fr>l'API du corpus →</span><span data-en>the corpus API →</span></a>
+      </div>
+    </div>
+  </section>
+
+  <p class="clore"><span data-fr>Ce choix n'est pas une coquetterie technique : il découle de ce que ce corpus défend. Voir la note <a href="/notes/#diffuser-sans-capturer">« Diffuser sans capturer »</a>.</span><span data-en>This choice is not a technical affectation: it follows from what this corpus defends. See the note <a href="/notes/#diffuser-sans-capturer">“Distribute without capturing.”</a></span></p>
+
+  <div class="retour">
+    <a href="/notes/"><span data-fr>↑ lire les notes</span><span data-en>↑ read the notes</span></a>
+    <a href="/corpus/"><span data-fr>le corpus</span><span data-en>the corpus</span></a>
+  </div>
+</div>
+
+<button id="theme-toggle" type="button" aria-label="Basculer clair / sombre" title="Clair / sombre">☾</button>
+<script>
+(function(){
+  var html=document.documentElement, fr=document.getElementById('btn-fr'), en=document.getElementById('btn-en');
+  function setLang(l){ if(l!=='en')l='fr'; html.setAttribute('lang',l); fr.classList.toggle('active',l==='fr'); en.classList.toggle('active',l==='en'); try{localStorage.setItem('lang',l);}catch(e){} }
+  function detect(){ var h=location.hash; if(h==='#en')return'en'; if(h==='#fr')return'fr'; var s; try{s=localStorage.getItem('lang');}catch(e){} if(s==='fr'||s==='en')return s; return (navigator.language||'fr').toLowerCase().indexOf('en')===0?'en':'fr'; }
+  fr.addEventListener('click',function(){setLang('fr');}); en.addEventListener('click',function(){setLang('en');});
+  setLang(detect());
+  var KEY='pjt-theme', r=html;
+  function sync(){var d=r.getAttribute('data-theme')==='dark';var b=document.getElementById('theme-toggle');if(b)b.textContent=d?'☀':'☾';}
+  function setT(t){if(t==='dark')r.setAttribute('data-theme','dark');else r.removeAttribute('data-theme');try{localStorage.setItem(KEY,t);}catch(e){}sync();}
+  sync();
+  var b=document.getElementById('theme-toggle');
+  if(b)b.addEventListener('click',function(){setT(r.getAttribute('data-theme')==='dark'?'light':'dark');});
+})();
+</script>
+</body>
+</html>

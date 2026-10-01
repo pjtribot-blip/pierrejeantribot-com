@@ -147,6 +147,20 @@ html[lang="en"] p[data-en], html[lang="en"] div[data-en], html[lang="en"] sectio
   max-width: 56ch;
   font-style: italic;
 }
+.hero .hasard {
+  display: inline-block;
+  margin-top: 18px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--texte-mute);
+  text-decoration: none;
+  border-bottom: 1px solid var(--filet-leger);
+  padding-bottom: 2px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.hero .hasard:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
 /* Index */
 .section-label {
@@ -515,6 +529,7 @@ html.js-ready body.reading .texte.is-active {
   overflow-wrap: anywhere;
 }
 .citation-ref em { font-style: italic; }
+.cite-doi { display: none; }
 .citation-copier {
   font-family: var(--mono);
   font-size: 11px;
@@ -627,8 +642,9 @@ a.mc-cell:hover .mc-title { color: var(--accent); }
   /* montrer la référence citable dans le PDF, même repliée */
   .citation { margin: 0 0 16px !important; }
   .citation-corps, .citation-corps[hidden] { display: block !important; padding: 0 !important; background: none !important; border: none !important; }
-  .citation-copier { display: none !important; }
+  .citation-copier, .citation-actions, .citation-bibtex, .citation-bib, .citation-ris { display: none !important; }
   .citation-ref { color: #000 !important; font-size: 12px !important; }
+  .cite-doi { display: block !important; color: #000 !important; font-size: 12px !important; margin-top: 4px !important; }
   a { color: #000 !important; text-decoration: none !important; }
   .note-sources { border-color: #000 !important; }
   .note-sources a { border-bottom: none !important; }
@@ -640,6 +656,12 @@ html[data-theme="dark"]{--fond:#1a1611;--texte:#ece4d4;--texte-mute:#9d9480;--ac
 #theme-toggle{position:fixed;right:18px;bottom:18px;z-index:60;width:40px;height:40px;border-radius:50%;border:1px solid var(--filet-leger);background:var(--fond);color:var(--texte-mute);font-size:17px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:color .15s,border-color .15s;box-shadow:0 1px 5px rgba(0,0,0,.10)}
 #theme-toggle:hover{color:var(--accent);border-color:var(--accent)}
 @media print{#theme-toggle{display:none}}
+
+/* a11y-focus */
+a:focus-visible,button:focus-visible,[tabindex]:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--accent,#a35a42);outline-offset:2px;border-radius:2px}
+.skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--accent);color:var(--fond);font-family:var(--mono);font-size:12px;letter-spacing:.04em;padding:10px 16px;text-decoration:none;border-radius:0 0 3px 0}
+.skip-link:focus{left:0}
+#contenu:focus{outline:none}
 </style>
 <script type="application/ld+json">
 {
@@ -1546,6 +1568,7 @@ html[data-theme="dark"]{--fond:#1a1611;--texte:#ece4d4;--texte-mute:#9d9480;--ac
 <script>(function(){try{if(localStorage.getItem('pjt-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
 </head>
 <body id="haut">
+<a class="skip-link" href="#contenu"><span data-fr>Aller au contenu</span><span data-en>Skip to content</span></a>
 
 <div class="wrap">
 
@@ -1563,7 +1586,7 @@ html[data-theme="dark"]{--fond:#1a1611;--texte:#ece4d4;--texte-mute:#9d9480;--ac
     </span>
   </header>
 
-  <section class="hero">
+  <section class="hero" id="contenu" tabindex="-1">
     <span class="marqueur">
       <span data-fr>▸ Notes éditoriales</span>
       <span data-en>▸ Editorial notes</span>
@@ -1575,6 +1598,7 @@ html[data-theme="dark"]{--fond:#1a1611;--texte:#ece4d4;--texte-mute:#9d9480;--ac
     <p class="chapeau" data-en>
       Notes in public on economy, culture and education in the age of artificial intelligence. Written from the position of a francophone editor, not a commentator. They seek less to question than to diagnose.
     </p>
+    <a href="#" id="au-hasard" class="hasard" rel="nofollow"><span data-fr>une note au hasard ↬</span><span data-en>a note at random ↬</span></a>
   </section>
 
   <section class="liste-textes">
@@ -11131,6 +11155,18 @@ html[data-theme="dark"]{--fond:#1a1611;--texte:#ece4d4;--texte-mute:#9d9480;--ac
   // ============================================================
 
   var CITE_BASE = 'https://pierrejeantribot.com/notes/';
+  var CITE_DOI = '10.5281/zenodo.22989326';
+  function downloadFile(name, text, mime) {
+    try {
+      var blob = new Blob([text], { type: (mime || 'text/plain') + ';charset=utf-8' });
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = name;
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 120);
+    } catch (e) {}
+  }
 
   // Slug stable à partir d'un intitulé (accents/apostrophes/ponctuation retirés)
   function slugify(s) {
@@ -11234,8 +11270,21 @@ html[data-theme="dark"]{--fond:#1a1611;--texte:#ece4d4;--texte-mute:#9d9480;--ac
         '  title        = {{' + noteTitle(art, 'fr') + '}},\n' +
         '  year         = {' + year + '},\n' +
         '  howpublished = {\\url{' + url + '}},\n' +
+        '  doi          = {' + CITE_DOI + '},\n' +
         '  note         = {Notes, ' + noteDate(art, 'fr') + '}\n' +
         '}';
+      var ris = [
+        'TY  - GEN',
+        'AU  - Tribot, Pierre-Jean',
+        'TI  - ' + noteTitle(art, 'fr'),
+        'T2  - Notes',
+        'PY  - ' + year,
+        'DA  - ' + noteDate(art, 'fr'),
+        'UR  - ' + url,
+        'DO  - ' + CITE_DOI,
+        'PB  - pierrejeantribot.com',
+        'ER  - '
+      ].join('\n');
 
       var wrap = document.createElement('div');
       wrap.className = 'citation';
@@ -11247,15 +11296,20 @@ html[data-theme="dark"]{--fond:#1a1611;--texte:#ece4d4;--texte-mute:#9d9480;--ac
         '<div class="citation-corps" hidden>' +
           '<p class="citation-ref" data-fr>' + refs.fr + '</p>' +
           '<p class="citation-ref" data-en>' + refs.en + '</p>' +
+          '<p class="cite-doi">DOI : ' + CITE_DOI + '</p>' +
           '<div class="citation-actions">' +
             '<button class="citation-copier" type="button">' +
               '<span data-fr>copier la référence</span><span data-en>copy citation</span>' +
             '</button>' +
-            '<button class="citation-bibtex" type="button">BibTeX</button>' +
+            '<button class="citation-bibtex" type="button" data-kind="bibtex">BibTeX</button>' +
+            '<button class="citation-bibtex" type="button" data-kind="ris">RIS</button>' +
           '</div>' +
           '<pre class="citation-bib" hidden></pre>' +
+          '<pre class="citation-ris" hidden></pre>' +
         '</div>';
       wrap.querySelector('.citation-bib').textContent = bib;
+      wrap.querySelector('.citation-ris').textContent = ris;
+      wrap.setAttribute('data-noteid', noteId);
 
       dateEl.parentNode.insertBefore(wrap, dateEl.nextSibling);
     });
@@ -11296,19 +11350,19 @@ html[data-theme="dark"]{--fond:#1a1611;--texte:#ece4d4;--texte-mute:#9d9480;--ac
     }
     var bibBtn = e.target.closest('.citation-bibtex');
     if (bibBtn) {
-      var bibEl = bibBtn.closest('.citation-corps').querySelector('.citation-bib');
-      var bibText = bibEl ? bibEl.textContent : '';
+      var corps = bibBtn.closest('.citation-corps');
+      var wrapEl = bibBtn.closest('.citation');
+      var noteid = (wrapEl && wrapEl.getAttribute('data-noteid')) || 'note';
+      var kind = bibBtn.getAttribute('data-kind') === 'ris' ? 'ris' : 'bibtex';
+      var src = corps.querySelector(kind === 'ris' ? '.citation-ris' : '.citation-bib');
+      var text = src ? src.textContent : '';
+      if (!text) return;
+      downloadFile(noteid + (kind === 'ris' ? '.ris' : '.bib'),
+                   text, kind === 'ris' ? 'application/x-research-info-systems' : 'application/x-bibtex');
       var lbl = bibBtn.textContent;
-      var okb = function() {
-        bibBtn.classList.add('ok');
-        bibBtn.textContent = (html.getAttribute('lang') === 'en') ? 'copied' : 'copié';
-        setTimeout(function() { bibBtn.classList.remove('ok'); bibBtn.textContent = lbl; }, 2000);
-      };
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(bibText).then(okb).catch(function() { fallbackCopy(bibText, okb); });
-      } else {
-        fallbackCopy(bibText, okb);
-      }
+      bibBtn.classList.add('ok');
+      bibBtn.textContent = (html.getAttribute('lang') === 'en') ? 'downloaded' : 'téléchargé';
+      setTimeout(function() { bibBtn.classList.remove('ok'); bibBtn.textContent = lbl; }, 2000);
     }
   });
 
@@ -11592,6 +11646,24 @@ html[data-theme="dark"]{--fond:#1a1611;--texte:#ece4d4;--texte-mute:#9d9480;--ac
 })();
 </script>
 <!-- READTIME-END -->
+
+<!-- AU-HASARD -->
+<script>
+(function(){
+  var link = document.getElementById('au-hasard');
+  if (!link) return;
+  link.addEventListener('click', function(e){
+    e.preventDefault();
+    var ids = [];
+    document.querySelectorAll('article.texte').forEach(function(a){ if (a.id) ids.push(a.id); });
+    if (!ids.length) return;
+    var id = ids[Math.floor(Math.random() * ids.length)];
+    if (location.hash === '#' + id) { location.hash = ''; }
+    location.hash = '#' + id;
+    window.scrollTo(0, 0);
+  });
+})();
+</script>
 
 <button id="theme-toggle" type="button" aria-label="Basculer clair / sombre" title="Clair / sombre">☾</button>
 <script>

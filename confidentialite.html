@@ -187,6 +187,9 @@ html[data-theme="dark"]{--fond:#1a1611;--texte:#ece4d4;--texte-mute:#9d9480;--ac
 #theme-toggle{position:fixed;right:18px;bottom:18px;z-index:60;width:40px;height:40px;border-radius:50%;border:1px solid var(--filet-leger);background:var(--fond);color:var(--texte-mute);font-size:17px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:color .15s,border-color .15s;box-shadow:0 1px 5px rgba(0,0,0,.10)}
 #theme-toggle:hover{color:var(--accent);border-color:var(--accent)}
 @media print{#theme-toggle{display:none}}
+
+/* a11y-focus */
+a:focus-visible,button:focus-visible,[tabindex]:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--accent,#a35a42);outline-offset:2px;border-radius:2px}
 </style>
 <script>(function(){try{if(localStorage.getItem('pjt-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
 </head>
