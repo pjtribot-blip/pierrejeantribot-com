@@ -11731,6 +11731,29 @@ body.reading #read-progress{opacity:1}
 })();
 </script>
 
+<!-- RACCOURCIS-CLAVIER -->
+<script>
+(function(){
+  function typing(){ var a=document.activeElement; return a && (a.tagName==='INPUT'||a.tagName==='TEXTAREA'||a.isContentEditable); }
+  function slugOf(h){ return (h||'').replace(/^#/,'').replace(/-(fr|en)$/,'').split('--')[0]; }
+  document.addEventListener('keydown', function(e){
+    if (e.metaKey || e.ctrlKey || e.altKey || typing()) return;
+    var reading = document.body.classList.contains('reading');
+    var k = e.key;
+    if (k === 'Escape' && reading) { location.hash = ''; window.scrollTo(0,0); e.preventDefault(); return; }
+    if (k === 'r' || k === 'R') { var l=document.getElementById('au-hasard'); if(l){ l.click(); e.preventDefault(); } return; }
+    if ((k === 'ArrowRight' || k === 'ArrowLeft') && reading) {
+      var seq=[]; document.querySelectorAll('article.texte').forEach(function(a){ if(a.id) seq.push(a.id); });
+      var i = seq.indexOf(slugOf(location.hash));
+      if (i < 0) return;
+      var j = (k === 'ArrowRight') ? i+1 : i-1;
+      if (j < 0 || j >= seq.length) return;
+      location.hash = '#' + seq[j]; window.scrollTo(0,0); e.preventDefault();
+    }
+  });
+})();
+</script>
+
 <button id="theme-toggle" type="button" aria-label="Basculer clair / sombre" title="Clair / sombre">☾</button>
 <script>
 (function(){var KEY='pjt-theme',r=document.documentElement;
