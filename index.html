@@ -225,6 +225,7 @@
     font-family:var(--serif);font-size:18px;line-height:1.62;color:var(--ink-soft);
     margin-bottom:18px;max-width:62ch;
   }
+  .note-featured .excerpt{ margin-bottom:16px; }
   .excerpt em.cut{color:var(--ink-faint);font-style:normal;margin:0 4px;letter-spacing:.06em}
   .excerpt-note{
     font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--ink-faint);
@@ -691,10 +692,10 @@
     }
     function trunc(p){
       p=(p||'').replace(/\s+/g,' ').trim();
-      if(p.length<=340)return esc(p);
-      var cut=p.slice(0,340);
+      if(p.length<=170)return esc(p);
+      var cut=p.slice(0,170);
       var idx=Math.max(cut.lastIndexOf('. '),cut.lastIndexOf('! '),cut.lastIndexOf('? '));
-      var body=idx>180?p.slice(0,idx+1):p.slice(0,cut.lastIndexOf(' '));
+      var body=idx>90?p.slice(0,idx+1):p.slice(0,cut.lastIndexOf(' '));
       return esc(body.replace(/[ ,;:—-]+$/,''))+' <em class="cut">[…]</em>';
     }
     function pick(art,sel,lang){
