@@ -186,7 +186,14 @@ fixed = [
   ["#{SITE}/methode/",               "monthly", "0.7"],
   ["#{SITE}/dossier/",               "monthly", "0.6"],
   ["#{SITE}/glossaire.html",         "monthly", "0.6"],
-  ["#{SITE}/confidentialite.html",   "yearly",  "0.2"]
+  ["#{SITE}/confidentialite.html",   "yearly",  "0.2"],
+  ["#{SITE}/theme/souverainete/",    "weekly",  "0.7"],
+  ["#{SITE}/theme/economie/",        "weekly",  "0.7"],
+  ["#{SITE}/theme/geopolitique/",    "weekly",  "0.7"],
+  ["#{SITE}/theme/societe/",         "weekly",  "0.7"],
+  ["#{SITE}/theme/patrimoine/",      "weekly",  "0.7"],
+  ["#{SITE}/theme/education/",       "weekly",  "0.7"],
+  ["#{SITE}/theme/methode/",         "weekly",  "0.7"]
 ]
 sm = +%(<?xml version="1.0" encoding="UTF-8"?>\n)
 sm << %(<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n)
