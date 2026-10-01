@@ -272,9 +272,26 @@
   .foot a{color:var(--paper-deep);text-decoration:none;opacity:.8;transition:opacity .2s}
   .foot a:hover{opacity:1;color:var(--paper)}
   .foot .fl{display:flex;gap:22px;flex-wrap:wrap}
+
+/* dark-mode v1 */
+html[data-theme="dark"]{--paper:#1a1611;--paper-deep:#221b14;--ink:#ece4d4;--ink-soft:#b3a890;--ink-faint:#8a7f6a;--line:#3a3328;--accent:#d58a66;--accent-deep:#e3a07d;}
+html[data-theme="dark"] #contact{background:var(--paper-deep);color:var(--ink)}
+html[data-theme="dark"] footer{background:var(--paper-deep);color:var(--ink-soft)}
+html[data-theme="dark"] .mailbtn{background:var(--accent);color:#17140f}
+html[data-theme="dark"] .mailbtn:hover{background:var(--accent-deep)}
+html[data-theme="dark"] #contact h2{color:var(--ink)}
+html[data-theme="dark"] #contact p.note-written{color:var(--ink-soft)}
+html[data-theme="dark"] #contact .alt{color:var(--ink-soft)}
+html[data-theme="dark"] #contact .alt a{color:var(--ink)}
+html[data-theme="dark"] .foot a{color:var(--ink-soft)}
+html[data-theme="dark"] .foot a:hover{color:var(--ink)}
+#theme-toggle{position:fixed;right:18px;bottom:18px;z-index:60;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--paper);color:var(--ink-faint);font-size:17px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:color .15s,border-color .15s;box-shadow:0 1px 5px rgba(0,0,0,.10)}
+#theme-toggle:hover{color:var(--accent);border-color:var(--accent)}
+@media print{#theme-toggle{display:none}}
 </style>
 <link rel="alternate" type="application/rss+xml" title="Pierre-Jean Tribot — Notes (RSS)" href="https://pierrejeantribot.com/feed.xml">
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f26dfa4ac2e94ad097fdcde2ccdc7c35"}'></script><!-- End Cloudflare Web Analytics -->
+<script>(function(){try{if(localStorage.getItem('pjt-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
 </head>
 <body class="lang-fr">
 
@@ -739,6 +756,17 @@
         var w=enNum(total); el.textContent=el.getAttribute('data-nc-en')==='cap'?cap(w):w;});
     }).catch(function(){/* on garde le repli statique */});
   })();
+</script>
+
+<button id="theme-toggle" type="button" aria-label="Basculer clair / sombre" title="Clair / sombre">☾</button>
+<script>
+(function(){var KEY='pjt-theme',r=document.documentElement;
+function sync(){var d=r.getAttribute('data-theme')==='dark';var b=document.getElementById('theme-toggle');if(b)b.textContent=d?'☀':'☾';}
+function set(t){if(t==='dark')r.setAttribute('data-theme','dark');else r.removeAttribute('data-theme');try{localStorage.setItem(KEY,t);}catch(e){}sync();}
+sync();
+var b=document.getElementById('theme-toggle');
+if(b)b.addEventListener('click',function(){set(r.getAttribute('data-theme')==='dark'?'light':'dark');});
+})();
 </script>
 
 </body>
