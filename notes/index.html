@@ -662,6 +662,9 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,input:focus-visibl
 .skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--accent);color:var(--fond);font-family:var(--mono);font-size:12px;letter-spacing:.04em;padding:10px 16px;text-decoration:none;border-radius:0 0 3px 0}
 .skip-link:focus{left:0}
 #contenu:focus{outline:none}
+#read-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:70;opacity:0;transition:width .1s linear,opacity .2s ease}
+body.reading #read-progress{opacity:1}
+@media print{#read-progress{display:none}}
 </style>
 <script type="application/ld+json">
 {
@@ -1569,6 +1572,7 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,input:focus-visibl
 </head>
 <body id="haut">
 <a class="skip-link" href="#contenu"><span data-fr>Aller au contenu</span><span data-en>Skip to content</span></a>
+<div id="read-progress" aria-hidden="true"></div>
 
 <div class="wrap">
 
@@ -11646,6 +11650,25 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,input:focus-visibl
 })();
 </script>
 <!-- READTIME-END -->
+
+<!-- READ-PROGRESS -->
+<script>
+(function(){
+  var bar = document.getElementById('read-progress');
+  if (!bar) return;
+  function upd(){
+    if (!document.body.classList.contains('reading')) { bar.style.width = '0'; return; }
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    var p = max > 0 ? (h.scrollTop || document.body.scrollTop) / max : 0;
+    bar.style.width = (Math.max(0, Math.min(1, p)) * 100) + '%';
+  }
+  window.addEventListener('scroll', upd, { passive: true });
+  window.addEventListener('resize', upd);
+  window.addEventListener('hashchange', function(){ setTimeout(upd, 60); });
+  upd();
+})();
+</script>
 
 <!-- AU-HASARD -->
 <script>
