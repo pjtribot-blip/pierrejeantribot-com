@@ -265,6 +265,8 @@
   @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
   .soon-card h3{font-family:var(--display);font-weight:400;font-size:23px;line-height:1.2;margin-bottom:14px}
   .soon-card p{color:var(--ink-soft);font-size:16.5px}
+  .soon-card .soon-link{display:inline-block;margin-top:16px;font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:3px;transition:border-color .2s}
+  .soon-card .soon-link:hover{border-bottom-color:var(--accent)}
 
   /* ---------- footer ---------- */
   footer{padding:46px 0;background:var(--ink);color:var(--paper-deep)}
@@ -612,18 +614,25 @@ main#top:focus{outline:none}
     </div>
   </section>
 
-  <!-- ATELIER / À VENIR -->
+  <!-- EN VOIX & EN DIALOGUE (en ligne) -->
   <section id="atelier">
     <div class="wrap">
       <div class="sec-head">
         <span class="num">05</span>
-        <h2><span class="fr">Bientôt. <em>La pensée, en voix et en dialogue.</em></span><span class="en">Coming soon. <em>The thinking, in voice and dialogue.</em></span></h2>
+        <h2><span class="fr">La pensée, <em>en voix et en dialogue.</em></span><span class="en">The thinking, <em>in dialogue.</em></span></h2>
       </div>
       <div class="twocol">
+        <div class="soon-card fr">
+          <div class="tag"><span class="fr">En ligne</span></div>
+          <h3><span class="fr">À voix haute</span></h3>
+          <p><span class="fr">Le podcast qui prolonge les notes-clés, lues à voix haute — en français. Des capsules courtes, en phase avec le moment.</span></p>
+          <a class="soon-link fr" href="https://pierrejeantribot.com/podcasts/">écouter les capsules →</a>
+        </div>
         <div class="soon-card">
-          <div class="tag"><span class="fr">En préparation</span><span class="en">In preparation</span></div>
-          <h3><span class="fr">Podcast &amp; interventions</span><span class="en">Podcast &amp; talks</span></h3>
-          <p><span class="fr">Prolongement audio de la pensée publique : entretiens, prises de parole et passages sur la culture à l’ère de l’IA. La couche qui reste en phase avec le moment et qui prolonge les Notes en voix.</span><span class="en">An audio extension of the public thinking: interviews, talks and appearances on culture in the age of AI. The layer that stays in step with the moment and extends the Notes into voice.</span></p>
+          <div class="tag"><span class="fr">En ligne</span><span class="en">Online</span></div>
+          <h3><span class="fr">Dialoguer avec le corpus</span><span class="en">Converse with the corpus</span></h3>
+          <p><span class="fr">Un agent ancré sur le corpus seul répond à vos questions et en restitue les positions, à la source — la pensée en conversation.</span><span class="en">An agent grounded on the corpus alone answers your questions and renders its positions, at the source — the thinking in conversation.</span></p>
+          <a class="soon-link" href="https://pierrejeantribot.com/dialogue/"><span class="fr">parler avec le corpus →</span><span class="en">talk with the corpus →</span></a>
         </div>
       </div>
     </div>
