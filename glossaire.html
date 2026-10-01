@@ -344,7 +344,14 @@ html[lang="en"] [data-fr] { display: none !important; }
   .nav-retour { top: 18px; left: 16px; font-size: 10px; }
   .sommaire { padding: 20px 22px; }
 }
+
+/* dark-mode v1 */
+html[data-theme="dark"]{--ivoire:#1a1611;--ivoire-clair:#221b14;--bordeaux:#d58a66;--bordeaux-clair:#e3a07d;--charbon:#ece4d4;--gris:#9d9480;--gris-clair:#352f26;}
+#theme-toggle{position:fixed;right:18px;bottom:18px;z-index:60;width:40px;height:40px;border-radius:50%;border:1px solid var(--gris-clair);background:var(--ivoire);color:var(--gris);font-size:17px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:color .15s,border-color .15s;box-shadow:0 1px 5px rgba(0,0,0,.10)}
+#theme-toggle:hover{color:var(--bordeaux);border-color:var(--bordeaux)}
+@media print{#theme-toggle{display:none}}
 </style>
+<script>(function(){try{if(localStorage.getItem('pjt-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
 </head>
 
 <body id="haut">
@@ -993,6 +1000,17 @@ function setLang(lang) {
     else if (navigator.language && navigator.language.startsWith('en')) lang = 'en';
   } catch(e) {}
   setLang(lang);
+})();
+</script>
+
+<button id="theme-toggle" type="button" aria-label="Basculer clair / sombre" title="Clair / sombre">☾</button>
+<script>
+(function(){var KEY='pjt-theme',r=document.documentElement;
+function sync(){var d=r.getAttribute('data-theme')==='dark';var b=document.getElementById('theme-toggle');if(b)b.textContent=d?'☀':'☾';}
+function set(t){if(t==='dark')r.setAttribute('data-theme','dark');else r.removeAttribute('data-theme');try{localStorage.setItem(KEY,t);}catch(e){}sync();}
+sync();
+var b=document.getElementById('theme-toggle');
+if(b)b.addEventListener('click',function(){set(r.getAttribute('data-theme')==='dark'?'light':'dark');});
 })();
 </script>
 
