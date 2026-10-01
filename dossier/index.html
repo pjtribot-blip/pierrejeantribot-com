@@ -58,6 +58,9 @@ p{margin:0 0 14px}
 .citer{background:rgba(122,62,42,.05);border:1px solid var(--filet-leger);border-radius:4px;padding:16px 18px;font-size:15px;line-height:1.55}
 .citer .ref{font-family:var(--mono);font-size:12.5px;color:var(--texte);line-height:1.6}
 .citer .todo{color:var(--texte-mute);font-style:italic}
+.cite-dl{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--texte);background:none;border:1px solid var(--filet-leger);border-radius:3px;padding:7px 13px;cursor:pointer;margin-right:8px;transition:color .15s,border-color .15s}
+.cite-dl:hover{color:var(--accent);border-color:var(--accent)}
+@media print{.cite-dl{display:none}}
 .liens a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--filet-leger);padding-bottom:1px}
 .liens a:hover{border-bottom-color:var(--accent)}
 .retour{margin-top:44px;font-family:var(--mono);font-size:11px}
@@ -159,6 +162,10 @@ a:focus-visible,button:focus-visible,[tabindex]:focus-visible,input:focus-visibl
     <p class="ref">Pierre-Jean Tribot, <em data-fr>Notes — un corpus sur l'IA, la culture, l'éducation et la souveraineté cognitive</em><em data-en>Notes — a corpus on AI, culture, education and cognitive sovereignty</em>, pierrejeantribot.com, 2026.</p>
     <p style="margin:10px 0 0"><span class="ref">ORCID : <a class="liens" href="https://orcid.org/0009-0002-0112-4155">0009-0002-0112-4155</a></span><br>
     <span class="ref">DOI : <a class="liens" href="https://doi.org/10.5281/zenodo.22989326">10.5281/zenodo.22989326</a> <span style="color:var(--texte-mute)">— <span data-fr>archivé sur Zenodo (CERN)</span><span data-en>archived on Zenodo (CERN)</span></span></span></p>
+    <p class="citer-dl" style="margin:14px 0 0">
+      <button type="button" class="cite-dl" data-kind="bibtex">BibTeX</button>
+      <button type="button" class="cite-dl" data-kind="ris">RIS</button>
+    </p>
   </div>
 
   <h2><span data-fr>Contact</span><span data-en>Contact</span></h2>
@@ -184,6 +191,45 @@ function set(t){if(t==='dark')r.setAttribute('data-theme','dark');else r.removeA
 sync();
 var b=document.getElementById('theme-toggle');
 if(b)b.addEventListener('click',function(){set(r.getAttribute('data-theme')==='dark'?'light':'dark');});
+})();
+</script>
+
+<!-- CITER-CORPUS -->
+<script>
+(function(){
+  var DOI = '10.5281/zenodo.22989326';
+  var URLC = 'https://pierrejeantribot.com/notes/';
+  var em = document.querySelector('.citer .ref em[data-fr]');
+  var title = em ? em.textContent.replace(/\s+/g, ' ').trim() : 'Notes';
+  var bib = '@misc{tribot_notes_corpus,\n' +
+    '  author       = {Tribot, Pierre-Jean},\n' +
+    '  title        = {{' + title + '}},\n' +
+    '  year         = {2026},\n' +
+    '  howpublished = {\\url{' + URLC + '}},\n' +
+    '  doi          = {' + DOI + '},\n' +
+    '  note         = {Corpus de notes, pierrejeantribot.com}\n' +
+    '}';
+  var ris = ['TY  - GEN','AU  - Tribot, Pierre-Jean','TI  - ' + title,'PY  - 2026',
+    'UR  - ' + URLC,'DO  - ' + DOI,'PB  - pierrejeantribot.com','ER  - '].join('\n');
+  function dl(name, text, mime){
+    try {
+      var bl = new Blob([text], { type: (mime || 'text/plain') + ';charset=utf-8' });
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(bl); a.download = name;
+      document.body.appendChild(a); a.click();
+      setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 120);
+    } catch (e) {}
+  }
+  document.querySelectorAll('.cite-dl').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var k = btn.getAttribute('data-kind');
+      if (k === 'ris') dl('tribot-corpus.ris', ris, 'application/x-research-info-systems');
+      else dl('tribot-corpus.bib', bib, 'application/x-bibtex');
+      var lbl = btn.textContent;
+      btn.textContent = (document.documentElement.getAttribute('lang') === 'en') ? 'downloaded' : 'téléchargé';
+      setTimeout(function(){ btn.textContent = lbl; }, 1800);
+    });
+  });
 })();
 </script>
 
