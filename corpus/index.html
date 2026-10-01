@@ -97,7 +97,18 @@ h1 .point{color:var(--accent)}
 
 /* lang-margin */
 .head .lang{margin:0 16px;}
+
+/* cx-theme-lien */
+.cx-theme-tete h3 a.cx-theme-lien{color:inherit;text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s}
+.cx-theme-tete h3 a.cx-theme-lien:hover{border-bottom-color:var(--accent)}
+
+/* dark-mode v1 */
+html[data-theme="dark"]{--fond:#1a1611;--texte:#ece4d4;--texte-mute:#9d9480;--accent:#d58a66;--filet:#6a6152;--filet-leger:#352f26;}
+#theme-toggle{position:fixed;right:18px;bottom:18px;z-index:60;width:40px;height:40px;border-radius:50%;border:1px solid var(--filet-leger);background:var(--fond);color:var(--texte-mute);font-size:17px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:color .15s,border-color .15s;box-shadow:0 1px 5px rgba(0,0,0,.10)}
+#theme-toggle:hover{color:var(--accent);border-color:var(--accent)}
+@media print{#theme-toggle{display:none}}
 </style>
+<script>(function(){try{if(localStorage.getItem('pjt-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
 </head>
 <body>
 <div class="wrap">
@@ -217,7 +228,7 @@ h1 .point{color:var(--accent)}
 
   <section class="cx-theme">
       <div class="cx-theme-tete">
-        <h3><span data-fr>souveraineté cognitive</span><span data-en>cognitive sovereignty</span></h3>
+        <h3><a class="cx-theme-lien" href="/theme/souverainete/"><span data-fr>souveraineté cognitive</span><span data-en>cognitive sovereignty</span></a></h3>
         <span class="cx-theme-n">8</span>
       </div>
       <div class="cx-bar"><span style="width:50%"></span></div>
@@ -225,7 +236,7 @@ h1 .point{color:var(--accent)}
     </section>
 <section class="cx-theme">
       <div class="cx-theme-tete">
-        <h3><span data-fr>économie politique</span><span data-en>political economy</span></h3>
+        <h3><a class="cx-theme-lien" href="/theme/economie/"><span data-fr>économie politique</span><span data-en>political economy</span></a></h3>
         <span class="cx-theme-n">6</span>
       </div>
       <div class="cx-bar"><span style="width:38%"></span></div>
@@ -233,7 +244,7 @@ h1 .point{color:var(--accent)}
     </section>
 <section class="cx-theme">
       <div class="cx-theme-tete">
-        <h3><span data-fr>géopolitique</span><span data-en>geopolitics</span></h3>
+        <h3><a class="cx-theme-lien" href="/theme/geopolitique/"><span data-fr>géopolitique</span><span data-en>geopolitics</span></a></h3>
         <span class="cx-theme-n">9</span>
       </div>
       <div class="cx-bar"><span style="width:56%"></span></div>
@@ -241,7 +252,7 @@ h1 .point{color:var(--accent)}
     </section>
 <section class="cx-theme">
       <div class="cx-theme-tete">
-        <h3><span data-fr>changements sociétaux</span><span data-en>societal change</span></h3>
+        <h3><a class="cx-theme-lien" href="/theme/societe/"><span data-fr>changements sociétaux</span><span data-en>societal change</span></a></h3>
         <span class="cx-theme-n">5</span>
       </div>
       <div class="cx-bar"><span style="width:31%"></span></div>
@@ -249,7 +260,7 @@ h1 .point{color:var(--accent)}
     </section>
 <section class="cx-theme">
       <div class="cx-theme-tete">
-        <h3><span data-fr>culture & patrimoine</span><span data-en>culture & heritage</span></h3>
+        <h3><a class="cx-theme-lien" href="/theme/patrimoine/"><span data-fr>culture & patrimoine</span><span data-en>culture & heritage</span></a></h3>
         <span class="cx-theme-n">16</span>
       </div>
       <div class="cx-bar"><span style="width:100%"></span></div>
@@ -257,7 +268,7 @@ h1 .point{color:var(--accent)}
     </section>
 <section class="cx-theme">
       <div class="cx-theme-tete">
-        <h3><span data-fr>éducation</span><span data-en>education</span></h3>
+        <h3><a class="cx-theme-lien" href="/theme/education/"><span data-fr>éducation</span><span data-en>education</span></a></h3>
         <span class="cx-theme-n">12</span>
       </div>
       <div class="cx-bar"><span style="width:75%"></span></div>
@@ -265,7 +276,7 @@ h1 .point{color:var(--accent)}
     </section>
 <section class="cx-theme">
       <div class="cx-theme-tete">
-        <h3><span data-fr>méthode</span><span data-en>method</span></h3>
+        <h3><a class="cx-theme-lien" href="/theme/methode/"><span data-fr>méthode</span><span data-en>method</span></a></h3>
         <span class="cx-theme-n">3</span>
       </div>
       <div class="cx-bar"><span style="width:19%"></span></div>
@@ -302,5 +313,16 @@ h1 .point{color:var(--accent)}
   set(detect());
 })();
 </script>
+<button id="theme-toggle" type="button" aria-label="Basculer clair / sombre" title="Clair / sombre">☾</button>
+<script>
+(function(){var KEY='pjt-theme',r=document.documentElement;
+function sync(){var d=r.getAttribute('data-theme')==='dark';var b=document.getElementById('theme-toggle');if(b)b.textContent=d?'☀':'☾';}
+function set(t){if(t==='dark')r.setAttribute('data-theme','dark');else r.removeAttribute('data-theme');try{localStorage.setItem(KEY,t);}catch(e){}sync();}
+sync();
+var b=document.getElementById('theme-toggle');
+if(b)b.addEventListener('click',function(){set(r.getAttribute('data-theme')==='dark'?'light':'dark');});
+})();
+</script>
+
 </body>
 </html>
